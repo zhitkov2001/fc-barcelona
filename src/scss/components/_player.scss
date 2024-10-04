@@ -1,0 +1,149 @@
+.player {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 450px;
+  margin: 7px 7px;
+}
+
+.player__link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.player__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.player__info {
+  position: absolute;
+  font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 14, 31, 0.2),
+    rgba(8, 14, 31, 0.5) 0%,
+    #080e1f 70%,
+    #080e1f
+  );
+  color: #ffffff;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  overflow: hidden;
+  // transition: height .3s;
+  transition: all 0.4s;
+}
+
+.player__name {
+  position: absolute;
+  display: flex;
+  //    width: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+
+  // transition: transform .3s;
+  transition: all 0.4s;
+}
+
+.player__number {
+  font-size: 50px;
+  padding-right: 15px;
+  font-weight: 600;
+}
+
+.player__surname {
+  font-size: 40px;
+}
+
+.player__stats {
+  font-family: "Cambria Math", sans-serif;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(115%);
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  padding: 10px 5px 5px 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  // transition: transform .3s, opacity .2s;
+  transition: all 0.4s;
+}
+
+.current__stats {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  height: 5rem;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.season__stats {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.matches {
+  width: 33.33333%;
+}
+
+.goals {
+  width: 33.33333%;
+}
+
+.assists {
+  width: 33.33333%;
+}
+
+.stats__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.stats__value {
+  display: flex;
+  color: #c6c607;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.player:hover .player__info {
+  width: 100%;
+  height: 210px;
+  // transition: height .3s;
+  transition: all 0.4s;
+}
+
+.player:hover .player__name {
+  transform: translateY(-110%);
+  // transition: transform .3s;
+  transition: all 0.4s;
+}
+
+.player:hover .player__stats {
+  transform: translateY(0);
+  opacity: 1;
+  // transition: transform .3s, opacity .4s;
+  transition: all 0.4s;
+}
