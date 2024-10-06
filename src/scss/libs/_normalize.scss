@@ -1,3 +1,5 @@
+@import "../variables";
+
 * {
   padding: 0;
   margin: 0;
@@ -8,14 +10,20 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #000;
+  box-sizing: border-box;
 }
 
 a,
@@ -27,7 +35,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: $black;
+  color: var($black);
 }
 
 h1 {

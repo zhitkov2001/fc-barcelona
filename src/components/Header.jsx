@@ -6,19 +6,16 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        {/* <a href="http://localhost:3000/"> */}
-        <picture className="header__logo">
+        <a className="header__logo" href="http://localhost:3000/">
           <img
             src="./img/barca_logo(60px).webp"
             href="http://localhost:3000/"
             alt="Logo"
           />
-        </picture>
-        {/* </a> */}
+        </a>
         <nav className="nav">
           <a className="nav__link" href="http://localhost:8000/first-team.html">
-            {/* <p> */}1<sup className="st">st</sup> team
-            {/* </p> */}
+            1<sup className="st">st</sup> team
           </a>
           <a className="nav__link" href="http://localhost:8000/schedule.html">
             schedule

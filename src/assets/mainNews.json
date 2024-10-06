@@ -1,0 +1,25 @@
+{
+  "mainNewsDataFromJson": [
+    {
+      "id": 0,
+      "newsUrl": "!#",
+      "newsImg": "./img/News/hansiFlick.webp",
+      "title": "Hansi Flick join to Barca",
+      "subtitle": "Hansi Flick's side complete the first week of training with a session on the Tito Vilanova pitch at the Ciutat Esportiva Joan Gamper"
+    },
+    {
+      "id": 1,
+      "newsUrl": "!#",
+      "newsImg": "./img/News/copaWinner.webp",
+      "title": "Copa America 2024 winners",
+      "subtitle": "Argentina National Team Copa 2024 winner"
+    },
+    {
+      "id": 2,
+      "newsUrl": "!#",
+      "newsImg": "./img/News/euro_winner.webp",
+      "title": "EURO 2024 winners",
+      "subtitle": "Lamine Yamal, Ferran, Fermin and Pedri EURO 2024 winners"
+    }
+  ]
+}
