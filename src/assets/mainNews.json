@@ -3,23 +3,23 @@
     {
       "id": 0,
       "newsUrl": "!#",
-      "newsImg": "./img/News/hansiFlick.webp",
-      "title": "Hansi Flick join to Barca",
-      "subtitle": "Hansi Flick's side complete the first week of training with a session on the Tito Vilanova pitch at the Ciutat Esportiva Joan Gamper"
+      "newsImg": "./img/MainNews/mainNews1.webp",
+      "title": "Lamine Yamal, U23 player of the month for August",
+      "subtitle": "The Barça forward has been named best young player in the league by La Liga after a month in which he scored once and created four assists"
     },
     {
       "id": 1,
       "newsUrl": "!#",
-      "newsImg": "./img/News/copaWinner.webp",
-      "title": "Copa America 2024 winners",
-      "subtitle": "Argentina National Team Copa 2024 winner"
+      "newsImg": "./img/MainNews/mainNews2.webp",
+      "title": "Alavés 0-3 FC Barcelona: Fast forward",
+      "subtitle": "Lewandowski hat-trick as good as seals the win Mendizorroza with an hour of football still to play"
     },
     {
       "id": 2,
       "newsUrl": "!#",
-      "newsImg": "./img/News/euro_winner.webp",
-      "title": "EURO 2024 winners",
-      "subtitle": "Lamine Yamal, Ferran, Fermin and Pedri EURO 2024 winners"
+      "newsImg": "./img/MainNews/mainNews3.webp",
+      "title": "FC Barcelona 5-0 Young Boys: Like clockwork",
+      "subtitle": "Lewandowski (2), Raphinha, Iñigo Martínez and a Camara own goal earn the first three Champions League points on a spectacular night at Montjuïc"
     }
   ]
 }

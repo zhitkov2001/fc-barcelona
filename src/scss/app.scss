@@ -16,12 +16,13 @@
 @import "./components/section-news";
 @import "./components/section-schedule";
 @import "./components/titles";
+@import "./components/social";
 
 html {
+  background-color: $dark-blue;
 }
 
-.main {
+main {
   margin-top: 55px;
-
   width: 100%;
 }

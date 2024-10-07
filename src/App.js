@@ -4,6 +4,7 @@ import "./scss/app.scss";
 import Header from "./components/Header";
 import Partners from "./components/Partners";
 import MainNews from "./components/MainNews";
+import Social from "./components/Social";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </section>
       </main>
       <Partners />
+      <Social />
       <footer className="footer">
         <div className="container">
           <div className="footer__copyright">

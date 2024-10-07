@@ -9,57 +9,42 @@ function Partners() {
             <a
               className="partners__link"
               href="https://www.nike.com/gb/"
-              // target="_blank"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <picture>
-                <source
-                  srcset="./img/nike_logo.webp 1x, ./img/nike_logo@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  className="partners__img"
-                  alt=""
-                  src="./img/nike_logo.webp"
-                />
-              </picture>
+              <img
+                className="partners__img"
+                alt=""
+                src="./img/nike_logo.webp"
+              />
             </a>
           </li>
           <li className="partners__item">
             <a
               className="partners__link"
               href="https://open.spotify.com"
-              // target="_blank"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <picture>
-                <source
-                  srcset="./img/spotify_logo.webp 1x, ./img/spotify_logo@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  className="partners__img"
-                  alt=""
-                  src="./img/spotify_logo.webp"
-                />
-              </picture>
+              <img
+                className="partners__img"
+                alt=""
+                src="./img/spotify_logo.webp"
+              />
             </a>
           </li>
           <li className="partners__item">
             <a
               className="partners__link"
               href="https://www.philips.ru/c-m-so/tv/all"
-              // target="_blank"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <picture>
-                <source
-                  srcset="./img/amblight_logo.webp 1x, ./img/amblight_logo@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  className="partners__img"
-                  alt=""
-                  src="./img/amblight_logo.webp"
-                />
-              </picture>
+              <img
+                className="partners__img"
+                alt=""
+                src="./img/amblight_logo.webp"
+              />
             </a>
           </li>
         </ul>

@@ -1,43 +1,29 @@
 import React from "react";
 
-// import Logo from "../../public/img/barca_logo(60px).webp";
-
 function Header() {
   return (
     <header className="header">
       <div className="container">
         <a className="header__logo" href="http://localhost:3000/">
-          <img
-            src="./img/barca_logo(60px).webp"
-            href="http://localhost:3000/"
-            alt="Logo"
-          />
+          <img src="./img/barca_logo(60px).webp" alt="Barcelona Logo" />
         </a>
         <nav className="nav">
-          <a className="nav__link" href="http://localhost:8000/first-team.html">
-            1<sup className="st">st</sup> team
+          <a className="nav__link" href="!#">
+            1<sup className="st">st</sup> Team
           </a>
-          <a className="nav__link" href="http://localhost:8000/schedule.html">
-            schedule
+          <a className="nav__link" href="!#">
+            Schedule
           </a>
-          <a className="nav__link" href="http://localhost:8000/news.html">
-            news
+          <a className="nav__link" href="!#">
+            News
           </a>
         </nav>
         <div className="profile">
-          <a
-            className="nav__link"
-            id="profile"
-            href="http://localhost/FC_Barcelona/login"
-          >
-            login
+          <a className="nav__link" id="profile" href="!#">
+            Login
           </a>
-          <a
-            className="nav__link"
-            id="profile"
-            href="http://localhost/FC_Barcelona/sign_in"
-          >
-            sign in
+          <a className="nav__link" id="profile" href="!#">
+            Sign in
           </a>
         </div>
       </div>
