@@ -36,7 +36,7 @@ function Partners() {
           <li className="partners__item">
             <a
               className="partners__link"
-              href="https://www.philips.ru/c-m-so/tv/all"
+              href="https://www.philips.com/ambilight?1"
               target="_blank"
               rel="noopener noreferrer"
             >

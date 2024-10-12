@@ -1,0 +1,46 @@
+{
+  "clubNewsDataFromJson": [
+    {
+      "id": 0,
+      "img": "./img/ClubNews/club-news1.webp",
+      "title": "Lamine Ymal, youngest to 50",
+      "date": "19.05.2024",
+      "subtitle": "The winger reaches a half centry of games as a blaugrana at the age of 16 years, 10 months and six days, beating Bojan Krkic`s"
+    },
+    {
+      "id": 1,
+      "img": "./img/ClubNews/club-news2.webp",
+      "title": "Lamine Ymal, youngest to 50",
+      "date": "18.05.2024",
+      "subtitle": "The winger reaches a half centry of games as a blaugrana at the age of 16 years, 10 months and six days, beating Bojan Krkic`s"
+    },
+    {
+      "id": 2,
+      "img": "./img/ClubNews/club-news3.webp",
+      "title": "Lamine Ymal, youngest to 50",
+      "date": "19.05.2024",
+      "subtitle": "The winger reaches a half centry of games as a blaugrana at the age of 16 years, 10 months and six days, beating Bojan Krkic`s"
+    },
+    {
+      "id": 3,
+      "img": "./img/ClubNews/club-news4.webp",
+      "title": "Lamine Ymal, youngest to 50",
+      "date": "19.05.2024",
+      "subtitle": "The winger reaches a half centry of games as a blaugrana at the age of 16 years, 10 months and six days, beating Bojan Krkic`s"
+    },
+    {
+      "id": 4,
+      "img": "./img/ClubNews/club-news5.webp",
+      "title": "Lamine Ymal, youngest to 50",
+      "date": "19.05.2024",
+      "subtitle": "The winger reaches a half centry of games as a blaugrana at the age of 16 years, 10 months and six days, beating Bojan Krkic`s"
+    },
+    {
+      "id": 5,
+      "img": "./img/ClubNews/club-news6.webp",
+      "title": "Lamine Ymal, youngest to 50",
+      "date": "19.05.2024",
+      "subtitle": "The winger reaches a half centry of games as a blaugrana at the age of 16 years, 10 months and six days, beating Bojan Krkic`s"
+    }
+  ]
+}

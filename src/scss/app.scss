@@ -5,7 +5,7 @@
 @import "./components/header";
 @import "./components/icons";
 @import "./components/logo";
-@import "./components/main-news";
+@import "../components/ClubNews/ClubNews.module.scss";
 @import "./components/mobile-nav";
 @import "./components/nav-icon";
 @import "./components/nav";
@@ -13,7 +13,7 @@
 @import "./components/player-info";
 @import "./components/player-page";
 @import "./components/player";
-@import "./components/section-news";
+@import "../components/MainNews/MainNews.module.scss";
 @import "./components/section-schedule";
 @import "./components/titles";
 @import "./components/social";

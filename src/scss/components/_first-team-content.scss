@@ -1,19 +1,19 @@
-.firstteam__tittle {
+.firstteam__title--background {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 19rem;
-  margin: 0;
-  padding: 0;
+  height: 190px;
 
-  font-family: "Libre Franklin", sans-serif;
-  text-align: center;
+  background: url(./../../../public/img/players_background.webp) no-repeat
+    center;
+  background-size: inherit;
+}
+
+.firstteam__title {
+  line-height: 1;
   font-size: 3rem;
   color: #ffffff;
-
-  // background: url(./../../img/players_background.webp) no-repeat center;
-  background-size: inherit;
 }
 
 .firstteam__nav {

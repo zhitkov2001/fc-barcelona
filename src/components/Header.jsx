@@ -1,16 +1,18 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter, Routes, Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
       <div className="container">
-        <a className="header__logo" href="http://localhost:3000/">
+        <Link to="http://localhost:3000/" className="header__logo">
           <img src="./img/barca_logo(60px).webp" alt="Barcelona Logo" />
-        </a>
+        </Link>
         <nav className="nav">
-          <a className="nav__link" href="!#">
+          <Link className="nav__link" to="/1stTeam">
             1<sup className="st">st</sup> Team
-          </a>
+          </Link>
           <a className="nav__link" href="!#">
             Schedule
           </a>
