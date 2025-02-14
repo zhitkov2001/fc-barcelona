@@ -6,8 +6,11 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <Link to="http://localhost:3000/" className="header__logo">
-          <img src="./img/barca_logo(60px).webp" alt="Barcelona Logo" />
+        <Link to="/" className="header__logo">
+          <img
+            src={`${process.env.PUBLIC_URL}/img/barca_logo(60px).webp`}
+            alt="Barcelona Logo"
+          />
         </Link>
         <nav className="nav">
           <Link className="nav__link" to="/1stTeam">

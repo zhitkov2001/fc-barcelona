@@ -24,6 +24,8 @@
   background-repeat: no-repeat;
   background-size: 0% 0.3rem;
 
+  transition: all 0.2s ease;
+
   &:hover {
     opacity: 1;
     background-position: bottom;

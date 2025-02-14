@@ -10,6 +10,8 @@ import Header from "./components/Header";
 import Partners from "./components/Partners";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
+import PlayerItems from "./components/Players/PlayerItem";
+import PlayerPage from "./pages/PlayerPage";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/1stTeam" element={<Players />} />
+          <Route path="/player/:id" element={<PlayerPage />} />
         </Routes>
       </main>
       <Partners />

@@ -1,214 +1,186 @@
-.playerPage__background {
+.playerPage {
   display: block;
   background-color: #080f3e;
-  padding: 20px 0 20px 0;
-  height: 600px;
-}
+  color: #fff;
+  // padding: 20px 0 20px 0;
+  min-height: 100vh;
 
-.background__surname {
-  display: flex;
-  font-family: "Libre Franklin", sans-serif;
-  position: absolute;
-  color: #ffffff;
-  width: 100%;
-  font-size: 350px;
-  font-weight: 600;
-  justify-content: center;
-  white-space: nowrap;
-  overflow: hidden;
-  opacity: 0.15;
-  text-transform: uppercase;
-}
+  .player-hero__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 578px;
 
-.playerPage__container {
-  display: flex;
-  margin: 0 auto;
-  width: 1500px;
-}
+    .player-hero__surname {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Libre Franklin", sans-serif;
+      position: absolute;
+      z-index: 1;
+      top: 20px;
+      width: 100%;
 
-.playerPage__header {
-  display: flex;
-  width: 100%;
-  height: 400px;
-  justify-content: center;
-}
+      font-size: 18vw;
+      font-weight: 600;
+      line-height: 1;
 
-.pagePlayer__stats {
-  font-family: "Cambria Math", sans-serif;
-  position: relative;
-  display: block;
-  width: 50%;
-  margin: 100px 150px 0 0;
-}
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0.1;
+      text-transform: uppercase;
+    }
 
-.playerCurrent__stats {
-  display: flex;
-  list-style: none;
-}
+    .player-hero__container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
 
-.playerSeason__stats {
-  display: flex;
-  list-style: none;
-}
+      .player-hero__stats {
+        align-content: end;
+        margin-bottom: 40px;
+        width: 50%;
+        text-align: center;
 
-.player__matches {
-  width: 33.33333%;
-}
+        .player-hero-stats__title {
+          margin-bottom: 20px;
+          font-family: Arial, Helvetica, Narrow-bold;
+          font-weight: narrow-bold;
+          font-size: 26px;
+          line-height: 100%;
+          letter-spacing: 0.04em;
+          color: #fff;
+        }
 
-.player__goals {
-  width: 33.33333%;
-}
+        .player-hero-stats__list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
 
-.player__assists {
-  width: 33.33333%;
-}
+          .player-hero-stats__item {
+            .player-hero-stats-item__barca {
+              display: grid;
+              gap: 9px;
+              margin-bottom: 22px;
 
-.playerStats__title {
-  display: flex;
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-  justify-content: center;
-}
+              .player-hero-stats-item-barca__title {
+                font-family: "Libre Franklin", sans-serif;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 100%;
+                color: #fff;
+              }
+              .player-hero-stats-item-barca__value {
+                font-family: "Libre Franklin", sans-serif;
+                font-weight: 600;
+                font-size: 70px;
+                line-height: 100%;
+                color: #edc831;
+              }
+            }
 
-.playerStats__value {
-  display: flex;
-  font-size: 30px;
-  font-weight: 600;
-  color: #c6c607;
-  justify-content: center;
-  margin-bottom: 15px;
-}
+            .player-hero-stats-item-current__season {
+              .player-hero-stats-item-current__title {
+                font-family: "Libre Franklin", sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 100%;
+                color: #fff;
+              }
+              .player-hero-stats-item-current__value {
+                font-family: "Libre Franklin", sans-serif;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 125%;
+                color: #edc831;
+              }
+            }
+          }
+        }
+      }
+    }
 
-.playerPage__player {
-  display: block;
-}
+    .player-hero-img__container {
+      position: relative;
+      height: 578px;
+      width: 490px;
 
-.playerPage__img {
-  position: relative;
-  display: flex;
-  width: 450px;
-  height: 500px;
-}
+      & img {
+        position: absolute;
+        z-index: 2;
+        width: 490px;
+      }
 
-.playerPage__name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.7);
-  font-size: 27px;
-  color: #ffffff;
-}
+      .player-hero-info__block {
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        gap: 15px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0 30px 0;
+        z-index: 3;
 
-.playerInfo__inner {
-  display: flex;
-  margin: auto;
-  background: #344194;
-  height: auto;
-  width: 100%;
-}
+        background-color: hsla(0, 0%, 0%, 0.6);
 
-.playerInfo__container {
-  background: #ffffff;
-  width: 1500px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  border-radius: 15px;
-}
+        .player-hero-info__position {
+          font-family: "Libre Franklin ", sans-serif;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 100%;
+          color: #fff;
+        }
+        .player-hero-info__data {
+          display: flex;
 
-.playerPage__info {
-  display: flex;
-  width: 100%;
-  margin: auto;
-  padding: 50px 30px 15px;
-}
+          align-items: baseline;
+          gap: 5px;
 
-.playerInfo__img {
-  display: block;
-  width: 100%;
-  height: 450px;
-  margin: 30px 20px;
-  box-shadow: 0.3rem 0.2rem 0.8rem 0 rgba(0, 0, 0, 0.3);
-}
+          font-family: "Libre Franklin", sans-serif;
+          font-weight: 700;
+          line-height: 1;
+          color: #fff;
 
-.playerPage__bio {
-  display: block;
-  width: 100%;
-  margin: 80px 20px 30px 20px;
-}
+          .player-hero-info__number {
+            font-size: 40px;
+          }
+          .player-hero-info__name {
+            font-size: 25px;
+          }
+          .player-hero-info__surname {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
 
-.playerPage__title {
-  display: block;
-  margin-bottom: 40px;
-  font-size: 43px;
-  font-weight: 600;
-  background: linear-gradient(90deg, #d81c1c, #0642e7);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  .container {
+    position: relative;
+    margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    width: 70%;
+    min-height: 500px;
+    background-color: #fff;
 
-.playerPage__subtitle {
-  display: block;
-  font-size: 15px;
-}
+    min-height: 100vh;
 
-.playerBirth__inner {
-  display: flex;
-  align-items: center;
-}
+    .TEST {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.11;
+      width: 100%;
+    }
 
-.birth__list {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  padding: 17px 25px;
-  list-style: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  justify-content: center;
-  align-items: center;
-}
-
-.birth__item {
-  justify-content: center;
-  margin: 0 43px 18px 0;
-  line-height: 30px;
-}
-
-.birth__title {
-  font-family: "Libre Franklin", system-ui;
-  font-size: 16px;
-  font-weight: 700;
-  color: #1f35d9;
-  text-transform: uppercase;
-}
-
-.birth__value {
-  font-family: "Libre Franklin", system-ui;
-  font-size: 35px;
-  font-weight: 300;
-  color: #000000;
-}
-
-.trophy__list {
-  display: flex;
-
-  gap: 40px;
-}
-
-.trophy__list-item {
-  width: 250px;
-  height: 250px;
-
-  //   background: url("./../../img/news_background.webp");
-  background-size: cover;
-}
-
-.trophy__img {
-  width: 135px;
-  height: 200px;
+    .player-card__content {
+      display: flex;
+      justify-content: center;
+      color: #000;
+    }
+  }
 }

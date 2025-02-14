@@ -10,8 +10,8 @@ function Social() {
               <a href="!#" className="social__link">
                 <img
                   className="social__link-img"
-                  src="./img/SocialIcon/facebook.webp"
-                  alt="Social link"
+                  alt="Facebook"
+                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/facebook.webp`}
                 />
                 <div className="social__link-item-info">
                   <h5 className="social__link-item-title">FC Barcelona</h5>
@@ -23,8 +23,8 @@ function Social() {
               <a href="!#" className="social__link">
                 <img
                   className="social__link-img"
-                  src="./img/SocialIcon/x.webp"
-                  alt="Social link"
+                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/x.webp`}
+                  alt="X"
                 />
                 <div className="social__link-item-info">
                   <h5 className="social__link-item-title">FC Barcelona</h5>
@@ -36,8 +36,8 @@ function Social() {
               <a href="!#" className="social__link">
                 <img
                   className="social__link-img"
-                  src="./img/SocialIcon/youtube.webp"
-                  alt="Social link"
+                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/youtube.webp`}
+                  alt="YouTube"
                 />
                 <div className="social__link-item-info">
                   <h5 className="social__link-item-title">FC Barcelona</h5>
@@ -49,8 +49,8 @@ function Social() {
               <a href="!#" className="social__link">
                 <img
                   className="social__link-img"
-                  src="./img/SocialIcon/instagram.webp"
-                  alt="Social link"
+                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/instagram.webp`}
+                  alt="Instagram"
                 />
                 <div className="social__link-item-info">
                   <h5 className="social__link-item-title">FC Barcelona</h5>
@@ -62,8 +62,8 @@ function Social() {
               <a href="!#" className="social__link">
                 <img
                   className="social__link-img"
-                  src="./img/SocialIcon/tiktok.webp"
-                  alt="Social link"
+                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/tiktok.webp`}
+                  alt="Tik Tok"
                 />
                 <div className="social__link-item-info">
                   <h5 className="social__link-item-title">FC Barcelona</h5>
@@ -75,8 +75,9 @@ function Social() {
               <a href="!#" className="social__link">
                 <img
                   className="social__link-img"
-                  src="./img/SocialIcon/spotify.svg"
-                  alt="Social link"
+                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/spotify.webp`}
+                  // ./img/SocialIcon/spotify.svg
+                  alt="Spotify"
                 />
                 <div className="social__link-item-info">
                   <h5 className="social__link-item-title">FC Barcelona</h5>

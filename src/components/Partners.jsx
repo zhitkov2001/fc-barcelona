@@ -14,8 +14,10 @@ function Partners() {
             >
               <img
                 className="partners__img"
-                alt=""
-                src="./img/nike_logo.webp"
+                alt="Nike"
+                src={`${process.env.PUBLIC_URL}/img/nike_logo.webp`}
+                // src={nikeLogo}
+                // src="./img/nike_logo.webp"
               />
             </a>
           </li>
@@ -28,8 +30,8 @@ function Partners() {
             >
               <img
                 className="partners__img"
-                alt=""
-                src="./img/spotify_logo.webp"
+                alt="Spotify"
+                src={`${process.env.PUBLIC_URL}/img/spotify_logo.webp`}
               />
             </a>
           </li>
@@ -42,8 +44,8 @@ function Partners() {
             >
               <img
                 className="partners__img"
-                alt=""
-                src="./img/amblight_logo.webp"
+                alt="Amblight"
+                src={`${process.env.PUBLIC_URL}/img/amblight_logo.webp`}
               />
             </a>
           </li>

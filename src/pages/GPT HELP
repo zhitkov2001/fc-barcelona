@@ -1,0 +1,132 @@
+import React from 'react';
+
+const team = {
+  goalkeepers: [
+    {
+      id: "TerStegen",
+      position: "goalkeeper",
+      surname: "Ter Stegen",
+      stats: [
+        {
+          matches: "500",
+          saves: "970",
+          cleanMatches: "190"
+        }
+      ]
+    },
+    {
+      id: "Pena",
+      position: "goalkeeper",
+      surname: "Pena",
+      stats: [
+        {
+          matches: "40",
+          saves: "80",
+          cleanMatches: "12"
+        }
+      ]
+    }
+  ],
+  defenders: [
+    {
+      id: "Araujo",
+      position: "defender",
+      surname: "Araujo",
+      stats: [
+        {
+          matches: "150",
+          goals: "4",
+          assists: "3"
+        }
+      ]
+    }
+  ],
+  midfielders: [
+    {
+      id: "DeJong",
+      position: "midfielder",
+      surname: "De Jong",
+      stats: [
+        {
+          matches: "150",
+          goals: "4",
+          assists: "3"
+        }
+      ]
+    }
+  ],
+  forwards: [
+    {
+      id: "Lewandowski",
+      position: "forward",
+      surname: "Lewandowski",
+      stats: [
+        {
+          matches: "143",
+          goals: "20",
+          assists: "13"
+        }
+      ]
+    }
+  ],
+  staff: [
+    {
+      id: "Xavi",
+      position: "coach",
+      surname: "Xavi",
+      stats: [
+        {
+          matches: "767",
+          goals: "85",
+          assists: "182"
+        }
+      ]
+    }
+  ]
+};
+
+const PlayerCard = ({ player }) => {
+  const stats = player.stats[0]; // Предполагаем, что stats — это массив с одним объектом
+
+  return (
+    <div className="player-card">
+      <h4>{player.surname}</h4>
+      <p>Position: {player.position}</p>
+      <ul>
+        {Object.entries(stats).map(([key, value], index) => (
+          <li key={index}>
+            <strong>{key}:</strong> {value}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const App = () => {
+  // Получаем названия всех секций (goalkeepers, defenders и т.д.)
+  const teamSections = Object.keys(team);
+
+  return (
+    <div>
+      <h1>Team Roster</h1>
+
+      {/* Перебираем все секции и выводим заголовок и карточки игроков */}
+      {teamSections.map((section, index) => (
+        <div key={index}>
+          {/* Выводим заголовок секции (например, "Goalkeepers") */}
+          <h3>{section.charAt(0).toUpperCase() + section.slice(1)}</h3>
+
+          {/* Перебираем игроков и выводим карточки */}
+          <div>
+            {team[section].map((player) => (
+              <PlayerCard key={player.id} player={player} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default App;

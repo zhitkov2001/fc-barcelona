@@ -1,113 +1,129 @@
 {
+  "goalkeepers": [
+    {
+      "id": "TerStegen",
+      "name": "Marc-André",
+      "surname": "Ter Stegen",
+      "position": "goalkeeper",
+      "img": "TerStegen",
+      "number": "1",
+      "stats": {
+        "matches": "420",
+        "clean": "174",
+        "saves": "983"
+      },
+      "currentStats": {
+        "matches": "7",
+        "clean": "1",
+        "saves": "17"
+      },
+      "title": "A keeper with great reflexes and also excellent with the ball at his feet"
+    },
 
-        "goalkeepers" : {
+    {
+      "id": "Pena",
+      "name": "Iñaki",
+      "surname": "Peña",
+      "position": "goalkeeper",
+      "img": "Pena",
+      "number": "1",
+      "stats": {
+        "matches": "44",
+        "clean": "88",
+        "saves": "9"
+      },
+      "currentStats": {
+        "matches": "22",
+        "clean": "5",
+        "saves": "42"
+      },
+      "title": "A keeper with great reflexes and also excellent with the ball at his feet"
+    }
+  ],
 
-           "TerStegen" : {
-                "id" : "TerStegen",
-                "position" : "goalkeeper",
-                "img" : "TerStegen",
-                "number" : "1",
-                "surname" : "Ter Stegen",
-                "matches" : "640",
-                "goals" : "0",
-                "assists" : "3",
-                "current-matches" : "38",
-                "current-goals" : "0",
-                "current-assists" : "1",
-                "title" : "A keeper with great reflexes and also excellent with the ball at his feet"
-            },
+  "defenders": [
+    {
+      "id": "Araujo",
+      "name": "Ronald",
+      "surname": "Araujo",
+      "position": "defender",
+      "img": "Araujo",
+      "number": "4",
+      "stats": {
+        "matches": "158",
+        "goals": "9",
+        "assists": "6"
+      },
+      "currentStats": {
+        "matches": "8",
+        "goals": "1",
+        "assists": "1"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    }
+  ],
 
-            "Pena" : {
-                "id" : "Pena",
-                "position" : "goalkeeper",
-                "img" : "Pena",
-                "number" : "1",
-                "surname" : "Ter Stegen",
-                "matches" : "640",
-                "goals" : "0",
-                "assists" : "3",
-                "current-matches" : "38",
-                "current-goals" : "0",
-                "current-assists" : "1",
-                "title" : "A keeper with great reflexes and also excellent with the ball at his feet"
-            }
-        },
+  "midfielders": [
+    {
+      "id": "DeJong",
+      "name": "Frenkie",
+      "surname": "De Jong",
+      "position": "midfielder",
+      "img": "DeJong",
+      "number": "21",
+      "stats": {
+        "matches": "236",
+        "goals": "19",
+        "assists": "20"
+      },
+      "currentStats": {
+        "matches": "23",
+        "goals": "2",
+        "assists": "1"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    }
+  ],
 
+  "forwards": [
+    {
+      "id": "Lewandowski",
+      "name": "Robert",
+      "surname": "Lewandowski",
+      "position": "forward",
+      "img": "Lewandowski",
+      "number": "9",
+      "stats": {
+        "matches": "128",
+        "goals": "90",
+        "assists": "20"
+      },
+      "currentStats": {
+        "matches": "14",
+        "goals": "26",
+        "assists": "5"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    }
+  ],
 
-        "defenders" : {
-
-            "Araujo" : {
-                "id" : "Araujo",
-                "position" : "defender",
-                "img" : "Araujo",
-                "number" : "4",
-                "surname" : "Araujo",
-                "matches" : "150",
-                "goals" : "4",
-                "assists" : "3",
-                "current-matches" : "38",
-                "current-goals" : "0",
-                "current-assists" : "1",
-                "title" : "Uruguayan defender, strong in the air and capable with the ball at his feet"
-            }
-        },
-
-
-
-         "midfielders" : {
-
-            "DeJong" : {
-                "id" : "DeJong",
-                "position" : "midfielder",
-                "img" : "DeJong",
-                "number" : "21",
-                "surname" : "De Jong",
-                "matches" : "150",
-                "goals" : "4",
-                "assists" : "3",
-                "current-matches" : "38",
-                "current-goals" : "0",
-                "current-assists" : "1",
-                "title" : "Uruguayan defender, strong in the air and capable with the ball at his feet"
-            }
-        },
-
-
-
-        "forwards" : {
-            "Lewandowski" : {
-                "id" : "Lewandowski",
-                "position" : "forward",
-                "img" : "Lewandowski",
-                "number" : "9",
-                "surname" : "Lewandowski",
-                "matches" : "143",
-                "goals" : "20",
-                "assists" : "13",
-                "current-matches" : "34",
-                "current-goals" : "4",
-                "current-assists" : "5",
-                "title" : "Uruguayan defender, strong in the air and capable with the ball at his feet"
-            }
-        },
-
-
-
-
-         "stuff" : {
-             "Xavi" : {
-                "id" : "Xavi",
-                "position" : "stuff",
-                "img" : "Xavi",
-                "number" : "6",
-                "surname" : "Xavi",
-                "matches" : "111",
-                "goals" : "7",
-                "assists" : "12",
-                "current-matches" : "15",
-                "current-goals" : "2",
-                "current-assists" : "1",
-                "title" : "Uruguayan defender, strong in the air and capable with the ball at his feet"
-            }
-         }
-        }
+  "stuff": [
+    {
+      "id": "Flick",
+      "name": "Hans-Dieter",
+      "surname": "Flick",
+      "position": "stuff",
+      "img": "Flick",
+      "number": "6",
+      "stats": {
+        "matches": "36",
+        "wins": "26"
+      },
+      "currentStats": {
+        "matches": "36",
+        "wins": "26"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    }
+  ]
+}

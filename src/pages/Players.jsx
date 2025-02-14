@@ -1,47 +1,52 @@
 import React from "react";
 
+import PlayerItem from "../components/Players/PlayerItem";
+import PlayersData from "./../assets/Players.json";
+import { Link } from "react-router-dom";
+
 function Players() {
+  const firstTeamNav = [
+    "goalkeepers",
+    "defenders",
+    "midfielders",
+    "forwards",
+    "coach stuff",
+  ];
+
+  // const players =
+  const playersKeys = Object.keys(PlayersData);
+  // console.log(playersKeys);
+
   return (
     <>
       <section className="first__team">
         <div className="firstteam__title--background">
           <h2 className="firstteam__title">FC Barcelona First Team</h2>
         </div>
-        <nav className="firstteam__nav">
-          <li className="firstteam__nav-item">
-            <button className="nav__btn" type="button">
-              goalkeepers
-            </button>
-          </li>
-          <li className="firstteam__nav-item">
-            <button className="nav__btn" type="button">
-              defenders
-            </button>
-          </li>
-          <li className="firstteam__nav-item">
-            <button className="nav__btn is-active" type="button">
-              midfielders
-            </button>
-          </li>
-          <li className="firstteam__nav-item">
-            <button className="nav__btn" type="button">
-              forwards
-            </button>
-          </li>
-          <li className="firstteam__nav-item">
-            <button className="nav__btn" type="button">
-              coach stuff
-            </button>
-          </li>
-        </nav>
+        <ul className="firstteam__nav">
+          {firstTeamNav.map((id) => (
+            <li className="firstteam__nav-item" key={id}>
+              <button className="nav__btn" type="button">
+                {id}
+              </button>
+            </li>
+          ))}
+        </ul>
         <div className="players__container">
-          <div className="players">
-            <h3 className="players__position">Goalkeepers</h3>
-            <h3 className="players__position">Defenders</h3>
-            <h3 className="players__position">Midfielders</h3>
-            <h3 className="players__position">Forwards</h3>
-            <h3 className="players__position">Stuff</h3>
-          </div>
+          <ul className="players">
+            {playersKeys.map((section) => (
+              <div key={section} className="players__group">
+                <h3 className="players__position">
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </h3>
+                <div className="players__group--flex">
+                  {PlayersData[section].map((player) => (
+                    <PlayerItem key={player.id} {...player} />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </ul>
         </div>
       </section>
     </>
