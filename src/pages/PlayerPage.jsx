@@ -1,18 +1,18 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import PlayersData from "../assets/Players.json";
-
 const PlayerPage = () => {
   const location = useLocation();
   const player = location.state?.player;
 
-  const playerStatsList = player.stats;
-  // console.log(playerStatsList);
+  const playerAllTimeStats = player.allTimeStats;
+  // const playerStatsList = player.stats;
+  // console.log(player);
+
   return (
     <div className="playerPage">
       <div className="player-hero__wrapper">
-        <h2 className="player-hero__surname">Lewandowski</h2>
+        <h2 className="player-hero__surname">{player.surname}</h2>
         <div className="player-hero__container">
           <div className="player-hero__stats">
             <h3 className="player-hero-stats__title">Barca stats</h3>
@@ -72,23 +72,66 @@ const PlayerPage = () => {
         </div>
       </div>
       <div className="container">
-        <img className="TEST" src="../../../img/playerPage_test.png" alt="" />
+        {/* <img className="TEST" src="../../../img/playerPage_test.png" alt="" /> */}
         <div className="player-card__content">
-          <div className="player-card__img">
-            <img src={`../../../img/Players/${player.img}.webp`} alt="" />
+          <div className="player-card__wrapper">
+            <img
+              className="player-card__img"
+              src={`../../../img/Players/${player.img}.webp`}
+              alt={player.surname}
+            />
+            <div className="player-card-img__info">
+              <p className="player-card-img__number">{player.number}</p>
+              <p className="player-card-img__fullname">
+                {player.name} {player.surname}
+              </p>
+            </div>
           </div>
           <div className="player-card__info">
-            <p>
-              One of the best strikers ever, the Polish forward's stats speak
-              for themselves
-            </p>
-            <p>
-              The striker from Poland stands out for his goalscoring abilities.
-              Inside the box he has all the tools to make him a difficult
-              striker to read as he can find the net with his head and both feet
-              with equal precision. 
-            </p>
+            <p className="player-card-info__title">{player.title}</p>
+            <p className="player-card-info__subtitle">{player.subtitle}</p>
+            <ul className="player-card-allTime__list">
+              {Object.entries(playerAllTimeStats).map(([key, value]) => (
+                <li key={key} className="player-card-allTime__item">
+                  <p className="player-card-allTime-stats__title">
+                    {key.charAt(0).toUpperCase() + key.slice(1)}
+                  </p>
+                  <span className="player-card-allTime-stats__value">
+                    {value}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <button className="player-card-btn">
+              Read full BIO
+              <svg
+                fill=""
+                height="16px"
+                width="12px"
+                version="1.1"
+                id="Layer_1"
+                viewBox="0 0 330 330"
+                stroke="#ffffff"
+                stroke-width="20"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    id="XMLID_222_"
+                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </button>
           </div>
+          {/* {player INFO block!!!}==== */}
+          {/* {player TROPHY block!!!}==== */}
         </div>
       </div>
     </div>

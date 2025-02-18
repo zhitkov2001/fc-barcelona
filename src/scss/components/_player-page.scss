@@ -161,26 +161,132 @@
   .container {
     position: relative;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: center;
     width: 70%;
     min-height: 500px;
     background-color: #fff;
-
     min-height: 100vh;
-
-    .TEST {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.11;
-      width: 100%;
-    }
+    border-radius: 5px;
 
     .player-card__content {
       display: flex;
       justify-content: center;
+      width: 100%;
+      padding: 50px 0;
       color: #000;
+
+      .player-card__wrapper {
+        padding: 38px 80px;
+        width: 50%;
+        background: linear-gradient(
+          90deg,
+          rgb(25, 46, 167) 50%,
+          rgb(184, 16, 27) 50%
+        );
+
+        .player-card__img {
+          display: flex;
+          width: 100%;
+          max-height: 270px;
+          margin-bottom: 30px;
+        }
+
+        .player-card-img__info {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 100%;
+          color: #fff;
+        }
+      }
+
+      .player-card__info {
+        display: grid;
+        gap: 60px;
+        padding: 40px 50px 0;
+        width: 50%;
+
+        color: #18191b;
+        font-weight: 400;
+        line-height: 1;
+
+        .player-card-info__title {
+          font-family: "Abel", serif;
+          font-size: 34px;
+        }
+        .player-card-info__subtitle {
+          font-family: "Libre Franklin", serif;
+          font-size: 18px;
+        }
+        .player-card-allTime__list {
+          display: flex;
+          gap: 18px;
+
+          .player-card-allTime__item {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 6px;
+
+            font-family: "Arial Narrow";
+            line-height: 1;
+            color: #294787;
+
+            p {
+              font-weight: 400;
+              font-size: 20px;
+              letter-spacing: -0.02em;
+              color: #18191b;
+            }
+
+            span {
+              font-weight: 700;
+              font-size: 36px;
+            }
+          }
+        }
+        .player-card-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+          padding: 15px 10px;
+          max-width: 160px;
+
+          line-height: 1;
+          background-color: #bc1144;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+
+          transition: all 0.1s ease;
+
+          & svg {
+            stroke: #ffffff;
+            fill: #ffffff;
+
+            transition: all 0.1s ease;
+          }
+
+          &:hover {
+            background-color: #0f2d7e;
+            color: #fdc52c;
+
+            transition: all 0.1s ease;
+            & svg {
+              stroke: #fdc52c;
+              fill: #fdc52c;
+
+              transition: all 0.1s ease;
+            }
+          }
+        }
+      }
     }
   }
 }

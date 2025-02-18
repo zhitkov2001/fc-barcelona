@@ -76,7 +76,6 @@ function Social() {
                 <img
                   className="social__link-img"
                   src={`${process.env.PUBLIC_URL}/img/SocialIcon/spotify.webp`}
-                  // ./img/SocialIcon/spotify.svg
                   alt="Spotify"
                 />
                 <div className="social__link-item-info">

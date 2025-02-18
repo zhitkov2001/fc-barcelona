@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./scss/app.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Players from "./pages/Players";
@@ -12,11 +12,13 @@ import Social from "./components/Social";
 import Footer from "./components/Footer";
 import PlayerItems from "./components/Players/PlayerItem";
 import PlayerPage from "./pages/PlayerPage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <ScrollToTop />
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />

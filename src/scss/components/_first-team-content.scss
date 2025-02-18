@@ -93,6 +93,7 @@
 }
 
 .players__group--flex {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px 10px;
 }

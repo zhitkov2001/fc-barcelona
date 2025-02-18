@@ -17,6 +17,11 @@
         "clean": "1",
         "saves": "17"
       },
+      "allTimeStats": {
+        "matches": "1111",
+        "clean": "999",
+        "saves": "888"
+      },
       "title": "A keeper with great reflexes and also excellent with the ball at his feet"
     },
 
@@ -26,7 +31,7 @@
       "surname": "Peña",
       "position": "goalkeeper",
       "img": "Pena",
-      "number": "1",
+      "number": "13",
       "stats": {
         "matches": "44",
         "clean": "88",
@@ -37,11 +42,86 @@
         "clean": "5",
         "saves": "42"
       },
+      "allTimeStats": {
+        "matches": "1111",
+        "clean": "999",
+        "saves": "888"
+      },
+      "title": "A keeper with great reflexes and also excellent with the ball at his feet"
+    },
+    {
+      "id": "Szczesny",
+      "name": "Wojcieh",
+      "surname": "Szczesny",
+      "position": "goalkeeper",
+      "img": "Szczesny",
+      "number": "25",
+      "stats": {
+        "matches": "9",
+        "clean": "4",
+        "saves": "18"
+      },
+      "currentStats": {
+        "matches": "9",
+        "clean": "4",
+        "saves": "18"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "clean": "999",
+        "saves": "888"
+      },
       "title": "A keeper with great reflexes and also excellent with the ball at his feet"
     }
   ],
 
   "defenders": [
+    {
+      "id": "Cubarsi",
+      "name": "Pau",
+      "surname": "Cubarsi",
+      "position": "defender",
+      "img": "Cubarsi",
+      "number": "2",
+      "stats": {
+        "matches": "60",
+        "assists": "4"
+      },
+      "currentStats": {
+        "matches": "36",
+        "assists": "3"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Balde",
+      "name": "Alejandro",
+      "surname": "Balde",
+      "position": "defender",
+      "img": "Balde",
+      "number": "3",
+      "stats": {
+        "matches": "110",
+        "goals": "3",
+        "assists": "13"
+      },
+      "currentStats": {
+        "matches": "31",
+        "goals": "1",
+        "assists": "6"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
     {
       "id": "Araujo",
       "name": "Ronald",
@@ -59,11 +139,254 @@
         "goals": "1",
         "assists": "1"
       },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Martinez",
+      "name": "Inigo",
+      "surname": "Martinez",
+      "position": "defender",
+      "img": "Martinez",
+      "number": "5",
+      "stats": {
+        "matches": "54",
+        "goals": "2",
+        "assists": "3"
+      },
+      "currentStats": {
+        "matches": "29",
+        "goals": "2",
+        "assists": "3"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Christensen",
+      "name": "Andreas",
+      "surname": "Christensen",
+      "position": "defender",
+      "img": "Christensen",
+      "number": "15",
+      "stats": {
+        "matches": "75",
+        "goals": "4",
+        "assists": "3"
+      },
+      "currentStats": {
+        "matches": "1",
+        "goals": "0",
+        "assists": "0"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Kounde",
+      "name": "Jules",
+      "surname": "Kounde",
+      "position": "defender",
+      "img": "Kounde",
+      "number": "23",
+      "stats": {
+        "matches": "124",
+        "goals": "6",
+        "assists": "17"
+      },
+      "currentStats": {
+        "matches": "36",
+        "goals": "3",
+        "assists": "7"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Garcia",
+      "name": "Eric",
+      "surname": "Garcia",
+      "position": "defender",
+      "img": "Garcia",
+      "number": "23",
+      "stats": {
+        "matches": "92",
+        "goals": "4",
+        "assists": "3"
+      },
+      "currentStats": {
+        "matches": "22",
+        "goals": "3",
+        "assists": "1"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
       "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
     }
   ],
 
   "midfielders": [
+    {
+      "id": "Gavi",
+      "name": "Pablo",
+      "surname": "Gavi",
+      "position": "midfielder",
+      "img": "Gavi",
+      "number": "6",
+      "stats": {
+        "matches": "133",
+        "goals": "9",
+        "assists": "14"
+      },
+      "currentStats": {
+        "matches": "22",
+        "goals": "2",
+        "assists": "2"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Pedri",
+      "name": "",
+      "surname": "Pedri",
+      "position": "midfielder",
+      "img": "Pedri",
+      "number": "8",
+      "stats": {
+        "matches": "178",
+        "goals": "24",
+        "assists": "19"
+      },
+      "currentStats": {
+        "matches": "35",
+        "goals": "4",
+        "assists": "6"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Casado",
+      "name": "Pablo",
+      "surname": "Casado",
+      "position": "midfielder",
+      "img": "Casado",
+      "number": "14",
+      "stats": {
+        "matches": "25",
+        "goals": "5",
+        "assists": "4"
+      },
+      "currentStats": {
+        "matches": "12",
+        "goals": "4",
+        "assists": "3"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Lopez",
+      "name": "Fermin",
+      "surname": "Lopez",
+      "position": "midfielder",
+      "img": "Fermin",
+      "number": "16",
+      "stats": {
+        "matches": "67",
+        "goals": "16",
+        "assists": "5"
+      },
+      "currentStats": {
+        "matches": "25",
+        "goals": "5",
+        "assists": "5"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Casado",
+      "name": "Marc",
+      "surname": "Casado",
+      "position": "midfielder",
+      "img": "Casado",
+      "number": "17",
+      "stats": {
+        "matches": "35",
+        "assists": "6"
+      },
+      "currentStats": {
+        "matches": "30",
+        "assists": "6"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Olmo",
+      "name": "Dani",
+      "surname": "Olmo",
+      "position": "midfielder",
+      "img": "Olmo",
+      "number": "20",
+      "stats": {
+        "matches": "20",
+        "goals": "6",
+        "assists": "3"
+      },
+      "currentStats": {
+        "matches": "20",
+        "goals": "6",
+        "assists": "3"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
     {
       "id": "DeJong",
       "name": "Frenkie",
@@ -81,11 +404,40 @@
         "goals": "2",
         "assists": "1"
       },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
       "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
     }
   ],
 
   "forwards": [
+    {
+      "id": "Torres",
+      "name": "Ferran",
+      "surname": "Torres",
+      "position": "forward",
+      "img": "Torres",
+      "number": "7",
+      "stats": {
+        "matches": "138",
+        "goals": "35",
+        "assists": "15"
+      },
+      "currentStats": {
+        "matches": "25",
+        "goals": "10",
+        "assists": "3"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
     {
       "id": "Lewandowski",
       "name": "Robert",
@@ -103,18 +455,129 @@
         "goals": "26",
         "assists": "5"
       },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "One of the best strikers ever, the Polish forward's stats speak for themselves"
+    },
+    {
+      "id": "Fati",
+      "name": "Ansu",
+      "surname": "Fati",
+      "position": "forward",
+      "img": "Fati",
+      "number": "10",
+      "stats": {
+        "matches": "120",
+        "goals": "29",
+        "assists": "6"
+      },
+      "currentStats": {
+        "matches": "8",
+        "goals": "0",
+        "assists": "0"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
       "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Raphinha",
+      "name": "",
+      "surname": "Raphinha",
+      "position": "forward",
+      "img": "Raphinha",
+      "number": "11",
+      "stats": {
+        "matches": "122",
+        "goals": "44",
+        "assists": "36"
+      },
+      "currentStats": {
+        "matches": "35",
+        "goals": "24",
+        "assists": "13"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Victor",
+      "name": "Pau",
+      "surname": "Victor",
+      "position": "forward",
+      "img": "Victor",
+      "number": "18",
+      "stats": {
+        "matches": "21",
+        "goals": "2",
+        "assists": "1"
+      },
+      "currentStats": {
+        "matches": "21",
+        "goals": "2",
+        "assists": "1"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+    },
+    {
+      "id": "Yamal",
+      "name": "",
+      "surname": "Lamine Yamal",
+      "position": "forward",
+      "img": "Yamal",
+      "number": "19",
+      "stats": {
+        "matches": "82",
+        "goals": "18",
+        "assists": "20"
+      },
+      "currentStats": {
+        "matches": "31",
+        "goals": "11",
+        "assists": "13"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "goals": "999",
+        "assists": "888"
+      },
+      "title": "A great talent from La Masia who stands out for his daring dribbling.",
+      "subtitle": "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
+      "bio": {
+        "0": "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
+        "1": "The forward had barely started playing for the U19s when he began training with the first team at the request of coach Xavi Hernández. In April 2023 he made his debut for the first team aged just 15 years, 9 months and 16 days in a 4-0 win against Real Betis, becoming the youngest player ever to represent Barça.",
+        "2": "After an excellent 2022/23 campaign, Lamine continued with first team for preseason in 2023/24 and despite being registered with the B squad, the forward became a regular presence in the first team squad under coach Xavi Hernandez.",
+        "3": "The winger set a whole host of records in the 2023/24 season with Barça, becoming the youngest player ever to reach 50 appearances for the first team. Besides, Lamine also set other records with regards to goalscoring and assists in competition such as La Liga, the Champions League and the Copa del Rey. In total in 2023/24 he made 50 appearances for Xavi Hernández's team, scoring 7 goals.",
+        "4": "On an international level, Lamine also became the youngest player ever to play for the Spanish national side and their youngest ever goalscorer. In the summer of 2024 he also became the youngest player ever to appear in the European Championships when he started for Spain against Croatia at the age of 16 years and 338 days. The winger set more records on his way to victory in the final against England, amongst them becoming the youngest player ever to appear in a major tournament final.",
+        "5": "After his excellent season for both club and country, in October 2024 Lamine was awarded the Kopa Trophy for best U23 player at the Ballon d'Or gala in Paris.",
+        "6": "Lamine Yamal stands out for his ability to take players on, create chances and for his versatility as he can play as a striker, attacking midfielder or on the right wing."
+      }
     }
   ],
 
-  "stuff": [
+  "Stuff": [
     {
       "id": "Flick",
       "name": "Hans-Dieter",
       "surname": "Flick",
-      "position": "stuff",
+      "position": "coach",
       "img": "Flick",
-      "number": "6",
+      "number": "",
       "stats": {
         "matches": "36",
         "wins": "26"
@@ -122,6 +585,10 @@
       "currentStats": {
         "matches": "36",
         "wins": "26"
+      },
+      "allTimeStats": {
+        "matches": "1111",
+        "wins": "999"
       },
       "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
     }
