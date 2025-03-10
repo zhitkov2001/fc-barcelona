@@ -4,6 +4,7 @@
       "id": "TerStegen",
       "name": "Marc-André",
       "surname": "Ter Stegen",
+      "fullName": "Marc-André ter Stegen",
       "position": "goalkeeper",
       "img": "TerStegen",
       "number": "1",
@@ -18,17 +19,34 @@
         "saves": "17"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "clean": "999",
-        "saves": "888"
+        "matches": "619",
+        "clean": "252"
       },
-      "title": "A keeper with great reflexes and also excellent with the ball at his feet"
+      "title": "A keeper with great reflexes and also excellent with the ball at his feet",
+      "subtitle": "Marc-André ter Stegen signed for FC Barcelona in the summer of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 in Mönchengladbach itself, the German did not take long to make his name as one Europe’s most promising young goalkeepers.",
+      "bio": [
+        "Marc-André ter Stegen signed for FC Barcelona in the summer of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 in Mönchengladbach itself, the German did not take long to make his name as one Europe’s most promising young goalkeepers.",
+        "His only previous club was Borussia Mönchengladbach, which he joined in 1996 at the age of just 4, and by the time he was 18 he had already made his first team debut on 10 April 2011 in the Bundesliga against FC Köln. Mönchengladbach won 5-1, and following a fine performance Ter Stegen was soon the regular first choice keeper, conceding just three goals in his first six outings.",
+        "In the next two games, Ter Stegen and Mönchengladbach faced a relegation playoff, and won 2-1 on aggregate to stay in the top division. The following season, Ter Stegen was named best goalkeeper in the Bundesliga and he went on to complete four seasons and 108 matches in the German league.",
+        "Ter Stegen made his official debut for the Club on 17 September 2014 in Champions League against APOEL Nicosia FC. The match ended with a Barça victory (1-0 ). Aged just 22 years he became the second German goalkeeper at FC Barcelona, following on from Robert Enke. In his debut season, 2014/15, the goalkeeper played every game in the Champions League and had a leading role in the Copa del Rey, both of which Barça won. In La Liga he was back up to Claudio Bravo in his first couple of seasons at the Club but with the departure of the Chilean, Ter Stegen became first choice also in the league in the 2016/17 season.",
+        "Consistency is one of the key characteristics of the German keeper and in the 2021/22 season he surpassed 300 games for Barça, taking him into the top 5 on the all time appearance list for foreign players.",
+        "The 2022/23 season was a memorable one for the goalkeeper from Mönchengladbach. Ter Stegen won his first Zamora trophy after conceding just 18 goals in the league, keeping 26 clean sheets to equal Deportivo La Coruña's Paco Liaño whose record was set back in 1993/94. The German's performances were key in Barça reclaiming the league title and winning another Spanish Super Cup to add to their collection.",
+        "The goalkeeper from Möchengladbach has gone from one success to another and as a player he has so far won no less than 16 trophies with Barça.",
+        "International with Germany since the summer of 2017 Ter Stegen was key in his national side's victory in the Confederations Cup and the goalkeeper was named man of the match in the final against Chile. He was also part of the German squad in the 2018 and 2022 World Cups."
+      ],
+      "details": {
+        "placeOfBirth": "Mönchengladbach, Germany",
+        "dateOfBirth": "30/04/1992",
+        "weight": "85kg",
+        "height": "187cm",
+        "clubDebut": "17/09/2014"
+      }
     },
-
     {
       "id": "Pena",
       "name": "Iñaki",
       "surname": "Peña",
+      "fullName": "Ignacio Peña Sotorres",
       "position": "goalkeeper",
       "img": "Pena",
       "number": "13",
@@ -43,16 +61,30 @@
         "saves": "42"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "clean": "999",
-        "saves": "888"
+        "matches": "125",
+        "clean": "42"
       },
-      "title": "A keeper with great reflexes and also excellent with the ball at his feet"
+      "title": "Iñaki Peña is a Barça-style goalkeeper: he reads the game well and can use his feet well",
+      "subtitle": "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
+      "bio": [
+        "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
+        "In his first season between the posts of the Barça Under-14 team, he won the league and was one of the keys to the team. His skill and play allowed him to grow as a player until he reached Barça B in the 2018/19 season. The keeper alternated between the B squad and the first team in the season 2020/21 and was part of the squad that lifted the Copa del Rey.",
+        "In the winter of the 2021/22 season the keeper left for Galatasaray on loan before returning in the summer of 2022 to the club. In January 2023 he was officially registered as a first team player.",
+        "That same season, 2022/23, Peña made his first debut in the Champions League against Viktoria Plzen before making his first appearance in La Liga for the blaugranes away at Valladolid in May 2023."
+      ],
+      "details": {
+        "placeOfBirth": "Alicante, Spain",
+        "dateOfBirth": "02/03/1999",
+        "weight": "78kg",
+        "height": "184cm",
+        "clubDebut": "23/05/2023"
+      }
     },
     {
       "id": "Szczesny",
       "name": "Wojcieh",
       "surname": "Szczesny",
+      "fullName": "Wojciech Tomasz Szczęsny",
       "position": "goalkeeper",
       "img": "Szczesny",
       "number": "25",
@@ -67,11 +99,25 @@
         "saves": "18"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "clean": "999",
-        "saves": "888"
+        "matches": "646",
+        "clean": "252"
       },
-      "title": "A keeper with great reflexes and also excellent with the ball at his feet"
+      "title": "With an admirable career in goal for Arsenal, Roma, and Juventus, Szczęsny is a vastly experienced international goalkeeper",
+      "subtitle": "FC Barcelona and the player Wojciech Szczęsny reached an agreement for him to join the Club until 30 June 2025 after Ter Stegen picked up a long-term injury.",
+      "bio": [
+        "FC Barcelona and the player Wojciech Szczęsny reached an agreement for him to join the Club until 30 June 2025 after Ter Stegen picked up a long-term injury.",
+        "This means the Polish keeper is back in a kit albeit he announced his retirement in August. However, Barça's call brought him back to football ​after an admirable career and many achievements. After leaving his home town of Warsaw at the age of 16 years old, he went on to play in goal for major European sides such as Arsenal, Roma and Juventus.",
+        "English side Arsenal gave him his chance in the top flight, and after a positive loan with Brentford, he became the gunners' number one for a while, winning two FA Cups and one Community Shield.",
+        "He then moved from London to Roma, were he stayed for two seasons, before signing for Juventus after having been chosen as the heir to Gianluigi Buffon. His importance in Turin was quite evident, as he played for seven seasons from 2017 to 2024, winning three league titles, three Cups and two Super Cups.",
+        "He also represented the Polish national team at two World Cups and four European Cups."
+      ],
+      "details": {
+        "placeOfBirth": "Warszawa, Poland",
+        "dateOfBirth": "18/04/1990",
+        "weight": "90kg",
+        "height": "195cm",
+        "clubDebut": "04/01/2025"
+      }
     }
   ],
 
@@ -80,52 +126,85 @@
       "id": "Cubarsi",
       "name": "Pau",
       "surname": "Cubarsi",
+      "fullName": "Pau Cubarsí Paredes",
       "position": "defender",
       "img": "Cubarsi",
       "number": "2",
       "stats": {
         "matches": "60",
+        "goals": "1",
         "assists": "4"
       },
       "currentStats": {
         "matches": "36",
+        "goals": "1",
         "assists": "3"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "77",
+        "goals": "1",
+        "assists": "4"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "A centre back who provides leadership and decisiveness in defence, while also being able to bring the ball out",
+      "subtitle": "Pau Cubarsí arrived at La Masia from Girona on 1 July 2018 as a U12 player. The 2023/24 season was a key moment in his career as he made his competitive debut with the first team.",
+      "bio": [
+        "Pau Cubarsí arrived at La Masia from Girona on 1 July 2018 as a U12 player. The 2023/24 season was a key moment in his career as he made his competitive debut with the first team.",
+        "A centre back who provides leadership and decisiveness in defence, while also being able to bring the ball out, as an U18 player during the 2023/24 season, he played for Barça Atlètic, while receiving squad call ups and playing time with the first team. Salamanca will always remain a fond memory for Pau Cubarsí, as the 16-year-old centre back made his competitive debut for the Club in January 2024 against Unionistas in the Copa del Rey. A month earlier he had already featured for the first team in a friendly game in Dallas against Club América.",
+        "The centre back played in 24 first team official fixtures in the 2023/24 season as well as playing in the U17 World Cup in the 2023/24 season and making his debut for the full Spanish national side. In the summer of 2024 he claimed a goal medal playing for Spain in the Paris Olympics."
+      ],
+      "details": {
+        "placeOfBirth": "Bescanó, Spain",
+        "dateOfBirth": "22/01/2007",
+        "weight": "75kg",
+        "height": "184cm",
+        "clubDebut": "18/01/2024"
+      }
     },
     {
       "id": "Balde",
       "name": "Alejandro",
       "surname": "Balde",
+      "fullName": "Alejandro Balde Martínez",
       "position": "defender",
       "img": "Balde",
       "number": "3",
       "stats": {
-        "matches": "110",
+        "matches": "114",
         "goals": "3",
         "assists": "13"
       },
       "currentStats": {
-        "matches": "31",
+        "matches": "35",
         "goals": "1",
         "assists": "6"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "149",
+        "goals": "3",
+        "assists": "16"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Skill and strength make Alejandro Balde a fast, explosive fullback who can also support the attack",
+      "subtitle": "Alejandro Balde, born in Barcelona to Guinean and Dominican parents, is a fast and explosive full back who joined Barça in 2011 at the age of eight after coming up through ranks at Espanyol.",
+      "bio": [
+        "Alejandro Balde, born in Barcelona to Guinean and Dominican parents, is a fast and explosive full back who joined Barça in 2011 at the age of eight after coming up through ranks at Espanyol.",
+        "He is of the 2003 generation, but has always played a year above. He won the league at U10 A, B and C, U12 A and C, U 14 A and B, A16 A and B levels, and quickly made the jump to the Barça Atlètic squad.",
+        "The left made his first team debut in the Champions League against Bayern Munich on 14 September, 2021, coming on for the injured Jordi Alba. The following campaign, 2022/23, he quickly made the left back spot his own in Xavi Hernández's team.",
+        "Part of the La Liga and Spanish Super Cup winning squad in 2022/23, in the summer of 2023 he became an official first team player.",
+        "Balde made his debut for the Spanish national side in the World Cup in Qatar in 2022, making four appearances in the tournament."
+      ],
+      "details": {
+        "placeOfBirth": "Barcelona, Spain",
+        "dateOfBirth": "18/10/2003",
+        "weight": "69kg",
+        "height": "175cm",
+        "clubDebut": "14/09/2021"
+      }
     },
     {
       "id": "Araujo",
       "name": "Ronald",
       "surname": "Araujo",
+      "fullName": "Ronald Federico Araújo da Silva",
       "position": "defender",
       "img": "Araujo",
       "number": "4",
@@ -140,16 +219,32 @@
         "assists": "1"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "272",
+        "goals": "24",
+        "assists": "16"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet",
+      "subtitle": "Ronald Araujo was born in Rivera, Uruguay, on 7 March 1999. The young central defender began playing professionally for his hometown team, and later joined the lower categories at Rentistas in the Uruguayan Second Division.",
+      "bio": [
+        "Ronald Araujo was born in Rivera, Uruguay, on 7 March 1999. The young central defender began playing professionally for his hometown team, and later joined the lower categories at Rentistas in the Uruguayan Second Division.",
+        "Araujo stood out in his country and Boston River signed him. After one year playing in Montevideo and gaining experience in the Uruguayan top flight, he signed a five-year contract with Barça B on 29 August 2018 with a buy out clause of 100 million euros, going up to 200 million if he joins the first team squad. For the 2020/21 season the defender became part of the FC Barcelona first team squad winning his first trophy at the Club, the Copa del Rey.",
+        "In his third season Araujo became a valuable part of the Barça defence, playing more than 3,000 minutes for the first team, scoring four goals and showing his versatility by playing at right back when called upon.",
+        "The season 2022/23 saw the Uruguayan become a vital cog in a brilliant Barça defence which conceded just 18 goals in 38 La Liga matches. Araujo picked up his first La Liga title with the first team in the same season.",
+        "Araujo was part of the Uruguay squad for the Copa América in Brazil in 2021 and for the World Cup in Qatar where he was unable to make an appearance due to injury."
+      ],
+      "details": {
+        "placeOfBirth": "Rivera, Uruguay",
+        "dateOfBirth": "07/03/1999",
+        "weight": "79kg",
+        "height": "188cm",
+        "clubDebut": "06/10/2020"
+      }
     },
     {
       "id": "Martinez",
       "name": "Inigo",
       "surname": "Martinez",
+      "fullName": "Iñigo Martínez Berridi",
       "position": "defender",
       "img": "Martinez",
       "number": "5",
@@ -164,16 +259,31 @@
         "assists": "3"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "525",
+        "goals": "30",
+        "assists": "18"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "After more than a decade playing at the top level in Spain, Iñigo has proven his qualities at centre back",
+      "subtitle": "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
+      "bio": [
+        "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
+        "Martínez started his career at his hometown club of Aurrera d’Ondarroa before joining the youth set up at Real Sociedad at the age of 15. He made his debut for the first team in August 2011 and after six seasons with the club from Sant Sebastián he moved to their rivals Athletic Club. After six seasons in Bilbao he comes to Barça as one of the most highly rated centre halves in Spanish Football.",
+        "After representing Spain at various youth levels, Martinez has also played for the full national side.",
+        "Excellent in the air, Iñigo Martinez has the talent to bring the ball out from the back and his defensive skills will bring even solidity to the Barça back line. Vastly experienced, the defender also stands out for his leadership qualities and his competitive nature."
+      ],
+      "details": {
+        "placeOfBirth": "Bilbao, Spain",
+        "dateOfBirth": "17/05/1991",
+        "weight": "76kg",
+        "height": "182cm",
+        "clubDebut": "05/06/2023"
+      }
     },
     {
       "id": "Christensen",
       "name": "Andreas",
       "surname": "Christensen",
+      "fullName": "Andreas Bødtker Christensen",
       "position": "defender",
       "img": "Christensen",
       "number": "15",
@@ -188,16 +298,33 @@
         "assists": "0"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "458",
+        "goals": "20",
+        "assists": "13"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Centre back with brilliant passing skills and a tremendous reading of the game. Fabulous and finding the right route to get the ball forward",
+      "subtitle": "An excellent reader of the game and versatile centre back, Andreas Christensen (10 April 1996) was born in Lillerød (Denmark) where he started out at IF Skjold Birkerød, soon catching the eye of Brøndby IF.",
+      "bio": [
+        "An excellent reader of the game and versatile centre back, Andreas Christensen (10 April 1996) was born in Lillerød (Denmark) where he started out at IF Skjold Birkerød, soon catching the eye of Brøndby IF.",
+        "Chelsea then spotted the potential of the centre back, and he was just 15 when he joined their youth system, and on 28 October 2014, at the age of 18, he made his pro debut against Shrewsbury Town in the League Cup.",
+        "In 2015, he was loaned to Borussia Mönchengladbach, and spent two seasons in the Bundesliga, quickly consolidating his role in the German team to the extent that he was named player of the season, earning him the reputation as one of the European game’s hottest defensive prospects.",
+        "In 2017, he went back to Chelsea to become a key component of Antonio Conte’s plans. In the following seasons he helped the Londoners to a first ever Champions League and Club World Cup.",
+        "In 2022/23, his first campaign as a blaugrana, he quickly became first choice at the back for coach Xavi Hernández. His ability to bring the ball out and his defensive solidity played a big role in allowing the club to claim the Spanish Super Cup and La Liga titles in that season.",
+        "Andreas has played for his country since 2015 and has gone on to make over 50 appearances. After featuring at the Russia 2018 World Cup he then helped the team to an impressive run to the semi-finals of Euro 2020."
+      ],
+      "details": {
+        "placeOfBirth": "Lillerød, Denmark",
+        "dateOfBirth": "10/04/1996",
+        "weight": "82kg",
+        "height": "187cm",
+        "clubDebut": "13/08/2022"
+      }
     },
     {
       "id": "Kounde",
       "name": "Jules",
       "surname": "Kounde",
+      "fullName": "Jules Olivier Koundé",
       "position": "defender",
       "img": "Kounde",
       "number": "23",
@@ -212,16 +339,32 @@
         "assists": "7"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "396",
+        "goals": "20",
+        "assists": "22"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Jules Kounde is known for being a very fast defender, quick to intercept, and being good on the ball",
+      "subtitle": "Jules Kounde was born in Paris on November 12, 1998. His family originally came from Benin. He started playing for small clubs in the outskirts of Bordeaux in Southwest France. He first passed a trial at the age of 14 years old and joined the youth ranks of the professional team, FC Girondins de Bordeaux.",
+      "bio": [
+        "Jules Kounde was born in Paris on November 12, 1998. His family originally came from Benin. He started playing for small clubs in the outskirts of Bordeaux in Southwest France. He first passed a trial at the age of 14 years old and joined the youth ranks of the professional team, FC Girondins de Bordeaux.",
+        "At the age of 19 the defender made his first team debt in a Coupe de France game against Granville, and he slowly but surely gained a regular place in the starting XI. Kounde caught the attention of La Liga club Sevilla and signed for the Andalusian club in 2019.",
+        "He quickly became an important member Julen Lopetegui's team and helped them win the Europa League in 2020. Kounde was part of the France squad that played in the Euro 2020 tournament in the summer of 2021 and that also claimed the UEFA Nations League title, beating Spain in the final in October 2021. In 2022 Kounde was a vital part of the France side that reached the final of the World Cup in Qatar, playing 120 minutes of the final against eventual champions Argentina.",
+        "As a blaugrana, Kounde was key in helping Barça to the Spanish Super Cup and La Liga titles in 2022/23. The Frenchman showed his versatility by playing mainly at right back in his first season at Barça. His first goal for the Club came against Espanyol in the match that sealed the league for FC Barcelona in May 2023.",
+        "Jules Kounde is known for being a very fast defender, quick to intercept, and being good on the ball. The French centre back, who can also play as a full back, is very difficult to beat one-on-one and is comfortable defending high up the pitch, as he trusts his recovery pace to get back."
+      ],
+      "details": {
+        "placeOfBirth": "Paris, France",
+        "dateOfBirth": "12/11/1998",
+        "weight": "75kg",
+        "height": "180cm",
+        "clubDebut": "28/08/2022"
+      }
     },
     {
       "id": "Garcia",
       "name": "Eric",
       "surname": "Garcia",
+      "fullName": "Eric García Martret",
       "position": "defender",
       "img": "Garcia",
       "number": "23",
@@ -236,11 +379,28 @@
         "assists": "1"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "231",
+        "goals": "15",
+        "assists": "5"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Centre back who excels at getting the ball out from the back and has an instinctive ability to read the game",
+      "subtitle": "A player of massive potential, he is the classic Barça defender. He likes to play the ball out of with his feet, is extremely smart at reading his opponents’ moves and reads the game with instinctive precision. Eric Garcia returned to Barça in the summer of 2021 from Manchester City. He originally joined the Barça Escola in 2008 and resided at La Masia until 2017.",
+      "bio": [
+        "A player of massive potential, he is the classic Barça defender. He likes to play the ball out of with his feet, is extremely smart at reading his opponents’ moves and reads the game with instinctive precision. Eric Garcia returned to Barça in the summer of 2021 from Manchester City. He originally joined the Barça Escola in 2008 and resided at La Masia until 2017.",
+        "Born 9 January 2001 in Martorell he grew up through the youth ranks at the club, from U10B to the U19 squad.",
+        "But he then departed for the youth team at Manchester City, and a year later started appearing for the first team, his official debut coming just before his 18th birthday on 18 December 2018 against Leicester City in the Carabao Cup.",
+        "Viewed as one of the finest young defenders in the world, he also played for Spain at U16, U17 and U21 level, and when Luis Enrique picked him for the senior team, he became the first Barça Escola graduate to ever do so.",
+        "In his return season in Barcelona, Eric becomes an important defender in the Catalan squad. His determination as a defender and his personality to play the ball from the back make him a footballer highly valued by both Ronald Koeman and Xavi Hernández.",
+        "In his second season with the first team Garcia continued to be a vital member of the squad, playing at centre back and also in central midfield when needed. In September 2022 he scored his first goal for the first team in a 3-0 win away at Sevilla. In the 2023/24 the defender went out on loan to Girona in search of regular playing time and his contribution helped the Catalan club qualify for the Champions League after a third placed finish in La Liga.",
+        "The centre back is also a part of the Spanish national squad, playing at Euro2020, the World Cup in Qatar in 2022 and winning a gold medal at the 2024 Paris Olympics."
+      ],
+      "details": {
+        "placeOfBirth": "Martorell, Spain",
+        "dateOfBirth": "09/01/2001",
+        "weight": "76kg",
+        "height": "182cm",
+        "clubDebut": "15/08/2021"
+      }
     }
   ],
 
@@ -249,6 +409,7 @@
       "id": "Gavi",
       "name": "Pablo",
       "surname": "Gavi",
+      "fullName": "Pablo Martín Páez Gavira",
       "position": "midfielder",
       "img": "Gavi",
       "number": "6",
@@ -263,42 +424,75 @@
         "assists": "2"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "165",
+        "goals": "14",
+        "assists": "17"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Technically gifted midfielder with plenty of character and a good reader of the game",
+      "subtitle": "A combative and technically gifted midfielder Pablo Páez Gavira, better known as 'Gavi', was born in the town of Los Palacios y Villafranca near Seville. As a youngster he made his way to the youth system at Real Betis where he spent two seasons representing the verdiblancos at the Luis del Sol training complex just a stone's throw from the Benito Villamarín stadium.",
+      "bio": [
+        "A combative and technically gifted midfielder Pablo Páez Gavira, better known as 'Gavi', was born in the town of Los Palacios y Villafranca near Seville. As a youngster he made his way to the youth system at Real Betis where he spent two seasons representing the verdiblancos at the Luis del Sol training complex just a stone's throw from the Benito Villamarín stadium.",
+        "A complete midfielder with a winning character to match, Gavi made his fateful move to FC Barcelona for the 2015/16 season. He first represented the blaugranes at U12 level before moving through the youth categories quickly to reach the U19 squad. After impressing quickly it was not long before he made his debut for Barça B and in preseason in 2020 coach Ronald Koeman decided to include him with the first team players at the Club.",
+        "His progression did not stop there. At the age of 17 years and 24 days he made his La Liga debut for Barça, the fourth youngest player ever to do so back in August of 2021. In September 2022, Gavi signed a contract extension until 2026 and became an official first team member. The following month the midfielder was the recipient of the Kopa Trophy, the award handed out by the prestigious magazine France Football to the best player of the year under the age of 21. In 2022/ 23 he won his first honours with the first team with victory in the Spanish Super Cup and the league.",
+        "His performances for Barça quickly attracted the attention of Spain coach Luis Enrique Gavi also became the youngest player to win an international cap for Spain at the age of 17 years and 62 days when started the UEFA Nations League semi final against Italy in October 2021. In the World Cup in Qatar in 2022 he became the youngest player to play and score in the tournament for Spain. In his team's opening fixture against Costa Rica, Gavi found the net and was named man of the match."
+      ],
+      "details": {
+        "placeOfBirth": "Los Palacios y Villafranca, Spain",
+        "dateOfBirth": "05/08/2004",
+        "weight": "70kg",
+        "height": "173cm",
+        "clubDebut": "01/07/2021"
+      }
     },
     {
       "id": "Pedri",
       "name": "",
       "surname": "Pedri",
+      "fullName": "Pedro González López",
       "position": "midfielder",
       "img": "Pedri",
       "number": "8",
       "stats": {
-        "matches": "178",
-        "goals": "24",
+        "matches": "183",
+        "goals": "25",
         "assists": "19"
       },
       "currentStats": {
-        "matches": "35",
-        "goals": "4",
+        "matches": "40",
+        "goals": "5",
         "assists": "6"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "250",
+        "goals": "31",
+        "assists": "28"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "The player enjoys playing on the front foot, driving at his direct opponent and having his passes break the defensive lines",
+      "subtitle": "On September 2, 2019, FC Barcelona and Las Palmas reached an agreement for the transfer of Pedri. However, the Canarian player didn't join the blaugranes until August 2020. Born in Tegueste, Tenerife, on November 25, 2002, he began his football career in the team from his hometown.",
+      "bio": [
+        "On September 2, 2019, FC Barcelona and Las Palmas reached an agreement for the transfer of Pedri. However, the Canarian player didn't join the blaugranes until August 2020. Born in Tegueste, Tenerife, on November 25, 2002, he began his football career in the team from his hometown.",
+        "Later, he joined Laguna Youth and, from 2018, he began playing in the youth teams at UD Las Palmas. He excelled there and in the 2019/20 season he was a starter in the first team and the most used player across the season: 34 Segunda División A games and four goals.",
+        "In his first season at the Club, Pedri made 52 appearances for Barça, more than any other player, establishing himself as a fixture in the side scoring four goals in the process. Such a great season has earned him the Golden Boy and the Kopa Trophy.",
+        "Pedri's second season at the club saw him confirm his talent as one the best midfielders in the world despite an injury hit campaign.",
+        "In the 2022/23 season Pedri showed his importance in the squad once again as he claimed the league title for the very first time, scoring six goals in the process.",
+        "The midfielder quickly became a fixture in the Spanish national side and in 2021 he was chosen as the Player of the Tournament in the 2020 European Championships.",
+        "In 2022 he was part of the Spain squad that reached the last 16 of the World Cup in Qatar. In the Euro 2024 tournament Pedri played his part in Spain's victorious campaign despite picking up an injury in the quarter final win over Germany."
+      ],
+      "details": {
+        "placeOfBirth": "Tegueste, Spain",
+        "dateOfBirth": "25/11/2002",
+        "weight": "60kg",
+        "height": "174cm",
+        "clubDebut": "27/09/2020"
+      }
     },
     {
-      "id": "Casado",
+      "id": "Torre",
       "name": "Pablo",
-      "surname": "Casado",
+      "surname": "Torre",
+      "fullName": "Pablo Torre Carral",
       "position": "midfielder",
-      "img": "Casado",
+      "img": "Torre",
       "number": "14",
       "stats": {
         "matches": "25",
@@ -311,16 +505,31 @@
         "assists": "3"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "132",
+        "goals": "22",
+        "assists": "28"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Attacking midfielder with great technique and the ability to play a killer pass",
+      "subtitle": "In March of 2022 Barça reached an agreement with Racing Santander for the transfer of Pablo Torre and the midfielder officially joined the Club in the summer of that year.",
+      "bio": [
+        "In March of 2022 Barça reached an agreement with Racing Santander for the transfer of Pablo Torre and the midfielder officially joined the Club in the summer of that year.",
+        "During the 2020/21 season, at the age of just 17, Pablo Torre made his debut for the Racing first team in the old Second Division B and as the season continued he became a regular in the side. The following season he was one of the top performers in the newly formed Primera RFEF Division and helped Racing win promotion back to the Second Division before joining FC Barcelona.",
+        "Torre returned to Barça in 2022/23 where he was part of the Barça Atlétic squad. After limited opportunities that season with the first team, in 23/24 the midfielder went out on loan to Girona where he made 29 appearances, five as a starter. In the summer of 2024 he returned to Barça and the first team.",
+        "Pablo Torre is a talented attacking midfielder who stands out for his ability to take players on, his vision in the final third of the pitch and his powerful shot."
+      ],
+      "details": {
+        "placeOfBirth": "Santander, Spain",
+        "dateOfBirth": "03/04/2003",
+        "weight": "65kg",
+        "height": "173cm",
+        "clubDebut": "07/09/2022"
+      }
     },
     {
       "id": "Lopez",
       "name": "Fermin",
       "surname": "Lopez",
+      "fullName": "Fermín López Marín",
       "position": "midfielder",
       "img": "Fermin",
       "number": "16",
@@ -335,16 +544,33 @@
         "assists": "5"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "116",
+        "goals": "28",
+        "assists": "11"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Culer since 2016/17, the midfielder from La Masia is now an established first team player",
+      "subtitle": "Fermín López Marín was part of the Campillo youth setup in his home town, and then signed for Recreativo Huelva. After one season, in 2011/12 he moved to Real Betis Balompié and four years later entered La Masía as an U14.",
+      "bio": [
+        "Fermín López Marín was part of the Campillo youth setup in his home town, and then signed for Recreativo Huelva. After one season, in 2011/12 he moved to Real Betis Balompié and four years later entered La Masía as an U14.",
+        "He rose through the age ranks and eventually played for the Spanish championship winning U19A team.",
+        "In 2022, Barça loaned him out to Linares Deportivo in Primera Federación so that he could gain playing time and experience. Fermín did just that and was top scorer for the team with 12 goals and 4 assists.",
+        "It was enough to earn a return to Barça for the 2023/24 season and for Xavi Hernández to choose him to go on the US pre-season tour with the first team, where he performed admirably in the Clásico against Real Madrid in Dallas, scoring a truly special goal and providing an assist in the 3-0 win.",
+        "After being named in several of Xavi's squads and starting XIs, he was registered as a first team player in 2024.",
+        "His excellent campaign led to a call up from the full Spanish national side and he made his debut in a friendly against Andorra. The midfielder made the squad for the victorious Euro 2024 tournament, making an appearance in the group stage against Albania. Fermín's dream summer continued as he was top scorer with six goals in the men's football tournament at the 2024 Paris Olympic Games, helping Spain to the gold medal."
+      ],
+      "details": {
+        "placeOfBirth": "El Campillo, Spain",
+        "dateOfBirth": "11/05/2003",
+        "weight": "64kg",
+        "height": "174cm",
+        "clubDebut": "29/07/2023"
+      }
     },
     {
       "id": "Casado",
       "name": "Marc",
       "surname": "Casado",
+      "fullName": "Marc Casadó Torras",
       "position": "midfielder",
       "img": "Casado",
       "number": "17",
@@ -357,16 +583,31 @@
         "assists": "6"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "116",
+        "goals": "1",
+        "assists": "8"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "La Masía trained midfielder known for hard work, quality, and leadership",
+      "subtitle": "Born in Sant Pere de Vilamajor in 2003 and a defensive central midfielder who provides a lot of balance to the team, Marc Casadó left Damm to join the Club for the 2016 season. The Catalan midfielder has stood out throughout his time in youth development at Barça, becoming one of the leaders of the squad.",
+      "bio": [
+        "Born in Sant Pere de Vilamajor in 2003 and a defensive central midfielder who provides a lot of balance to the team, Marc Casadó left Damm to join the Club for the 2016 season. The Catalan midfielder has stood out throughout his time in youth development at Barça, becoming one of the leaders of the squad.",
+        "The centre midfielder has been wearing the FC Barcelona jersey since he was in the Under-14A team, shining bright as he moved through the age groups, culminating in Casadó captaining the Under-19A side to the Liga and Copa de Campeones double.",
+        "In the 2022/23 season Casadó moved up to the Barça Atlètic squad and made 36 appearances for the team. The following season under Rafa Márquez he made another 30 appearances, alternating between midfield and right back.",
+        "In 2022/23 he made his official debut for the first team in a Champions League game against Viktoria Pilsen and in the summer of 2024 Casadó became an official first team member."
+      ],
+      "details": {
+        "placeOfBirth": "Sant Pere de Vilamajor, Spain",
+        "dateOfBirth": "14/09/2003",
+        "weight": "66kg",
+        "height": "172cm",
+        "clubDebut": "01/11/2022"
+      }
     },
     {
       "id": "Olmo",
       "name": "Dani",
       "surname": "Olmo",
+      "fullName": "Daniel Olmo Carvajal",
       "position": "midfielder",
       "img": "Olmo",
       "number": "20",
@@ -381,35 +622,68 @@
         "assists": "3"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "375",
+        "goals": "85",
+        "assists": "78"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "A goalscorer and a versatile addition who can in midfield or up front",
+      "subtitle": "An attack minded forward who can play anywhere up front and in midfield Dani Olmo, born on 7 May 1998 in Terrassa, Catalonia, arrived at La Masia in 2007 from neighbours Espanyol and after seven years in the blaugrana youth system, the Catalan decided to further his career in Croatia, signing for Dinamo Zagreb.",
+      "bio": [
+        "An attack minded forward who can play anywhere up front and in midfield Dani Olmo, born on 7 May 1998 in Terrassa, Catalonia, arrived at La Masia in 2007 from neighbours Espanyol and after seven years in the blaugrana youth system, the Catalan decided to further his career in Croatia, signing for Dinamo Zagreb.",
+        "In Croatia Olmo continued to develop as a player and put together an impressive list of honours - five league titles and three Croatia Cups and a Croatian Super Cup - as well being named player of the year in the country on two separate occasions. Whilst playing for Dinamo, Olmo also made his debut in the Champions League.",
+        "In 2020 his talent sparked interest from clubs across Europe and he eventually moved to German club RB Leipzig. His four seasons in the Bundesliga saw him win the German Cup twice and a German Super Cup in which he scored a hat-trick in a 3-0 win away at Bayern Munich.",
+        "In the summer of 2024 the forward returned to Barça to take his place in Hansi Flick's squad.",
+        "After representing Spain at youth level, Dani Olmo made his debut for the full national side during qualifiers for Euro 2020, scoring on his first appearance.",
+        "Since then, he has represented his country in the Tokyo Olympics, winning a silver medal, at the World Cup in Qatar in 2022, and in the recent Euro 2024 tournament where he was top scorer with three goals for the victorious Spanish national side."
+      ],
+      "details": {
+        "placeOfBirth": "Terrassa, Spain",
+        "dateOfBirth": "07/05/1998",
+        "weight": "72kg",
+        "height": "179cm",
+        "clubDebut": "09/08/2024"
+      }
     },
     {
       "id": "DeJong",
       "name": "Frenkie",
       "surname": "De Jong",
+      "fullName": "Frenkie de Jong",
       "position": "midfielder",
       "img": "DeJong",
       "number": "21",
       "stats": {
-        "matches": "236",
+        "matches": "241",
         "goals": "19",
         "assists": "20"
       },
       "currentStats": {
-        "matches": "23",
+        "matches": "28",
         "goals": "2",
         "assists": "1"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "463",
+        "goals": "41",
+        "assists": "54"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "His versatility, energy and great vision have allowed him to continue developing his skills in any midfield position",
+      "subtitle": "Frenkie de Jong was born in Arkel (Netherlands) on May 12, 1997. The Barça player started his career at Willem II in the Eredivise, the Dutch first division. In 2016 he signed for Ajax, where he gradually gained a place in the starting eleven. His versatility and his great vision allowed him to become the midfield organiser for the team from Amsterdam.",
+      "bio": [
+        "Frenkie de Jong was born in Arkel (Netherlands) on May 12, 1997. The Barça player started his career at Willem II in the Eredivise, the Dutch first division. In 2016 he signed for Ajax, where he gradually gained a place in the starting eleven. His versatility and his great vision allowed him to become the midfield organiser for the team from Amsterdam.",
+        "With Ajax, the versatile midfielder on won the Dutch league title and the Dutch Cup as well helping the Amsterdam club to the semi finals of the Champions League in the 2018/19 season.",
+        "De Jong arrived at Camp Nou in the summer of 2019 and he made his debut against Athletic Club in San Mamés that August.",
+        "In his second season at Barça, De Jong became a vital cog in Ronald Koeman's team ending the campaign with seven goals and seven assists.",
+        "In his fourth season as a blaugrana, in 2022/23, De Jong played 43 times and claimed the league title for the first time in his Barça career.",
+        "An important part of the Netherlands national side, Frenkie de Jong was part of the team that was runner up in the UEFA Nations League in 2019. The midfielder also played in Euro 2020 and the World Cup in 2022 when the Dutch went out to eventual winners Argentina on penalties in the quarter finals."
+      ],
+      "details": {
+        "placeOfBirth": "Arkel, Netherlands",
+        "dateOfBirth": "12/05/1997",
+        "weight": "74kg",
+        "height": "181cm",
+        "clubDebut": "16/08/2019"
+      }
     }
   ],
 
@@ -418,6 +692,7 @@
       "id": "Torres",
       "name": "Ferran",
       "surname": "Torres",
+      "fullName": "Ferran Torres García",
       "position": "forward",
       "img": "Torres",
       "number": "7",
@@ -432,16 +707,35 @@
         "assists": "3"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "195",
+        "goals": "34",
+        "assists": "37"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "He brings together various talents which allow him to operate anywhere up front",
+      "subtitle": "Born on 29 February 2000 in Foios (Valencia), Ferran Torres made first contact with the ball at an early age. He started out with futsal at the EPLA school and then attracted the attention of the Valencia CF academy. He was only seven years when he wore the shirt for the first time.",
+      "bio": [
+        "Born on 29 February 2000 in Foios (Valencia), Ferran Torres made first contact with the ball at an early age. He started out with futsal at the EPLA school and then attracted the attention of the Valencia CF academy. He was only seven years when he wore the shirt for the first time.",
+        "From there his rise was meteoric. In what seems like the blink of an eye he had advanced from all the way to the Valencia first team and made his Liga debut on 16 December 2017 against Eibar, in doing so becoming the first player born this century to appear in the competition. He had already made his official debut a few days earlier on November 30 in a Copa del Rey game against Zaragoza.",
+        "Ferran Torres soon adapted to life in the footballing elite, and played a bigger and bigger role in the team with every season. In the second half of the 2017/18 season, and then in 2018/19 and 2019/20, he made 97 appearances and scored nine goals.",
+        "From Valencia to Manchester City",
+        "His fine season attracted the attention of Manchester City and Pep Guardiola. After having spent his whole career at Valencia, Ferran moved to the Premier League, and also from winger to centre forward. It was in England that he became famed as a goalscorer, with 11 goals in 30 games in his first season, 2020/21, in which the Sky Blues won the league and the League Cup.",
+        "He began his second season with the Citizens, 2021/22, with four appearances and two goals before making the move to FC Barcelona in December 2021.",
+        "In his first full season with Barça the striker played his part in the league title success, scoring a vital goal in the win over Atlético Madrid which handed Barça an 11 point lead.",
+        "With the Spanish national side he competed in Euro2020, played in the summer of 2021, where his two goals helped the Spanish national side to the semi-finals. In the World Cup in Qatar in 2022, Torres scored two again with Spain reaching the last 16. In Euro 2024 the striker scored once in the tournament as he picked up a winner's medal with Luis de la Fuente's squad."
+      ],
+      "details": {
+        "placeOfBirth": "Warszawa, Poland",
+        "dateOfBirth": "21/08/1988",
+        "weight": "81kg",
+        "height": "185cm",
+        "clubDebut": "12/09/2022"
+      }
     },
     {
       "id": "Lewandowski",
       "name": "Robert",
       "surname": "Lewandowski",
+      "fullName": "Robert Lewandowski",
       "position": "forward",
       "img": "Lewandowski",
       "number": "9",
@@ -456,16 +750,36 @@
         "assists": "5"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "964",
+        "goals": "685",
+        "assists": "190"
       },
-      "title": "One of the best strikers ever, the Polish forward's stats speak for themselves"
+      "title": "One of the best strikers ever, the Polish forward's stats speak for themselves",
+      "subtitle": "The striker from Poland stands out for his goalscoring abilities. Inside the box he has all the tools to make him a difficult striker to read as he can find the net with his head and both feet with equal precision.",
+      "bio": [
+        "The striker from Poland stands out for his goalscoring abilities. Inside the box he has all the tools to make him a difficult striker to read as he can find the net with his head and both feet with equal precision.",
+        "His technical qualities also mean that he can link up well outside the box also. Lewandowski will bring goals, experience and know-how to the Barça attack.",
+        "After eight years with Bayern Munich, the striker joined Barça in the summer of 2022. Lewandowski is amongst the top five leading goalscorers in Champions League history and second on the list for the Bundesliga.",
+        "Born on 21 August in the Polish capital of Warsaw, Lewandowski started his career at Legia Warsaw, his professional career began in the youth teams at 2006 at Znicz Pruszków where he was top scorer on two separate occasions.",
+        "A move followed to Polish first division side Lech Poznan where he was top scorer in the league in 2009/10. The summer of 2010 brought a move to Bundesliga club Borussia Dortmund where he won the German league title twice and collected a runners-up medal when Jurgen Klopp’s side lost in the final of the Champions League against Bayern Munich.",
+        "Lewandowski’s next move was to none other than Bayern Munich where he becoming a vital part of the all-conquering Bavarian side. In 2020 with Bayern the Polish striker won all there is to win; the Bundesliga title, the German cup and Super Cup and the Champions League in which he was top scorer with 15 goals.",
+        "The striker’s consistent goalscoring led him to be named as ‘The Best’ on two occasions, picking up the award in 2020 and 2021. In 2022 he won the inaugural Gerd Müller award from magazine France Football for scoring the most goals for club and country with Bayern and Poland over the 2021/22 with 57 goals in 56 matches.",
+        "In his first season at FC Barcelona the Polish striker became the attacking reference point for the team, scoring 23 goals in the league to become pichichi as the blaugranes took the La Liga title.",
+        "After making his debut back in 2008, Lewandowski is the all time leading scorer for the Polish national team with ahead of second placed Włodzimierz Lubanski. In the World Cup in Qatar 2022 Lewandowski scored his first ever goal in the tournament as he helped Poland out of the group stage before defeat against France in the last 16 put an end to the tournament."
+      ],
+      "details": {
+        "placeOfBirth": "Warszawa, Poland",
+        "dateOfBirth": "21/08/1988",
+        "weight": "81kg",
+        "height": "185cm",
+        "clubDebut": "12/09/2022"
+      }
     },
     {
       "id": "Fati",
       "name": "Ansu",
       "surname": "Fati",
+      "fullName": "Anssumane Fati Vieira",
       "position": "forward",
       "img": "Fati",
       "number": "10",
@@ -480,16 +794,34 @@
         "assists": "0"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "166",
+        "goals": "39",
+        "assists": "10"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Instinct, speed and skill, Ansu Fati has it all the qualities of a top striker",
+      "subtitle": "Anssumane Fati (31 October 2002) was born in Bissau, the capital of Guinea Bissau. The striker moved to Seville at the age of six where he began in the youth team set up at Sevilla. In 2012, at the age of 10, he joined the FC Barcelona youth teams before making his debut with the first team in the 2019/20 season.",
+      "bio": [
+        "Anssumane Fati (31 October 2002) was born in Bissau, the capital of Guinea Bissau. The striker moved to Seville at the age of six where he began in the youth team set up at Sevilla. In 2012, at the age of 10, he joined the FC Barcelona youth teams before making his debut with the first team in the 2019/20 season.",
+        "On 25 August 2019 he became the youngest ever person to play for the Barça first team in the league at the time at the age of 16 years and 298 days. The striker, wearing number 31, came on in the 78th minute of the game against Betis to replace Carles Pérez in week 2 of the 2019/20 league season.",
+        "On 31 August 2019, in a game against Osasuna in El Sadar, Ansu Fati became one of the youngest players ever to score in the league for Barça. The striker, aged just 16 years and 304 days, scored with a well placed header from Carles Pérez in the 2-2 draw in Pamplona.",
+        "On 17 September 2019, at 16 years and 321 days, Ansu Fati made his Champions League debut when he started a game against Borussia Dortmund in the Signal Iduna Park.",
+        "The 2021/22 season was overshadowed by injuries in the case of the young Barça pearl. However, the Spanish international, left flashes of his immeasurable quality and scores 6 goals.",
+        "In September 2023 the forward left on loan for the Premier League and Brighton and Hove Albion. After experience in England and in the Europa League with Brighton, he returned to form part of Hansi Flick's squad in the summer of 2024.",
+        "On 3 September 2020 Ansu Fati came on in the second half a Spain's game against Germany to become one of the youngest player ever to make his debut for the national team. The striker featured in his first major tournament for the Spanish national side in the World Cup in Qatar in 2022."
+      ],
+      "details": {
+        "placeOfBirth": "Bissau, Guinea-Bissau",
+        "dateOfBirth": "31/10/2002",
+        "weight": "66kg",
+        "height": "178cm",
+        "clubDebut": "25/08/2019"
+      }
     },
     {
       "id": "Raphinha",
       "name": "",
       "surname": "Raphinha",
+      "fullName": "Raphael Dias Belloli",
       "position": "forward",
       "img": "Raphinha",
       "number": "11",
@@ -504,16 +836,34 @@
         "assists": "13"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "404",
+        "goals": "117",
+        "assists": "87"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "A technically gifted, skill winger with great dribbling skills and combination play",
+      "subtitle": "A technically proficient winger, with good dribbling, decision making and  an appealing and attractive style of play Raphael Dias Belloli (Raphinha) was born on 14 December 1996 in Porto Alegre, Brazil. He joined the Club from Leeds United in summer 2022.",
+      "bio": [
+        "A technically proficient winger, with good dribbling, decision making and  an appealing and attractive style of play Raphael Dias Belloli (Raphinha) was born on 14 December 1996 in Porto Alegre, Brazil. He joined the Club from Leeds United in summer 2022.",
+        "The Brazilian winger went through the youth system at Avaí FC, making his debut for the club at the age of 19. His talent and progression earmarked him for European football and he went on to sign for the Portuguese Primeria Liga side, Vitòria Guimaraes. His first season was spent alternating playing for the youth and first teams before he ended up cementing a starting place.",
+        "Two years later, Raphinha signed for Sporting Club de Portugal for the 2018/19 season. The Brazilian developed into one of Europe's promising talents while at the Lisbon club and played a key role in the club winning the Copa de la Liga and Copa de Portugal double.",
+        "At the end of the 2018/19 season, Raphinha joined Rennes. He was one of the most expensive signings that summer, and the French club's second most expensive signing ever at the time. The winger played high quality football that season and proved to be the team's main threat.",
+        "In summer 2020 Raphinha signed for Leeds United, after his good performances didn't go unnoticed. During his two seasons at the English club he scored 17 goals and created 10 assists. He also played a key role in preventing the team from being relegated from the Premier League during his second year, shining bright towards the end of the 2021/22 season.",
+        "After arriving in July 2022 the Brazilian came to Barça and in his first season he helped the blaugranes to the league title with 10 goals and 12 assists.",
+        "A full international level, Raphinha officially debuted for the Brazilian national team on 7 October 2021 against Venezuela, creating two assists in the match. The winger was also part of the Brazil squad in the 2022 World Cup in Qatar where he figured in every game for his national side."
+      ],
+      "details": {
+        "placeOfBirth": "Porto Alegre, Brasil",
+        "dateOfBirth": "14/12/1996",
+        "weight": "68kg",
+        "height": "176cm",
+        "clubDebut": "19/07/2022"
+      }
     },
     {
       "id": "Victor",
       "name": "Pau",
       "surname": "Victor",
+      "fullName": "Pau Víctor Delgado",
       "position": "forward",
       "img": "Victor",
       "number": "18",
@@ -528,16 +878,30 @@
         "assists": "1"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "110",
+        "goals": "29",
+        "assists": "13"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "Versatile striker with great goalscoring ability and vision",
+      "subtitle": "A versatile forward who can play as a striker or on either wing, Víctor stands out for his vision and goalscoring ability, Pau Víctor was born in Sant Cugat del Vallès on 26 November 2001. He started playing at Junior FC and in his teens he joined Sabadell and three years later was playing U19 football for Girona, and after two years of that started playing for the Girona reserves.",
+      "bio": [
+        "A versatile forward who can play as a striker or on either wing, Víctor stands out for his vision and goalscoring ability, Pau Víctor was born in Sant Cugat del Vallès on 26 November 2001. He started playing at Junior FC and in his teens he joined Sabadell and three years later was playing U19 football for Girona, and after two years of that started playing for the Girona reserves.",
+        "He was soon knocking on the senior team's door, training with them regularly and playing eight Second Division fixtures in the 2019/20 and 2020/21 seasons.",
+        "In 2022/23 he was loaned back to CE Sabadell, playing 36 games, scoring 7 goals and giving 6 assists. He continued to develop as a footballer at Barça Atlètic in 2023/24, officially on loan from Girona."
+      ],
+      "details": {
+        "placeOfBirth": "Sant Cugat del Vallès, Spain",
+        "dateOfBirth": "26/11/2001",
+        "weight": "77kg",
+        "height": "184cm",
+        "clubDebut": "30/07/2024"
+      }
     },
     {
       "id": "Yamal",
-      "name": "",
-      "surname": "Lamine Yamal",
+      "name": "Lamine",
+      "surname": "Yamal",
+      "fullName": "Lamine Yamal Nasraoui Ebana",
       "position": "forward",
       "img": "Yamal",
       "number": "19",
@@ -552,20 +916,27 @@
         "assists": "13"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "goals": "999",
-        "assists": "888"
+        "matches": "113",
+        "goals": "21",
+        "assists": "31"
       },
       "title": "A great talent from La Masia who stands out for his daring dribbling.",
       "subtitle": "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
-      "bio": {
-        "0": "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
-        "1": "The forward had barely started playing for the U19s when he began training with the first team at the request of coach Xavi Hernández. In April 2023 he made his debut for the first team aged just 15 years, 9 months and 16 days in a 4-0 win against Real Betis, becoming the youngest player ever to represent Barça.",
-        "2": "After an excellent 2022/23 campaign, Lamine continued with first team for preseason in 2023/24 and despite being registered with the B squad, the forward became a regular presence in the first team squad under coach Xavi Hernandez.",
-        "3": "The winger set a whole host of records in the 2023/24 season with Barça, becoming the youngest player ever to reach 50 appearances for the first team. Besides, Lamine also set other records with regards to goalscoring and assists in competition such as La Liga, the Champions League and the Copa del Rey. In total in 2023/24 he made 50 appearances for Xavi Hernández's team, scoring 7 goals.",
-        "4": "On an international level, Lamine also became the youngest player ever to play for the Spanish national side and their youngest ever goalscorer. In the summer of 2024 he also became the youngest player ever to appear in the European Championships when he started for Spain against Croatia at the age of 16 years and 338 days. The winger set more records on his way to victory in the final against England, amongst them becoming the youngest player ever to appear in a major tournament final.",
-        "5": "After his excellent season for both club and country, in October 2024 Lamine was awarded the Kopa Trophy for best U23 player at the Ballon d'Or gala in Paris.",
-        "6": "Lamine Yamal stands out for his ability to take players on, create chances and for his versatility as he can play as a striker, attacking midfielder or on the right wing."
+      "bio": [
+        "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
+        "The forward had barely started playing for the U19s when he began training with the first team at the request of coach Xavi Hernández. In April 2023 he made his debut for the first team aged just 15 years, 9 months and 16 days in a 4-0 win against Real Betis, becoming the youngest player ever to represent Barça.",
+        "After an excellent 2022/23 campaign, Lamine continued with first team for preseason in 2023/24 and despite being registered with the B squad, the forward became a regular presence in the first team squad under coach Xavi Hernandez.",
+        "The winger set a whole host of records in the 2023/24 season with Barça, becoming the youngest player ever to reach 50 appearances for the first team. Besides, Lamine also set other records with regards to goalscoring and assists in competition such as La Liga, the Champions League and the Copa del Rey. In total in 2023/24 he made 50 appearances for Xavi Hernández's team, scoring 7 goals.",
+        "On an international level, Lamine also became the youngest player ever to play for the Spanish national side and their youngest ever goalscorer. In the summer of 2024 he also became the youngest player ever to appear in the European Championships when he started for Spain against Croatia at the age of 16 years and 338 days. The winger set more records on his way to victory in the final against England, amongst them becoming the youngest player ever to appear in a major tournament final.",
+        "After his excellent season for both club and country, in October 2024 Lamine was awarded the Kopa Trophy for best U23 player at the Ballon d'Or gala in Paris.",
+        "Lamine Yamal stands out for his ability to take players on, create chances and for his versatility as he can play as a striker, attacking midfielder or on the right wing."
+      ],
+      "details": {
+        "placeOfBirth": "Esplugues de Llobregat, Spain",
+        "dateOfBirth": "13/07/2007",
+        "weight": "72kg",
+        "height": "180cm",
+        "clubDebut": "13/07/2023"
       }
     }
   ],
@@ -573,24 +944,42 @@
   "Stuff": [
     {
       "id": "Flick",
-      "name": "Hans-Dieter",
+      "name": "Hansi",
       "surname": "Flick",
+      "fullName": "Hans-Dieter Flick",
       "position": "coach",
       "img": "Flick",
       "number": "",
       "stats": {
-        "matches": "36",
-        "wins": "26"
+        "matches": "41",
+        "wins": "30"
       },
       "currentStats": {
-        "matches": "36",
-        "wins": "26"
+        "matches": "41",
+        "wins": "30"
       },
       "allTimeStats": {
-        "matches": "1111",
-        "wins": "999"
+        "matches": "347",
+        "wins": "200"
       },
-      "title": "Uruguayan defender, strong in the air and capable with the ball at his feet"
+      "title": "The German coach has great experience at club and international level and won six trophies in 2020 with Bayern Munich",
+      "subtitle": "In the summer of 2024 FC Barcelona and Hansi Flick came to an agreement for the coach to take over at the Club until 30 June 2026.",
+      "bio": [
+        "In the summer of 2024 FC Barcelona and Hansi Flick came to an agreement for the coach to take over at the Club until 30 June 2026.",
+        "Born in Heidelberg, Germany in 1965, Flick started his coaching career back in 1996 as player-coach at FC Victoria Bammental. In 2000 he took over at Hoffenheim where he stayed for five seasons before moving to RB Salzburg to become part of the coaching staff under Giovanni Trapattoni and Lothar Matthäus.",
+        "In August 2006 Flick became assistant coach to Jürgen Löw at the German national team following the resignation of Jürgen Klinsmann. Löw and Flick led Germany through a rebuilding phase and then to the final of the European Championships in 2008.",
+        "In 2010 the team reached the World Cup semi-final, the same stage of the European Championships in 2012 before being crowned World Champions in 2014 in Brazil.",
+        "Six trophies",
+        "After the success in the tournament, Flick stepped down as assistant coach to the ‘Mannschaft’ and took a job as sporting director at the German Football Federation (DFB) before returning to Hoffenheim in 2017 as sporting director. In the summer of 2019 Flick arrived at Bayern Munich as assistant to Nico Kovac.",
+        "The Bavarian club went on to sack their Croatian coach after just months in the job and Flick was promoted to caretaker first team coach, a decision that was to change the course of Bayern’s history. After a good start, Bayern CEO Karl-Heinz Rummenigge confirmed Flick in the job until the end of the season. Flick recorded 22 wins in his first 25 games in charge, surpassing Josep Guardiola’s figures of 21 wins in his first 25 matches.",
+        "After winning the Bundesliga, the German Cup and the Champions League, Bayern completed the set with victory in the German Super Cup, the UEFA Super Cup and the Club World Cup, repeating the feat achieved by Pep Guardiola’s Barça in 2009.",
+        "In the 2020/21 season Bayern retained the league title before the coach informed the club he would be leaving to take on the German national team, a job he retained until September 2023."
+      ],
+      "details": {
+        "placeOfBirth": "Heidelberg, Germany",
+        "dateOfBirth": "24/02/1965",
+        "clubDebut": "29/05/2024"
+      }
     }
   ]
 }

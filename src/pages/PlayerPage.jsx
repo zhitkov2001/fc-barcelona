@@ -1,13 +1,66 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 const PlayerPage = () => {
   const location = useLocation();
   const player = location.state?.player;
+  const playerStats = player?.stats;
+  const playerCurrentStats = player?.currentStats;
+  const playerAllTimeStats = player?.allTimeStats;
+  const playerDetails = player?.details;
+  const playerBio = player?.bio;
 
-  const playerAllTimeStats = player.allTimeStats;
-  // const playerStatsList = player.stats;
-  // console.log(player);
+  const [popup, setPopup] = React.useState(false);
+  const openPopup = () => {
+    setPopup(!popup);
+  };
+  const closePopup = () => {
+    setPopup(false);
+  };
+
+  const detailsTranslation = {
+    placeOfBirth: "place of birth",
+    dateOfBirth: "date of birth",
+    weight: "weight",
+    height: "height",
+    clubDebut: "club debut",
+  };
+
+  function smoothScrollTo(element, target, duration) {
+    const start = element.scrollLeft;
+    const distance = target - start;
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+      element.scrollLeft = start + distance * easeOutCubic(progress);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+
+    function easeOutCubic(t) {
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    requestAnimationFrame(animation);
+  }
+  const listRef = useRef(null);
+
+  const handleNext = () => {
+    if (listRef.current) {
+      smoothScrollTo(listRef.current, listRef.current.scrollLeft + 550, 500);
+    }
+  };
+
+  const handlePrev = () => {
+    if (listRef.current) {
+      smoothScrollTo(listRef.current, listRef.current.scrollLeft - 550, 500);
+    }
+  };
 
   return (
     <div className="playerPage">
@@ -17,42 +70,26 @@ const PlayerPage = () => {
           <div className="player-hero__stats">
             <h3 className="player-hero-stats__title">Barca stats</h3>
             <ul className="player-hero-stats__list">
-              <li className="player-hero-stats__item">
-                <div className="player-hero-stats-item__barca">
-                  <p className="player-hero-stats-item-barca__title">Matches</p>
-                  <p className="player-hero-stats-item-barca__value">128</p>
-                </div>
-                <div className="player-hero-stats-item-current__season">
+              {Object.entries(playerStats).map(([key, value]) => (
+                <li key={key} className="player-hero-stats__item">
+                  <p className="player-hero-stats-item__title">
+                    {key.charAt(0).toUpperCase() + key.slice(1)}
+                  </p>
+                  <p className="player-hero-stats-item__value">{value}</p>
+                </li>
+              ))}
+            </ul>
+            <ul className="player-hero-stats__list">
+              {Object.entries(playerCurrentStats).map(([key, value]) => (
+                <li key={key} className="player-hero-current-stats__item">
                   <p className="player-hero-stats-item-current__title">
                     Season 24/25
                   </p>
-                  <p className="player-hero-stats-item-current__value">33</p>
-                </div>
-              </li>
-              <li className="player-hero-stats__item">
-                <div className="player-hero-stats-item__barca">
-                  <p className="player-hero-stats-item-barca__title">Goals</p>
-                  <p className="player-hero-stats-item-barca__value">90</p>
-                </div>
-                <div className="player-hero-stats-item-current__season">
-                  <p className="player-hero-stats-item-current__title">
-                    Season 24/25
+                  <p className="player-hero-stats-item-current__value">
+                    {value}
                   </p>
-                  <p className="player-hero-stats-item-current__value">31</p>
-                </div>
-              </li>
-              <li className="player-hero-stats__item">
-                <div className="player-hero-stats-item__barca">
-                  <p className="player-hero-stats-item-barca__title">Assists</p>
-                  <p className="player-hero-stats-item-barca__value">20</p>
-                </div>
-                <div className="player-hero-stats-item-current__season">
-                  <p className="player-hero-stats-item-current__title">
-                    Season 24/25
-                  </p>
-                  <p className="player-hero-stats-item-current__value">3</p>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="player-hero-img__container">
@@ -61,7 +98,10 @@ const PlayerPage = () => {
               src={`../../../img/Players/No-bg/${player.img}.webp`}
             />
             <div className="player-hero-info__block">
-              <p className="player-hero-info__position">{player.position}</p>
+              <p className="player-hero-info__position">
+                {player.position.charAt(0).toUpperCase() +
+                  player.position.slice(1)}
+              </p>
               <div className="player-hero-info__data">
                 <p className="player-hero-info__number">{player.number}</p>
                 <p className="player-hero-info__name">{player.name}</p>
@@ -72,7 +112,6 @@ const PlayerPage = () => {
         </div>
       </div>
       <div className="container">
-        {/* <img className="TEST" src="../../../img/playerPage_test.png" alt="" /> */}
         <div className="player-card__content">
           <div className="player-card__wrapper">
             <img
@@ -102,7 +141,7 @@ const PlayerPage = () => {
                 </li>
               ))}
             </ul>
-            <button className="player-card-btn">
+            <button onClick={openPopup} className="player-card-btn">
               Read full BIO
               <svg
                 fill=""
@@ -112,7 +151,7 @@ const PlayerPage = () => {
                 id="Layer_1"
                 viewBox="0 0 330 330"
                 stroke="#ffffff"
-                stroke-width="20"
+                strokeWidth="20"
               >
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
@@ -130,10 +169,147 @@ const PlayerPage = () => {
               </svg>
             </button>
           </div>
-          {/* {player INFO block!!!}==== */}
-          {/* {player TROPHY block!!!}==== */}
+        </div>
+        <div className="player-card__details">
+          <ul className="player-card-details__list">
+            {playerDetails ? (
+              Object.entries(playerDetails).map(([key, value]) => (
+                <li key={key} className="player-card-details__item">
+                  <p className="player-card-details__title">
+                    {detailsTranslation[key].toUpperCase()}
+                  </p>
+                  <p className="player-card-details__text">{value}</p>
+                </li>
+              ))
+            ) : (
+              <div></div>
+            )}
+          </ul>
+        </div>
+        <div className="player-card__trophy">
+          <div className="player-card-trophy-btn__wrapper">
+            <button onClick={handlePrev} className="player-card-trophy__btn">
+              <img src="../../img/svgicons/btnPrev.svg" alt="Previous" />
+            </button>
+            <button onClick={handleNext} className="player-card-trophy__btn">
+              <img src="../../img/svgicons/btnNext.svg" alt="Previous" />
+            </button>
+          </div>
+          <ul ref={listRef} className="player-card-trophy__list">
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">1</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">2</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">3</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">4</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">5</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">6</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">7</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+            <li className="player-card-trophy__item">
+              <p className="player-card-trophy__team">Barcelona</p>
+              <p className="player-card-trophy__competition">
+                Champions League
+              </p>
+              <div className="player-card-trophy__wrapper">
+                <span className="player-card-trophy__quantity">8</span>
+                <img src="../../img/Trophy/UCLYY_2.webp" alt="UCL" />
+              </div>
+              <p className="player-card-trophy__season">2022/23</p>
+            </li>
+          </ul>
         </div>
       </div>
+      {playerBio ? (
+        popup ? (
+          <div className="full-bio__overlay">
+            <div className="full-bio__wrapper">
+              <button onClick={closePopup} className="full-bio__btn">
+                <img src="../../img/svgicons/close.svg" alt="close" />
+              </button>
+              <ul className="full-bio__content">
+                <h4 className="full-bio__title">{player.fullName}</h4>
+                {playerBio.map((text, i) => (
+                  <li key={i} className="full-bio__item">
+                    <p className="full-bio__paragraph">{text}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ) : (
+          ""
+        )
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };
