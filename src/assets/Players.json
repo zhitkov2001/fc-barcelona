@@ -773,6 +773,72 @@
         "weight": "81kg",
         "height": "185cm",
         "clubDebut": "12/09/2022"
+      },
+      "trophy": {
+        "UCL": {
+          "club": "Bayern Munich",
+          "title": "Champions League",
+          "quantity": 1,
+          "img": "UCL",
+          "years": {
+            "0": "2019/20"
+          }
+        },
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "BundesligaBor": {
+          "club": "Borussia Dortmund",
+          "title": "Bundesliga",
+          "quantity": 2,
+          "img": "",
+          "years": {
+            "0": "2010/11",
+            "1": "2011/12"
+          }
+        },
+        "Bundesliga1111": {
+          "club": "Borussia Dortmund",
+          "title": "Bundesliga",
+          "quantity": 2,
+          "img": "",
+          "years": {
+            "0": "2010/11",
+            "1": "2011/12"
+          }
+        },
+        "Bundesliga22222": {
+          "club": "Borussia Dortmund",
+          "title": "Bundesliga",
+          "quantity": 2,
+          "img": "",
+          "years": {
+            "0": "2010/11",
+            "1": "2011/12"
+          }
+        },
+        "BundesligaBor33333": {
+          "club": "Borussia Dortmund",
+          "title": "Bundesliga",
+          "quantity": 2,
+          "img": "",
+          "years": {
+            "0": "2010/11",
+            "1": "2011/12",
+            "2": "2012/13",
+            "3": "2013/14",
+            "4": "2010/11",
+            "5": "2011/12",
+            "6": "2012/13",
+            "7": "2013/14"
+          }
+        }
       }
     },
     {
