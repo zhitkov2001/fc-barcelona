@@ -40,6 +40,91 @@
         "weight": "85kg",
         "height": "187cm",
         "clubDebut": "17/09/2014"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 5,
+          "img": "LaLiga",
+          "years": {
+            "0": "2014/15",
+            "1": "2015/16",
+            "2": "2017/18",
+            "3": "2018/19",
+            "4": "2022/23"
+          }
+        },
+        "UCL": {
+          "club": "Barcelona",
+          "title": "Champions League",
+          "quantity": 1,
+          "img": "UCL",
+          "years": {
+            "0": "2014/15"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 5,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2014/15",
+            "1": "2015/16",
+            "2": "2016/17",
+            "3": "2017/18",
+            "4": "2020/21"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 4,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2016/17",
+            "1": "2018/19",
+            "2": "2022/23",
+            "3": "2024/25"
+          }
+        },
+        "ClubWorldCup": {
+          "club": "Barcelona",
+          "title": "Club World Cup",
+          "quantity": 1,
+          "img": "ClubWorldCup",
+          "years": {
+            "0": "2015/16"
+          }
+        },
+        "EuropeanSuperCup": {
+          "club": "Barcelona",
+          "title": "European Super Cup",
+          "quantity": 1,
+          "img": "EuropeanSuperCup",
+          "years": {
+            "0": "2015/16"
+          }
+        },
+        "ConfederationsCup": {
+          "club": "Germany",
+          "title": "Confederations Cup",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2017"
+          }
+        },
+        "EuropeanU19Championship": {
+          "club": "Germany",
+          "title": "European U-19 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2009"
+          }
+        }
       }
     },
     {
@@ -78,6 +163,27 @@
         "weight": "78kg",
         "height": "184cm",
         "clubDebut": "23/05/2023"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        }
       }
     },
     {
@@ -117,6 +223,60 @@
         "weight": "90kg",
         "height": "195cm",
         "clubDebut": "04/01/2025"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "SerieA": {
+          "club": "Juventus",
+          "title": "Serie A",
+          "quantity": 3,
+          "img": "SerieA",
+          "years": {
+            "0": "2017/18",
+            "1": "2018/19",
+            "2": "2019/20"
+          }
+        },
+        "CoppaItalia": {
+          "club": "Juventus",
+          "title": "Coppa Italia",
+          "quantity": 3,
+          "img": "CoppaItalia",
+          "years": {
+            "0": "2017/18",
+            "1": "2020/21",
+            "2": "2023/24"
+          }
+        },
+        "ItalianSuperCup": {
+          "club": "Juventus",
+          "title": "Italian Super Cup",
+          "quantity": 2,
+          "img": "ItalianSuperCup",
+          "years": {
+            "0": "2017/18",
+            "1": "2019/20"
+          }
+        },
+
+        "FACup": {
+          "club": "Arsenal",
+          "title": "FA Cup",
+          "quantity": 2,
+          "img": "FACup",
+          "years": {
+            "0": "2013/14",
+            "1": "2014/15"
+          }
+        }
       }
     }
   ],
@@ -158,6 +318,26 @@
         "weight": "75kg",
         "height": "184cm",
         "clubDebut": "18/01/2024"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "OlympicGames": {
+          "club": "Spain",
+          "title": "Olympic Games",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        }
       }
     },
     {
@@ -198,6 +378,27 @@
         "weight": "69kg",
         "height": "175cm",
         "clubDebut": "14/09/2021"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        }
       }
     },
     {
@@ -238,6 +439,36 @@
         "weight": "79kg",
         "height": "188cm",
         "clubDebut": "06/10/2020"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        }
       }
     },
     {
@@ -277,6 +508,35 @@
         "weight": "76kg",
         "height": "182cm",
         "clubDebut": "05/06/2023"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "SpanishSuperCupBilbao": {
+          "club": "Athletic Bilbao",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "EuroU21": {
+          "club": "Spain",
+          "title": "European U-21 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2013"
+          }
+        }
       }
     },
     {
@@ -318,6 +578,63 @@
         "weight": "82kg",
         "height": "187cm",
         "clubDebut": "13/08/2022"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "UCL": {
+          "club": "Chelsea",
+          "title": "Champions League",
+          "quantity": 1,
+          "img": "UCL",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "UEL": {
+          "club": "Chelsea",
+          "title": "Europa League",
+          "quantity": 1,
+          "img": "ECL",
+          "years": {
+            "0": "2018/19"
+          }
+        },
+        "FACup": {
+          "club": "Chelsea",
+          "title": "FA Cup",
+          "quantity": 1,
+          "img": "FACup",
+          "years": {
+            "0": "2017/18"
+          }
+        },
+        "ClubWorldCup": {
+          "club": "Chelsea",
+          "title": "Club World Cup",
+          "quantity": 1,
+          "img": "ClubWorldCup",
+          "years": {
+            "0": "2020/21"
+          }
+        }
       }
     },
     {
@@ -358,6 +675,45 @@
         "weight": "75kg",
         "height": "180cm",
         "clubDebut": "28/08/2022"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "UEL": {
+          "club": "Sevilla",
+          "title": "Europa League",
+          "quantity": 1,
+          "img": "ECL",
+          "years": {
+            "0": "2019/20"
+          }
+        },
+        "NationsLeague": {
+          "club": "Chelsea",
+          "title": "UEFA Nations League",
+          "quantity": 1,
+          "img": "NationsLeague",
+          "years": {
+            "0": "2020/21"
+          }
+        }
       }
     },
     {
@@ -400,6 +756,83 @@
         "weight": "76kg",
         "height": "182cm",
         "clubDebut": "15/08/2021"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "APL": {
+          "club": "Manchester City",
+          "title": "Premier League",
+          "quantity": 1,
+          "img": "APL",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "EnglishLeagueCup": {
+          "club": "Manchester City",
+          "title": "League Cup",
+          "quantity": 3,
+          "img": "EnglishLeagueCup",
+          "years": {
+            "0": "2018/19",
+            "1": "2019/20",
+            "2": "2020/21"
+          }
+        },
+        "NationsLeague": {
+          "club": "Spain",
+          "title": "UEFA Nations League",
+          "quantity": 1,
+          "img": "NationsLeague",
+          "years": {
+            "0": "2023"
+          }
+        },
+        "OlympicGames": {
+          "club": "Spain",
+          "title": "Olympic Games",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "EuropeanU19Championship": {
+          "club": "Spain",
+          "title": "European U-19 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2019"
+          }
+        },
+        "EuropeanU17Championship": {
+          "club": "Spain",
+          "title": "European U-17 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2017"
+          }
+        }
       }
     }
   ],
@@ -442,6 +875,45 @@
         "weight": "70kg",
         "height": "173cm",
         "clubDebut": "01/07/2021"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "GoldenBoy": {
+          "club": "Individual",
+          "title": "Golden Boy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2022"
+          }
+        },
+        "KopaTrophy": {
+          "club": "Individual",
+          "title": "Kopa Trophy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2022"
+          }
+        }
       }
     },
     {
@@ -484,6 +956,72 @@
         "weight": "60kg",
         "height": "174cm",
         "clubDebut": "27/09/2020"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "NationsLeague": {
+          "club": "Spain",
+          "title": "UEFA Nations League",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2023"
+          }
+        },
+        "EuropeanChampionships": {
+          "club": "Spain",
+          "title": "European Championships",
+          "quantity": 1,
+          "img": "EuroCup",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "GoldenBoy": {
+          "club": "Individual",
+          "title": "Golden Boy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2021"
+          }
+        },
+        "KopaTrophy": {
+          "club": "Individual",
+          "title": "Kopa Trophy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2021"
+          }
+        }
       }
     },
     {
@@ -523,6 +1061,27 @@
         "weight": "65kg",
         "height": "173cm",
         "clubDebut": "07/09/2022"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        }
       }
     },
     {
@@ -564,6 +1123,36 @@
         "weight": "64kg",
         "height": "174cm",
         "clubDebut": "29/07/2023"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "EuropeanChampionships": {
+          "club": "Spain",
+          "title": "European Championships",
+          "quantity": 1,
+          "img": "EuroCup",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "OlympicGames": {
+          "club": "Spain",
+          "title": "Olympic Games",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        }
       }
     },
     {
@@ -601,6 +1190,17 @@
         "weight": "66kg",
         "height": "172cm",
         "clubDebut": "01/11/2022"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        }
       }
     },
     {
@@ -642,6 +1242,96 @@
         "weight": "72kg",
         "height": "179cm",
         "clubDebut": "09/08/2024"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "EuropeanChampionships": {
+          "club": "Spain",
+          "title": "European Championships",
+          "quantity": 1,
+          "img": "EuroCup",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "DFBPokal": {
+          "club": "RB Leipzig",
+          "title": "DFB Pokal",
+          "quantity": 2,
+          "img": "DFBPokal",
+          "years": {
+            "0": "2021/22",
+            "1": "2022/23"
+          }
+        },
+        "DFLSuperCup": {
+          "club": "RB Leipzig",
+          "title": "DFL Super Cup",
+          "quantity": 1,
+          "img": "DFLSuperCup",
+          "years": {
+            "0": "2023/24"
+          }
+        },
+        "CroatianLeague": {
+          "club": "Dinamo Zagreb",
+          "title": "Croatian League",
+          "quantity": 5,
+          "img": "",
+          "years": {
+            "0": "2014/15",
+            "1": "2015/16",
+            "2": "2017/18",
+            "3": "2018/19",
+            "4": "2019/20"
+          }
+        },
+        "CroatianCup": {
+          "club": "Dinamo Zagreb",
+          "title": "Croatian Cup",
+          "quantity": 3,
+          "img": "",
+          "years": {
+            "0": "2014/15",
+            "1": "2015/16",
+            "2": "2017/18"
+          }
+        },
+        "CroatianSuperCup": {
+          "club": "Dinamo Zagreb",
+          "title": "Croatian Super Cup",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2019/20"
+          }
+        },
+        "EuropeanU21Championship": {
+          "club": "Spain",
+          "title": "European U-21 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2019"
+          }
+        },
+        "NationsLeague": {
+          "club": "Spain",
+          "title": "UEFA Nations League",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2023"
+          }
+        }
       }
     },
     {
@@ -683,6 +1373,54 @@
         "weight": "74kg",
         "height": "181cm",
         "clubDebut": "16/08/2019"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "Eredivisie": {
+          "club": "Ajax",
+          "title": "Eredivisie",
+          "quantity": 1,
+          "img": "Eredivisie",
+          "years": {
+            "0": "2018/19"
+          }
+        },
+        "KNVBCup": {
+          "club": "Ajax",
+          "title": "KNVB Cup",
+          "quantity": 1,
+          "img": "KNVBCup",
+          "years": {
+            "0": "2018/19"
+          }
+        }
       }
     }
   ],
@@ -729,6 +1467,90 @@
         "weight": "81kg",
         "height": "185cm",
         "clubDebut": "12/09/2022"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "EuropeanChampionships": {
+          "club": "Spain",
+          "title": "European Championships",
+          "quantity": 1,
+          "img": "EuroCup",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "APL": {
+          "club": "Manchester City",
+          "title": "Premier League",
+          "quantity": 1,
+          "img": "APL",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "EnglishLeagueCup": {
+          "club": "Manchester City",
+          "title": "League Cup",
+          "quantity": 1,
+          "img": "EnglishLeagueCup",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Valencia",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2018/19"
+          }
+        },
+        "EuropeanU19Championship": {
+          "club": "Spain",
+          "title": "European U-19 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2019"
+          }
+        },
+        "EuropeanU17Championship": {
+          "club": "Spain",
+          "title": "European U-17 Championship",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2017"
+          }
+        },
+        "NationsLeague": {
+          "club": "Spain",
+          "title": "UEFA Nations League",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2023"
+          }
+        }
       }
     },
     {
@@ -775,15 +1597,6 @@
         "clubDebut": "12/09/2022"
       },
       "trophy": {
-        "UCL": {
-          "club": "Bayern Munich",
-          "title": "Champions League",
-          "quantity": 1,
-          "img": "UCL",
-          "years": {
-            "0": "2019/20"
-          }
-        },
         "LaLiga": {
           "club": "Barcelona",
           "title": "La Liga",
@@ -793,50 +1606,126 @@
             "0": "2022/23"
           }
         },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "UCL": {
+          "club": "Bayern Munich",
+          "title": "Champions League",
+          "quantity": 1,
+          "img": "UCL",
+          "years": {
+            "0": "2019/20"
+          }
+        },
+        "Bundesliga": {
+          "club": "Bayern Munich",
+          "title": "Bundesliga",
+          "quantity": 7,
+          "img": "Bundesliga",
+          "years": {
+            "0": "2014/15",
+            "1": "2015/16",
+            "2": "2017/18",
+            "3": "2018/19",
+            "4": "2019/20",
+            "5": "2020/21",
+            "6": "2021/22"
+          }
+        },
         "BundesligaBor": {
           "club": "Borussia Dortmund",
           "title": "Bundesliga",
           "quantity": 2,
-          "img": "",
+          "img": "Bundesliga",
           "years": {
             "0": "2010/11",
             "1": "2011/12"
           }
         },
-        "Bundesliga1111": {
-          "club": "Borussia Dortmund",
-          "title": "Bundesliga",
-          "quantity": 2,
-          "img": "",
+        "ClubWorldCup": {
+          "club": "Bayern Munich",
+          "title": "Club World Cup",
+          "quantity": 1,
+          "img": "ClubWorldCup",
           "years": {
-            "0": "2010/11",
-            "1": "2011/12"
+            "0": "2019/20"
           }
         },
-        "Bundesliga22222": {
-          "club": "Borussia Dortmund",
-          "title": "Bundesliga",
-          "quantity": 2,
-          "img": "",
+        "EuropeanSuperCup": {
+          "club": "Bayern Munich",
+          "title": "European Super Cup",
+          "quantity": 1,
+          "img": "EuropeanSuperCup",
           "years": {
-            "0": "2010/11",
-            "1": "2011/12"
+            "0": "2019/20"
           }
         },
-        "BundesligaBor33333": {
+        "DFBPokal": {
+          "club": "Bayern Munich",
+          "title": "DFB Pokal",
+          "quantity": 3,
+          "img": "DFBPokal",
+          "years": {
+            "0": "2015/16",
+            "1": "2018/19",
+            "2": "2019/20"
+          }
+        },
+        "DFBPokalBor": {
           "club": "Borussia Dortmund",
-          "title": "Bundesliga",
-          "quantity": 2,
+          "title": "DFB Pokal",
+          "quantity": 1,
+          "img": "DFBPokal",
+          "years": {
+            "0": "2011/12"
+          }
+        },
+        "DFLSuperCup": {
+          "club": "Bayern Munich",
+          "title": "DFL Super Cup",
+          "quantity": 5,
+          "img": "DFLSuperCup",
+          "years": {
+            "0": "2015/16",
+            "1": "2016/17",
+            "2": "2017/18",
+            "3": "2019/20",
+            "4": "2020/21"
+          }
+        },
+        "DFLSuperCupBor": {
+          "club": "Borussia Dortmund",
+          "title": "DFL Super Cup",
+          "quantity": 1,
+          "img": "DFLSuperCup",
+          "years": {
+            "0": "2012/13"
+          }
+        },
+        "PolishLeague": {
+          "club": "Lech Poznan",
+          "title": "Polish League",
+          "quantity": 1,
           "img": "",
           "years": {
-            "0": "2010/11",
-            "1": "2011/12",
-            "2": "2012/13",
-            "3": "2013/14",
-            "4": "2010/11",
-            "5": "2011/12",
-            "6": "2012/13",
-            "7": "2013/14"
+            "0": "2009/10"
+          }
+        },
+        "PolishCup": {
+          "club": "Lech Poznan",
+          "title": "Polish Cup",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2008/09"
           }
         }
       }
@@ -881,6 +1770,45 @@
         "weight": "66kg",
         "height": "178cm",
         "clubDebut": "25/08/2019"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2020/21"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "NationsLeague": {
+          "club": "Spain",
+          "title": "UEFA Nations League",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2023"
+          }
+        }
       }
     },
     {
@@ -923,6 +1851,45 @@
         "weight": "68kg",
         "height": "176cm",
         "clubDebut": "19/07/2022"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 2,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2022/23",
+            "1": "2024/25"
+          }
+        },
+        "TacaDePortugal": {
+          "club": "Sporting",
+          "title": "Taça de Portugal",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2018/19"
+          }
+        },
+        "TacaDaLiga": {
+          "club": "Sporting",
+          "title": "Taça da Liga",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2018/19"
+          }
+        }
       }
     },
     {
@@ -961,6 +1928,17 @@
         "weight": "77kg",
         "height": "184cm",
         "clubDebut": "30/07/2024"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        }
       }
     },
     {
@@ -1003,6 +1981,53 @@
         "weight": "72kg",
         "height": "180cm",
         "clubDebut": "13/07/2023"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "EuropeanChampionships": {
+          "club": "Spain",
+          "title": "European Championships",
+          "quantity": 1,
+          "img": "EuroCup",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "GoldenBoy": {
+          "club": "Individual",
+          "title": "Golden Boy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "KopaTrophy": {
+          "club": "Individual",
+          "title": "Kopa Trophy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        }
       }
     }
   ],
@@ -1045,7 +2070,8 @@
         "placeOfBirth": "Heidelberg, Germany",
         "dateOfBirth": "24/02/1965",
         "clubDebut": "29/05/2024"
-      }
+      },
+      "trophy": {}
     }
   ]
 }
