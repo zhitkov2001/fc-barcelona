@@ -1,27 +1,10 @@
 import React from "react";
-import PlayersData from "../../assets/Players.json";
-
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line no-unused-vars
-
 function PlayerItem(player) {
-  // const playersKeys = Object.keys(PlayersData);
-
-  // const test = PlayersData.map((obj) => {
-  //   console.log(obj);
-  // });
-  // console.log(test);
-
-  // let test2 = playersKeys.map((section, obj) => (
-  //   <div key={obj} className="players__group">
-  //     {PlayersData[section].map((player) => console.log(player))}
-  //   </div>
-  // ));
-
   const playerStats = player.stats;
   const playerStatsCurrent = player.currentStats;
-
+  console.log(player);
   return (
     <>
       <div className="player">
@@ -56,7 +39,6 @@ function PlayerItem(player) {
                 {Object.entries(playerStatsCurrent).map(([key, value]) => (
                   <li key={key} className="player-stats__item">
                     <p className="player-stats__title current__stats">
-                      {/* {key.charAt(0).toUpperCase() + key.slice(1)} */}
                       24/25 season
                     </p>
                     <p className="player-stats__value current__value">

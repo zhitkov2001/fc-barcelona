@@ -1,7 +1,7 @@
 import React from "react";
 
-import ClubNewsItems from "./ClubNewsItems";
-import ClubNewsData from "../../assets/clubNews.json";
+import ClubNewsItems from "./clubNewsItems";
+import ClubNewsData from "../../assets/club-news.json";
 
 function ClubNews() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 
-import MainNewsItems from "./MainNewsItems";
-import MainNewsData from "../../assets/mainNews.json";
+import MainNewsItems from "./mainNewsItems";
+import MainNewsData from "../../assets/main-news.json";
 
 function MainNews() {
   const centralIndex = 1; // Индекс центрального элемента

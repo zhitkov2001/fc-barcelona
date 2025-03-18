@@ -10,9 +10,9 @@ import Header from "./components/Header";
 import Partners from "./components/Partners";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
-import PlayerItems from "./components/Players/PlayerItem";
 import PlayerPage from "./pages/PlayerPage";
 import ScrollToTop from "./utils/ScrollToTop";
+import Schedule from "./pages/Schedule";
 
 function App() {
   return (
@@ -22,8 +22,9 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/1stTeam" element={<Players />} />
+          <Route path="/players" element={<Players />} />
           <Route path="/player/:id" element={<PlayerPage />} />
+          <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </main>
       <Partners />

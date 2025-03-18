@@ -1,8 +1,7 @@
 import React from "react";
 
-import PlayerItem from "../components/Players/PlayerItem";
-import PlayersData from "./../assets/Players.json";
-import { Link } from "react-router-dom";
+import PlayerItem from "../components/PlayerItem";
+import PlayersData from "../assets/players.json";
 
 function Players() {
   const firstTeamNav = [
@@ -13,9 +12,7 @@ function Players() {
     "coach stuff",
   ];
 
-  // const players =
   const playersKeys = Object.keys(PlayersData);
-  // console.log(playersKeys);
 
   return (
     <>

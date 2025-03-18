@@ -16,8 +16,6 @@ function Partners() {
                 className="partners__img"
                 alt="Nike"
                 src={`${process.env.PUBLIC_URL}/img/nike_logo.webp`}
-                // src={nikeLogo}
-                // src="./img/nike_logo.webp"
               />
             </a>
           </li>

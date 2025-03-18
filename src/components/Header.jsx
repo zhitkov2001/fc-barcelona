@@ -1,6 +1,5 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import { BrowserRouter, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,10 +12,10 @@ function Header() {
           />
         </Link>
         <nav className="nav">
-          <Link className="nav__link" to="/1stTeam">
-            1<sup className="st">st</sup> Team
+          <Link className="nav__link" to="/players">
+            Players
           </Link>
-          <a className="nav__link" href="!#">
+          <a className="nav__link" href="/schedule">
             Schedule
           </a>
           <a className="nav__link" href="!#">
