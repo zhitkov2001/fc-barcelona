@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function PlayerItem(player) {
   const playerStats = player.stats;
   const playerStatsCurrent = player.currentStats;
-  console.log(player);
+  // console.log(player);
   return (
     <>
       <div className="player">

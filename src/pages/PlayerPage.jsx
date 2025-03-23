@@ -10,7 +10,7 @@ const PlayerPage = () => {
   const playerDetails = player?.details;
   const playerBio = player?.bio;
   const playerTrophy = player?.trophy;
-  console.log(playerTrophy);
+  // console.log(playerTrophy);
 
   const [popup, setPopup] = React.useState(false);
   const openPopup = () => {
@@ -202,10 +202,7 @@ const PlayerPage = () => {
               {Object.entries(playerTrophy).length > 0 ? (
                 Object.entries(playerTrophy).map(([key, value]) => (
                   <li key={key} className="player-card-trophy__item">
-                    <p className="player-card-trophy__team">
-                      {value.club}
-                      {console.log(value.club)}
-                    </p>
+                    <p className="player-card-trophy__team">{value.club}</p>
                     <p className="player-card-trophy__competition">
                       {value.title}
                     </p>

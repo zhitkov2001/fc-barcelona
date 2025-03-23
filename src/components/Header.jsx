@@ -15,12 +15,12 @@ function Header() {
           <Link className="nav__link" to="/players">
             Players
           </Link>
-          <Link className="nav__link" href="/schedule">
+          <Link className="nav__link" to="/schedule">
             Schedule
           </Link>
-          <a className="nav__link" href="!#">
+          <Link className="nav__link" to="!#">
             News
-          </a>
+          </Link>
         </nav>
         <div className="profile">
           <a className="nav__link" id="profile" href="!#">

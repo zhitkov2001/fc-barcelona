@@ -9,10 +9,12 @@ import Players from "./pages/Players";
 import Header from "./components/Header";
 import Partners from "./components/Partners";
 import Social from "./components/Social";
+import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import PlayerPage from "./pages/PlayerPage";
-import ScrollToTop from "./utils/ScrollToTop";
 import Schedule from "./pages/Schedule";
+
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
@@ -23,12 +25,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/players" element={<Players />} />
-          <Route path="/player/:id" element={<PlayerPage />} />
           <Route path="/schedule" element={<Schedule />} />
+          <Route path="/player/:id" element={<PlayerPage />} />
         </Routes>
       </main>
       <Partners />
       <Social />
+      <Sponsors />
       <Footer />
     </div>
   );

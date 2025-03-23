@@ -2,6 +2,7 @@ import React from "react";
 
 import PlayerItem from "../components/PlayerItem";
 import PlayersData from "../assets/players.json";
+import TitleBackround from "../components/TitleBackground/TitleBackground";
 
 function Players() {
   const firstTeamNav = [
@@ -17,9 +18,7 @@ function Players() {
   return (
     <>
       <section className="first__team">
-        <div className="firstteam__title--background">
-          <h2 className="firstteam__title">FC Barcelona First Team</h2>
-        </div>
+        <TitleBackround title="FC Barcelona First Team" />
         <ul className="firstteam__nav">
           {firstTeamNav.map((id) => (
             <li className="firstteam__nav-item" key={id}>

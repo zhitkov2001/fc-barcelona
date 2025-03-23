@@ -1,13 +1,13 @@
 import React from "react";
 
-import MainNewsItems from "./mainNewsItems";
+import MainNewsItems from "../MainNewsItems";
 import MainNewsData from "../../assets/main-news.json";
 
 function MainNews() {
-  const centralIndex = 1; // Индекс центрального элемента
+  const centralIndex = 1;
   const [activeId, setActiveId] = React.useState(
     MainNewsData.mainNewsDataFromJson[centralIndex].id
-  ); // Устанавливаем центральный элемент как активный
+  );
 
   return (
     <>
@@ -18,8 +18,8 @@ function MainNews() {
             <MainNewsItems
               key={obj.id}
               {...obj}
-              isActive={activeId === obj.id} // Проверяем, активен ли элемент
-              onMouseEnter={() => setActiveId(obj.id)} // Устанавливаем активный ID при наведении
+              isActive={activeId === obj.id}
+              onMouseEnter={() => setActiveId(obj.id)}
             />
           ))}
         </div>
