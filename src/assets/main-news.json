@@ -4,22 +4,22 @@
       "id": 0,
       "newsUrl": "!#",
       "newsImg": "./img/MainNews/mainNews1.webp",
-      "title": "Lamine Yamal, U23 player of the month for August",
-      "subtitle": "The Barça forward has been named best young player in the league by La Liga after a month in which he scored once and created four assists"
+      "title": "Pau Cubarsí injury news",
+      "subtitle": "Centre back injured playing for Spain against Netherlands and undergoes tests on return to Barcelona"
     },
     {
       "id": 1,
       "newsUrl": "!#",
       "newsImg": "./img/MainNews/mainNews2.webp",
-      "title": "Alavés 0-3 FC Barcelona: Fast forward",
-      "subtitle": "Lewandowski hat-trick as good as seals the win Mendizorroza with an hour of football still to play"
+      "title": "FC Barcelona International Diary",
+      "subtitle": "All the latest on the FC Barcelona players in action for their respective countries"
     },
     {
       "id": 2,
       "newsUrl": "!#",
       "newsImg": "./img/MainNews/mainNews3.webp",
-      "title": "FC Barcelona 5-0 Young Boys: Like clockwork",
-      "subtitle": "Lewandowski (2), Raphinha, Iñigo Martínez and a Camara own goal earn the first three Champions League points on a spectacular night at Montjuïc"
+      "title": "Montjuïc pivotal for league title",
+      "subtitle": "Seven of the eleven remaining games in the domestic competition set to be played at the Estadi Olímpic"
     }
   ]
 }

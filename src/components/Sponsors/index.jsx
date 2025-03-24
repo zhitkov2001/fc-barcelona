@@ -6,14 +6,13 @@ import styles from "./sponsors.module.scss";
 const Sponsors = () => {
   const sliderTrackRef = React.useRef(null);
   const [isHovered, setIsHovered] = React.useState(false);
-  // eslint-disable-next-line no-unused-vars
-  const [offset, setOffset] = React.useState(0);
+  const [, setOffset] = React.useState(0);
   const duplicatedSlides = [...sponsorsData, ...sponsorsData]; // Дублируем слайды
 
   React.useEffect(() => {
     const sliderTrack = sliderTrackRef.current;
     let animationFrameId;
-    const speed = 0.6; // Скорость прокрутки (пикселей за кадр)
+    const speed = 0.3; // Скорость прокрутки (пикселей за кадр)
 
     const animate = () => {
       if (!isHovered) {
