@@ -1,1 +1,246 @@
-{}
+{
+  "March 2025": [
+    {
+      "id": 0,
+      "dateInfo": {
+        "dayOfTheWeek": "Sunday",
+        "date": "16 March"
+      },
+      "competition": "LaLiga",
+      "stageInfo": {
+        "stage": "Matchday 28",
+        "stadium": "Cívitas Metropolitano"
+      },
+      "owner": {
+        "title": "Atlético Madrid ",
+        "img": "AtleticoMadrid"
+      },
+      "score": {
+        "owner": "2",
+        "guest": "4"
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      }
+    },
+    {
+      "id": 1,
+      "dateInfo": {
+        "dayOfTheWeek": "Tuesday",
+        "date": "11 March"
+      },
+      "competition": "UCL",
+      "stageInfo": {
+        "stage": "Round of 1/8",
+        "stadium": "Estadi Olímpic Lluís Companys"
+      },
+      "owner": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      },
+      "score": {
+        "owner": "3",
+        "guest": "1"
+      },
+      "guest": {
+        "title": "Benfica",
+        "img": "Benfica"
+      }
+    },
+    {
+      "id": 2,
+      "dateInfo": {
+        "dayOfTheWeek": "Wednesday",
+        "date": "05 March"
+      },
+      "competition": "UCL",
+      "stageInfo": {
+        "stage": "Round of 1/8",
+        "stadium": "Estádio da Luz"
+      },
+      "owner": {
+        "title": "Benfica",
+        "img": "Benfica"
+      },
+      "score": {
+        "owner": "0",
+        "guest": "1"
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      }
+    },
+    {
+      "id": 3,
+      "dateInfo": {
+        "dayOfTheWeek": "Sunday",
+        "date": "02 March"
+      },
+      "competition": "LaLiga",
+      "stageInfo": {
+        "stage": "Matchday 26",
+        "stadium": "Estádio da Luz"
+      },
+      "owner": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      },
+      "score": {
+        "owner": "4",
+        "guest": "0"
+      },
+      "guest": {
+        "title": "Real Sosiedad",
+        "img": "RealSosiedad"
+      }
+    }
+  ],
+  "February 2025": [
+    {
+      "id": 4,
+      "dateInfo": {
+        "dayOfTheWeek": "Tuesday",
+        "date": "25 February"
+      },
+      "competition": "CopaDelRey",
+      "stageInfo": {
+        "stage": "Semi-finals",
+        "stadium": "Estadi Olímpic Lluís Companys"
+      },
+      "owner": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      },
+      "score": {
+        "owner": "4",
+        "guest": "4"
+      },
+      "guest": {
+        "title": "Atlético Madrid ",
+        "img": "AtleticoMadrid"
+      }
+    },
+    {
+      "id": 5,
+      "dateInfo": {
+        "dayOfTheWeek": "Saturday",
+        "date": "22 February"
+      },
+      "competition": "LaLiga",
+      "stageInfo": {
+        "stage": "Matchday 25",
+        "stadium": "Estadio Gran Canaria"
+      },
+      "owner": {
+        "title": "UD Las Palmas",
+        "img": "LasPalmas"
+      },
+      "score": {
+        "owner": "0",
+        "guest": "2"
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      }
+    },
+    {
+      "id": 6,
+      "dateInfo": {
+        "dayOfTheWeek": "Monday",
+        "date": "17 February"
+      },
+      "competition": "LaLiga",
+      "stageInfo": {
+        "stage": "Matchday 24",
+        "stadium": "Estadi Olímpic Lluís Companys"
+      },
+      "owner": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      },
+      "score": {
+        "owner": "1",
+        "guest": "0"
+      },
+      "guest": {
+        "title": "Rayo Vallecano",
+        "img": "RayoVallecano"
+      }
+    },
+    {
+      "id": 7,
+      "dateInfo": {
+        "dayOfTheWeek": "Sunday",
+        "date": "09 February"
+      },
+      "competition": "LaLiga",
+      "stageInfo": {
+        "stage": "Matchday 23",
+        "stadium": "Ramón Sánchez-Pizjuán"
+      },
+      "owner": {
+        "title": "Sevilla",
+        "img": "Sevilla"
+      },
+      "score": {
+        "owner": "1",
+        "guest": "4"
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      }
+    },
+    {
+      "id": 8,
+      "dateInfo": {
+        "dayOfTheWeek": "Thursday",
+        "date": "06 February"
+      },
+      "competition": "CopaDelRey",
+      "stageInfo": {
+        "stage": "Quater-finals",
+        "stadium": "Mestalla"
+      },
+      "owner": {
+        "title": "Valencia CF",
+        "img": "Valencia"
+      },
+      "score": {
+        "owner": "0",
+        "guest": "5"
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      }
+    },
+    {
+      "id": 9,
+      "dateInfo": {
+        "dayOfTheWeek": "Sunday",
+        "date": "02 February"
+      },
+      "competition": "LaLiga",
+      "stageInfo": {
+        "stage": "Matchday 22",
+        "stadium": "Estadi Olímpic Lluís Companys"
+      },
+      "owner": {
+        "title": "FC Barcelona",
+        "img": "Barcelona"
+      },
+      "score": {
+        "owner": "1",
+        "guest": "0"
+      },
+      "guest": {
+        "title": " Alavés",
+        "img": "Alaves"
+      }
+    }
+  ]
+}

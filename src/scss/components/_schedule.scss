@@ -1,15 +1,53 @@
 .schedule {
   min-height: 100vh;
-  //   background-color: antiquewhite;
 
-  .schedule__title {
-    text-align: center;
-    color: #fff;
+  .container {
+    margin: 50px auto;
+    width: 80vw;
+
+    border-radius: 10px;
+    background-color: #fff;
   }
-  //   .container {
-  //   }
-  //   .btn__wrapper {
-  //   }
-  //   .matches__btn {
-  //   }
+  .btn__wrapper {
+    display: flex;
+    justify-content: center;
+    .matches__btn {
+    }
+  }
+  .match__list {
+    display: grid;
+    gap: 24px;
+    padding: 20px 30px;
+
+    .match__group {
+      position: relative;
+      padding: 0 0 28px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(
+          270deg,
+          #9b0041 0,
+          #9b0041 49%,
+          #0018b4 51%,
+          #0018b4
+        );
+      }
+
+      .match-list__month {
+        margin-bottom: 10px;
+
+        font-family: "Inter", serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1;
+        color: #202020;
+      }
+    }
+  }
 }
