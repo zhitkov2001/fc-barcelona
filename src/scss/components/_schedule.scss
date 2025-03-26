@@ -11,7 +11,30 @@
   .btn__wrapper {
     display: flex;
     justify-content: center;
+    gap: 30px;
+    padding: 16px 0 0;
+
     .matches__btn {
+      padding: 6px 14px;
+
+      background-color: transparent;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      font-family: "Inter", serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #0018b4;
+
+      transition: all 0.1s ease;
+
+      &:hover {
+        color: #fff;
+        background-color: #0018b4;
+
+        transition: all 0.1s ease;
+      }
     }
   }
   .match__list {

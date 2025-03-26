@@ -41,7 +41,8 @@
       },
       "score": {
         "owner": "3",
-        "guest": "1"
+        "guest": "1",
+        "aggregate": "4 - 1"
       },
       "guest": {
         "title": "Benfica",

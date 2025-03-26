@@ -31,10 +31,10 @@
     line-height: 1;
 
     .match-weekday {
-      font-size: 16px;
+      font-size: 12px;
     }
     .match-date {
-      font-size: 18px;
+      font-size: 14px;
     }
 
     &::after {
@@ -58,8 +58,8 @@
     height: 50px;
 
     .match-competition__img {
-      max-width: 140px;
-      max-height: 50px;
+      max-width: 110px;
+      max-height: 40px;
     }
 
     &::after {
@@ -81,7 +81,7 @@
     gap: 5px;
 
     padding: 4px 10px;
-    min-width: 250px;
+    min-width: 200px;
     height: 50px;
 
     font-family: "Inter", serif;
@@ -93,7 +93,7 @@
       font-size: 14px;
     }
     .match__stadium {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     &::after {
@@ -114,14 +114,14 @@
     justify-content: center;
     flex-grow: 1;
     gap: 20px;
-    width: 50%;
+    width: 40%;
     height: 50px;
 
     .match-info__team {
       display: flex;
       align-items: center;
       gap: 12px;
-      min-width: 250px;
+      min-width: 220px;
 
       font-family: "Inter", serif;
       font-weight: 600;
@@ -129,7 +129,7 @@
       line-height: 1;
 
       .team__title {
-        font-size: 20px;
+        font-size: 16px;
       }
 
       .team-img__container {
@@ -139,8 +139,8 @@
         height: 50px;
       }
       .team__img {
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 40px;
+        max-height: 40px;
       }
 
       &--end {
@@ -157,19 +157,19 @@
       background-color: #203c89;
 
       font-family: Impact, sans-serif;
-      line-height: 30px;
+      line-height: 28px;
       color: #fff;
 
       .team__score {
-        font-size: 30px;
+        font-size: 28px;
       }
       .score__dash {
-        font-size: 30px;
+        font-size: 28px;
       }
       .score__aggregate {
         position: absolute;
         bottom: -14px;
-        left: 37%;
+        left: 20%;
 
         font-size: 12px;
         color: #555555;

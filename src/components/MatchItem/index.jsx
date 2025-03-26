@@ -36,7 +36,9 @@ const MatchItem = (match) => {
           <span className={styles.score__dash}>-</span>
           <p className={styles.team__score}>{match.score.guest}</p>
           {match.score.aggregate ? (
-            <p className={styles.score__aggregate}>{match.score.aggregate}</p>
+            <p className={styles.score__aggregate}>
+              Agg: {match.score.aggregate}
+            </p>
           ) : (
             <></>
           )}

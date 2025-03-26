@@ -5,11 +5,12 @@ function PlayerItem(player) {
   const playerStats = player.stats;
   const playerStatsCurrent = player.currentStats;
   // console.log(player);
+
   return (
     <>
       <div className="player">
         <Link
-          to={`/player/${player.id}`}
+          to={`/players/${player.id}`}
           key={player.id}
           state={{ player }}
           className="player__link"

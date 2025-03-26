@@ -19,9 +19,9 @@ function Players() {
     <>
       <section className="first__team">
         <TitleBackround title="FC Barcelona First Team" />
-        <ul className="firstteam__nav">
+        <ul className="players__nav">
           {firstTeamNav.map((id) => (
-            <li className="firstteam__nav-item" key={id}>
+            <li className="players__nav-item" key={id}>
               <button className="nav__btn" type="button">
                 {id}
               </button>
