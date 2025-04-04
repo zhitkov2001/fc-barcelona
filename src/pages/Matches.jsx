@@ -4,7 +4,7 @@ import TitleBackround from "../components/TitleBackground/TitleBackground";
 import matchData from "../assets/schedule";
 import MatchItem from "../components/MatchItem";
 
-function Schedule() {
+function Matches() {
   const monthKeys = Object.keys(matchData);
 
   return (
@@ -32,4 +32,4 @@ function Schedule() {
   );
 }
 
-export default Schedule;
+export default Matches;

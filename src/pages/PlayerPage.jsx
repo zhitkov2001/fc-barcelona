@@ -10,7 +10,9 @@ const PlayerPage = () => {
   const playerDetails = player?.details;
   const playerBio = player?.bio;
   const playerTrophy = player?.trophy;
-  // console.log(playerTrophy);
+
+  console.log(location.state, "location");
+  console.log(player, "player");
 
   const [popup, setPopup] = React.useState(false);
   const openPopup = () => {

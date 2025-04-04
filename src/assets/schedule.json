@@ -2,12 +2,12 @@
   "March 2025": [
     {
       "id": 0,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Sunday",
         "date": "16 March"
       },
       "competition": "LaLiga",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Matchday 28",
         "stadium": "Cívitas Metropolitano"
       },
@@ -21,17 +21,255 @@
       },
       "guest": {
         "title": "FC Barcelona",
-        "img": "Barcelona"
-      }
+        "img": "Barcelona",
+        "players": {
+          "start": {
+            "Szczesny": {
+              "number": "25",
+              "img": "Szczesny",
+              "name": "Wojciech",
+              "surname": "Szczesny",
+              "position": "goalkeeper",
+              "actions": {}
+            },
+            "Balde": {
+              "number": "3",
+              "img": "Balde",
+              "name": "Alejandro",
+              "surname": "Balde",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "yellow",
+                  "minute": "64"
+                },
+                "1": {
+                  "img": "subtitution",
+                  "minute": "86",
+                  "playerIn": "Martin"
+                }
+              }
+            },
+            "Martinez": {
+              "number": "5",
+              "img": "Martinez",
+              "name": "Iñigo",
+              "surname": "Martínez",
+              "position": "defender",
+              "actions": {}
+            },
+            "Kounde": {
+              "number": "23",
+              "img": "Kounde",
+              "name": "Jules",
+              "surname": "Koundé",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "yellow",
+                  "minute": "26"
+                },
+                "1": {
+                  "img": "subtitution",
+                  "minute": "86",
+                  "playerIn": "Araujo"
+                }
+              }
+            },
+            "Cubarsi": {
+              "number": "23",
+              "img": "Cubarsi",
+              "name": "Pau",
+              "surname": "Cubarsí",
+              "position": "defender",
+              "actions": {}
+            },
+            "Olmo": {
+              "number": "23",
+              "img": "Olmo",
+              "name": "Dani",
+              "surname": "Olmo",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "67",
+                  "playerIn": "Torres"
+                }
+              }
+            },
+            "Casado": {
+              "number": "17",
+              "img": "Casado",
+              "name": "Marc",
+              "surname": "Casadó",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "67",
+                  "playerIn": "Garsia"
+                }
+              }
+            },
+            "Pedri": {
+              "number": "8",
+              "img": "Pedri",
+              "name": "",
+              "surname": "Pedri",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "90+4",
+                  "playerIn": "Gavi"
+                }
+              }
+            },
+            "Yamal": {
+              "number": "19",
+              "img": "Yamal",
+              "name": "Lamine",
+              "surname": "Yamal",
+              "position": "forwards",
+              "actions": {
+                "0": {
+                  "img": "goal",
+                  "minute": "90+2"
+                },
+                "1": {
+                  "img": "yellow",
+                  "minute": "90+3"
+                }
+              }
+            },
+            "Raphinha": {
+              "number": "11",
+              "img": "Raphinha",
+              "name": "",
+              "surname": "Raphinha",
+              "position": "forwards",
+              "actions": {}
+            },
+            "Lewandowski": {
+              "number": "9",
+              "img": "Lewandowski",
+              "name": "Robert",
+              "surname": "Lewandowski",
+              "position": "forwards",
+              "actions": {
+                "0": {
+                  "img": "goal",
+                  "minute": "72"
+                }
+              }
+            }
+          },
+          "subtitution": {
+            "Pena": {
+              "number": "13",
+              "img": "Pena",
+              "name": "Iñaki",
+              "surname": "Peña",
+              "position": "goalkeeper",
+              "actions": {}
+            },
+            "Kochen": {
+              "number": "31",
+              "img": "",
+              "name": "Diego",
+              "surname": "Kochen",
+              "position": "goalkeeper",
+              "actions": {}
+            },
+            "Garcia": {
+              "number": "9",
+              "img": "Garcia",
+              "name": "Eric",
+              "surname": "García",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "67",
+                  "playerIn": "Casadó"
+                }
+              }
+            },
+            "Martin": {
+              "number": "35",
+              "img": "",
+              "name": "Gerard",
+              "surname": "Martín",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "86",
+                  "playerIn": "Balde"
+                }
+              }
+            },
+            "Araujo": {
+              "number": "4",
+              "img": "Araujo",
+              "name": "Ronald",
+              "surname": "Araujo",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "86",
+                  "playerIn": "Koundé"
+                }
+              }
+            },
+            "Gavi": {
+              "number": "6",
+              "img": "Gavi",
+              "name": "",
+              "surname": "Gavi",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "90+4",
+                  "playerIn": "Pedri"
+                }
+              }
+            },
+            "Torres": {
+              "number": "7",
+              "img": "Torres",
+              "name": "Ferran",
+              "surname": "Torres",
+              "position": "forward",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "67",
+                  "playerIn": "Olmo"
+                },
+                "1": {
+                  "img": "goal",
+                  "minute": ["78", "90+8"]
+                }
+              }
+            }
+          }
+        }
+      },
+
+      "match_background": "BarcelonaSevilla"
     },
     {
       "id": 1,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Tuesday",
         "date": "11 March"
       },
       "competition": "UCL",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Round of 1/8",
         "stadium": "Estadi Olímpic Lluís Companys"
       },
@@ -47,16 +285,17 @@
       "guest": {
         "title": "Benfica",
         "img": "Benfica"
-      }
+      },
+      "match_background": "BarcelonaBenfica"
     },
     {
       "id": 2,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Wednesday",
         "date": "05 March"
       },
       "competition": "UCL",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Round of 1/8",
         "stadium": "Estádio da Luz"
       },
@@ -75,12 +314,12 @@
     },
     {
       "id": 3,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Sunday",
         "date": "02 March"
       },
       "competition": "LaLiga",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Matchday 26",
         "stadium": "Estádio da Luz"
       },
@@ -93,20 +332,20 @@
         "guest": "0"
       },
       "guest": {
-        "title": "Real Sosiedad",
-        "img": "RealSosiedad"
+        "title": "Real Sociedad",
+        "img": "RealSociedad"
       }
     }
   ],
   "February 2025": [
     {
       "id": 4,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Tuesday",
         "date": "25 February"
       },
       "competition": "CopaDelRey",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Semi-finals",
         "stadium": "Estadi Olímpic Lluís Companys"
       },
@@ -125,12 +364,12 @@
     },
     {
       "id": 5,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Saturday",
         "date": "22 February"
       },
       "competition": "LaLiga",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Matchday 25",
         "stadium": "Estadio Gran Canaria"
       },
@@ -149,12 +388,12 @@
     },
     {
       "id": 6,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Monday",
         "date": "17 February"
       },
       "competition": "LaLiga",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Matchday 24",
         "stadium": "Estadi Olímpic Lluís Companys"
       },
@@ -173,12 +412,12 @@
     },
     {
       "id": 7,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Sunday",
         "date": "09 February"
       },
       "competition": "LaLiga",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Matchday 23",
         "stadium": "Ramón Sánchez-Pizjuán"
       },
@@ -197,12 +436,12 @@
     },
     {
       "id": 8,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Thursday",
         "date": "06 February"
       },
       "competition": "CopaDelRey",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Quater-finals",
         "stadium": "Mestalla"
       },
@@ -221,12 +460,12 @@
     },
     {
       "id": 9,
-      "dateInfo": {
+      "dateinfo": {
         "dayOfTheWeek": "Sunday",
         "date": "02 February"
       },
       "competition": "LaLiga",
-      "stageInfo": {
+      "stageinfo": {
         "stage": "Matchday 22",
         "stadium": "Estadi Olímpic Lluís Companys"
       },
@@ -239,7 +478,7 @@
         "guest": "0"
       },
       "guest": {
-        "title": " Alavés",
+        "title": "Alavés",
         "img": "Alaves"
       }
     }

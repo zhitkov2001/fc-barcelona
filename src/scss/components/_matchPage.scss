@@ -1,0 +1,290 @@
+.match__page {
+  .container {
+    color: #fff;
+    margin: 0 auto;
+    width: 70vw;
+
+    .match__wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+
+      .match-wrapper__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          180deg,
+          rgba(217, 217, 217, 0) 67.44%,
+          rgba(217, 217, 217, 0.2) 80.98%,
+          rgba(217, 217, 217, 0.8) 100%
+        );
+        background-color: rgba(0, 1, 26, 0.6);
+        z-index: 2;
+      }
+
+      .match__item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        padding: 25px 35px;
+
+        border: 2px solid #fff;
+        border-radius: 15px;
+
+        z-index: 3;
+
+        .match-team__container {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 15px;
+
+          .team-img__container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto 0;
+
+            .team__logo {
+              margin: 0 auto;
+              max-width: 120px;
+              max-height: 120px;
+            }
+
+            .team__title {
+              font-family: "Inter", serif;
+              font-size: 24px;
+              font-weight: 600;
+            }
+          }
+
+          .team-info__list {
+            display: grid;
+            min-width: 200px;
+            height: fit-content;
+            gap: 4px;
+
+            .team-info-list__item {
+              white-space: nowrap;
+              display: flex;
+              gap: 8px;
+
+              .action__container {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                .action__img {
+                  max-width: 16px;
+                  max-height: 16px;
+                }
+
+                .action__minute {
+                  color: hsla(0, 0%, 100%, 0.891);
+                  font-size: 16px;
+                }
+
+                .action__player {
+                  text-align: right;
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+
+        .match__info {
+          display: grid;
+          text-align: center;
+          gap: 14px;
+          height: 100%;
+
+          line-height: 1;
+          color: #fff;
+
+          .match-info__stage {
+            font-size: 16px;
+          }
+          .match-info__competition {
+            margin: 10px auto;
+            max-width: 120px;
+            max-height: 40px;
+          }
+
+          .white-logo {
+            filter: brightness(0) invert(1);
+          }
+
+          .match-score__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            line-height: 1;
+
+            .team__score {
+              font-family: Impact, sans-serif;
+              font-size: 33px;
+            }
+            .score__dash {
+              font-size: 38px;
+            }
+          }
+          .match-info__stadium {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .match-info__container {
+      min-height: 100vh;
+
+      border-radius: 0 0 8px 8px;
+      background-color: #fff;
+      color: #000;
+
+      .match-info__title {
+        padding: 20px 0 20px 0;
+        text-align: center;
+
+        font-family: "Inter";
+        font-size: 28px;
+        line-height: 1;
+        color: #191919;
+      }
+
+      .lineup__container {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+
+        .lineup__wrapper {
+          padding: 0 20px;
+          width: 50%;
+
+          line-height: 1;
+          color: #fff;
+
+          .lineup__title {
+            text-align: center;
+            padding: 0 0 10px 0;
+
+            font-family: "Libre Franklin";
+            font-weight: 600;
+            font-size: 18px;
+            color: #191919;
+          }
+
+          .lineup__list {
+            padding: 15px;
+
+            border-radius: 5px;
+            background-color: #0b1a44;
+
+            .lineup__item {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 6px 10px;
+              gap: 10px;
+              border-bottom: 1px solid #b9b9b9d4;
+
+              font-family: "Libre Franklin";
+
+              .lineup-player__number {
+                min-width: 30px;
+
+                font-family: "Libre Franklin";
+                font-weight: 700;
+                font-style: italic;
+                font-size: 20px;
+                color: #fdc52c;
+              }
+              .lineup-player-img__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+
+                overflow: hidden;
+                background-color: #37345e;
+                border-radius: 50%;
+
+                .lineup-player__img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+              .luneup-player__info {
+                display: grid;
+                gap: 5px;
+
+                .lineup-player__name {
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+                .lineup-player__position {
+                  font-size: 10px;
+                  font-weight: 400;
+                }
+              }
+              .player-action__list {
+                display: flex;
+                justify-content: end;
+                margin-left: auto;
+                gap: 6px;
+
+                .player-action__item {
+                  display: grid;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 4px;
+
+                  .player-action__img {
+                    margin: 0 auto;
+                    max-height: 16px;
+                  }
+                  .player-action__subtitle {
+                    font-size: 10px;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+
+            .lineup__subtitle {
+              padding: 10px 0 5px 0;
+
+              font-family: "Libre Franklin";
+              font-weight: 600;
+              font-size: 18px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

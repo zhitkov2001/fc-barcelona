@@ -1,9 +1,4 @@
 .match__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1 0 auto;
-
   padding: 10px 14px;
 
   border-radius: 5px;
@@ -15,165 +10,174 @@
     transition: all 0.1s ease;
   }
 
-  .match-date__container {
-    position: relative;
-    align-content: center;
-    display: grid;
-    gap: 5px;
-
-    padding: 4px 10px;
-    min-width: 140px;
-    height: 50px;
-
-    font-family: "Inter", serif;
-    font-weight: 500;
-    color: #0f2d7e;
-    line-height: 1;
-
-    .match-weekday {
-      font-size: 12px;
-    }
-    .match-date {
-      font-size: 14px;
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 1px;
-      height: 100%;
-      content: "";
-      display: block;
-      background: #c5c5c5;
-    }
-  }
-
-  .match__competition {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 170px;
-    height: 50px;
-
-    .match-competition__img {
-      max-width: 110px;
-      max-height: 40px;
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 1px;
-      height: 100%;
-      content: "";
-      display: block;
-      background: #c5c5c5;
-    }
-  }
-
-  .match-stage__container {
-    position: relative;
-    align-content: center;
-    display: grid;
-    gap: 5px;
-
-    padding: 4px 10px;
-    min-width: 200px;
-    height: 50px;
-
-    font-family: "Inter", serif;
-    font-weight: 400;
-    color: #0f2d7e;
-    line-height: 1;
-
-    .match__stage {
-      font-size: 14px;
-    }
-    .match__stadium {
-      font-size: 12px;
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 1px;
-      height: 100%;
-      content: "";
-      display: block;
-      background: #c5c5c5;
-    }
-  }
-
-  .match__info {
+  .match-item__link {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    gap: 20px;
-    width: 40%;
-    height: 50px;
+    justify-content: space-between;
+    // flex: 1 0 auto;
 
-    .match-info__team {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 220px;
+    .match-date__container {
+      position: relative;
+      align-content: center;
+      display: grid;
+      gap: 5px;
+
+      padding: 4px 10px;
+      min-width: 140px;
+      height: 50px;
 
       font-family: "Inter", serif;
-      font-weight: 600;
+      font-weight: 500;
       color: #0f2d7e;
       line-height: 1;
 
-      .team__title {
-        font-size: 16px;
+      .match-weekday {
+        font-size: 12px;
+      }
+      .match-date {
+        font-size: 14px;
       }
 
-      .team-img__container {
-        display: flex;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-      }
-      .team__img {
-        max-width: 40px;
-        max-height: 40px;
-      }
-
-      &--end {
-        justify-content: end;
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        content: "";
+        display: block;
+        background: #c5c5c5;
       }
     }
 
-    .score__container {
+    .match__competition {
       position: relative;
       display: flex;
-      gap: 8px;
-      padding: 4px 10px;
+      justify-content: center;
+      align-items: center;
+      min-width: 170px;
+      height: 50px;
 
-      background-color: #203c89;
-
-      font-family: Impact, sans-serif;
-      line-height: 28px;
-      color: #fff;
-
-      .team__score {
-        font-size: 28px;
+      .match-competition__img {
+        max-width: 110px;
+        max-height: 40px;
       }
-      .score__dash {
-        font-size: 28px;
-      }
-      .score__aggregate {
+
+      &::after {
         position: absolute;
-        bottom: -14px;
-        left: 20%;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        content: "";
+        display: block;
+        background: #c5c5c5;
+      }
+    }
 
+    .match-stage__container {
+      position: relative;
+      align-content: center;
+      display: grid;
+      gap: 5px;
+
+      padding: 4px 10px;
+      min-width: 200px;
+      height: 50px;
+
+      font-family: "Inter", serif;
+      font-weight: 400;
+      color: #0f2d7e;
+      line-height: 1;
+
+      .match__stage {
+        font-size: 14px;
+      }
+      .match__stadium {
         font-size: 12px;
-        color: #555555;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        content: "";
+        display: block;
+        background: #c5c5c5;
+      }
+    }
+
+    .match__info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 20px;
+      width: 40%;
+      height: 50px;
+
+      .match-info__team {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 220px;
+
+        font-family: "Inter", serif;
+        font-weight: 600;
+        color: #0f2d7e;
         line-height: 1;
+
+        .team__title {
+          font-size: 16px;
+        }
+
+        .team-img__container {
+          display: flex;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+        }
+        .team__img {
+          max-width: 40px;
+          max-height: 40px;
+        }
+
+        &--end {
+          justify-content: end;
+        }
+      }
+
+      .score__container {
+        position: relative;
+        display: flex;
+        gap: 8px;
+        padding: 4px 10px;
+
+        background-color: #203c89;
+
+        font-family: Impact, sans-serif;
+        line-height: 28px;
+        color: #fff;
+
+        .team__score {
+          font-size: 28px;
+        }
+        .score__dash {
+          font-size: 28px;
+        }
+        .score__aggregate {
+          position: absolute;
+          bottom: -14px;
+          left: 20%;
+
+          font-size: 12px;
+          color: #555555;
+          line-height: 1;
+        }
       }
     }
   }

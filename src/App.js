@@ -12,7 +12,8 @@ import Social from "./components/Social";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import PlayerPage from "./pages/PlayerPage";
-import Schedule from "./pages/Schedule";
+import Matches from "./pages/Matches";
+import MatchPage from "./pages/MatchPage";
 
 import ScrollToTop from "./utils/ScrollToTop";
 
@@ -26,7 +27,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/players" element={<Players />} />
           <Route path="/players/:id" element={<PlayerPage />} />
-          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/matches" element={<Matches />} />
+          <Route path="/matches/:id" element={<MatchPage />} />
         </Routes>
       </main>
       <Partners />
