@@ -11,9 +11,6 @@ const PlayerPage = () => {
   const playerBio = player?.bio;
   const playerTrophy = player?.trophy;
 
-  console.log(location.state, "location");
-  console.log(player, "player");
-
   const [popup, setPopup] = React.useState(false);
   const openPopup = () => {
     setPopup(!popup);
@@ -56,13 +53,13 @@ const PlayerPage = () => {
 
   const handleNext = () => {
     if (listRef.current) {
-      smoothScrollTo(listRef.current, listRef.current.scrollLeft + 550, 500);
+      smoothScrollTo(listRef.current, listRef.current.scrollLeft + 550, 50);
     }
   };
 
   const handlePrev = () => {
     if (listRef.current) {
-      smoothScrollTo(listRef.current, listRef.current.scrollLeft - 550, 500);
+      smoothScrollTo(listRef.current, listRef.current.scrollLeft - 550, 50);
     }
   };
 
@@ -75,7 +72,7 @@ const PlayerPage = () => {
             <h3 className="player-hero-stats__title">Barca stats</h3>
             <ul className="player-hero-stats__list">
               {Object.entries(playerStats).map(([key, value]) => (
-                <li key={key} className="player-hero-stats__item">
+                <li key={`${key}-${value}`} className="player-hero-stats__item">
                   <p className="player-hero-stats-item__title">
                     {key.charAt(0).toUpperCase() + key.slice(1)}
                   </p>
@@ -85,7 +82,10 @@ const PlayerPage = () => {
             </ul>
             <ul className="player-hero-stats__list">
               {Object.entries(playerCurrentStats).map(([key, value]) => (
-                <li key={key} className="player-hero-current-stats__item">
+                <li
+                  key={`${key}-${value}`}
+                  className="player-hero-current-stats__item"
+                >
                   <p className="player-hero-stats-item-current__title">
                     Season 24/25
                   </p>
@@ -178,7 +178,10 @@ const PlayerPage = () => {
           <ul className="player-card-details__list">
             {playerDetails ? (
               Object.entries(playerDetails).map(([key, value]) => (
-                <li key={key} className="player-card-details__item">
+                <li
+                  key={`${key}-${value}`}
+                  className="player-card-details__item"
+                >
                   <p className="player-card-details__title">
                     {detailsTranslation[key].toUpperCase()}
                   </p>
@@ -202,25 +205,31 @@ const PlayerPage = () => {
             </div>
             <ul ref={listRef} className="player-card-trophy__list">
               {Object.entries(playerTrophy).length > 0 ? (
-                Object.entries(playerTrophy).map(([key, value]) => (
-                  <li key={key} className="player-card-trophy__item">
-                    <p className="player-card-trophy__team">{value.club}</p>
+                Object.entries(playerTrophy).map(([key, trophy]) => (
+                  <li
+                    key={`${key}-${trophy}`}
+                    className="player-card-trophy__item"
+                  >
+                    <p className="player-card-trophy__team">{trophy.club}</p>
                     <p className="player-card-trophy__competition">
-                      {value.title}
+                      {trophy.title}
                     </p>
                     <div className="player-card-trophy__wrapper">
                       <span className="player-card-trophy__quantity">
-                        {value.quantity}
+                        {trophy.quantity}
                       </span>
                       <img
-                        src={`../../img/Trophy/${value.img}.webp`}
-                        alt={`${value.img}`}
+                        src={`../../img/Trophy/${trophy.img}.webp`}
+                        alt={`${trophy.img}`}
                       />
                     </div>
                     <ul className="player-card-trophy-season__list">
-                      {Object.entries(value.years).length > 0 ? (
-                        Object.entries(value.years).map(([key, year]) => (
-                          <li className="player-card-trophy-season__item">
+                      {Object.entries(trophy.years).length > 0 ? (
+                        Object.entries(trophy.years).map(([key, year]) => (
+                          <li
+                            key={`${key}-${year}`}
+                            className="player-card-trophy-season__item"
+                          >
                             <p className="player-card-trophy-season__value">
                               {year}
                             </p>

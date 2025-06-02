@@ -277,60 +277,64 @@ const MatchPage = () => {
                     ))
                   : null}
                 <h4 className="lineup__subtitle">Subtitution</h4>
-                {ownerPlayersList
-                  ? Object.entries(ownerPlayersList).map(([key, player]) => (
-                      <li key={key} className="lineup__item">
-                        <p className="lineup-player__number">{player.number}</p>
-                        <div className="lineup-player-img__container">
-                          <img
-                            className="lineup-player__img"
-                            src={
-                              player.img
-                                ? `/img/Players/30x30/${player.img}.png`
-                                : "/img/Players/30x30/Noname.png"
-                            }
-                            alt={player.img ? player.surname : "Noname"}
-                          />
-                        </div>
-                        <div className="luneup-player__info">
-                          <p className="lineup-player__name">
-                            {player.name + " " + player.surname}
+                {ownerSubtitutionsList
+                  ? Object.entries(ownerSubtitutionsList).map(
+                      ([key, player]) => (
+                        <li key={key} className="lineup__item">
+                          <p className="lineup-player__number">
+                            {player.number}
                           </p>
-                          <p className="lineup-player__position">
-                            {player.position}
-                          </p>
-                        </div>
-                        <ul className="player-action__list">
-                          {player.actions ? (
-                            Object.entries(player.actions).map(
-                              ([key, action]) => (
-                                <li key={key} className="player-action__item">
-                                  <img
-                                    className="player-action__img"
-                                    src={`/img/MatchAction/${action.img}.png`}
-                                    alt={`${action.img}`}
-                                  />
-                                  {action.playerIn ? (
-                                    <p className="player-action__subtitle">
-                                      {action.minute +
-                                        "'" +
-                                        " " +
-                                        action.playerIn}
-                                    </p>
-                                  ) : (
-                                    <p className="player-action__subtitle">
-                                      {action.minute + "' "}
-                                    </p>
-                                  )}
-                                </li>
+                          <div className="lineup-player-img__container">
+                            <img
+                              className="lineup-player__img"
+                              src={
+                                player.img
+                                  ? `/img/Players/30x30/${player.img}.png`
+                                  : "/img/Players/30x30/Noname.png"
+                              }
+                              alt={player.img ? player.surname : "Noname"}
+                            />
+                          </div>
+                          <div className="luneup-player__info">
+                            <p className="lineup-player__name">
+                              {player.name + " " + player.surname}
+                            </p>
+                            <p className="lineup-player__position">
+                              {player.position}
+                            </p>
+                          </div>
+                          <ul className="player-action__list">
+                            {player.actions ? (
+                              Object.entries(player.actions).map(
+                                ([key, action]) => (
+                                  <li key={key} className="player-action__item">
+                                    <img
+                                      className="player-action__img"
+                                      src={`/img/MatchAction/${action.img}.png`}
+                                      alt={`${action.img}`}
+                                    />
+                                    {action.playerIn ? (
+                                      <p className="player-action__subtitle">
+                                        {action.minute +
+                                          "'" +
+                                          " " +
+                                          action.playerIn}
+                                      </p>
+                                    ) : (
+                                      <p className="player-action__subtitle">
+                                        {action.minute + "' "}
+                                      </p>
+                                    )}
+                                  </li>
+                                )
                               )
-                            )
-                          ) : (
-                            <></>
-                          )}
-                        </ul>
-                      </li>
-                    ))
+                            ) : (
+                              <></>
+                            )}
+                          </ul>
+                        </li>
+                      )
+                    )
                   : null}
               </ul>
             </div>

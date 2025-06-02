@@ -1,0 +1,70 @@
+.standings {
+  min-height: 100vh;
+
+  .container {
+    margin: 50px auto;
+    width: 80vw;
+
+    border-radius: 10px;
+    background-color: #fff;
+
+    .standings-img___container {
+      display: flex;
+      padding: 10px 50px;
+      justify-content: space-between;
+
+      .standings__info {
+        font-family: "Nunito";
+        color: $dark-blue;
+
+        .standings-competition__info {
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        .standings-date__update {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .standings__table {
+      border-collapse: separate;
+      border-spacing: 0;
+      padding: 15px 20px 10px 20px;
+      width: 100%;
+
+      .standings-table__head {
+        height: 60px;
+        text-align: center;
+
+        color: #141e5e;
+        font-size: 14px;
+        font-weight: 700;
+
+        .table-head__row {
+          position: relative;
+          width: 100%;
+          .table-head__item {
+            &::after {
+              position: absolute;
+              content: "";
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 4px;
+              background: linear-gradient(
+                270deg,
+                #9b0041 0,
+                #9b0041 49%,
+                #0018b4 51%,
+                #0018b4
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,258 @@
       },
       "owner": {
         "title": "Atlético Madrid ",
-        "img": "AtleticoMadrid"
+        "img": "AtleticoMadrid",
+        "players": {
+          "start": {
+            "Oblak": {
+              "number": "13",
+              "img": "",
+              "name": "Jan",
+              "surname": "Oblak",
+              "position": "goalkeeper",
+              "actions": {}
+            },
+            "Lenglet": {
+              "number": "15",
+              "img": "",
+              "name": "lément",
+              "surname": "Lenglet",
+              "position": "defender",
+              "actions": {}
+            },
+            "Llorente": {
+              "number": "14",
+              "img": "",
+              "name": "Marcos",
+              "surname": "Llorente",
+              "position": "defender",
+              "actions": {}
+            },
+            "Reinildo": {
+              "number": "23",
+              "img": "",
+              "name": "",
+              "surname": "Reinildo",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "yellow",
+                  "minute": "36"
+                }
+              }
+            },
+            "LeNormand": {
+              "number": "24",
+              "img": "",
+              "name": "Robin",
+              "surname": "Le Normand",
+              "position": "defender",
+              "actions": {}
+            },
+            "Simeone": {
+              "number": "22",
+              "img": "",
+              "name": "Guiliano",
+              "surname": "Simeone",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "79",
+                  "playerIn": "Giménez"
+                }
+              }
+            },
+            "Barrios": {
+              "number": "8",
+              "img": "",
+              "name": "Pablo",
+              "surname": "Barrios",
+              "position": "midfielder",
+              "actions": {}
+            },
+            "DePaul": {
+              "number": "5",
+              "img": "",
+              "name": "Rodrigo",
+              "surname": "De Paul",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "79",
+                  "playerIn": "Molina"
+                }
+              }
+            },
+            "Lino": {
+              "number": "12",
+              "img": "",
+              "name": "Samuel",
+              "surname": "Lino",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "60",
+                  "playerIn": "Gallagher"
+                }
+              }
+            },
+            "Griezmann": {
+              "number": "7",
+              "img": "",
+              "name": "Antonie",
+              "surname": "Griezmann",
+              "position": "forwards",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "86",
+                  "playerIn": "Riquelme"
+                }
+              }
+            },
+            "Alvarez": {
+              "number": "19",
+              "img": "",
+              "name": "Julián",
+              "surname": "Alvarez",
+              "position": "forwards",
+              "actions": {
+                "0": {
+                  "img": "goal",
+                  "minute": "45"
+                },
+                "1": {
+                  "img": "subtitution",
+                  "minute": "60",
+                  "playerIn": "Sørloth"
+                }
+              }
+            }
+          },
+          "subtitution": {
+            "Gomis": {
+              "number": "31",
+              "img": "",
+              "name": "Antonio",
+              "surname": "Gomis",
+              "position": "goalkeeper",
+              "actions": {}
+            },
+            "Musso": {
+              "number": "1",
+              "img": "",
+              "name": "Juan",
+              "surname": "Musso",
+              "position": "goalkeeper",
+              "actions": {}
+            },
+            "Witsel": {
+              "number": "20",
+              "img": "",
+              "name": "Axel",
+              "surname": "Witsel",
+              "position": "defender"
+            },
+            "Azpilicueta": {
+              "number": "3",
+              "img": "",
+              "name": "César",
+              "surname": "Azpilicueta",
+              "position": "defender"
+            },
+            "Galán": {
+              "number": "21",
+              "img": "",
+              "name": "Javi",
+              "surname": "Galán",
+              "position": "defender"
+            },
+            "Gimenez": {
+              "number": "2",
+              "img": "",
+              "name": "José María",
+              "surname": "Giménez",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "79",
+                  "playerIn": "Simeone"
+                }
+              }
+            },
+            "Molina": {
+              "number": "16",
+              "img": "",
+              "name": "Nahuel",
+              "surname": "Molina",
+              "position": "defender",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "79",
+                  "playerIn": "De Paul"
+                }
+              }
+            },
+            "Gallagher": {
+              "number": "4",
+              "img": "",
+              "name": "Nahuel",
+              "surname": "Gallagher",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "60",
+                  "playerIn": "Lino"
+                }
+              }
+            },
+            "Riquelme": {
+              "number": "17",
+              "img": "",
+              "name": "Rodrigo",
+              "surname": "Riquelme",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "86",
+                  "playerIn": "Griezmann"
+                }
+              }
+            },
+            "Lemar": {
+              "number": "11",
+              "img": "",
+              "name": "Thomas",
+              "surname": "Lemar",
+              "position": "midfielder"
+            },
+            "Sorloth": {
+              "number": "9",
+              "img": "",
+              "name": "Alexander",
+              "surname": "Sørloth",
+              "position": "forward",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "60",
+                  "playerIn": "Alvarez"
+                },
+                "1": {
+                  "img": "goal",
+                  "minute": "70"
+                }
+              }
+            }
+          }
+        }
       },
       "score": {
         "owner": "2",
@@ -77,7 +328,7 @@
               }
             },
             "Cubarsi": {
-              "number": "23",
+              "number": "2",
               "img": "Cubarsi",
               "name": "Pau",
               "surname": "Cubarsí",
@@ -85,7 +336,7 @@
               "actions": {}
             },
             "Olmo": {
-              "number": "23",
+              "number": "20",
               "img": "Olmo",
               "name": "Dani",
               "surname": "Olmo",
@@ -224,6 +475,14 @@
                 }
               }
             },
+            "Lopez": {
+              "number": "16",
+              "img": "Fermin",
+              "name": "Fermín",
+              "surname": "López",
+              "position": "midfielder",
+              "actions": {}
+            },
             "Gavi": {
               "number": "6",
               "img": "Gavi",
@@ -237,6 +496,14 @@
                   "playerIn": "Pedri"
                 }
               }
+            },
+            "Torre": {
+              "number": "14",
+              "img": "Torre",
+              "name": "Pablo",
+              "surname": "Torre",
+              "position": "midfielder",
+              "actions": {}
             },
             "Torres": {
               "number": "7",
@@ -255,11 +522,18 @@
                   "minute": ["78", "90+8"]
                 }
               }
+            },
+            "Victor": {
+              "number": "18",
+              "img": "Victor",
+              "name": "Pau",
+              "surname": "Víctor",
+              "position": "forward",
+              "actions": {}
             }
           }
         }
       },
-
       "match_background": "BarcelonaSevilla"
     },
     {

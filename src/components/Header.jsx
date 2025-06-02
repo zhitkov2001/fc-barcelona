@@ -18,6 +18,9 @@ function Header() {
           <Link className="nav__link" to="/matches">
             Matches
           </Link>
+          <Link className="nav__link" to="/standings">
+            Standings
+          </Link>
           <Link className="nav__link" to="!#">
             News
           </Link>

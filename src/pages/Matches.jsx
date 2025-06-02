@@ -8,27 +8,27 @@ function Matches() {
   const monthKeys = Object.keys(matchData);
 
   return (
-    <>
-      <section className="schedule">
-        <TitleBackround title="Barça Matches" />
-        <div className="container">
-          <div className="btn__wrapper">
-            <button className="matches__btn">Schedule</button>
-            <button className="matches__btn">Matches</button>
-          </div>
-          <ul className="match__list">
-            {monthKeys.map((month) => (
-              <div key={month} className="match__group">
-                <h3 className="match-list__month">{month}</h3>
-                {matchData[month].map((match) => (
-                  <MatchItem key={match.id} {...match} />
-                ))}
-              </div>
-            ))}
-          </ul>
+    // <>
+    <section className="matches">
+      <TitleBackround title="Barça Matches" />
+      <div className="container">
+        <div className="btn__wrapper">
+          <button className="matches__btn">Schedule</button>
+          <button className="matches__btn">Matches</button>
         </div>
-      </section>
-    </>
+        <ul className="match__list">
+          {monthKeys.map((month) => (
+            <div key={month} className="match__group">
+              <h3 className="match-list__month">{month}</h3>
+              {matchData[month].map((match) => (
+                <MatchItem key={match.id} {...match} />
+              ))}
+            </div>
+          ))}
+        </ul>
+      </div>
+    </section>
+    // </>
   );
 }
 

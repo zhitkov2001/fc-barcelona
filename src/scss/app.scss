@@ -12,8 +12,10 @@
 @import "./components/matchPage";
 @import "./components/section-schedule";
 @import "./components/social";
+@import "./components/standings";
 
 html {
+  font-family: "Nunito";
   background-color: $dark-blue;
 }
 
