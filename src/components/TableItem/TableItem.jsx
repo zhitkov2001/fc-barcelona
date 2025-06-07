@@ -2,8 +2,19 @@ import React from "react";
 import style from "./tableItem.module.scss";
 
 function TableItem(team) {
+  const getStatus = () => {
+    if (team.isDowngraded) return "#dc3545";
+    if (team.isQualified === "UEFA Champions League") return "#141e5e";
+    if (team.isQualified === "UEFA Europe League") return "#ff9100";
+    if (team.isQualified === "UEFA Conference League") return "#28a745";
+    return "transparent";
+  };
+
   return (
-    <tr className={style.tableItem}>
+    <tr
+      className={style.tableItem}
+      style={{ "--row-accent-color": getStatus() }}
+    >
       <th className={style.position}>{team.position}</th>
       <th className={style.teamContainer}>
         <div className={style.teamImgContainer}>

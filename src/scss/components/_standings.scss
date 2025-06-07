@@ -3,15 +3,89 @@
 
   .container {
     margin: 50px auto;
-    width: 80vw;
+    width: 75vw;
 
     border-radius: 10px;
     background-color: #fff;
 
     .standings-img___container {
       display: flex;
-      padding: 10px 50px;
+      padding: 40px 40px 0;
       justify-content: space-between;
+
+      .season__selector {
+        position: relative;
+        margin-bottom: 10px;
+
+        color: #fff;
+
+        .season__dropdown {
+          position: relative;
+          top: 0;
+          display: block;
+          cursor: pointer;
+          z-index: 10;
+
+          .dropdown__selected {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            padding: 8px 20px;
+            min-width: 100px;
+
+            border-radius: 12px;
+            background-color: #141e5e;
+
+            &:hover {
+              background-color: #152277;
+            }
+
+            .dropdown__arrow {
+              font-size: 12px;
+              rotate: 90deg;
+
+              &.active {
+                rotate: 0deg;
+              }
+            }
+
+            &.active {
+              border-radius: 12px 12px 0 0;
+            }
+          }
+
+          .dropdown__options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #141e5e;
+            border: 1px solid #ddd;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-height: 200px;
+            overflow-y: auto;
+
+            .dropdown__option {
+              padding: 8px 15px;
+
+              transition: all 0.2s ease;
+
+              &:hover {
+                background-color: #152277;
+              }
+
+              &.active {
+                transition: all 0.2s ease;
+
+                color: #edc831;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
 
       .standings__info {
         font-family: "Nunito";
@@ -29,38 +103,45 @@
       }
     }
 
-    .standings__table {
-      border-collapse: separate;
-      border-spacing: 0;
-      padding: 15px 20px 10px 20px;
+    .table__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
+      padding: 25px 40px 40px 40px;
 
-      .standings-table__head {
-        height: 60px;
-        text-align: center;
+      .standings__table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
 
-        color: #141e5e;
-        font-size: 14px;
-        font-weight: 700;
+        .standings-table__head {
+          height: 60px;
+          text-align: center;
 
-        .table-head__row {
-          position: relative;
-          width: 100%;
-          .table-head__item {
-            &::after {
-              position: absolute;
-              content: "";
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 4px;
-              background: linear-gradient(
-                270deg,
-                #9b0041 0,
-                #9b0041 49%,
-                #0018b4 51%,
-                #0018b4
-              );
+          color: #141e5e;
+          font-size: 14px;
+          font-weight: 700;
+
+          .table-head__row {
+            position: relative;
+            width: 100%;
+            .table-head__item {
+              &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(
+                  270deg,
+                  #9b0041 0,
+                  #9b0041 49%,
+                  #0018b4 51%,
+                  #0018b4
+                );
+              }
             }
           }
         }
