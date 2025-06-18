@@ -4,9 +4,9 @@ import style from "./tableItem.module.scss";
 function TableItem(team) {
   const getStatus = () => {
     if (team.isDowngraded) return "#dc3545";
-    if (team.isQualified === "UEFA Champions League") return "#141e5e";
-    if (team.isQualified === "UEFA Europe League") return "#ff9100";
-    if (team.isQualified === "UEFA Conference League") return "#28a745";
+    if (team.isQualified === "blue") return "#141e5e";
+    if (team.isQualified === "orange") return "#ff9100";
+    if (team.isQualified === "green") return "#28a745";
     return "transparent";
   };
 

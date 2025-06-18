@@ -1,0 +1,45 @@
+.playoff-match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  .match-teams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+    width: 100%;
+
+    .team {
+      display: grid;
+      min-width: 100px;
+      justify-content: center;
+      align-items: center;
+
+      // .team-img {
+      //   margin: 0 auto;
+      //   max-width: 50px;
+      //   max-height: 50px;
+      // }
+      .team-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #0f1585;
+        line-height: 1;
+      }
+    }
+    .match-score {
+      margin: 0 auto;
+      max-width: 50px;
+
+      font-size: 20px;
+      font-weight: 600;
+      color: #0f1585;
+      line-height: 1;
+    }
+  }
+}
