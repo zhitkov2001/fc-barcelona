@@ -17,13 +17,23 @@ function TableItem(team) {
     >
       <th className={style.position}>{team.position}</th>
       <th className={style.teamContainer}>
-        <div className={style.teamImgContainer}>
-          <img
-            src={`../img/Teams/${team.image}.png`}
-            alt={team.title}
-            className={style.teamImg}
-          />
-        </div>
+        {team.image === "" || !team.image ? (
+          <div className={style.teamImgContainer}>
+            <img
+              src={`../img/Teams/default2.png`}
+              alt={team.title}
+              className={style.teamImg}
+            />
+          </div>
+        ) : (
+          <div className={style.teamImgContainer}>
+            <img
+              src={`../img/Teams/${team.image}.png`}
+              alt={team.title}
+              className={style.teamImg}
+            />
+          </div>
+        )}
         <p className={style.teamTitle}>{team.title}</p>
       </th>
       <th className={style.points}>

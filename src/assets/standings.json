@@ -1292,7 +1292,7 @@
           {
             "id": 18,
             "position": 18,
-            "image": "Brest",
+            "image": "",
             "title": "Brest",
             "points": 13,
             "matches": 8,
@@ -1382,7 +1382,7 @@
           {
             "id": 24,
             "position": 24,
-            "image": "ClubBrugge",
+            "image": "Brugge",
             "title": "Club Brugge",
             "points": 11,
             "matches": 8,
@@ -1453,7 +1453,7 @@
           {
             "id": 29,
             "position": 29,
-            "image": "CrvenaZvezda",
+            "image": "Crvena",
             "title": "Crvena Zvezda",
             "points": 6,
             "matches": 8,
@@ -1467,7 +1467,7 @@
           {
             "id": 30,
             "position": 30,
-            "image": "SturmGraz",
+            "image": "",
             "title": "SK Sturm Graz",
             "points": 6,
             "matches": 8,
@@ -1481,7 +1481,7 @@
           {
             "id": 31,
             "position": 31,
-            "image": "SpartaPrague",
+            "image": "",
             "title": "Sparta Prague",
             "points": 4,
             "matches": 8,
@@ -1495,7 +1495,7 @@
           {
             "id": 32,
             "position": 32,
-            "image": "RBLeipzig",
+            "image": "Leipzig",
             "title": "RB Leipzig",
             "points": 3,
             "matches": 8,
@@ -1524,7 +1524,7 @@
             "id": 34,
             "position": 34,
             "image": "Salzburg",
-            "title": "FC Red Bull Salzburg",
+            "title": "RB Salzburg",
             "points": 3,
             "matches": 8,
             "wins": 1,
@@ -1537,7 +1537,7 @@
           {
             "id": 35,
             "position": 35,
-            "image": "SlovanBratislava",
+            "image": "",
             "title": "Slovan Bratislava",
             "points": 0,
             "matches": 8,
@@ -1551,7 +1551,7 @@
           {
             "id": 36,
             "position": 36,
-            "image": "YoungBoys",
+            "image": "",
             "title": "BSC Young Boys",
             "points": 0,
             "matches": 8,
