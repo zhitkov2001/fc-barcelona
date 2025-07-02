@@ -69,9 +69,9 @@ const Standings = () => {
   };
 
   const transformToPlayoffMatches = (playOffData) => {
-    if (!playOffData || !playOffData.teams) return [];
+    if (!playOffData || !playOffData.group) return [];
 
-    return Object.entries(playOffData.teams)
+    return Object.entries(playOffData.group)
       .map(([coupleName, matches]) => {
         const firstMatch = matches[0];
         const hasSecondMatch = matches.length > 1;
@@ -125,6 +125,10 @@ const Standings = () => {
         };
       })
       .filter(Boolean);
+  };
+
+  const hasGroups = () => {
+    return currentSeason.groups && !currentSeason.group;
   };
 
   return (
@@ -242,7 +246,7 @@ const Standings = () => {
               }`}
               onClick={() => selectRound("league")}
             >
-              Group Stage
+              {hasGroups ? "Group Stage" : "League"}
             </button>
             {currentSeason.playOff.map((round, index) => (
               <button
@@ -260,22 +264,54 @@ const Standings = () => {
 
         <div className="table__container">
           {selectedRound === "league" ? (
-            <table className="standings__table">
-              <thead className="standings-table__head">
-                <tr className="table-head__row">
-                  {tableHeadItems.map((item, index) => (
-                    <td key={index} className="table-head__item">
-                      {item}
-                    </td>
+            hasGroups() ? (
+              <div className="groups-container">
+                {Object.entries(currentSeason.groups).map(
+                  ([groupName, teams]) => (
+                    <div key={groupName} className="group-table">
+                      <h3 className="group-title">{`Group ${groupName}`}</h3>
+                      <table className="standings__table">
+                        <thead className="standings-table__head">
+                          <tr className="table-head__row">
+                            {tableHeadItems.map((item, index) => (
+                              <td key={index} className="table-head__item">
+                                {item}
+                              </td>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="standings-table__body">
+                          {teams.map((team) => (
+                            <TableItem
+                              key={`${team.id}-${team.title}`}
+                              {...team}
+                            />
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )
+                )}
+              </div>
+            ) : (
+              // Render single group
+              <table className="standings__table">
+                <thead className="standings-table__head">
+                  <tr className="table-head__row">
+                    {tableHeadItems.map((item, index) => (
+                      <td key={index} className="table-head__item">
+                        {item}
+                      </td>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="standings-table__body">
+                  {currentSeason.group.map((team) => (
+                    <TableItem key={`${team.id}-${team.title}`} {...team} />
                   ))}
-                </tr>
-              </thead>
-              <tbody className="standings-table__body">
-                {currentSeason.teams.map((team) => (
-                  <TableItem key={`${team.id}-${team.title}`} {...team} />
-                ))}
-              </tbody>
-            </table>
+                </tbody>
+              </table>
+            )
           ) : (
             <div className="playoff-matches">
               <h3 className="playoff-matches__title">

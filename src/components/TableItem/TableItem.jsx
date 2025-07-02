@@ -20,7 +20,7 @@ function TableItem(team) {
         {team.image === "" || !team.image ? (
           <div className={style.teamImgContainer}>
             <img
-              src={`../img/Teams/default2.png`}
+              src={`../img/Teams/default.png`}
               alt={team.title}
               className={style.teamImg}
             />
@@ -37,9 +37,9 @@ function TableItem(team) {
         <p className={style.teamTitle}>{team.title}</p>
       </th>
       <th className={style.points}>
-        <b>{team.points}</b>
+        <b>{team.wins * 3 + team.draws}</b>
       </th>
-      <th className={style.stats}>{team.matches}</th>
+      <th className={style.stats}>{team.wins + team.draws + team.losses}</th>
       <th className={style.stats}>{team.wins}</th>
       <th className={style.stats}>{team.draws}</th>
       <th className={style.stats}>{team.losses}</th>

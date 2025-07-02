@@ -243,13 +243,25 @@
       width: 100%;
       padding: 25px 40px 40px 40px;
 
+      .groups-container {
+        width: 100%;
+
+        .group-table {
+        }
+
+        .group-title {
+          padding: 18px 0 0 16px;
+          color: #141e5e;
+        }
+      }
+
       .standings__table {
         border-collapse: collapse;
         border-spacing: 0;
         width: 100%;
 
         .standings-table__head {
-          height: 60px;
+          height: 30px;
           text-align: center;
 
           color: #141e5e;
@@ -281,7 +293,9 @@
       }
 
       .playoff-matches {
-        & __title {
+        &__title {
+          text-align: center;
+          padding: 0 0 10px 0;
           color: #0b0b0b;
         }
 
