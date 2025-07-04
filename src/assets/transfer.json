@@ -1,0 +1,85 @@
+[
+  {
+    "id": "Fati",
+    "name": "Ansu",
+    "surname": "Fati",
+    "fullName": "Anssumane Fati Vieira",
+    "position": "forward",
+    "img": "Fati",
+    "number": "10",
+    "stats": {
+      "matches": "120",
+      "goals": "29",
+      "assists": "6"
+    },
+    "currentStats": {
+      "matches": "8",
+      "goals": "0",
+      "assists": "0"
+    },
+    "allTimeStats": {
+      "matches": "166",
+      "goals": "39",
+      "assists": "10"
+    },
+    "title": "Instinct, speed and skill, Ansu Fati has it all the qualities of a top striker",
+    "subtitle": "Anssumane Fati (31 October 2002) was born in Bissau, the capital of Guinea Bissau. The striker moved to Seville at the age of six where he began in the youth team set up at Sevilla. In 2012, at the age of 10, he joined the FC Barcelona youth teams before making his debut with the first team in the 2019/20 season.",
+    "bio": [
+      "Anssumane Fati (31 October 2002) was born in Bissau, the capital of Guinea Bissau. The striker moved to Seville at the age of six where he began in the youth team set up at Sevilla. In 2012, at the age of 10, he joined the FC Barcelona youth teams before making his debut with the first team in the 2019/20 season.",
+      "On 25 August 2019 he became the youngest ever person to play for the Barça first team in the league at the time at the age of 16 years and 298 days. The striker, wearing number 31, came on in the 78th minute of the game against Betis to replace Carles Pérez in week 2 of the 2019/20 league season.",
+      "On 31 August 2019, in a game against Osasuna in El Sadar, Ansu Fati became one of the youngest players ever to score in the league for Barça. The striker, aged just 16 years and 304 days, scored with a well placed header from Carles Pérez in the 2-2 draw in Pamplona.",
+      "On 17 September 2019, at 16 years and 321 days, Ansu Fati made his Champions League debut when he started a game against Borussia Dortmund in the Signal Iduna Park.",
+      "The 2021/22 season was overshadowed by injuries in the case of the young Barça pearl. However, the Spanish international, left flashes of his immeasurable quality and scores 6 goals.",
+      "In September 2023 the forward left on loan for the Premier League and Brighton and Hove Albion. After experience in England and in the Europa League with Brighton, he returned to form part of Hansi Flick's squad in the summer of 2024.",
+      "On 3 September 2020 Ansu Fati came on in the second half a Spain's game against Germany to become one of the youngest player ever to make his debut for the national team. The striker featured in his first major tournament for the Spanish national side in the World Cup in Qatar in 2022."
+    ],
+    "details": {
+      "placeOfBirth": "Bissau, Guinea-Bissau",
+      "dateOfBirth": "31/10/2002",
+      "weight": "66kg",
+      "height": "178cm",
+      "clubDebut": "25/08/2019"
+    },
+    "trophy": {
+      "LaLiga": {
+        "club": "Barcelona",
+        "title": "La Liga",
+        "quantity": 2,
+        "img": "LaLiga",
+        "years": {
+          "0": "2022/23",
+          "1": "2024/25"
+        }
+      },
+      "CopaDelRey": {
+        "club": "Barcelona",
+        "title": "Copa Del Rey",
+        "quantity": 2,
+        "img": "CopaDelRey",
+        "years": {
+          "0": "2020/21",
+          "1": "2024/25"
+        }
+      },
+      "SpanishSuperCup": {
+        "club": "Barcelona",
+        "title": "Spanish Super Cup",
+        "quantity": 2,
+        "img": "SpanishSuperCup",
+        "years": {
+          "0": "2022/23",
+          "1": "2024/25"
+        }
+      },
+      "NationsLeague": {
+        "club": "Spain",
+        "title": "UEFA Nations League",
+        "quantity": 1,
+        "img": "",
+        "years": {
+          "0": "2023"
+        }
+      }
+    }
+  }
+]

@@ -719,6 +719,172 @@
         "year": "2024/25",
         "playOff": [
           {
+            "title": "round of 1/16",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "Juventus",
+                  "ownerTitle": "Juventus",
+                  "ownerScore": 2,
+                  "guestImg": "PSV",
+                  "guestTitle": "PSV Eindhoven",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "PSV",
+                  "ownerTitle": "PSV Eindhoven",
+                  "ownerScore": 3,
+                  "guestImg": "Juventus",
+                  "guestTitle": "Juventus",
+                  "guestScore": 1,
+                  "overtime": true
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 2,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 3
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 3,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 1
+                }
+              ],
+              "couple3": [
+                {
+                  "id": 1,
+                  "ownerImg": "Brest",
+                  "ownerTitle": "Brest",
+                  "ownerScore": 0,
+                  "guestImg": "PSG",
+                  "guestTitle": "PSG",
+                  "guestScore": 3
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "PSG",
+                  "ownerTitle": "PSG",
+                  "ownerScore": 7,
+                  "guestImg": "Brest",
+                  "guestTitle": "Brest",
+                  "guestScore": 0
+                }
+              ],
+              "couple4": [
+                {
+                  "id": 1,
+                  "ownerImg": "Brugge",
+                  "ownerTitle": "Club Brugge",
+                  "ownerScore": 2,
+                  "guestImg": "Atalanta",
+                  "guestTitle": "Atalanta",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Atalanta",
+                  "ownerTitle": "Atalanta",
+                  "ownerScore": 1,
+                  "guestImg": "Brugge",
+                  "guestTitle": "Club Brugge",
+                  "guestScore": 3
+                }
+              ],
+              "couple5": [
+                {
+                  "id": 1,
+                  "ownerImg": "Monaco",
+                  "ownerTitle": "Monaco",
+                  "ownerScore": 0,
+                  "guestImg": "Benfica",
+                  "guestTitle": "Benfica",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Benfica",
+                  "ownerTitle": "Benfica",
+                  "ownerScore": 3,
+                  "guestImg": "Monaco",
+                  "guestTitle": "Monaco",
+                  "guestScore": 3
+                }
+              ],
+              "couple6": [
+                {
+                  "id": 1,
+                  "ownerImg": "Sporting",
+                  "ownerTitle": "Sporting",
+                  "ownerScore": 0,
+                  "guestImg": "Borussia",
+                  "guestTitle": "Borussia Dotrmund",
+                  "guestScore": 3
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Borussia",
+                  "ownerTitle": "Borussia Dotrmund",
+                  "ownerScore": 0,
+                  "guestImg": "Sporting",
+                  "guestTitle": "Sporting",
+                  "guestScore": 0
+                }
+              ],
+              "couple7": [
+                {
+                  "id": 1,
+                  "ownerImg": "Celtic",
+                  "ownerTitle": "Celtic",
+                  "ownerScore": 1,
+                  "guestImg": "Bayern",
+                  "guestTitle": "Bayern Munchen",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Bayern",
+                  "ownerTitle": "Bayern Munchen",
+                  "ownerScore": 1,
+                  "guestImg": "Celtic",
+                  "guestTitle": "Celtic",
+                  "guestScore": 1
+                }
+              ],
+              "couple8": [
+                {
+                  "id": 1,
+                  "ownerImg": "Feyenoord",
+                  "ownerTitle": "Feyenoord",
+                  "ownerScore": 1,
+                  "guestImg": "Milan",
+                  "guestTitle": "Milan",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Milan",
+                  "ownerTitle": "Milan",
+                  "ownerScore": 1,
+                  "guestImg": "Feyenoord",
+                  "guestTitle": "Feyenoord",
+                  "guestScore": 1
+                }
+              ]
+            }
+          },
+          {
             "title": "round of 1/8",
             "group": {
               "couple1": [
@@ -1302,7 +1468,7 @@
             "id": 23,
             "position": 23,
             "image": "Sporting",
-            "title": "Sporting Lisbon",
+            "title": "Sporting CP",
             "wins": 3,
             "draws": 2,
             "losses": 3,
@@ -2165,6 +2331,1428 @@
               "losses": 5,
               "scored": 6,
               "missed": 17
+            }
+          ]
+        }
+      },
+      {
+        "year": "2022/23",
+        "playOff": [
+          {
+            "title": "round of 1/8",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "Liverpool",
+                  "ownerTitle": "Liverpool",
+                  "ownerScore": 2,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 5
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 1,
+                  "guestImg": "Liverpool",
+                  "guestTitle": "Liverpool",
+                  "guestScore": 0
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "Borussia",
+                  "ownerTitle": "Borussia Dotrmund",
+                  "ownerScore": 1,
+                  "guestImg": "Chelsea",
+                  "guestTitle": "Chelsea",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Chelsea",
+                  "ownerTitle": "Chelsea",
+                  "ownerScore": 2,
+                  "guestImg": "Borussia",
+                  "guestTitle": "Borussia Dotrmund",
+                  "guestScore": 0
+                }
+              ],
+              "couple3": [
+                {
+                  "id": 1,
+                  "ownerImg": "Leipzig",
+                  "ownerTitle": "RB Leipzig",
+                  "ownerScore": 1,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 7,
+                  "guestImg": "Leipzig",
+                  "guestTitle": "RB Leipzig",
+                  "guestScore": 0
+                }
+              ],
+              "couple4": [
+                {
+                  "id": 1,
+                  "ownerImg": "PSG",
+                  "ownerTitle": "Paris Saint Germain",
+                  "ownerScore": 0,
+                  "guestImg": "Bayern",
+                  "guestTitle": "Bayern Munchen",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Bayern",
+                  "ownerTitle": "Bayern Munchen",
+                  "ownerScore": 2,
+                  "guestImg": "PSG",
+                  "guestTitle": "Paris Saint Germain",
+                  "guestScore": 0
+                }
+              ],
+              "couple5": [
+                {
+                  "id": 1,
+                  "ownerImg": "Milan",
+                  "ownerTitle": "Milan",
+                  "ownerScore": 1,
+                  "guestImg": "Tottenham",
+                  "guestTitle": "Tottenham",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Tottenham",
+                  "ownerTitle": "Tottenham",
+                  "ownerScore": 0,
+                  "guestImg": "Milan",
+                  "guestTitle": "Milan",
+                  "guestScore": 0
+                }
+              ],
+              "couple6": [
+                {
+                  "id": 1,
+                  "ownerImg": "Frankfurt",
+                  "ownerTitle": "Frankfurt",
+                  "ownerScore": 0,
+                  "guestImg": "Napoli",
+                  "guestTitle": "Napoli",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Napoli",
+                  "ownerTitle": "Napoli",
+                  "ownerScore": 3,
+                  "guestImg": "Frankfurt",
+                  "guestTitle": "Frankfurt",
+                  "guestScore": 0
+                }
+              ],
+              "couple7": [
+                {
+                  "id": 1,
+                  "ownerImg": "Inter",
+                  "ownerTitle": "Inter",
+                  "ownerScore": 1,
+                  "guestImg": "Porto",
+                  "guestTitle": "FC Porto",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Porto",
+                  "ownerTitle": "FC Porto",
+                  "ownerScore": 0,
+                  "guestImg": "Inter",
+                  "guestTitle": "Inter",
+                  "guestScore": 0
+                }
+              ],
+              "couple8": [
+                {
+                  "id": 1,
+                  "ownerImg": "Brugge",
+                  "ownerTitle": "Club Brugge",
+                  "ownerScore": 0,
+                  "guestImg": "Benfica",
+                  "guestTitle": "Benfica",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Benfica",
+                  "ownerTitle": "Benfica",
+                  "ownerScore": 5,
+                  "guestImg": "Brugge",
+                  "guestTitle": "Club Brugge",
+                  "guestScore": 1
+                }
+              ]
+            }
+          },
+          {
+            "title": "round of 1/4",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 2,
+                  "guestImg": "Chelsea",
+                  "guestTitle": "Chelsea",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Chelsea",
+                  "ownerTitle": "Chelsea",
+                  "ownerScore": 0,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 2
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 3,
+                  "guestImg": "Bayern",
+                  "guestTitle": "Bayern München",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Bayern",
+                  "ownerTitle": "Bayern München",
+                  "ownerScore": 1,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 1
+                }
+              ],
+              "couple3": [
+                {
+                  "id": 1,
+                  "ownerImg": "Milan",
+                  "ownerTitle": "Milan",
+                  "ownerScore": 1,
+                  "guestImg": "Napoli",
+                  "guestTitle": "Napoli",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Napoli",
+                  "ownerTitle": "Napoli",
+                  "ownerScore": 1,
+                  "guestImg": "Milan",
+                  "guestTitle": "Milan",
+                  "guestScore": 1
+                }
+              ],
+              "couple4": [
+                {
+                  "id": 1,
+                  "ownerImg": "Benfica",
+                  "ownerTitle": "Benfica",
+                  "ownerScore": 0,
+                  "guestImg": "Inter",
+                  "guestTitle": "Inter",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Inter",
+                  "ownerTitle": "Inter",
+                  "ownerScore": 3,
+                  "guestImg": "Benfica",
+                  "guestTitle": "Benfica",
+                  "guestScore": 3
+                }
+              ]
+            }
+          },
+          {
+            "title": "round of 1/2",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 1,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 4,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 0
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "Milan",
+                  "ownerTitle": "Milan",
+                  "ownerScore": 0,
+                  "guestImg": "Inter",
+                  "guestTitle": "Inter",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Inter",
+                  "ownerTitle": "Inter",
+                  "ownerScore": 1,
+                  "guestImg": "Milan",
+                  "guestTitle": "Milan",
+                  "guestScore": 0
+                }
+              ]
+            }
+          },
+          {
+            "title": "final",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 1,
+                  "guestImg": "Inter",
+                  "guestTitle": "Inter",
+                  "guestScore": 0
+                }
+              ]
+            }
+          }
+        ],
+        "groups": {
+          "A": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Napoli",
+              "title": "Napoli",
+              "wins": 5,
+              "draws": 0,
+              "losses": 1,
+              "scored": 20,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Liverpool",
+              "title": "Liverpool",
+              "wins": 5,
+              "draws": 0,
+              "losses": 1,
+              "scored": 17,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Ajax",
+              "title": "Ajax",
+              "wins": 2,
+              "draws": 0,
+              "losses": 4,
+              "scored": 11,
+              "missed": 16,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "",
+              "title": "Rangers",
+              "wins": 0,
+              "draws": 0,
+              "losses": 6,
+              "scored": 2,
+              "missed": 22
+            }
+          ],
+          "B": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Porto",
+              "title": "FC Porto",
+              "wins": 4,
+              "draws": 0,
+              "losses": 2,
+              "scored": 12,
+              "missed": 7,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Brugge",
+              "title": "Club Brugge",
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scored": 7,
+              "missed": 4,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Bayer",
+              "title": "Bayer 04",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 4,
+              "missed": 8,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "AtleticoMadrid",
+              "title": "Atletico Madrid",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 5,
+              "missed": 9
+            }
+          ],
+          "C": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Bayern",
+              "title": "Bayern München",
+              "wins": 6,
+              "draws": 0,
+              "losses": 0,
+              "scored": 18,
+              "missed": 2,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Inter",
+              "title": "Inter",
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scored": 10,
+              "missed": 7,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Barcelona",
+              "title": "FC Barcelona",
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scored": 12,
+              "missed": 12,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "",
+              "title": "Viktoria Plzen",
+              "wins": 0,
+              "draws": 0,
+              "losses": 6,
+              "scored": 5,
+              "missed": 24
+            }
+          ],
+          "D": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Tottenham",
+              "title": "Tottenham",
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scored": 8,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Frankfurt",
+              "title": "Frankfurt",
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scored": 7,
+              "missed": 8,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Sporting",
+              "title": "Sporting CP",
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scored": 8,
+              "missed": 9,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Marseille",
+              "title": "Marseille",
+              "wins": 2,
+              "draws": 0,
+              "losses": 4,
+              "scored": 8,
+              "missed": 8
+            }
+          ],
+          "E": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Chelsea",
+              "title": "Chelsea",
+              "wins": 4,
+              "draws": 1,
+              "losses": 1,
+              "scored": 10,
+              "missed": 4,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Milan",
+              "title": "Milan",
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scored": 12,
+              "missed": 7,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Salzburg",
+              "title": "RB Salzburg",
+              "wins": 1,
+              "draws": 3,
+              "losses": 2,
+              "scored": 5,
+              "missed": 9,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "DinamoZagreb",
+              "title": "GNK Dinamo",
+              "wins": 1,
+              "draws": 1,
+              "losses": 4,
+              "scored": 4,
+              "missed": 11
+            }
+          ],
+          "F": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "RealMadrid",
+              "title": "Real Madrid",
+              "wins": 4,
+              "draws": 1,
+              "losses": 1,
+              "scored": 15,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Leipzig",
+              "title": "RB Leipzig",
+              "wins": 4,
+              "draws": 0,
+              "losses": 2,
+              "scored": 13,
+              "missed": 9,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Shakhtar",
+              "title": "Shakhtar",
+              "wins": 1,
+              "draws": 3,
+              "losses": 2,
+              "scored": 8,
+              "missed": 10,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Celtic",
+              "title": "Celtic",
+              "wins": 0,
+              "draws": 2,
+              "losses": 4,
+              "scored": 4,
+              "missed": 15
+            }
+          ],
+          "G": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "ManchesterCity",
+              "title": "Manchester City",
+              "wins": 4,
+              "draws": 2,
+              "losses": 0,
+              "scored": 14,
+              "missed": 2,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Borussia",
+              "title": "Borussia Dortmund",
+              "wins": 2,
+              "draws": 3,
+              "losses": 1,
+              "scored": 10,
+              "missed": 5,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Sevilla",
+              "title": "Sevilla",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 6,
+              "missed": 12,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Copenhagen",
+              "title": "Copenhagen",
+              "wins": 0,
+              "draws": 3,
+              "losses": 3,
+              "scored": 1,
+              "missed": 12
+            }
+          ],
+          "H": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Benfica",
+              "title": "Benfica",
+              "wins": 4,
+              "draws": 2,
+              "losses": 0,
+              "scored": 16,
+              "missed": 7,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "PSG",
+              "title": "Paris Saint Germain",
+              "wins": 4,
+              "draws": 2,
+              "losses": 0,
+              "scored": 16,
+              "missed": 7,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Juventus",
+              "title": "Juventus",
+              "wins": 1,
+              "draws": 0,
+              "losses": 5,
+              "scored": 9,
+              "missed": 13,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "",
+              "title": "Maccabi Haifa",
+              "wins": 1,
+              "draws": 0,
+              "losses": 5,
+              "scored": 7,
+              "missed": 21
+            }
+          ]
+        }
+      },
+      {
+        "year": "2021/22",
+        "playOff": [
+          {
+            "title": "round of 1/8",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "Benfica",
+                  "ownerTitle": "Benfica",
+                  "ownerScore": 2,
+                  "guestImg": "Ajax",
+                  "guestTitle": "Ajax",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Ajax",
+                  "ownerTitle": "Ajax",
+                  "ownerScore": 0,
+                  "guestImg": "Benfica",
+                  "guestTitle": "Benfica",
+                  "guestScore": 1
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "Inter",
+                  "ownerTitle": "Inter",
+                  "ownerScore": 0,
+                  "guestImg": "Liverpool",
+                  "guestTitle": "Liverpool",
+                  "guestScore": 2
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Liverpool",
+                  "ownerTitle": "Liverpool",
+                  "ownerScore": 0,
+                  "guestImg": "Inter",
+                  "guestTitle": "Inter",
+                  "guestScore": 1
+                }
+              ],
+              "couple3": [
+                {
+                  "id": 1,
+                  "ownerImg": "Villarreal",
+                  "ownerTitle": "Villarreal",
+                  "ownerScore": 1,
+                  "guestImg": "Juventus",
+                  "guestTitle": "Juventus",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Juventus",
+                  "ownerTitle": "Juventus",
+                  "ownerScore": 0,
+                  "guestImg": "Villarreal",
+                  "guestTitle": "Villarreal",
+                  "guestScore": 3
+                }
+              ],
+              "couple4": [
+                {
+                  "id": 1,
+                  "ownerImg": "Salzburg",
+                  "ownerTitle": "RB Salzburg",
+                  "ownerScore": 1,
+                  "guestImg": "Bayern",
+                  "guestTitle": "Bayern Munchen",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Bayern",
+                  "ownerTitle": "Bayern Munchen",
+                  "ownerScore": 7,
+                  "guestImg": "Salzburg",
+                  "guestTitle": "RB Salzburg",
+                  "guestScore": 1
+                }
+              ],
+              "couple5": [
+                {
+                  "id": 1,
+                  "ownerImg": "Sporting",
+                  "ownerTitle": "Sporting",
+                  "ownerScore": 0,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 5
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 0,
+                  "guestImg": "Sporting",
+                  "guestTitle": "Sporting",
+                  "guestScore": 0
+                }
+              ],
+              "couple6": [
+                {
+                  "id": 1,
+                  "ownerImg": "AtleticoMadrid",
+                  "ownerTitle": "Atletico Madrid",
+                  "ownerScore": 1,
+                  "guestImg": "ManchesterUnited",
+                  "guestTitle": "Manchester United",
+                  "guestScore": 1
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "ManchesterUnited",
+                  "ownerTitle": "Manchester United",
+                  "ownerScore": 0,
+                  "guestImg": "AtleticoMadrid",
+                  "guestTitle": "Atletico Madrid",
+                  "guestScore": 1
+                }
+              ],
+              "couple7": [
+                {
+                  "id": 1,
+                  "ownerImg": "Chelsea",
+                  "ownerTitle": "Chelsea",
+                  "ownerScore": 2,
+                  "guestImg": "Lille",
+                  "guestTitle": "Lille",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Lille",
+                  "ownerTitle": "Lille",
+                  "ownerScore": 1,
+                  "guestImg": "Chelsea",
+                  "guestTitle": "Chelsea",
+                  "guestScore": 2
+                }
+              ],
+              "couple8": [
+                {
+                  "id": 1,
+                  "ownerImg": "PSG",
+                  "ownerTitle": "Paris Saint Germain",
+                  "ownerScore": 1,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 3,
+                  "guestImg": "PSG",
+                  "guestTitle": "Paris Saint Germain",
+                  "guestScore": 1
+                }
+              ]
+            }
+          },
+          {
+            "title": "round of 1/4",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "Benfica",
+                  "ownerTitle": "Benfica",
+                  "ownerScore": 1,
+                  "guestImg": "Liverpool",
+                  "guestTitle": "Liverpool",
+                  "guestScore": 3
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Liverpool",
+                  "ownerTitle": "Liverpool",
+                  "ownerScore": 3,
+                  "guestImg": "Benfica",
+                  "guestTitle": "Benfica",
+                  "guestScore": 3
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "Villarreal",
+                  "ownerTitle": "Villarreal",
+                  "ownerScore": 1,
+                  "guestImg": "Bayern",
+                  "guestTitle": "Bayern Munchen",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Bayern",
+                  "ownerTitle": "Bayern Munchen",
+                  "ownerScore": 1,
+                  "guestImg": "Villarreal",
+                  "guestTitle": "Villarreal",
+                  "guestScore": 1
+                }
+              ],
+              "couple3": [
+                {
+                  "id": 1,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 1,
+                  "guestImg": "AtleticoMadrid",
+                  "guestTitle": "Atletico Madrid",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "AtleticoMadrid",
+                  "ownerTitle": "Atletico Madrid",
+                  "ownerScore": 0,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 0
+                }
+              ],
+              "couple4": [
+                {
+                  "id": 1,
+                  "ownerImg": "Chelsea",
+                  "ownerTitle": "Chelsea",
+                  "ownerScore": 1,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 3
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 2,
+                  "guestImg": "Chelsea",
+                  "guestTitle": "Chelsea",
+                  "guestScore": 3,
+                  "overtime": true
+                }
+              ]
+            }
+          },
+          {
+            "title": "round of 1/2",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "Liverpool",
+                  "ownerTitle": "Liverpool",
+                  "ownerScore": 2,
+                  "guestImg": "Villarreal",
+                  "guestTitle": "Villarreal",
+                  "guestScore": 0
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "Villarreal",
+                  "ownerTitle": "Villarreal",
+                  "ownerScore": 2,
+                  "guestImg": "Liverpool",
+                  "guestTitle": "Liverpool",
+                  "guestScore": 3
+                }
+              ],
+              "couple2": [
+                {
+                  "id": 1,
+                  "ownerImg": "ManchesterCity",
+                  "ownerTitle": "Manchester City",
+                  "ownerScore": 4,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 3
+                },
+                {
+                  "id": 2,
+                  "ownerImg": "RealMadrid",
+                  "ownerTitle": "Real Madrid",
+                  "ownerScore": 3,
+                  "guestImg": "ManchesterCity",
+                  "guestTitle": "Manchester City",
+                  "guestScore": 1,
+                  "overtime": true
+                }
+              ]
+            }
+          },
+          {
+            "title": "final",
+            "group": {
+              "couple1": [
+                {
+                  "id": 1,
+                  "ownerImg": "Liverpool",
+                  "ownerTitle": "Liverpool",
+                  "ownerScore": 0,
+                  "guestImg": "RealMadrid",
+                  "guestTitle": "Real Madrid",
+                  "guestScore": 1
+                }
+              ]
+            }
+          }
+        ],
+        "groups": {
+          "A": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "ManchesterCity",
+              "title": "Manchester City",
+              "wins": 4,
+              "draws": 0,
+              "losses": 2,
+              "scored": 18,
+              "missed": 10,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "PSG",
+              "title": "Paris Saint Germain",
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scored": 13,
+              "missed": 8,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Leipzig",
+              "title": "RB Leipzig",
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scored": 15,
+              "missed": 14,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Brugge",
+              "title": "Club Brugge",
+              "wins": 1,
+              "draws": 1,
+              "losses": 4,
+              "scored": 6,
+              "missed": 20
+            }
+          ],
+          "B": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Liverpool",
+              "title": "Liverpool",
+              "wins": 6,
+              "draws": 0,
+              "losses": 0,
+              "scored": 17,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "AtleticoMadrid",
+              "title": "Atletico Madrid",
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scored": 7,
+              "missed": 8,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Porto",
+              "title": "FC Porto",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 4,
+              "missed": 11,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Milan",
+              "title": "Milan",
+              "wins": 1,
+              "draws": 1,
+              "losses": 4,
+              "scored": 6,
+              "missed": 9
+            }
+          ],
+          "C": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Ajax",
+              "title": "Ajax",
+              "wins": 6,
+              "draws": 0,
+              "losses": 0,
+              "scored": 20,
+              "missed": 5,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Sporting",
+              "title": "Sporting Lisbon",
+              "wins": 3,
+              "draws": 0,
+              "losses": 3,
+              "scored": 14,
+              "missed": 12,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Borussia",
+              "title": "Borussia Dortmund",
+              "wins": 3,
+              "draws": 0,
+              "losses": 3,
+              "scored": 10,
+              "missed": 11,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Beshiktash",
+              "title": "Beşiktaş",
+              "wins": 0,
+              "draws": 0,
+              "losses": 6,
+              "scored": 3,
+              "missed": 19
+            }
+          ],
+          "D": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "RealMadrid",
+              "title": "Real Madrid",
+              "wins": 5,
+              "draws": 0,
+              "losses": 1,
+              "scored": 14,
+              "missed": 3,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Inter",
+              "title": "Inter",
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scored": 8,
+              "missed": 5,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "",
+              "title": "Sherif",
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scored": 7,
+              "missed": 11,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Shakhtar",
+              "title": "Shakhtar",
+              "wins": 0,
+              "draws": 2,
+              "losses": 4,
+              "scored": 2,
+              "missed": 12
+            }
+          ],
+          "E": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Bayern",
+              "title": "Bayern München",
+              "wins": 6,
+              "draws": 0,
+              "losses": 0,
+              "scored": 22,
+              "missed": 3,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Benfica",
+              "title": "Benfica",
+              "wins": 2,
+              "draws": 2,
+              "losses": 2,
+              "scored": 7,
+              "missed": 9,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Barcelona",
+              "title": "FC Barcelona",
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scored": 2,
+              "missed": 9,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "DynamoKyiv",
+              "title": "Dynamo Kyiv",
+              "wins": 1,
+              "draws": 1,
+              "losses": 4,
+              "scored": 5,
+              "missed": 15
+            }
+          ],
+          "F": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "ManchesterUnited",
+              "title": "Manchester United",
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scored": 11,
+              "missed": 8,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Villarreal",
+              "title": "Villarreal",
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scored": 12,
+              "missed": 9,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Atalanta",
+              "title": "Atalanta",
+              "wins": 1,
+              "draws": 3,
+              "losses": 2,
+              "scored": 12,
+              "missed": 13,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "YoungBoys",
+              "title": "BSC Young Boys",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 7,
+              "missed": 12
+            }
+          ],
+          "G": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Lille",
+              "title": "Lille",
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scored": 7,
+              "missed": 4,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Salzburg",
+              "title": "RB Salzburg",
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scored": 8,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Sevilla",
+              "title": "Sevilla",
+              "wins": 1,
+              "draws": 3,
+              "losses": 2,
+              "scored": 5,
+              "missed": 5,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Wolfsburg",
+              "title": "Wolfsburg",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 5,
+              "missed": 10
+            }
+          ],
+          "H": [
+            {
+              "id": 1,
+              "position": 1,
+              "image": "Juventus",
+              "title": "Juventus",
+              "wins": 5,
+              "draws": 0,
+              "losses": 1,
+              "scored": 10,
+              "missed": 6,
+              "isQualified": "green"
+            },
+            {
+              "id": 2,
+              "position": 2,
+              "image": "Chelsea",
+              "title": "Chelsea",
+              "wins": 4,
+              "draws": 1,
+              "losses": 1,
+              "scored": 13,
+              "missed": 4,
+              "isQualified": "green"
+            },
+            {
+              "id": 3,
+              "position": 3,
+              "image": "Zenit",
+              "title": "Zenit",
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scored": 10,
+              "missed": 10,
+              "isQualified": "orange"
+            },
+            {
+              "id": 4,
+              "position": 4,
+              "image": "Malmo",
+              "title": "Malmo",
+              "wins": 0,
+              "draws": 1,
+              "losses": 5,
+              "scored": 1,
+              "missed": 14
             }
           ]
         }

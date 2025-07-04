@@ -278,6 +278,31 @@
           }
         }
       }
+    },
+    {
+      "id": "JoanGarcia",
+      "name": "Joan",
+      "surname": "Garcia",
+      "fullName": "Joan Garcia Pons",
+      "position": "goalkeeper",
+      "img": "JoanGarcia",
+      "number": "",
+
+      "title": "A goalkeeper with tremendous reflexes who can also play with the ball at his feet",
+      "subtitle": "Joan Garcia came to FC Barcelona in the summer of 2025 after showing himself to be one of the best goalkeepers in La Liga in the previous campaign.",
+      "bio": [
+        "Joan Garcia came to FC Barcelona in the summer of 2025 after showing himself to be one of the best goalkeepers in La Liga in the previous campaign.",
+        "Born in Sallent de Llobregat, in the Bages region of Catalonia, the new Barça goalkeeper, like many others, didn’t start out between the posts. However, it wasn’t long before he followed in the footsteps of his older brother and picked up the gloves. That was the beginning of his path toward the elite. After leaving Sallent, he moved to Manresa and then to Damm, until Espanyol signed him at the age of 15.",
+        "With Espanyol, he made his first-team debut at the end of 2021, but it was not until the 2023/24 season that he established himself as the starting goalkeeper, helping the team earn promotion back to the top flight. He has just completed a fantastic campaign in La Liga, playing a key role in Espanyol's survival. In numbers, he was the goalkeeper with the most saves in the league (146), and according to advanced statistics, the one who prevented the most goals in the entire competition.",
+        "During his time at Espanyol, he became a regular in Spain’s youth national teams from the U17 to the U21 level, and he has an Olympic gold medal from the 2024 Games in Paris."
+      ],
+      "details": {
+        "placeOfBirth": "Sallent, Spain",
+        "dateOfBirth": "04/05/2001",
+        "weight": "79kg",
+        "height": "191cm",
+        "clubDebut": ""
+      }
     }
   ],
 
@@ -1472,10 +1497,11 @@
         "LaLiga": {
           "club": "Barcelona",
           "title": "La Liga",
-          "quantity": 1,
+          "quantity": 2,
           "img": "LaLiga",
           "years": {
-            "0": "2022/23"
+            "0": "2022/23",
+            "1": "2024/25"
           }
         },
         "EuropeanChampionships": {
@@ -1518,10 +1544,11 @@
         "CopaDelRey": {
           "club": "Valencia",
           "title": "Copa Del Rey",
-          "quantity": 1,
+          "quantity": 2,
           "img": "CopaDelRey",
           "years": {
-            "0": "2018/19"
+            "0": "2018/19",
+            "1": "2024/25"
           }
         },
         "EuropeanU19Championship": {
@@ -1600,10 +1627,11 @@
         "LaLiga": {
           "club": "Barcelona",
           "title": "La Liga",
-          "quantity": 1,
+          "quantity": 2,
           "img": "LaLiga",
           "years": {
-            "0": "2022/23"
+            "0": "2022/23",
+            "1": "2024/25"
           }
         },
         "SpanishSuperCup": {
@@ -1614,6 +1642,15 @@
           "years": {
             "0": "2022/23",
             "1": "2024/25"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2024/25"
           }
         },
         "UCL": {
@@ -1731,87 +1768,6 @@
       }
     },
     {
-      "id": "Fati",
-      "name": "Ansu",
-      "surname": "Fati",
-      "fullName": "Anssumane Fati Vieira",
-      "position": "forward",
-      "img": "Fati",
-      "number": "10",
-      "stats": {
-        "matches": "120",
-        "goals": "29",
-        "assists": "6"
-      },
-      "currentStats": {
-        "matches": "8",
-        "goals": "0",
-        "assists": "0"
-      },
-      "allTimeStats": {
-        "matches": "166",
-        "goals": "39",
-        "assists": "10"
-      },
-      "title": "Instinct, speed and skill, Ansu Fati has it all the qualities of a top striker",
-      "subtitle": "Anssumane Fati (31 October 2002) was born in Bissau, the capital of Guinea Bissau. The striker moved to Seville at the age of six where he began in the youth team set up at Sevilla. In 2012, at the age of 10, he joined the FC Barcelona youth teams before making his debut with the first team in the 2019/20 season.",
-      "bio": [
-        "Anssumane Fati (31 October 2002) was born in Bissau, the capital of Guinea Bissau. The striker moved to Seville at the age of six where he began in the youth team set up at Sevilla. In 2012, at the age of 10, he joined the FC Barcelona youth teams before making his debut with the first team in the 2019/20 season.",
-        "On 25 August 2019 he became the youngest ever person to play for the Barça first team in the league at the time at the age of 16 years and 298 days. The striker, wearing number 31, came on in the 78th minute of the game against Betis to replace Carles Pérez in week 2 of the 2019/20 league season.",
-        "On 31 August 2019, in a game against Osasuna in El Sadar, Ansu Fati became one of the youngest players ever to score in the league for Barça. The striker, aged just 16 years and 304 days, scored with a well placed header from Carles Pérez in the 2-2 draw in Pamplona.",
-        "On 17 September 2019, at 16 years and 321 days, Ansu Fati made his Champions League debut when he started a game against Borussia Dortmund in the Signal Iduna Park.",
-        "The 2021/22 season was overshadowed by injuries in the case of the young Barça pearl. However, the Spanish international, left flashes of his immeasurable quality and scores 6 goals.",
-        "In September 2023 the forward left on loan for the Premier League and Brighton and Hove Albion. After experience in England and in the Europa League with Brighton, he returned to form part of Hansi Flick's squad in the summer of 2024.",
-        "On 3 September 2020 Ansu Fati came on in the second half a Spain's game against Germany to become one of the youngest player ever to make his debut for the national team. The striker featured in his first major tournament for the Spanish national side in the World Cup in Qatar in 2022."
-      ],
-      "details": {
-        "placeOfBirth": "Bissau, Guinea-Bissau",
-        "dateOfBirth": "31/10/2002",
-        "weight": "66kg",
-        "height": "178cm",
-        "clubDebut": "25/08/2019"
-      },
-      "trophy": {
-        "LaLiga": {
-          "club": "Barcelona",
-          "title": "La Liga",
-          "quantity": 1,
-          "img": "LaLiga",
-          "years": {
-            "0": "2022/23"
-          }
-        },
-        "CopaDelRey": {
-          "club": "Barcelona",
-          "title": "Copa Del Rey",
-          "quantity": 1,
-          "img": "CopaDelRey",
-          "years": {
-            "0": "2020/21"
-          }
-        },
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
-          "quantity": 2,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2022/23",
-            "1": "2024/25"
-          }
-        },
-        "NationsLeague": {
-          "club": "Spain",
-          "title": "UEFA Nations League",
-          "quantity": 1,
-          "img": "",
-          "years": {
-            "0": "2023"
-          }
-        }
-      }
-    },
-    {
       "id": "Raphinha",
       "name": "",
       "surname": "Raphinha",
@@ -1856,10 +1812,11 @@
         "LaLiga": {
           "club": "Barcelona",
           "title": "La Liga",
-          "quantity": 1,
+          "quantity": 2,
           "img": "LaLiga",
           "years": {
-            "0": "2022/23"
+            "0": "2022/23",
+            "1": "2024/25"
           }
         },
         "SpanishSuperCup": {
@@ -1870,6 +1827,15 @@
           "years": {
             "0": "2022/23",
             "1": "2024/25"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2024/25"
           }
         },
         "TacaDePortugal": {

@@ -71,29 +71,34 @@ const PlayerPage = () => {
           <div className="player-hero__stats">
             <h3 className="player-hero-stats__title">Barca stats</h3>
             <ul className="player-hero-stats__list">
-              {Object.entries(playerStats).map(([key, value]) => (
-                <li key={`${key}-${value}`} className="player-hero-stats__item">
-                  <p className="player-hero-stats-item__title">
-                    {key.charAt(0).toUpperCase() + key.slice(1)}
-                  </p>
-                  <p className="player-hero-stats-item__value">{value}</p>
-                </li>
-              ))}
+              {playerStats &&
+                Object.entries(playerStats).map(([key, value]) => (
+                  <li
+                    key={`${key}-${value}`}
+                    className="player-hero-stats__item"
+                  >
+                    <p className="player-hero-stats-item__title">
+                      {key.charAt(0).toUpperCase() + key.slice(1)}
+                    </p>
+                    <p className="player-hero-stats-item__value">{value}</p>
+                  </li>
+                ))}
             </ul>
             <ul className="player-hero-stats__list">
-              {Object.entries(playerCurrentStats).map(([key, value]) => (
-                <li
-                  key={`${key}-${value}`}
-                  className="player-hero-current-stats__item"
-                >
-                  <p className="player-hero-stats-item-current__title">
-                    Season 24/25
-                  </p>
-                  <p className="player-hero-stats-item-current__value">
-                    {value}
-                  </p>
-                </li>
-              ))}
+              {playerCurrentStats &&
+                Object.entries(playerCurrentStats).map(([key, value]) => (
+                  <li
+                    key={`${key}-${value}`}
+                    className="player-hero-current-stats__item"
+                  >
+                    <p className="player-hero-stats-item-current__title">
+                      Season 24/25
+                    </p>
+                    <p className="player-hero-stats-item-current__value">
+                      {value}
+                    </p>
+                  </li>
+                ))}
             </ul>
           </div>
           <div className="player-hero-img__container">
@@ -107,8 +112,8 @@ const PlayerPage = () => {
                   player.position.slice(1)}
               </p>
               <div className="player-hero-info__data">
-                <p className="player-hero-info__number">{player.number}</p>
-                <p className="player-hero-info__name">{player.name}</p>
+                <p className="player-hero-info__number">{player?.number}</p>
+                <p className="player-hero-info__name">{player?.name}</p>
                 <p className="player-hero-info__surname">{player.surname}</p>
               </div>
             </div>
@@ -134,16 +139,17 @@ const PlayerPage = () => {
             <p className="player-card-info__title">{player.title}</p>
             <p className="player-card-info__subtitle">{player.subtitle}</p>
             <ul className="player-card-allTime__list">
-              {Object.entries(playerAllTimeStats).map(([key, value]) => (
-                <li key={key} className="player-card-allTime__item">
-                  <p className="player-card-allTime-stats__title">
-                    {key.charAt(0).toUpperCase() + key.slice(1)}
-                  </p>
-                  <span className="player-card-allTime-stats__value">
-                    {value}
-                  </span>
-                </li>
-              ))}
+              {playerAllTimeStats &&
+                Object.entries(playerAllTimeStats).map(([key, value]) => (
+                  <li key={key} className="player-card-allTime__item">
+                    <p className="player-card-allTime-stats__title">
+                      {key.charAt(0).toUpperCase() + key.slice(1)}
+                    </p>
+                    <span className="player-card-allTime-stats__value">
+                      {value}
+                    </span>
+                  </li>
+                ))}
             </ul>
             <button onClick={openPopup} className="player-card-btn">
               Read full BIO
@@ -176,7 +182,7 @@ const PlayerPage = () => {
         </div>
         <div className="player-card__details">
           <ul className="player-card-details__list">
-            {playerDetails ? (
+            {playerDetails &&
               Object.entries(playerDetails).map(([key, value]) => (
                 <li
                   key={`${key}-${value}`}
@@ -187,13 +193,10 @@ const PlayerPage = () => {
                   </p>
                   <p className="player-card-details__text">{value}</p>
                 </li>
-              ))
-            ) : (
-              <div></div>
-            )}
+              ))}
           </ul>
         </div>
-        {playerTrophy ? (
+        {playerTrophy && (
           <div className="player-card__trophy">
             <div className="player-card-trophy-btn__wrapper">
               <button onClick={handlePrev} className="player-card-trophy__btn">
@@ -246,12 +249,10 @@ const PlayerPage = () => {
               )}
             </ul>
           </div>
-        ) : (
-          <></>
         )}
       </div>
-      {playerBio ? (
-        popup ? (
+      {playerBio &&
+        (popup ? (
           <div className="full-bio__overlay">
             <div className="full-bio__wrapper">
               <button onClick={closePopup} className="full-bio__btn">
@@ -269,10 +270,7 @@ const PlayerPage = () => {
           </div>
         ) : (
           ""
-        )
-      ) : (
-        <div></div>
-      )}
+        ))}
     </div>
   );
 };
