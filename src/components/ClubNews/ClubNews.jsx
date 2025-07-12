@@ -11,8 +11,8 @@ function ClubNews() {
           <div className="club__news-container">
             <h2 className="section__news-title">News</h2>
             <ul className="club__news-list">
-              {ClubNewsData.clubNewsDataFromJson.map((obj) => (
-                <ClubNewsItems key={obj.id} {...obj} />
+              {ClubNewsData.clubNewsDataFromJson.map((news) => (
+                <ClubNewsItems key={news.id} {...news} />
               ))}
             </ul>
           </div>

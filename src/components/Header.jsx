@@ -21,7 +21,7 @@ function Header() {
           <Link className="nav__link" to="/standings">
             Standings
           </Link>
-          <Link className="nav__link" to="!#">
+          <Link className="nav__link" to="/news">
             News
           </Link>
         </nav>
