@@ -5,23 +5,32 @@ import newsData from "../assets/news.json";
 import NewsItem from "../components/NewsItem";
 
 const News = () => {
-  // console.log(newsData);
+  const [selectedType, setSelectedType] = React.useState("All News");
 
-  const [selectedType, setSelectedType] = React.useState(0);
+  console.log("Selected type:", selectedType);
+  console.log(
+    "Filtered news:",
+    newsData.filter((news) => news.category === selectedType)
+  );
 
   const newsCategory = [
     "All News",
-    "Club",
-    "Match reports",
-    "Players",
-    "Transfers",
-    "La Masia",
+    "club",
+    "match reports",
+    "players",
+    "transfers",
+    "la masia",
   ];
 
-  function onSelectedType(id) {
-    setSelectedType(id);
+  function onSelectedType(type) {
+    setSelectedType(type);
   }
-  console.log(selectedType);
+
+  const filteredNews =
+    selectedType === "All News"
+      ? newsData
+      : newsData.filter((news) => news.category === selectedType);
+
   return (
     <section className="news">
       <TitleBackround title="News" />
@@ -30,17 +39,16 @@ const News = () => {
           {newsCategory.map((item, id) => (
             <button
               key={id}
-              onClick={() => onSelectedType(id)}
-              className={`nav-btn ${selectedType === id ? "active" : ""}`}
+              onClick={() => onSelectedType(item)}
+              className={`nav-btn ${selectedType === item ? "active" : ""}`}
             >
-              {item}
+              {item[0].toUpperCase() + item.slice(1)}
             </button>
           ))}
         </div>
         <div className="news__container">
-          {newsData.map((news) => (
+          {filteredNews.map((news) => (
             <NewsItem key={news.id} {...news} />
-            // NewsItem содержит только title+date, а уже на странице NewsPage будет вся остальная инфа
           ))}
         </div>
       </div>

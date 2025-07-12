@@ -1,6 +1,67 @@
 [
   {
+    "id": 7,
+    "weekday": "monday",
+    "month": "july",
+    "date": "05",
+    "img": "2",
+    "title": "First Liga kick-off time announced",
+    "subtitle": "The league organisation has confirmed when FC Barcelona will play their opening league fixture away to Mallorca",
+    "category": "club",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Ivan Rakitić has announced his retirement at the age of 37. After spending his final seasons playing in the Saudi Pro League and back in Croatia, he has decided to hang up his boots, bringing an end to a brilliant career that included spells at Schalke 04, Sevilla, and FC Barcelona."
+      },
+      {
+        "type": "heading",
+        "text": "Stunning stats"
+      },
+      {
+        "type": "paragraph",
+        "text": "Over his six seasons in a Barça shirt (2014–2020), Rakitić played a total of 310 competitive matches, scoring 36 goals. His trophy haul includes 4 La Liga titles, 4 Copas del Rey, 1 Champions League, 1 FIFA Club World Cup, 1 UEFA Super Cup, and 2 Spanish Super Cups. Beyond the statistics, he stood out for his tactical intelligence, work ethic, and flawless understanding with players like Messi, Busquets, Iniesta and Suárez."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ivan Rakitić will be remembered as a modern legend at FC Barcelona, an all-round midfielder who put his talent at the service of the team and helped shape one of the most successful eras in the club’s history."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "weekday": "friday",
+    "month": "june",
+    "date": "20",
+    "img": "4",
+    "title": "Joan Garcia puts pen to paper",
+    "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
+    "category": "transfers",
+    "playerId": "JoanGarcia"
+  },
+  {
+    "id": 5,
+    "weekday": "friday",
+    "month": "june",
+    "date": "20",
+    "img": "7",
+    "title": "Joan Garcia puts pen to paper",
+    "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
+    "category": "la masia",
+    "playerId": "JoanGarcia"
+  },
+  {
     "id": 4,
+    "weekday": "friday",
+    "month": "june",
+    "date": "20",
+    "img": "1",
+    "title": "Joan Garcia puts pen to paper",
+    "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
+    "category": "match reports",
+    "playerId": "JoanGarcia"
+  },
+  {
+    "id": 3,
     "weekday": "monday",
     "month": "july",
     "date": "05",
@@ -35,7 +96,7 @@
     "img": "4",
     "title": "Joan Garcia puts pen to paper",
     "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
-    "category": "transfer",
+    "category": "transfers",
     "playerId": "JoanGarcia"
   },
   {
@@ -46,7 +107,7 @@
     "img": "7",
     "title": "Joan Garcia puts pen to paper",
     "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
-    "category": "transfer",
+    "category": "transfers",
     "playerId": "JoanGarcia"
   },
   {
@@ -57,68 +118,7 @@
     "img": "1",
     "title": "Joan Garcia puts pen to paper",
     "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
-    "category": "transfer",
-    "playerId": "JoanGarcia"
-  },
-  {
-    "id": 4,
-    "weekday": "monday",
-    "month": "july",
-    "date": "05",
-    "img": "2",
-    "title": "First Liga kick-off time announced",
-    "subtitle": "The league organisation has confirmed when FC Barcelona will play their opening league fixture away to Mallorca",
-    "category": "club",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Ivan Rakitić has announced his retirement at the age of 37. After spending his final seasons playing in the Saudi Pro League and back in Croatia, he has decided to hang up his boots, bringing an end to a brilliant career that included spells at Schalke 04, Sevilla, and FC Barcelona."
-      },
-      {
-        "type": "heading",
-        "text": "Stunning stats"
-      },
-      {
-        "type": "paragraph",
-        "text": "Over his six seasons in a Barça shirt (2014–2020), Rakitić played a total of 310 competitive matches, scoring 36 goals. His trophy haul includes 4 La Liga titles, 4 Copas del Rey, 1 Champions League, 1 FIFA Club World Cup, 1 UEFA Super Cup, and 2 Spanish Super Cups. Beyond the statistics, he stood out for his tactical intelligence, work ethic, and flawless understanding with players like Messi, Busquets, Iniesta and Suárez."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ivan Rakitić will be remembered as a modern legend at FC Barcelona, an all-round midfielder who put his talent at the service of the team and helped shape one of the most successful eras in the club’s history."
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "weekday": "friday",
-    "month": "june",
-    "date": "20",
-    "img": "4",
-    "title": "Joan Garcia puts pen to paper",
-    "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
-    "category": "transfer",
-    "playerId": "JoanGarcia"
-  },
-  {
-    "id": 1,
-    "weekday": "friday",
-    "month": "june",
-    "date": "20",
-    "img": "7",
-    "title": "Joan Garcia puts pen to paper",
-    "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
-    "category": "transfer",
-    "playerId": "JoanGarcia"
-  },
-  {
-    "id": 0,
-    "weekday": "friday",
-    "month": "june",
-    "date": "20",
-    "img": "1",
-    "title": "Joan Garcia puts pen to paper",
-    "subtitle": "New goalkeeper joined by his family, club president Joan Laporta and the sports commission at signing ceremony",
-    "category": "transfer",
+    "category": "players",
     "playerId": "JoanGarcia"
   }
 ]
