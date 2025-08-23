@@ -1,26 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function MainNewsItems({
-  id,
-  newsUrl,
-  newsImg,
-  title,
-  subtitle,
-  isActive,
-  onMouseEnter,
-}) {
+function MainNewsItems({ isActive, onMouseEnter, ...news }) {
   return (
-    <a
+    <Link
       className={isActive ? "active" : ""}
-      onMouseEnter={onMouseEnter} // Устанавливаем активный ID при наведении
-      href={newsUrl}
+      onMouseEnter={onMouseEnter}
+      to={`/newspage/${news.id}`}
     >
-      <img className="main__news-img" alt="News Img" src={newsImg} />
+      <img
+        className="main__news-img"
+        alt={news.title}
+        src={`/img/News/${news.img}.webp`}
+      />
       <div className="main__news-info">
-        <p className="main__news-title">{title}</p>
-        <p className="main__news-subtitle">{subtitle}</p>
+        <p className="main__news-title">{news.title}</p>
+        <p className="main__news-subtitle">{news.subtitle}</p>
       </div>
-    </a>
+    </Link>
   );
 }
 

@@ -7,11 +7,11 @@ import NewsItem from "../components/NewsItem";
 const News = () => {
   const [selectedType, setSelectedType] = React.useState("All News");
 
-  console.log("Selected type:", selectedType);
-  console.log(
-    "Filtered news:",
-    newsData.filter((news) => news.category === selectedType)
-  );
+  // console.log("Selected type:", selectedType);
+  // console.log(
+  //   "Filtered news:",
+  //   newsData.filter((news) => news.category === selectedType)
+  // );
 
   const newsCategory = [
     "All News",

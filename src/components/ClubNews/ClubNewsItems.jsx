@@ -1,25 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ClubNewsItems(news) {
   return (
-    <li className="club__news-item">
-      <a href="!#" className="club__news-link">
+    <Link to={`/newspage/${news.id}`} className="club__news-link">
+      <li className="club__news-item">
         <img
           className="club__news-img"
-          src={`./img/News/${news.id}.webp`}
+          src={`./img/News/${news.img}.webp`}
           alt="Club news"
         />
         <div className="club__news-info">
           <p className="club__news-title">{news.title}</p>
-          <ul className="club__news-subinfo">
-            <li className="club__news-date" date="2024-02-07">
+          <div className="club__news-subinfo">
+            <p className="club__news-date" date="2024-02-07">
               {news.date}
-            </li>
-            <li className="club__news-theme">{news.subtitle}</li>
-          </ul>
+            </p>
+          </div>
         </div>
-      </a>
-    </li>
+      </li>
+    </Link>
   );
 }
 

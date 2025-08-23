@@ -16,7 +16,6 @@ function NewsItem(news) {
         </div>
         <div className={styles.info__container}>
           <h3 className={styles.news__title}>{news.title}</h3>
-          {/* <div className={styles.news__subtitle}>{news.subtitle}</div> */}
           <div className={styles.news__info}>
             <div className={styles.category__container}>
               <div className={styles["category-quad"]}></div>
