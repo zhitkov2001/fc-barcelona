@@ -12,7 +12,7 @@ const Sponsors = () => {
   React.useEffect(() => {
     const sliderTrack = sliderTrackRef.current;
     let animationFrameId;
-    const speed = 0.3; // Скорость прокрутки (пикселей за кадр)
+    const speed = 0.4; // Скорость прокрутки (пикселей за кадр)
 
     const animate = () => {
       if (!isHovered) {
