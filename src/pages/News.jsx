@@ -1,6 +1,6 @@
 import React from "react";
 
-import TitleBackround from "../components/TitleBackground/TitleBackground";
+import TitleBackround from "../components/TitleBackground";
 import newsData from "../assets/news.json";
 import NewsItem from "../components/NewsItem";
 

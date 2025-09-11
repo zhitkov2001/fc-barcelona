@@ -2,7 +2,7 @@ import React from "react";
 
 import PlayerItem from "../components/PlayerItem";
 import PlayersData from "../assets/players.json";
-import TitleBackround from "../components/TitleBackground/TitleBackground";
+import TitleBackround from "../components/TitleBackground";
 
 function Players() {
   const firstTeamNav = [

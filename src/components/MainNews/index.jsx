@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./mainNews.module.scss"
+
 import MainNewsItems from "../MainNewsItems";
 import MainNewsData from "../../assets/news.json";
 
@@ -9,9 +11,9 @@ function MainNews() {
 
   return (
     <>
-      <section className="main__news">
-        <h1 className="main__title">FC Barcelona Fan Page</h1>
-        <div className="main__news-container">
+      <section className={styles["main__news"]}>
+        <h1 className={styles["main__title"]}>FC Barcelona Fan Page</h1>
+        <div className={styles["main__news-container"]}>
           {MainNewsData.slice(0, 3).map((news, index) => (
             <MainNewsItems
               key={news.id}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import TitleBackround from "../components/TitleBackground/TitleBackground";
+import TitleBackround from "../components/TitleBackground";
 import matchData from "../assets/schedule";
 import MatchItem from "../components/MatchItem";
 

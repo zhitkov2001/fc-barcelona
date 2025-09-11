@@ -2,13 +2,11 @@
   display: block;
   min-height: 100vh;
   margin-bottom: 50px;
-
   background-image: url(./../../assets/img/news_bg.webp);
 }
 
 .main__title {
   padding: 50px 0;
-
   text-align: center;
   font-family: "Nunito";
   font-weight: 700;
@@ -18,107 +16,11 @@
 
 .main__news-container {
   display: flex;
-
   justify-content: center;
   overflow: hidden;
   margin: 0 auto;
-
   width: 1350px;
   height: 550px;
-
-  & a {
-    position: relative;
-    display: block;
-    width: 33.33333%;
-    height: 100%;
-
-    transition: all 0.4s;
-
-    &.active {
-      width: 100%;
-      transition: all 0.4s;
-    }
-
-    &:hover .main__news-img {
-      filter: brightness(80%);
-      transition: all 0.4s;
-    }
-
-    &:hover .main__news-info {
-      height: 130px;
-      transition: all 0.4s;
-    }
-
-    &:hover .main__news-title {
-      height: 50%;
-      transition: all 0.4s;
-    }
-
-    &:hover .main__news-subtitle {
-      height: 45%;
-      transition: all 0.4s;
-    }
-  }
 }
 
-.main__news-img {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  filter: brightness(100%);
 
-  transition: all 0.4s;
-}
-
-.main__news-info {
-  position: absolute;
-  display: block;
-
-  bottom: 0;
-  height: 8rem;
-  width: 100%;
-
-  font-family: monospace;
-  color: #fff;
-
-  background: linear-gradient(
-    180deg,
-    rgba(8, 14, 31, 0.4),
-    rgba(8, 14, 31, 0) 0%,
-    #080e1f 100%,
-    #080e1f
-  );
-
-  transition: all 0.4s;
-}
-
-.main__news-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-
-  font-size: 28px;
-  font-weight: 600;
-
-  transition: all 0.4s;
-}
-
-.main__news-subtitle {
-  width: 100%;
-  padding: 15px 20px 0px 20px;
-
-  // text-align: center;
-  font-size: 15px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  transition: all 0.4s;
-}

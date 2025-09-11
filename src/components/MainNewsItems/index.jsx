@@ -1,21 +1,22 @@
-import React from "react";
 import { Link } from "react-router-dom";
+
+import styles from "./mainNewsItems.module.scss"
 
 function MainNewsItems({ isActive, onMouseEnter, ...news }) {
   return (
     <Link
-      className={isActive ? "active" : ""}
+      className={`${styles["main__news-item"]} ${isActive ? styles.active : ""}`}
       onMouseEnter={onMouseEnter}
       to={`/newspage/${news.id}`}
     >
       <img
-        className="main__news-img"
+        className={styles["main__news-img"]}
         alt={news.title}
         src={`/img/News/${news.img}.webp`}
       />
-      <div className="main__news-info">
-        <p className="main__news-title">{news.title}</p>
-        <p className="main__news-subtitle">{news.subtitle}</p>
+      <div className={styles["main__news-info"]}>
+        <p className={styles["main__news-title"]}>{news.title}</p>
+        <p className={styles["main__news-subtitle"]}>{news.subtitle}</p>
       </div>
     </Link>
   );

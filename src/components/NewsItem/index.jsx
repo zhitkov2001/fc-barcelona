@@ -1,7 +1,7 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./NewsItem.module.scss";
+import styles from "./newsItem.module.scss";
 
 function NewsItem(news) {
   return (
