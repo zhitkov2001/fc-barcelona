@@ -132,13 +132,13 @@ const Standings = () => {
   };
 
   return (
-    <section className="standings">
-      <TitleBackround title="Standings" />
-      <div className="container">
-        <div className="standings-selector___container">
+    <section className='standings'>
+      <TitleBackround title='Standings' />
+      <div className='container'>
+        <div className='standings-selector___container'>
           {/* League Selector */}
-          <div className="league__selector">
-            <div className="league__dropdown">
+          <div className='league__selector'>
+            <div className='league__dropdown'>
               <div
                 onClick={() => toggleLeagueDropdown()}
                 className={`dropdown__selected ${
@@ -148,7 +148,7 @@ const Standings = () => {
                 <img
                   src={`../img/Competition/${leagueData.img}.png`}
                   alt={leagueData.title}
-                  className="standings-competition__img"
+                  className='standings-competition__img'
                 />
                 <span
                   className={`dropdown__arrow ${
@@ -159,7 +159,7 @@ const Standings = () => {
                 </span>
               </div>
               {leagueDropdown && (
-                <div className="dropdown__options">
+                <div className='dropdown__options'>
                   {leagues.map((league) => {
                     const leagueInfo = StandingsData[league];
                     return (
@@ -173,9 +173,9 @@ const Standings = () => {
                         <img
                           src={`../img/Competition/${leagueInfo.img}.png`}
                           alt={leagueInfo.title}
-                          className="standings-competition__img"
+                          className='standings-competition__img'
                         />
-                        <span className="standings-competition__title">
+                        <span className='standings-competition__title'>
                           {leagueInfo.title}
                         </span>
                       </div>
@@ -188,8 +188,8 @@ const Standings = () => {
           {/* //League Selector  */}
 
           {/* Season Selector */}
-          <div className="season__selector">
-            <div className="season__dropdown">
+          <div className='season__selector'>
+            <div className='season__dropdown'>
               <div
                 onClick={() => toggleSeasonDropdown()}
                 className={`dropdown__selected ${
@@ -206,7 +206,7 @@ const Standings = () => {
                 </span>
               </div>
               {seasonDropdown && (
-                <div className="dropdown__options">
+                <div className='dropdown__options'>
                   {leagueData.seasons.map((season, index) => (
                     <div
                       key={season.year}
@@ -224,22 +224,22 @@ const Standings = () => {
           </div>
           {/* //Season Selector */}
 
-          <div className="standings__info">
-            <p className="standings-competition__info">
+          <div className='standings__info'>
+            <p className='standings-competition__info'>
               <b>
                 {leagueData.title} {currentSeason.year}
               </b>{" "}
               season
             </p>
-            <p className="standings-date__update">
-              Last updated: 02.06.25 14:40 PM
+            <p className='standings-date__update'>
+              Last updated: {leagueData.updatedAt}
             </p>
           </div>
         </div>
 
         {/* Round Navigation */}
         {currentSeason.playOff && (
-          <div className="round-navigation">
+          <div className='round-navigation'>
             <button
               className={`round-btn ${
                 selectedRound === "league" ? "active" : ""
@@ -262,25 +262,25 @@ const Standings = () => {
           </div>
         )}
 
-        <div className="table__container">
+        <div className='table__container'>
           {selectedRound === "league" ? (
             hasGroups() ? (
-              <div className="groups-container">
+              <div className='groups-container'>
                 {Object.entries(currentSeason.groups).map(
                   ([groupName, teams]) => (
-                    <div key={groupName} className="group-table">
-                      <h3 className="group-title">{`Group ${groupName}`}</h3>
-                      <table className="standings__table">
-                        <thead className="standings-table__head">
-                          <tr className="table-head__row">
+                    <div key={groupName} className='group-table'>
+                      <h3 className='group-title'>{`Group ${groupName}`}</h3>
+                      <table className='standings__table'>
+                        <thead className='standings-table__head'>
+                          <tr className='table-head__row'>
                             {tableHeadItems.map((item, index) => (
-                              <td key={index} className="table-head__item">
+                              <td key={index} className='table-head__item'>
                                 {item}
                               </td>
                             ))}
                           </tr>
                         </thead>
-                        <tbody className="standings-table__body">
+                        <tbody className='standings-table__body'>
                           {teams.map((team) => (
                             <TableItem
                               key={`${team.id}-${team.title}`}
@@ -295,17 +295,17 @@ const Standings = () => {
               </div>
             ) : (
               // Render single group
-              <table className="standings__table">
-                <thead className="standings-table__head">
-                  <tr className="table-head__row">
+              <table className='standings__table'>
+                <thead className='standings-table__head'>
+                  <tr className='table-head__row'>
                     {tableHeadItems.map((item, index) => (
-                      <td key={index} className="table-head__item">
+                      <td key={index} className='table-head__item'>
                         {item}
                       </td>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="standings-table__body">
+                <tbody className='standings-table__body'>
                   {currentSeason.group.map((team) => (
                     <TableItem key={`${team.id}-${team.title}`} {...team} />
                   ))}
@@ -313,49 +313,49 @@ const Standings = () => {
               </table>
             )
           ) : (
-            <div className="playoff-matches">
-              <h3 className="playoff-matches__title">
+            <div className='playoff-matches'>
+              <h3 className='playoff-matches__title'>
                 {getCurrentRoundTitle()}
               </h3>
-              <div className="playoff-matches__container">
+              <div className='playoff-matches__container'>
                 {transformToPlayoffMatches(
                   currentSeason.playOff[selectedRound]
                 ).map((couple, index) => (
-                  <div key={index} className="playoff-couple">
-                    <div className="playoff-couple__header">
-                      <div className="team-with-logo">
+                  <div key={index} className='playoff-couple'>
+                    <div className='playoff-couple__header'>
+                      <div className='team-with-logo'>
                         <img
-                          className="team-logo"
+                          className='team-logo'
                           src={`../img/teams/${couple.homeTeam.img}.png`}
                           alt={couple.homeTeam.name}
                         />
-                        <span className="team-title">
+                        <span className='team-title'>
                           {couple.homeTeam.name}
                         </span>
                       </div>
-                      <div className="score-container">
-                        <span className="aggregate-score">{`${couple.homeAggregate} - ${couple.awayAggregate}`}</span>
-                        <p className="score-info">
+                      <div className='score-container'>
+                        <span className='aggregate-score'>{`${couple.homeAggregate} - ${couple.awayAggregate}`}</span>
+                        <p className='score-info'>
                           {couple.isDraw &&
                             couple.penalty &&
                             ` (penalty: ${couple.penalty})`}
                         </p>
-                        <p className="score-info">
+                        <p className='score-info'>
                           {couple.overtime && ` (O.T)`}
                         </p>
                       </div>
-                      <div className="team-with-logo">
+                      <div className='team-with-logo'>
                         <img
-                          className="team-logo"
+                          className='team-logo'
                           src={`../img/teams/${couple.awayTeam.img}.png`}
                           alt={couple.awayTeam.name}
                         />
-                        <span className="team-title">
+                        <span className='team-title'>
                           {couple.awayTeam.name}
                         </span>
                       </div>
                     </div>
-                    <div className="playoff-matches-list">
+                    <div className='playoff-matches-list'>
                       {couple.matches.map((match) => (
                         <PlayOffItem key={match.id} match={match} />
                       ))}
