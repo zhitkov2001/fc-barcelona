@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "./mainNews.module.scss"
+import styles from "./mainNews.module.scss";
 
 import MainNewsItems from "../MainNewsItems";
-import MainNewsData from "../../assets/news.json";
+import MainNewsData from "../../data/news.json";
 
 function MainNews() {
   const centralIndex = 1;

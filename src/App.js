@@ -15,24 +15,26 @@ import PlayerPage from "./pages/PlayerPage";
 import Matches from "./pages/Matches";
 import MatchPage from "./pages/MatchPage";
 import Standings from "./pages/Standings";
+import Tournaments from "./pages/Tournaments";
 import News from "./pages/News";
 
 import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <ScrollToTop />
-      <main className="main">
+      <main className='main'>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/players" element={<Players />} />
-          <Route path="/players/:id" element={<PlayerPage />} />
-          <Route path="/matches" element={<Matches />} />
-          <Route path="/matches/:id" element={<MatchPage />} />
-          <Route path="/standings" element={<Standings />} />
-          <Route path="/news" element={<News />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/players' element={<Players />} />
+          <Route path='/players/:id' element={<PlayerPage />} />
+          <Route path='/matches' element={<Matches />} />
+          <Route path='/matches/:id' element={<MatchPage />} />
+          <Route path='/standings' element={<Standings />} />
+          <Route path='/tournaments' element={<Tournaments />} />
+          <Route path='/news' element={<News />} />
         </Routes>
       </main>
       <Partners />

@@ -3,33 +3,36 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="header">
-      <div className="container">
-        <Link to="/" className="header__logo">
+    <header className='header'>
+      <div className='container'>
+        <Link to='/' className='header__logo'>
           <img
             src={`${process.env.PUBLIC_URL}/img/barca_logo(60px).webp`}
-            alt="Barcelona Logo"
+            alt='Barcelona Logo'
           />
         </Link>
-        <nav className="nav">
-          <Link className="nav__link" to="/players">
+        <nav className='nav'>
+          <Link className='nav__link' to='/players'>
             Players
           </Link>
-          <Link className="nav__link" to="/matches">
+          <Link className='nav__link' to='/matches'>
             Matches
           </Link>
-          <Link className="nav__link" to="/standings">
+          <Link className='nav__link' to='/standings'>
             Standings
           </Link>
-          <Link className="nav__link" to="/news">
+          <Link className='nav__link' to='/standingsNew'>
+            StandingsNew
+          </Link>
+          <Link className='nav__link' to='/news'>
             News
           </Link>
         </nav>
-        <div className="profile">
-          <a className="nav__link" id="profile" href="!#">
+        <div className='profile'>
+          <a className='nav__link' id='profile' href='!#'>
             Login
           </a>
-          <a className="nav__link" id="profile" href="!#">
+          <a className='nav__link' id='profile' href='!#'>
             Sign in
           </a>
         </div>

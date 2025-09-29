@@ -1,6 +1,6 @@
 import React from "react";
 
-import sponsorsData from "../../assets/sponsors.json";
+import sponsorsData from "../../data/sponsors.json";
 import styles from "./sponsors.module.scss";
 
 const Sponsors = () => {
@@ -47,8 +47,8 @@ const Sponsors = () => {
               <a
                 className={styles.slide__link}
                 href={sponsor.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <img
                   className={styles.slide__img}

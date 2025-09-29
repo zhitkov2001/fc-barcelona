@@ -1,7 +1,7 @@
 import React from "react";
 
 import TitleBackround from "../components/TitleBackground";
-import StandingsData from "../assets/standings.json";
+import StandingsData from "../data/standings.json";
 import TableItem from "../components/TableItem";
 import PlayOffItem from "../components/PlayOffItem/";
 
