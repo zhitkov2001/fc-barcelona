@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./playOffItem.module.scss";
+import styles from "./PlayOffItem.module.scss";
 
 const PlayOffItem = ({ match }) => {
   console.log(match);

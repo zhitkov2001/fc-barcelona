@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./matchItem.module.scss";
+import styles from "./MatchItem.module.scss";
 
 const MatchItem = (match) => {
   return (

@@ -21,8 +21,8 @@ function Header() {
           <Link className='nav__link' to='/standings'>
             Standings
           </Link>
-          <Link className='nav__link' to='/standingsNew'>
-            StandingsNew
+          <Link className='nav__link' to='/tournaments'>
+            Tournaments
           </Link>
           <Link className='nav__link' to='/news'>
             News

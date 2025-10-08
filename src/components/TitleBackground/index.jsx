@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./titleBackground.module.scss";
+import styles from "./TitleBackground.module.scss";
 
 const TitleBackround = ({ title }) => {
   return (
-    <div className={styles.root}>
+    <div className={styles["title-background"]}>
       <h2 className={styles.title}>{title}</h2>
     </div>
   );

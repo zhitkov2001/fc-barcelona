@@ -1,21 +1,22 @@
 @import "./libs/normalize";
 
-@import "./components/first-team-content";
 @import "./components/footer";
 @import "./components/header";
-@import "../components/ClubNews/ClubNews.module.scss";
-@import "./components/partners";
-@import "./components/player-page";
-@import "./components/playerItem";
-@import "../components/MainNews/MainNews.module.scss";
+@import "./components/match-page";
 @import "./components/matches";
-@import "./components/matchPage";
+@import "./components/news";
+@import "./components/partners";
+@import "./components/player-item";
+@import "./components/player-page";
+@import "./components/players";
 @import "./components/section-schedule";
 @import "./components/social";
 @import "./components/standings";
-@import "./components/news";
+@import "./components/tournaments";
 
 html {
+  filter: brightness(0.8);
+
   font-family: "Nunito";
   background-color: $dark-blue;
 }

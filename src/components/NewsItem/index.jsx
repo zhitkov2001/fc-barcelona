@@ -1,7 +1,7 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./newsItem.module.scss";
+import styles from "./NewsItem.module.scss";
 
 function NewsItem(news) {
   return (
@@ -26,8 +26,8 @@ function NewsItem(news) {
             <div className={styles["news__date-info"]}>
               <img
                 className={styles.news__icon}
-                src="../img/time.svg"
-                alt="time"
+                src='../img/time.svg'
+                alt='time'
               />
               <p className={styles.news__date}>{news.date}</p>
               <p className={styles.news__month}>{news.month}</p>

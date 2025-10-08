@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./mainNews.module.scss";
+import styles from "./MainNews.module.scss";
 
-import MainNewsItems from "../MainNewsItems";
+import MainNewsItems from "../MainNewsItem";
 import MainNewsData from "../../data/news.json";
 
 function MainNews() {

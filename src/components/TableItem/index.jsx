@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./tableItem.module.scss";
+import styles from "./TableItem.module.scss";
 
 function TableItem(team) {
   const getStatus = () => {

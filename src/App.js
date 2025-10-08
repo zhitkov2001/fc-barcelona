@@ -15,7 +15,7 @@ import PlayerPage from "./pages/PlayerPage";
 import Matches from "./pages/Matches";
 import MatchPage from "./pages/MatchPage";
 import Standings from "./pages/Standings";
-import Tournaments from "./pages/Tournaments";
+import Tournaments from "./pages/Tournaments/index";
 import News from "./pages/News";
 
 import ScrollToTop from "./utils/ScrollToTop";

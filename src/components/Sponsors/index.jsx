@@ -1,7 +1,7 @@
 import React from "react";
 
 import sponsorsData from "../../data/sponsors.json";
-import styles from "./sponsors.module.scss";
+import styles from "./Sponsors.module.scss";
 
 const Sponsors = () => {
   const sliderTrackRef = React.useRef(null);

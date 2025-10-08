@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 
-import styles from "./mainNewsItems.module.scss"
+import styles from "./MainNewsItem.module.scss";
 
 function MainNewsItems({ isActive, onMouseEnter, ...news }) {
   return (
     <Link
-      className={`${styles["main__news-item"]} ${isActive ? styles.active : ""}`}
+      className={`${styles["main__news-item"]} ${
+        isActive ? styles.active : ""
+      }`}
       onMouseEnter={onMouseEnter}
       to={`/newspage/${news.id}`}
     >

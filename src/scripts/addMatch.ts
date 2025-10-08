@@ -1,5 +1,5 @@
-import TestStandingsData from "../data/TESTSTANDINGS.json";
-import { addMatchWithStats } from "../utils/addMatchWithStats";
+import TestStandingsData from "../data/tournaments/ucl.json";
+import { addMatchWithStats } from "../utils/Tournaments/addMatchWithStats";
 import fs from "fs";
 import path from "path";
 
@@ -21,7 +21,7 @@ function main() {
 
   try {
     // Проверяем структуру перед началом
-    if (!TestStandingsData.ucl?.seasons?.["2025/26"]?.teams) {
+    if (!TestStandingsData.seasons?.["2025/26"]?.teams) {
       throw new Error("Неверная структура JSON файла");
     }
 
