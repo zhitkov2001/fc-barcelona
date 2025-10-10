@@ -1,7 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = React.useState(location.pathname);
+
+  React.useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
+
+  const isActive = (path) => activeLink === path;
+
+  console.log(activeLink);
+
   return (
     <header className='header'>
       <div className='container'>
@@ -12,19 +23,39 @@ function Header() {
           />
         </Link>
         <nav className='nav'>
-          <Link className='nav__link' to='/players'>
+          <Link
+            className={`nav__link ${isActive("/players") ? "active" : ""}`}
+            to='/players'
+            onClick={() => setActiveLink("/players")}
+          >
             Players
           </Link>
-          <Link className='nav__link' to='/matches'>
+          <Link
+            className={`nav__link ${isActive("/matches") ? "active" : ""}`}
+            to='/matches'
+            onClick={() => setActiveLink("/matches")}
+          >
             Matches
           </Link>
-          <Link className='nav__link' to='/standings'>
+          <Link
+            className={`nav__link ${isActive("/standings") ? "active" : ""}`}
+            to='/standings'
+            onClick={() => setActiveLink("/standings")}
+          >
             Standings
           </Link>
-          <Link className='nav__link' to='/tournaments'>
+          <Link
+            className={`nav__link ${isActive("/tournaments") ? "active" : ""}`}
+            to='/tournaments'
+            onClick={() => setActiveLink("/tournaments")}
+          >
             Tournaments
           </Link>
-          <Link className='nav__link' to='/news'>
+          <Link
+            className={`nav__link ${isActive("/news") ? "active" : ""}`}
+            to='/news'
+            onClick={() => setActiveLink("/news")}
+          >
             News
           </Link>
         </nav>

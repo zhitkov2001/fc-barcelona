@@ -2,11 +2,50 @@
   .container {
     display: block;
     margin: 50px auto;
-    padding: 50px;
+    padding: 40px;
     width: 80vw;
     min-height: 100vh;
 
     border-radius: 10px;
     background-color: #fff;
+
+    .group__container {
+      .standings__table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+
+        .standings-table__head {
+          height: 30px;
+          text-align: center;
+
+          color: #141e5e;
+          font-size: 14px;
+          font-weight: 700;
+
+          .table-head__row {
+            position: relative;
+            width: 100%;
+            .table-head__item {
+              &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(
+                  270deg,
+                  #9b0041 0,
+                  #9b0041 49%,
+                  #0018b4 51%,
+                  #0018b4
+                );
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

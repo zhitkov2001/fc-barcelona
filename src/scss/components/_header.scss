@@ -55,7 +55,7 @@
   color: hsla(0, 0%, 100%, 1);
   text-decoration: none;
 
-  background-image: linear-gradient(#fff648, #fff648);
+  background-image: linear-gradient(#fdc52c, #fdc52c);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -66,6 +66,12 @@
     color: hsl(0, 0%, 91%);
     background-size: 100% 2px;
     transition: all 0.2s ease;
+  }
+
+  &.active {
+    color: #fdc52c;
+    background-size: 0% 2px;
+    transition: all 0.3s ease;
   }
 }
 

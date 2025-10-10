@@ -1,41 +1,19 @@
 import React from "react";
-
 import styles from "./TournamentsSelector.module.scss";
-
-import listImg from "../../assets/img/list.svg";
 import reset from "../../assets/img/reset.svg";
 
-import LaLigaData from "../../data/tournaments/laliga";
-import UclData from "../../data/tournaments/ucl.json";
-
-const TournamentsSelector = () => {
-  // const seasonList = ["2025/26", "2024/25", "2023/24", "2022/23", "2021/22"];
-  const TournamentsData = {
-    "La Liga": LaLigaData,
-    "UEFA Champions League": UclData,
-  };
-
-  const [selectedLeague, setSelectedLeague] = React.useState("La Liga");
-  const [selectedSeason, setSelectedSeason] = React.useState("");
+const TournamentsSelector = ({
+  selectedLeague,
+  selectedSeason,
+  onLeagueChange,
+  onSeasonChange,
+  onReset,
+  tournamentsData,
+  availableSeasons,
+}) => {
   const [leagueDropdown, setLeagueDropdown] = React.useState(false);
   const [seasonDropdown, setSeasonDropdown] = React.useState(false);
-
-  const availableSeasons = React.useMemo(() => {
-    const leagueData = TournamentsData[selectedLeague];
-    if (leagueData && leagueData.seasons) {
-      return Object.keys(leagueData.seasons);
-    }
-    return [];
-  }, [selectedLeague]);
-
-  React.useEffect(() => {
-    if (
-      availableSeasons.length > 0 &&
-      !availableSeasons.includes(selectedSeason)
-    ) {
-      setSelectedSeason(availableSeasons[0]);
-    }
-  });
+  const selectorRef = React.useRef(null);
 
   const toggleLeagueDropdown = () => {
     setLeagueDropdown(!leagueDropdown);
@@ -47,15 +25,32 @@ const TournamentsSelector = () => {
     setLeagueDropdown(false);
   };
 
-  const resetFilter = () => {
-    setSelectedLeague("La Liga");
-    setSelectedSeason(availableSeasons[0]);
+  const handleLeagueSelect = (league) => {
+    onLeagueChange(league);
+    setLeagueDropdown(false);
   };
 
-  return (
-    <div className={styles["tournaments-selector"]}>
-      {/* <img src={listImg} alt='list' className={styles["selector-img"]} /> */}
+  const handleSeasonSelect = (season) => {
+    onSeasonChange(season);
+    setSeasonDropdown(false);
+  };
 
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (selectorRef.current && !selectorRef.current.contains(event.target)) {
+        setLeagueDropdown(false);
+        setSeasonDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div ref={selectorRef} className={styles["tournaments-selector"]}>
       <div className={styles["selector-options"]}>
         {/* Liga selector */}
         <div
@@ -67,9 +62,9 @@ const TournamentsSelector = () => {
           {leagueDropdown && (
             <div className={styles["selector-dropdown"]}>
               <ul className={styles.dropdown__list}>
-                {Object.entries(TournamentsData).map(([id, league]) => (
+                {Object.entries(tournamentsData).map(([id, league]) => (
                   <li
-                    onClick={() => setSelectedLeague(league.title)}
+                    onClick={() => handleLeagueSelect(league.title)}
                     key={id}
                     className={`${styles.dropdown__item} ${
                       selectedLeague === league.title ? styles.active : ""
@@ -95,7 +90,7 @@ const TournamentsSelector = () => {
               <ul className={styles.dropdown__list}>
                 {availableSeasons.map((season) => (
                   <li
-                    onClick={() => setSelectedSeason(season)}
+                    onClick={() => handleSeasonSelect(season)}
                     key={season}
                     className={`${styles.dropdown__item} ${
                       selectedSeason === season ? styles.active : ""
@@ -109,7 +104,7 @@ const TournamentsSelector = () => {
           )}
         </div>
       </div>
-      <button onClick={resetFilter} className={styles["selector__btn"]}>
+      <button onClick={onReset} className={styles["selector__btn"]}>
         <img src={reset} alt='reset' className={styles["selector__btn-img"]} />
         <p>RESET</p>
       </button>

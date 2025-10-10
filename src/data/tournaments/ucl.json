@@ -1,9 +1,9 @@
 {
   "title": "UEFA Champions League",
   "img": "UCL",
+  "updatedAt": "25.09.25 5:06 PM",
   "seasons": {
     "2025/26": {
-      "updatedAt": "25.09.25 5:06 PM",
       "year": "2025/26",
       "groupStage": [],
       "playOff": [],
@@ -467,7 +467,6 @@
       ]
     },
     "2024/25": {
-      "updatedAt": "25.09.25 5:06 PM",
       "year": "2024/25",
       "groupStage": [],
       "playOff": [],
