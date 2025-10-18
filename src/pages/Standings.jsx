@@ -2,8 +2,8 @@ import React from "react";
 
 import TitleBackround from "../components/TitleBackground";
 import StandingsData from "../data/standings.json";
-import TableItem from "../components/TableItem";
-import PlayOffItem from "../components/PlayOffItem/";
+import TableItem from "../components/Tournaments/TableItem";
+import PlayOffItem from "../components/Tournaments/PlayOffItem";
 
 const Standings = () => {
   const [selectedLeague, setSelectedLeague] = React.useState("laliga");

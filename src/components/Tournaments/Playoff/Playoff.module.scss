@@ -1,0 +1,33 @@
+.playoff {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  gap: 4px;
+}
+
+.round__container {
+  position: relative;
+  display: grid;
+  gap: 22px;
+  height: 100%;
+}
+
+.playoff__title {
+  position: absolute;
+  text-align: start;
+  top: 0;
+}
+
+.round__couple {
+  display: block;
+  align-content: center;
+
+  .couple {
+  }
+
+  &:first-of-type {
+    margin-top: 60px;
+  }
+}

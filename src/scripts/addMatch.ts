@@ -21,7 +21,7 @@ function main() {
 
   try {
     // Проверяем структуру перед началом
-    if (!TestStandingsData.seasons?.["2025/26"]?.teams) {
+    if (!TestStandingsData.seasons?.["2025/26"]?.groupStage) {
       throw new Error("Неверная структура JSON файла");
     }
 

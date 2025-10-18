@@ -1,0 +1,33 @@
+.round-selector {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+  padding: 6px 8px;
+  max-width: 270px;
+
+  border: 1px solid #141e5e;
+  border-radius: 16px;
+  background-color: #e0e0e0;
+}
+
+.selector__item {
+  padding: 8px 12px;
+
+  border: 1px solid #141e5e;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+
+  color: #141e5e;
+
+  cursor: pointer;
+
+  &.active {
+    background-color: #141e5e;
+
+    color: #f6f6f6;
+  }
+}

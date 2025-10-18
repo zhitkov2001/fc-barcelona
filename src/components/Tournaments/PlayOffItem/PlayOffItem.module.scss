@@ -1,0 +1,87 @@
+.playoff-match {
+  padding: 6px 0;
+  width: 100%;
+  border: 1px solid #0f1585;
+
+  .match__header {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .team__container {
+      display: grid;
+      justify-content: center;
+
+      gap: 6px;
+      width: 120px;
+      height: 60px;
+
+      .team__logo {
+        width: 50px;
+        max-height: 60px;
+
+        margin: auto;
+      }
+    }
+    .match-score__container {
+      text-align: center;
+      width: 48px;
+
+      .match__score {
+        margin-bottom: -8px;
+
+        .score__value {
+          font-size: 20px;
+          font-weight: 600;
+          color: #0f1585;
+          line-height: 1;
+        }
+        .extratime__value {
+          margin-top: -2px;
+
+          font-size: 14px;
+          font-weight: 400;
+          color: #353992;
+          line-height: 1;
+          letter-spacing: -0.06em;
+        }
+      }
+    }
+  }
+
+  .match__container {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #0f1585;
+    .match__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 120px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #0f1585;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      .score {
+        text-align: center;
+        width: 48px;
+
+        font-size: 20px;
+        font-weight: 600;
+        color: #0f1585;
+        line-height: 1;
+      }
+    }
+  }
+}

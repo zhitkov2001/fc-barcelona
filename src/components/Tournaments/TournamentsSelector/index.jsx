@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TournamentsSelector.module.scss";
-import reset from "../../assets/img/reset.svg";
+import reset from "../../../assets/img/reset.svg";
 
 const TournamentsSelector = ({
   selectedLeague,

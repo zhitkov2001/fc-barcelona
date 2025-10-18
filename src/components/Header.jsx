@@ -11,8 +11,6 @@ function Header() {
 
   const isActive = (path) => activeLink === path;
 
-  console.log(activeLink);
-
   return (
     <header className='header'>
       <div className='container'>

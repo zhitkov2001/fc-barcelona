@@ -72,6 +72,23 @@
     color: #fdc52c;
     background-size: 0% 2px;
     transition: all 0.3s ease;
+    animation: gradientShrink 0.2s ease forwards;
+  }
+
+  @keyframes gradientShrink {
+    0% {
+      background-size: 100% 2px;
+      background-position: 0% 100%;
+    }
+    50% {
+      background-size: 60% 2px;
+      background-position: 50% 100%;
+    }
+    100% {
+      background-size: 0% 2px;
+      background-position: 50% 80%;
+      background-image: linear-gradient(#fdc52c, #fdc52c);
+    }
   }
 }
 
