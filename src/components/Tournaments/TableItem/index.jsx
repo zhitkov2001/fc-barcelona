@@ -10,42 +10,37 @@ function TableItem(team) {
     return "transparent";
   };
 
+  const points = team.stats.wins * 3 + team.stats.draws;
+  const played = team.stats.wins + team.stats.draws + team.stats.losses;
+  const goalDifference = team.stats.scored - team.stats.missed;
+
   return (
     <tr
       className={styles.tableItem}
       style={{ "--row-accent-color": getStatus() }}
     >
       <th className={styles.position}>{team.position}</th>
-      <th className={styles.teamContainer}>
-        {team.image === "" || !team.image ? (
-          <div className={styles.teamImgContainer}>
-            <img
-              src={`../img/Teams/default.png`}
-              alt={team.title}
-              className={styles.teamImg}
-            />
-          </div>
-        ) : (
-          <div className={styles.teamImgContainer}>
-            <img
-              src={`../img/Teams/${team.image}.png`}
-              alt={team.title}
-              className={styles.teamImg}
-            />
-          </div>
-        )}
+      <th className={styles.team__сontainer}>
+        <div className={styles.team__img__container}>
+          <img
+            src={`../img/Teams/${team.image || "default"}.png`}
+            alt={team.title}
+            className={styles.team__img}
+          />
+        </div>
+
         <p className={styles.teamTitle}>{team.title}</p>
       </th>
       <th className={styles.points}>
-        <b>{team.wins * 3 + team.draws}</b>
+        <b>{points}</b>
       </th>
-      <th className={styles.stats}>{team.wins + team.draws + team.losses}</th>
-      <th className={styles.stats}>{team.wins}</th>
-      <th className={styles.stats}>{team.draws}</th>
-      <th className={styles.stats}>{team.losses}</th>
-      <th className={styles.stats}>{team.scored}</th>
-      <th className={styles.stats}>{team.missed}</th>
-      <th className={styles.stats}>{team.scored - team.missed}</th>
+      <th className={styles.stats}>{played}</th>
+      <th className={styles.stats}>{team.stats.wins}</th>
+      <th className={styles.stats}>{team.stats.draws}</th>
+      <th className={styles.stats}>{team.stats.losses}</th>
+      <th className={styles.stats}>{team.stats.scored}</th>
+      <th className={styles.stats}>{team.stats.missed}</th>
+      <th className={styles.stats}>{goalDifference}</th>
     </tr>
   );
 }
