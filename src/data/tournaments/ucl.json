@@ -2,8 +2,475 @@
   "title": "UEFA Champions League",
   "image": "UCL",
   "type": "championship",
-  "updatedAt": "2025-09-25T17:06:00+02:00",
+  "updatedAt": "2025-11-04T17:06:00+02:00",
   "seasons": {
+    "2025/26": {
+      "teams": [
+        { "id": 1, "title": "Ajax", "image": "Ajax" },
+        { "id": 2, "title": "Arsenal", "image": "Arsenal" },
+        { "id": 3, "title": "Atalanta", "image": "Atalanta" },
+        { "id": 4, "title": "Athletic Bilbao", "image": "AthleticBilbao" },
+        { "id": 5, "title": "Atletico Madrid", "image": "AtleticoMadrid" },
+        { "id": 6, "title": "B. Dortmund", "image": "Borussia" },
+        { "id": 7, "title": "Barcelona", "image": "Barcelona" },
+        { "id": 8, "title": "Bayer", "image": "Bayer" },
+        { "id": 9, "title": "Bayern Munchen", "image": "Bayern" },
+        { "id": 10, "title": "Benfica", "image": "Benfica" },
+        { "id": 11, "title": "Bodo-Glimt", "image": "BodoGlimt" },
+        { "id": 12, "title": "Brugge", "image": "Brugge" },
+        { "id": 13, "title": "Chelsea", "image": "Chelsea" },
+        { "id": 14, "title": "Copenhagen", "image": "Copenhagen" },
+        { "id": 15, "title": "Frankfurt", "image": "Frankfurt" },
+        { "id": 16, "title": "Galatasaray", "image": "Galatasaray" },
+        { "id": 17, "title": "Inter", "image": "Inter" },
+        { "id": 18, "title": "Juventus", "image": "Juventus" },
+        { "id": 19, "title": "Kairat", "image": "Kairat" },
+        { "id": 20, "title": "Liverpool", "image": "Liverpool" },
+        { "id": 21, "title": "Manchester City", "image": "ManchesterCity" },
+        { "id": 22, "title": "Marseille", "image": "Marseille" },
+        { "id": 23, "title": "Monaco", "image": "Monaco" },
+        { "id": 24, "title": "Napoli", "image": "Napoli" },
+        { "id": 25, "title": "Newcastle", "image": "Newcastle" },
+        { "id": 26, "title": "Olympiacos", "image": "Olympiacos" },
+        { "id": 27, "title": "PSG", "image": "PSG" },
+        { "id": 28, "title": "PSV Eindhoven", "image": "PSV" },
+        { "id": 29, "title": "Pafos", "image": "Pafos" },
+        { "id": 30, "title": "Qarabag", "image": "Qarabag" },
+        { "id": 31, "title": "Real Madrid", "image": "RealMadrid" },
+        { "id": 32, "title": "SlaviaPraha", "image": "SlaviaPraha" },
+        { "id": 33, "title": "Sporting", "image": "Sporting" },
+        { "id": 34, "title": "Tottenham", "image": "Tottenham" },
+        { "id": 35, "title": "UnionSG", "image": "UnionSG" },
+        { "id": 36, "title": "Villarreal", "image": "Villarreal" }
+      ],
+      "stages": {
+        "league": [
+          {
+            "teamId": 1,
+            "stats": {
+              "position": 36,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "scored": 1,
+              "missed": 11
+            }
+          },
+          {
+            "teamId": 2,
+            "stats": {
+              "position": 4,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "scored": 8,
+              "missed": 0
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 3,
+            "stats": {
+              "position": 17,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "scored": 2,
+              "missed": 5
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 4,
+            "stats": {
+              "position": 21,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 4,
+              "missed": 7
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 5,
+            "stats": {
+              "position": 19,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 7,
+              "missed": 8
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 6,
+            "stats": {
+              "position": 6,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "scored": 12,
+              "missed": 7
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 7,
+            "stats": {
+              "position": 9,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 9,
+              "missed": 4
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 8,
+            "stats": {
+              "position": 30,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "scored": 5,
+              "missed": 10
+            }
+          },
+          {
+            "teamId": 9,
+            "stats": {
+              "position": 2,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "scored": 12,
+              "missed": 2
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 10,
+            "stats": {
+              "position": 35,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "scored": 2,
+              "missed": 7
+            }
+          },
+          {
+            "teamId": 11,
+            "stats": {
+              "position": 26,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "scored": 5,
+              "missed": 7
+            }
+          },
+          {
+            "teamId": 12,
+            "stats": {
+              "position": 20,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 5,
+              "missed": 7
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 13,
+            "stats": {
+              "position": 11,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 7,
+              "missed": 4
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 14,
+            "stats": {
+              "position": 32,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "scored": 4,
+              "missed": 8
+            }
+          },
+          {
+            "teamId": 15,
+            "stats": {
+              "position": 22,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 7,
+              "missed": 11
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 16,
+            "stats": {
+              "position": 14,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 5,
+              "missed": 6
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 17,
+            "stats": {
+              "position": 3,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "scored": 9,
+              "missed": 0
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 18,
+            "stats": {
+              "position": 25,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "scored": 6,
+              "missed": 7
+            }
+          },
+          {
+            "teamId": 19,
+            "stats": {
+              "position": 34,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "scored": 1,
+              "missed": 9
+            }
+          },
+          {
+            "teamId": 20,
+            "stats": {
+              "position": 10,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 8,
+              "missed": 4
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 21,
+            "stats": {
+              "position": 7,
+              "wins": 2,
+              "draws": 1,
+              "losses": 0,
+              "scored": 6,
+              "missed": 2
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 22,
+            "stats": {
+              "position": 18,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 6,
+              "missed": 4
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 23,
+            "stats": {
+              "position": 27,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "scored": 3,
+              "missed": 6
+            }
+          },
+          {
+            "teamId": 24,
+            "stats": {
+              "position": 23,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 4,
+              "missed": 9
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 25,
+            "stats": {
+              "position": 8,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 8,
+              "missed": 2
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 26,
+            "stats": {
+              "position": 33,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "scored": 1,
+              "missed": 8
+            }
+          },
+          {
+            "teamId": 27,
+            "stats": {
+              "position": 1,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "scored": 13,
+              "missed": 3
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 28,
+            "stats": {
+              "position": 16,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "scored": 8,
+              "missed": 6
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 29,
+            "stats": {
+              "position": 29,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "scored": 1,
+              "missed": 5
+            }
+          },
+          {
+            "teamId": 30,
+            "stats": {
+              "position": 13,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 6,
+              "missed": 5
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 31,
+            "stats": {
+              "position": 5,
+              "wins": 3,
+              "draws": 0,
+              "losses": 0,
+              "scored": 8,
+              "missed": 1
+            },
+            "isQualified": "green"
+          },
+          {
+            "teamId": 32,
+            "stats": {
+              "position": 28,
+              "wins": 0,
+              "draws": 2,
+              "losses": 1,
+              "scored": 2,
+              "missed": 5
+            }
+          },
+          {
+            "teamId": 33,
+            "stats": {
+              "position": 11,
+              "wins": 2,
+              "draws": 0,
+              "losses": 1,
+              "scored": 7,
+              "missed": 4
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 34,
+            "stats": {
+              "position": 15,
+              "wins": 1,
+              "draws": 2,
+              "losses": 0,
+              "scored": 3,
+              "missed": 2
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 35,
+            "stats": {
+              "position": 24,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "scored": 3,
+              "missed": 9
+            },
+            "isQualified": "orange"
+          },
+          {
+            "teamId": 36,
+            "stats": {
+              "position": 31,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "scored": 2,
+              "missed": 5
+            }
+          }
+        ],
+        "playoff": {
+          "rounds": []
+        }
+      }
+    },
     "2024/25": {
       "teams": [
         { "id": 1, "title": "Arsenal", "image": "Arsenal" },
@@ -15,13 +482,13 @@
         { "id": 7, "title": "Bayern Munchen", "image": "Bayern" },
         { "id": 8, "title": "Benfica", "image": "Benfica" },
         { "id": 9, "title": "Bologna", "image": "Bologna" },
-        { "id": 10, "title": "Borussia Dortmund", "image": "Borussia" },
+        { "id": 10, "title": "B. Dortmund", "image": "Borussia" },
         { "id": 11, "title": "Brest", "image": "Brest" },
         { "id": 12, "title": "Brugge", "image": "Brugge" },
         { "id": 13, "title": "Celtic", "image": "Celtic" },
         { "id": 14, "title": "Crvena Zvezda", "image": "Crvena" },
         { "id": 15, "title": "Feyenoord", "image": "Feyenoord" },
-        { "id": 16, "title": "GNK Dinamo", "image": "GNK Dinamo" },
+        { "id": 16, "title": "GNK Dinamo", "image": "GNKDinamo" },
         { "id": 17, "title": "Girona", "image": "Girona" },
         { "id": 18, "title": "Inter", "image": "Inter" },
         { "id": 19, "title": "Juventus", "image": "Juventus" },
@@ -36,10 +503,10 @@
         { "id": 28, "title": "RB Salzburg", "image": "Salzburg" },
         { "id": 29, "title": "Real Madrid", "image": "RealMadrid" },
         { "id": 30, "title": "Shakhtar", "image": "Shakhtar" },
-        { "id": 31, "title": "Slovan Bratislava", "image": "Slovan" },
+        { "id": 31, "title": "Slovan Bratislava", "image": "SlovanBratislava" },
         { "id": 32, "title": "Sparta Praha", "image": "SpartaPraha" },
         { "id": 33, "title": "Sporting", "image": "Sporting" },
-        { "id": 34, "title": "Sturm Graz", "image": "Sturm" },
+        { "id": 34, "title": "Sturm Graz", "image": "SturmGraz" },
         { "id": 35, "title": "Stuttgart", "image": "Stuttgart" },
         { "id": 36, "title": "Young Boys", "image": "YoungBoys" }
       ],
@@ -737,7 +1204,7 @@
         { "id": 4, "title": "Barcelona", "image": "Barcelona" },
         { "id": 5, "title": "Bayern Munchen", "image": "Bayern" },
         { "id": 6, "title": "Benfica", "image": "Benfica" },
-        { "id": 7, "title": "Borussia Dortmund", "image": "Borussia" },
+        { "id": 7, "title": "B. Dortmund", "image": "Borussia" },
         { "id": 8, "title": "Braga", "image": "Braga" },
         { "id": 9, "title": "Celtic", "image": "Celtic" },
         { "id": 10, "title": "Copenhagen", "image": "Copenhagen" },
@@ -1338,6 +1805,624 @@
                   "homeTeamId": 7,
                   "awayTeamId": 27,
                   "legs": [{ "homeScore": 0, "awayScore": 2 }]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "2022/23": {
+      "teams": [
+        { "id": 1, "title": "Ajax", "image": "Ajax" },
+        { "id": 2, "title": "Atletico Madrid", "image": "AtleticoMadrid" },
+        { "id": 3, "title": "B. Dortmund", "image": "Borussia" },
+        { "id": 4, "title": "Barcelona", "image": "Barcelona" },
+        { "id": 5, "title": "Bayer", "image": "Bayer" },
+        { "id": 6, "title": "Bayern Munchen", "image": "Bayern" },
+        { "id": 7, "title": "Benfica", "image": "Benfica" },
+        { "id": 8, "title": "Brugge", "image": "Brugge" },
+        { "id": 9, "title": "Celtic", "image": "Celtic" },
+        { "id": 10, "title": "Chelsea", "image": "Chelsea" },
+        { "id": 11, "title": "Copenhagen", "image": "Copenhagen" },
+        { "id": 12, "title": "Frankfurt", "image": "Frankfurt" },
+        { "id": 13, "title": "GNK Dinamo", "image": "GNKDinamo" },
+        { "id": 14, "title": "Inter", "image": "Inter" },
+        { "id": 15, "title": "Juventus", "image": "Juventus" },
+        { "id": 16, "title": "Liverpool", "image": "Liverpool" },
+        { "id": 17, "title": "Maccabi Haifa", "image": "MaccabiHaifa" },
+        { "id": 18, "title": "Manchester City", "image": "ManchesterCity" },
+        { "id": 19, "title": "Marseille", "image": "Marseille" },
+        { "id": 20, "title": "Milan", "image": "Milan" },
+        { "id": 21, "title": "Napoli", "image": "Napoli" },
+        { "id": 22, "title": "PSG", "image": "PSG" },
+        { "id": 23, "title": "Porto", "image": "Porto" },
+        { "id": 24, "title": "RB Leipzig", "image": "Leipzig" },
+        { "id": 25, "title": "RB Salzburg", "image": "Salzburg" },
+        { "id": 26, "title": "Rangers", "image": "Rangers" },
+        { "id": 27, "title": "Real Madrid", "image": "RealMadrid" },
+        { "id": 28, "title": "Sevilla", "image": "Sevilla" },
+        { "id": 29, "title": "Shakhtar", "image": "Shakhtar" },
+        { "id": 30, "title": "Sporting", "image": "Sporting" },
+        { "id": 31, "title": "Tottenham", "image": "Tottenham" },
+        { "id": 32, "title": "Viktoria Plzen", "image": "ViktoriaPlzen" }
+      ],
+      "stages": {
+        "groupStage": [
+          {
+            "groupName": "A",
+            "teams": [
+              {
+                "teamId": 21,
+                "stats": {
+                  "position": 1,
+                  "wins": 5,
+                  "draws": 0,
+                  "losses": 1,
+                  "scored": 20,
+                  "missed": 6
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 16,
+                "stats": {
+                  "position": 2,
+                  "wins": 5,
+                  "draws": 0,
+                  "losses": 1,
+                  "scored": 17,
+                  "missed": 6
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 1,
+                "stats": {
+                  "position": 3,
+                  "wins": 2,
+                  "draws": 0,
+                  "losses": 4,
+                  "scored": 11,
+                  "missed": 16
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 26,
+                "stats": {
+                  "position": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 6,
+                  "scored": 2,
+                  "missed": 22
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "B",
+            "teams": [
+              {
+                "teamId": 23,
+                "stats": {
+                  "position": 1,
+                  "wins": 4,
+                  "draws": 0,
+                  "losses": 2,
+                  "scored": 12,
+                  "missed": 7
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 8,
+                "stats": {
+                  "position": 2,
+                  "wins": 3,
+                  "draws": 2,
+                  "losses": 1,
+                  "scored": 7,
+                  "missed": 4
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 5,
+                "stats": {
+                  "position": 3,
+                  "wins": 1,
+                  "draws": 2,
+                  "losses": 3,
+                  "scored": 4,
+                  "missed": 8
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 2,
+                "stats": {
+                  "position": 4,
+                  "wins": 1,
+                  "draws": 2,
+                  "losses": 3,
+                  "scored": 5,
+                  "missed": 9
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "C",
+            "teams": [
+              {
+                "teamId": 6,
+                "stats": {
+                  "position": 1,
+                  "wins": 6,
+                  "draws": 0,
+                  "losses": 0,
+                  "scored": 18,
+                  "missed": 2
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 14,
+                "stats": {
+                  "position": 2,
+                  "wins": 3,
+                  "draws": 1,
+                  "losses": 2,
+                  "scored": 10,
+                  "missed": 7
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 4,
+                "stats": {
+                  "position": 3,
+                  "wins": 2,
+                  "draws": 1,
+                  "losses": 3,
+                  "scored": 12,
+                  "missed": 12
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 32,
+                "stats": {
+                  "position": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 6,
+                  "scored": 5,
+                  "missed": 24
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "D",
+            "teams": [
+              {
+                "teamId": 31,
+                "stats": {
+                  "position": 1,
+                  "wins": 3,
+                  "draws": 2,
+                  "losses": 1,
+                  "scored": 8,
+                  "missed": 6
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 12,
+                "stats": {
+                  "position": 2,
+                  "wins": 3,
+                  "draws": 1,
+                  "losses": 2,
+                  "scored": 7,
+                  "missed": 8
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 30,
+                "stats": {
+                  "position": 3,
+                  "wins": 2,
+                  "draws": 1,
+                  "losses": 3,
+                  "scored": 8,
+                  "missed": 9
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 19,
+                "stats": {
+                  "position": 4,
+                  "wins": 2,
+                  "draws": 0,
+                  "losses": 4,
+                  "scored": 8,
+                  "missed": 8
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "E",
+            "teams": [
+              {
+                "teamId": 10,
+                "stats": {
+                  "position": 1,
+                  "wins": 4,
+                  "draws": 1,
+                  "losses": 1,
+                  "scored": 10,
+                  "missed": 4
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 20,
+                "stats": {
+                  "position": 2,
+                  "wins": 3,
+                  "draws": 1,
+                  "losses": 2,
+                  "scored": 12,
+                  "missed": 7
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 25,
+                "stats": {
+                  "position": 3,
+                  "wins": 1,
+                  "draws": 3,
+                  "losses": 2,
+                  "scored": 5,
+                  "missed": 9
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 13,
+                "stats": {
+                  "position": 4,
+                  "wins": 1,
+                  "draws": 1,
+                  "losses": 4,
+                  "scored": 4,
+                  "missed": 11
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "F",
+            "teams": [
+              {
+                "teamId": 27,
+                "stats": {
+                  "position": 1,
+                  "wins": 4,
+                  "draws": 1,
+                  "losses": 1,
+                  "scored": 15,
+                  "missed": 6
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 24,
+                "stats": {
+                  "position": 2,
+                  "wins": 4,
+                  "draws": 0,
+                  "losses": 2,
+                  "scored": 13,
+                  "missed": 9
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 29,
+                "stats": {
+                  "position": 3,
+                  "wins": 1,
+                  "draws": 3,
+                  "losses": 2,
+                  "scored": 8,
+                  "missed": 10
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 9,
+                "stats": {
+                  "position": 4,
+                  "wins": 0,
+                  "draws": 2,
+                  "losses": 4,
+                  "scored": 4,
+                  "missed": 15
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "G",
+            "teams": [
+              {
+                "teamId": 18,
+                "stats": {
+                  "position": 1,
+                  "wins": 4,
+                  "draws": 2,
+                  "losses": 0,
+                  "scored": 14,
+                  "missed": 2
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 3,
+                "stats": {
+                  "position": 2,
+                  "wins": 2,
+                  "draws": 3,
+                  "losses": 1,
+                  "scored": 10,
+                  "missed": 5
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 28,
+                "stats": {
+                  "position": 3,
+                  "wins": 1,
+                  "draws": 2,
+                  "losses": 3,
+                  "scored": 6,
+                  "missed": 12
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 11,
+                "stats": {
+                  "position": 4,
+                  "wins": 0,
+                  "draws": 3,
+                  "losses": 3,
+                  "scored": 1,
+                  "missed": 12
+                }
+              }
+            ]
+          },
+          {
+            "groupName": "H",
+            "teams": [
+              {
+                "teamId": 7,
+                "stats": {
+                  "position": 1,
+                  "wins": 4,
+                  "draws": 2,
+                  "losses": 0,
+                  "scored": 16,
+                  "missed": 7
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 22,
+                "stats": {
+                  "position": 2,
+                  "wins": 4,
+                  "draws": 2,
+                  "losses": 0,
+                  "scored": 16,
+                  "missed": 7
+                },
+                "isQualified": "green"
+              },
+              {
+                "teamId": 15,
+                "stats": {
+                  "position": 3,
+                  "wins": 1,
+                  "draws": 0,
+                  "losses": 5,
+                  "scored": 9,
+                  "missed": 13
+                },
+                "isQualified": "orange"
+              },
+              {
+                "teamId": 17,
+                "stats": {
+                  "position": 4,
+                  "wins": 1,
+                  "draws": 0,
+                  "losses": 5,
+                  "scored": 7,
+                  "missed": 21
+                }
+              }
+            ]
+          }
+        ],
+        "playoff": {
+          "rounds": [
+            {
+              "title": "round of 16",
+              "matches": [
+                {
+                  "matchId": "m1",
+                  "homeTeamId": 16,
+                  "awayTeamId": 27,
+                  "legs": [
+                    { "homeScore": 2, "awayScore": 5 },
+                    { "homeScore": 1, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m2",
+                  "homeTeamId": 3,
+                  "awayTeamId": 10,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 0 },
+                    { "homeScore": 2, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m3",
+                  "homeTeamId": 24,
+                  "awayTeamId": 18,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 1 },
+                    { "homeScore": 7, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m4",
+                  "homeTeamId": 22,
+                  "awayTeamId": 6,
+                  "legs": [
+                    { "homeScore": 0, "awayScore": 1 },
+                    { "homeScore": 2, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m5",
+                  "homeTeamId": 20,
+                  "awayTeamId": 31,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 0 },
+                    {
+                      "homeScore": 0,
+                      "awayScore": 0
+                    }
+                  ]
+                },
+                {
+                  "matchId": "m6",
+                  "homeTeamId": 12,
+                  "awayTeamId": 21,
+                  "legs": [
+                    { "homeScore": 0, "awayScore": 2 },
+                    { "homeScore": 3, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m7",
+                  "homeTeamId": 14,
+                  "awayTeamId": 23,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 0 },
+                    { "homeScore": 0, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m8",
+                  "homeTeamId": 8,
+                  "awayTeamId": 7,
+                  "legs": [
+                    { "homeScore": 0, "awayScore": 2 },
+                    { "homeScore": 5, "awayScore": 1 }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "quarter-finals",
+              "matches": [
+                {
+                  "matchId": "m1",
+                  "homeTeamId": 27,
+                  "awayTeamId": 10,
+                  "legs": [
+                    { "homeScore": 2, "awayScore": 0 },
+                    { "homeScore": 0, "awayScore": 2 }
+                  ]
+                },
+                {
+                  "matchId": "m2",
+                  "homeTeamId": 18,
+                  "awayTeamId": 6,
+                  "legs": [
+                    { "homeScore": 3, "awayScore": 0 },
+                    { "homeScore": 1, "awayScore": 1 }
+                  ]
+                },
+                {
+                  "matchId": "m3",
+                  "homeTeamId": 20,
+                  "awayTeamId": 21,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 0 },
+                    { "homeScore": 1, "awayScore": 1 }
+                  ]
+                },
+                {
+                  "matchId": "m4",
+                  "homeTeamId": 7,
+                  "awayTeamId": 14,
+                  "legs": [
+                    { "homeScore": 0, "awayScore": 2 },
+                    {
+                      "homeScore": 3,
+                      "awayScore": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "semi-finals",
+              "matches": [
+                {
+                  "matchId": "m1",
+                  "homeTeamId": 27,
+                  "awayTeamId": 18,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 1 },
+                    { "homeScore": 4, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m2",
+                  "homeTeamId": 20,
+                  "awayTeamId": 14,
+                  "legs": [
+                    { "homeScore": 0, "awayScore": 2 },
+                    { "homeScore": 1, "awayScore": 0 }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "final",
+              "matches": [
+                {
+                  "matchId": "m1",
+                  "homeTeamId": 18,
+                  "awayTeamId": 14,
+                  "legs": [{ "homeScore": 1, "awayScore": 0 }]
                 }
               ]
             }

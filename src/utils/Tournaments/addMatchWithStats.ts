@@ -95,7 +95,6 @@ function updateTeamsStats(teams: any[], match: any) {
   ownerTeam.missed += match.guest.score;
   guestTeam.missed += match.owner.score;
 
-  // Обновляем победы/ничьи/поражения
   if (match.owner.score > match.guest.score) {
     ownerTeam.wins += 1;
     guestTeam.losses += 1;
@@ -107,7 +106,6 @@ function updateTeamsStats(teams: any[], match: any) {
     guestTeam.draws += 1;
   }
 
-  // Обновляем дополнительную статистику если поля существуют
   if (guestTeam.awayGoals !== undefined) {
     guestTeam.awayGoals += match.guest.score;
   }

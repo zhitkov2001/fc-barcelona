@@ -1,6 +1,6 @@
 .playoff {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
 
@@ -16,8 +16,9 @@
 
 .playoff__title {
   position: absolute;
-  text-align: start;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .round__couple {
@@ -30,4 +31,8 @@
   &:first-of-type {
     margin-top: 60px;
   }
+}
+
+.noMatches {
+  margin-top: 60px;
 }

@@ -1,19 +1,23 @@
-.standings__table {
+.table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 
-  .standings-table__head {
-    height: 30px;
+  .table__header {
     text-align: center;
 
     color: #141e5e;
     font-size: 14px;
     font-weight: 700;
-    .table-head__row {
+    line-height: 100%;
+
+    .table__header-row {
       position: relative;
       width: 100%;
-      .table-head__item {
+
+      .header__item {
+        padding-bottom: 4px;
+
         &::after {
           position: absolute;
           content: "";

@@ -6,14 +6,44 @@ const PlayoffItem = ({ match, teamsData }) => {
     return teamsData?.find((team) => team.id === teamId) || {};
   };
 
-  if (!match?.[0]) return null;
+  // if (!match?.legs[0]) return null;
 
-  const firstMatch = match[0];
-  const hasSecondMatch = match.length > 1;
-  const secondMatch = hasSecondMatch ? match[1] : null;
+  const firstMatch = match.legs[0];
+  const hasSecondMatch = match.legs.length > 1;
+  const secondMatch = hasSecondMatch ? match.legs[1] : null;
 
-  const homeTeam = findTeamById(firstMatch.homeTeamId);
-  const awayTeam = findTeamById(firstMatch.awayTeamId);
+  const homeTeam = findTeamById(match.homeTeamId);
+  const awayTeam = findTeamById(match.awayTeamId);
+
+  if (!match?.legs?.length) {
+    return (
+      <div className={styles["playoff-match"]}>
+        <div className={styles.match__header}>
+          <div className={styles.team__container}>
+            <img
+              src={`../img/teams/${homeTeam?.image || "default"}.png`}
+              alt={homeTeam?.title}
+              className={styles.team__logo}
+            />
+          </div>
+          <div className={styles["match-score__container"]}>
+            <div className={styles.match__score}>
+              <p className={styles.score__value}>-</p>
+            </div>
+          </div>
+          <div
+            className={`${styles.team__container} ${styles["away-team__container"]}`}
+          >
+            <img
+              src={`../img/teams/${awayTeam?.image || "default"}.png`}
+              alt={awayTeam?.title}
+              className={styles.team__logo}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const homeAggregate = hasSecondMatch
     ? (firstMatch.homeScore || 0) + (secondMatch?.awayScore || 0)
@@ -37,8 +67,8 @@ const PlayoffItem = ({ match, teamsData }) => {
         : `pen. ${homeScore}-${awayScore}`;
     }
 
-    if (data?.overtime) {
-      const { homeScore, awayScore } = data.overtime;
+    if (data?.extratime) {
+      const { homeScore, awayScore } = data.extratime;
       return hasSecondMatch
         ? `ET ${awayScore}-${homeScore}`
         : `ET ${homeScore}-${awayScore}`;
@@ -80,20 +110,21 @@ const PlayoffItem = ({ match, teamsData }) => {
         </div>
       </div>
       <div className={styles.match__container}>
-        {match.map((match, index) => {
-          const matchhomeTeam = findTeamById(match.homeTeamId);
-          const matchawayTeam = findTeamById(match.awayTeamId);
+        {match.legs.map((leg, index) => {
+          const isReversed = index === 1;
+          const home = isReversed ? awayTeam : homeTeam;
+          const away = isReversed ? homeTeam : awayTeam;
 
           return (
             <div
-              key={`${match.homeTeamId}-${match.awayTeamId}-${match.id}-${index}`}
+              key={`${leg.homeTeamId}-${leg.awayTeamId}-${index}`}
               className={styles.match__item}
             >
-              <div className={styles.team}>{matchhomeTeam?.title}</div>
+              <div className={styles.team}>{home?.title}</div>
               <div className={styles.score}>
-                {match?.homeScore} - {match?.awayScore}
+                {leg.homeScore} - {leg.awayScore}
               </div>
-              <div className={styles.team}>{matchawayTeam?.title}</div>
+              <div className={styles.team}>{away?.title}</div>
             </div>
           );
         })}

@@ -25,42 +25,42 @@ const Tournaments = () => {
   // }
 
   // const teams = [
-  //   "Liverpool",
-  //   "Barcelona",
-  //   "Arsenal",
-  //   "Inter",
-  //   "AtleticoMadrid",
-  //   "Bayer",
-  //   "Lille",
-  //   "AstonVilla",
-  //   "Atalanta",
-  //   "BorussiaDortmund",
-  //   "RealMadrid",
-  //   "Bayern",
-  //   "Milan",
-  //   "PSVEindhoven",
-  //   "PSG",
-  //   "Benfica",
-  //   "Monaco",
-  //   "Brest",
-  //   "Feyenoord",
   //   "Juventus",
-  //   "Celtic",
-  //   "ManchesterCity",
+  //   "Nantes",
+  //   "Sevilla",
+  //   "PSVEindhoven",
+  //   "Bayer",
+  //   "Monaco",
   //   "Sporting",
-  //   "Brugge",
-  //   "GNK Dinamo",
-  //   "Stuttgart",
-  //   "Shakhtar",
-  //   "Bologna",
-  //   "CrvenaZvezda",
-  //   "SturmGraz",
-  //   "SpartaPraha",
-  //   "RBLeipzig",
-  //   "Girona",
+  //   "Midtjylland",
   //   "RBSalzburg",
-  //   "SlovanBratislava",
-  //   "YoungBoys",
+  //   "Roma",
+  //   "Ajax",
+  //   "UnionBerlin",
+  //   "Shakhtar",
+  //   "Rennes",
+  //   "Barcelona",
+  //   "ManchesterUnited",
+  //   "Feyenoord",
+  //   "RealBetis",
+  //   "Freiburg",
+  //   "Fenerbahce",
+  //   "RealSociedad",
+  //   "Arsenal",
+  //   "Ferencvaros",
+  //   "UnionSG",
+  //   // "Almeria",
+  //   // "Sevilla",
+  //   // "Cartagena",
+  //   // "Leganes",
+  //   // "Minera",
+  //   // "RealMadrid",
+  //   // "Rasing",
+  //   // "Celta",
+  //   // "Olympiacos",
+  //   // "Kairat",
+  //   // "Benfica",
+  //   // "Ajax",
   // ];
   // const sortedTeams = sortStringsAlphabetically(teams);
   // console.log(sortedTeams);
@@ -177,13 +177,12 @@ const Tournaments = () => {
             {selectedRound === "Group stage" || selectedRound === "League" ? (
               hasGroupStage ? (
                 oldTableData.map((group) => {
-                  // Фильтруем нормализованные данные по названию группы
                   const groupTableData = tableData.filter(
                     (team) => team.groupName === group.groupName
                   );
 
                   return (
-                    <div key={group.groupName}>
+                    <div className='table__container' key={group.groupName}>
                       <h5 className='group-stage__title'>{`Group ${group.groupName}`}</h5>
                       <Table
                         key={group.groupName}

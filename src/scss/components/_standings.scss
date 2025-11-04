@@ -2,9 +2,9 @@
   min-height: 100vh;
 
   .container {
-    min-height: 100vh; //УДАЛИТЬ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     display: block;
     margin: 50px auto;
+    padding: 24px 12px 36px;
     width: 75vw;
 
     border-radius: 10px;
@@ -256,86 +256,6 @@
           color: #141e5e;
         }
       }
-
-      // .playoff-matches {
-      //   display: block;
-      //   width: 100%;
-
-      //   &__title {
-      //     text-align: center;
-      //     padding: 0 0 10px 0;
-      //     color: #0b0b0b;
-      //   }
-
-      //   // .playoff-matches__container {
-      //   //   display: flex;
-      //   //   flex-wrap: wrap;
-      //   //   justify-content: center;
-      //   //   gap: 16px 12px;
-
-      //   //   .playoff-couple {
-      //   //     flex: 0 0 calc(50% - 6px);
-
-      //   //     padding: 8px;
-      //   //     border-radius: 14px;
-      //   //     background-color: #f5f5f5;
-      //   //     border: 2px solid #e2e2e2;
-
-      //   //     .playoff-couple__header {
-      //   //       display: flex;
-      //   //       justify-content: space-between;
-
-      //   //       margin-bottom: 15px;
-      //   //       padding-bottom: 8px;
-      //   //       align-items: center;
-      //   //       text-align: center;
-      //   //       gap: 15px;
-      //   //       border-bottom: 1px solid #e2e2e2;
-
-      //   //       .team-with-logo {
-      //   //         display: flex;
-      //   //         justify-content: center;
-      //   //         align-items: center;
-      //   //         gap: 5px;
-
-      //   //         width: 208px;
-
-      //   //         .team-logo {
-      //   //           max-width: 46px;
-      //   //           max-height: 46px;
-      //   //         }
-
-      //   //         .team-title {
-      //   //           color: #141e5e;
-      //   //           font-size: 18px;
-      //   //           font-weight: 700;
-      //   //           letter-spacing: -0.02em;
-      //   //         }
-      //   //       }
-      //   //       .score-container {
-      //   //         width: 120px;
-      //   //         line-height: 1;
-
-      //   //         .aggregate-score {
-      //   //           font-size: 20px;
-      //   //           font-weight: 800;
-      //   //           color: #141e5e;
-      //   //         }
-      //   //         .score-info {
-      //   //           font-size: 16px;
-      //   //           font-weight: 500;
-      //   //           color: #757575;
-      //   //         }
-      //   //       }
-      //   //     }
-
-      //   //     // .playoff-matches-list {
-      //   //     //   display: grid;
-      //   //     //   gap: 8px;
-      //   //     // }
-      //   //   }
-      //   // }
-      // }
     }
   }
 }

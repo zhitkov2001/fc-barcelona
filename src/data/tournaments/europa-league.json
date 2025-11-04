@@ -4,551 +4,204 @@
   "type": "championship",
   "updatedAt": "25.09.25 5:06 PM",
   "seasons": {
-    "2025/26": {
-      "year": "2025/26",
+    "2022/23": {
       "teams": [
-        {
-          "id": 1,
-          "image": "Frankfurt",
-          "title": "Frankfurt",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 2,
-          "image": "PSG",
-          "title": "Paris Saint Germain",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 3,
-          "image": "Brugge",
-          "title": "Club Brugge",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 4,
-          "image": "Sporting",
-          "title": "Sporting CP",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 5,
-          "image": "UnionSG",
-          "title": "Union SG",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 6,
-          "image": "Bayern",
-          "title": "Bayern München",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 7,
-          "image": "Arsenal",
-          "title": "Arsenal",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 8,
-          "image": "Inter",
-          "title": "Inter",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "green"
-        },
-        {
-          "id": 9,
-          "image": "ManchesterCity",
-          "title": "Manchester City",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 10,
-          "image": "",
-          "title": "Qarabağ",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 11,
-          "image": "Liverpool",
-          "title": "Liverpool",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 12,
-          "image": "Barcelona",
-          "title": "FC Barcelona",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 13,
-          "image": "RealMadrid",
-          "title": "Real Madrid",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 14,
-          "image": "Tottenham",
-          "title": "Tottenham",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 15,
-          "image": "Borussia",
-          "title": "Borussia Dortmund",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 16,
-          "image": "Juventus",
-          "title": "Juventus",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 17,
-          "image": "",
-          "title": "Bodø/Glimt",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 18,
-          "image": "Bayer",
-          "title": "Bayer Leverkusen",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 19,
-          "image": "Copenhagen",
-          "title": "Copenhagen",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 20,
-          "image": "SlaviaPraha",
-          "title": "Slavia Praha",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 21,
-          "image": "Olympiacos",
-          "title": "Olympiacos",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 22,
-          "image": "",
-          "title": "Pafos",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 23,
-          "image": "AtleticoMadrid",
-          "title": "Atletico Madrid",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 24,
-          "image": "Benfica",
-          "title": "Benfica",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0,
-          "isQualified": "orange"
-        },
-        {
-          "id": 25,
-          "image": "Marseille",
-          "title": "Marseille",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 26,
-          "image": "Newcastle",
-          "title": "Newcastle",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 27,
-          "image": "Villarreal",
-          "title": "Villarreal",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 28,
-          "image": "Chelsea",
-          "title": "Chelsea",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 29,
-          "image": "PSV",
-          "title": "PSV",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 30,
-          "image": "Ajax",
-          "title": "Ajax",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 31,
-          "image": "AthleticBilbao",
-          "title": "Athletic Bilbao",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 32,
-          "image": "Napoli",
-          "title": "Napoli",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 33,
-          "image": "",
-          "title": "Kairat",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 34,
-          "image": "Monaco",
-          "title": "Monaco",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 35,
-          "image": "Galatasaray",
-          "title": "Galatasaray",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        },
-        {
-          "id": 36,
-          "image": "Atalanta",
-          "title": "Atalanta",
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "scored": 0,
-          "missed": 0,
-          "awayGoals": 0,
-          "awayWins": 0
-        }
+        { "id": 1, "title": "Ajax", "image": "Ajax" },
+        { "id": 2, "title": "Arsenal", "image": "Arsenal" },
+        { "id": 3, "title": "Barcelona", "image": "Barcelona" },
+        { "id": 4, "title": "Bayer", "image": "Bayer" },
+        { "id": 5, "title": "Fenerbahce", "image": "Fenerbahce" },
+        { "id": 6, "title": "Ferencvaros", "image": "Ferencvaros" },
+        { "id": 7, "title": "Feyenoord", "image": "Feyenoord" },
+        { "id": 8, "title": "Freiburg", "image": "Freiburg" },
+        { "id": 9, "title": "Juventus", "image": "Juventus" },
+        { "id": 10, "title": "Man. United", "image": "ManchesterUnited" },
+        { "id": 11, "title": "Midtjylland", "image": "Midtjylland" },
+        { "id": 12, "title": "Monaco", "image": "Monaco" },
+        { "id": 13, "title": "Nantes", "image": "Nantes" },
+        { "id": 14, "title": "PSV Eindhoven", "image": "PSV" },
+        { "id": 15, "title": "RB Salzburg", "image": "Salzburg" },
+        { "id": 16, "title": "Real Betis", "image": "RealBetis" },
+        { "id": 17, "title": "Real Sociedad", "image": "RealSociedad" },
+        { "id": 18, "title": "Rennes", "image": "Rennes" },
+        { "id": 19, "title": "Roma", "image": "Roma" },
+        { "id": 20, "title": "Sevilla", "image": "Sevilla" },
+        { "id": 21, "title": "Shakhtar", "image": "Shakhtar" },
+        { "id": 22, "title": "Sporting", "image": "Sporting" },
+        { "id": 23, "title": "Union Berlin", "image": "UnionBerlin" },
+        { "id": 24, "title": "Union SG", "image": "UnionSG" }
       ],
       "stages": {
-        "groupStage": [],
         "playoff": {
           "rounds": [
             {
-              "title": "round of 16",
+              "title": "KO play-offs",
               "matches": [
                 {
                   "matchId": "m1",
-                  "homeTeamId": 14,
-                  "awayTeamId": 3,
+                  "homeTeamId": 9,
+                  "awayTeamId": 13,
                   "legs": [
-                    { "homeScore": 1, "awayScore": 0 },
-                    {
-                      "homeScore": 2,
-                      "awayScore": 1,
-                      "penalty": { "homeScore": 3, "awayScore": 2 }
-                    }
+                    { "homeScore": 1, "awayScore": 1 },
+                    { "homeScore": 0, "awayScore": 3 }
                   ]
                 },
                 {
                   "matchId": "m2",
-                  "homeTeamId": 23,
-                  "awayTeamId": 7,
+                  "homeTeamId": 22,
+                  "awayTeamId": 11,
                   "legs": [
                     { "homeScore": 1, "awayScore": 1 },
-                    { "homeScore": 2, "awayScore": 0 }
+                    { "homeScore": 0, "awayScore": 4 }
                   ]
                 },
                 {
                   "matchId": "m3",
-                  "homeTeamId": 22,
-                  "awayTeamId": 28,
+                  "homeTeamId": 3,
+                  "awayTeamId": 10,
                   "legs": [
-                    { "homeScore": 2, "awayScore": 0 },
-                    { "homeScore": 1, "awayScore": 2 }
+                    { "homeScore": 2, "awayScore": 2 },
+                    { "homeScore": 2, "awayScore": 1 }
                   ]
                 },
                 {
                   "matchId": "m4",
                   "homeTeamId": 20,
-                  "awayTeamId": 4,
+                  "awayTeamId": 14,
                   "legs": [
-                    { "homeScore": 1, "awayScore": 1 },
-                    { "homeScore": 3, "awayScore": 1 }
+                    { "homeScore": 3, "awayScore": 0 },
+                    { "homeScore": 2, "awayScore": 0 }
                   ]
                 },
                 {
                   "matchId": "m5",
-                  "homeTeamId": 24,
-                  "awayTeamId": 2,
+                  "homeTeamId": 21,
+                  "awayTeamId": 18,
                   "legs": [
-                    { "homeScore": 1, "awayScore": 0 },
+                    { "homeScore": 2, "awayScore": 1 },
                     {
-                      "homeScore": 1,
-                      "awayScore": 0,
-                      "penalty": { "homeScore": 4, "awayScore": 2 }
+                      "homeScore": 2,
+                      "awayScore": 1,
+                      "penalty": { "homeScore": 4, "awayScore": 5 }
                     }
                   ]
                 },
                 {
                   "matchId": "m6",
                   "homeTeamId": 15,
-                  "awayTeamId": 5,
+                  "awayTeamId": 19,
                   "legs": [
                     { "homeScore": 1, "awayScore": 0 },
-                    { "homeScore": 3, "awayScore": 0 }
+                    { "homeScore": 2, "awayScore": 0 }
                   ]
                 },
                 {
                   "matchId": "m7",
-                  "homeTeamId": 25,
-                  "awayTeamId": 27,
+                  "homeTeamId": 4,
+                  "awayTeamId": 12,
                   "legs": [
-                    { "homeScore": 0, "awayScore": 1 },
-                    { "homeScore": 1, "awayScore": 1 }
+                    { "homeScore": 2, "awayScore": 3 },
+                    {
+                      "homeScore": 2,
+                      "awayScore": 3,
+                      "penalty": { "homeScore": 3, "awayScore": 5 }
+                    }
                   ]
                 },
                 {
                   "matchId": "m8",
+                  "homeTeamId": 1,
+                  "awayTeamId": 23,
+                  "legs": [
+                    { "homeScore": 0, "awayScore": 0 },
+                    { "homeScore": 3, "awayScore": 1 }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "round of 16",
+              "matches": [
+                {
+                  "matchId": "m1",
+                  "homeTeamId": 9,
+                  "awayTeamId": 8,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 0 },
+                    { "homeScore": 0, "awayScore": 2 }
+                  ]
+                },
+                {
+                  "matchId": "m2",
+                  "homeTeamId": 22,
+                  "awayTeamId": 2,
+                  "legs": [
+                    { "homeScore": 2, "awayScore": 2 },
+                    {
+                      "homeScore": 1,
+                      "awayScore": 1,
+                      "penalty": { "homeScore": 3, "awayScore": 5 }
+                    }
+                  ]
+                },
+                {
+                  "matchId": "m3",
                   "homeTeamId": 10,
+                  "awayTeamId": 16,
+                  "legs": [
+                    { "homeScore": 4, "awayScore": 1 },
+                    { "homeScore": 0, "awayScore": 1 }
+                  ]
+                },
+                {
+                  "matchId": "m4",
+                  "homeTeamId": 20,
+                  "awayTeamId": 5,
+                  "legs": [
+                    { "homeScore": 2, "awayScore": 0 },
+                    { "homeScore": 1, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m5",
+                  "homeTeamId": 21,
+                  "awayTeamId": 7,
+                  "legs": [
+                    { "homeScore": 1, "awayScore": 1 },
+                    {
+                      "homeScore": 7,
+                      "awayScore": 1
+                    }
+                  ]
+                },
+                {
+                  "matchId": "m6",
+                  "homeTeamId": 19,
                   "awayTeamId": 17,
                   "legs": [
-                    { "homeScore": 1, "awayScore": 3 },
-                    { "homeScore": 3, "awayScore": 1 }
+                    { "homeScore": 2, "awayScore": 0 },
+                    { "homeScore": 0, "awayScore": 0 }
+                  ]
+                },
+                {
+                  "matchId": "m7",
+                  "homeTeamId": 4,
+                  "awayTeamId": 6,
+                  "legs": [
+                    { "homeScore": 2, "awayScore": 0 },
+                    {
+                      "homeScore": 0,
+                      "awayScore": 2
+                    }
+                  ]
+                },
+                {
+                  "matchId": "m8",
+                  "homeTeamId": 23,
+                  "awayTeamId": 24,
+                  "legs": [
+                    { "homeScore": 3, "awayScore": 3 },
+                    { "homeScore": 3, "awayScore": 0 }
                   ]
                 }
               ]
@@ -558,41 +211,44 @@
               "matches": [
                 {
                   "matchId": "m1",
-                  "homeTeamId": 3,
-                  "awayTeamId": 7,
+                  "homeTeamId": 9,
+                  "awayTeamId": 22,
                   "legs": [
-                    { "homeScore": 2, "awayScore": 1 },
-                    { "homeScore": 4, "awayScore": 2 }
+                    { "homeScore": 1, "awayScore": 0 },
+                    { "homeScore": 1, "awayScore": 1 }
                   ]
                 },
                 {
                   "matchId": "m2",
-                  "homeTeamId": 22,
-                  "awayTeamId": 4,
+                  "homeTeamId": 10,
+                  "awayTeamId": 20,
                   "legs": [
-                    { "homeScore": 2, "awayScore": 3 },
-                    { "homeScore": 1, "awayScore": 4 }
+                    { "homeScore": 2, "awayScore": 2 },
+                    { "homeScore": 3, "awayScore": 0 }
                   ]
                 },
                 {
                   "matchId": "m3",
-                  "homeTeamId": 2,
-                  "awayTeamId": 5,
+                  "homeTeamId": 7,
+                  "awayTeamId": 19,
                   "legs": [
-                    { "homeScore": 2, "awayScore": 2 },
-                    { "homeScore": 1, "awayScore": 0 }
+                    { "homeScore": 1, "awayScore": 0 },
+                    {
+                      "homeScore": 2,
+                      "awayScore": 1,
+                      "extratime": { "homeScore": 2, "awayScore": 0 }
+                    }
                   ]
                 },
                 {
                   "matchId": "m4",
-                  "homeTeamId": 27,
-                  "awayTeamId": 17,
+                  "homeTeamId": 4,
+                  "awayTeamId": 24,
                   "legs": [
-                    { "homeScore": 3, "awayScore": 3 },
+                    { "homeScore": 1, "awayScore": 1 },
                     {
                       "homeScore": 1,
-                      "awayScore": 1,
-                      "penalty": { "homeScore": 3, "awayScore": 4 }
+                      "awayScore": 4
                     }
                   ]
                 }
@@ -603,20 +259,27 @@
               "matches": [
                 {
                   "matchId": "m1",
-                  "homeTeamId": 7,
-                  "awayTeamId": 22,
+                  "homeTeamId": 9,
+                  "awayTeamId": 20,
                   "legs": [
-                    { "homeScore": 1, "awayScore": 0 },
-                    { "homeScore": 0, "awayScore": 1 }
+                    { "homeScore": 1, "awayScore": 1 },
+                    {
+                      "homeScore": 1,
+                      "awayScore": 1,
+                      "extratime": { "homeScore": 1, "awayScore": 0 }
+                    }
                   ]
                 },
                 {
                   "matchId": "m2",
-                  "homeTeamId": 5,
-                  "awayTeamId": 27,
+                  "homeTeamId": 19,
+                  "awayTeamId": 4,
                   "legs": [
-                    { "homeScore": 2, "awayScore": 2 },
-                    { "homeScore": 2, "awayScore": 1 }
+                    { "homeScore": 1, "awayScore": 0 },
+                    {
+                      "homeScore": 0,
+                      "awayScore": 0
+                    }
                   ]
                 }
               ]
@@ -626,9 +289,15 @@
               "matches": [
                 {
                   "matchId": "m1",
-                  "homeTeamId": 7,
-                  "awayTeamId": 27,
-                  "legs": [{ "homeScore": 0, "awayScore": 2 }]
+                  "homeTeamId": 20,
+                  "awayTeamId": 19,
+                  "legs": [
+                    {
+                      "homeScore": 1,
+                      "awayScore": 1,
+                      "penalty": { "homeScore": 4, "awayScore": 1 }
+                    }
+                  ]
                 }
               ]
             }
