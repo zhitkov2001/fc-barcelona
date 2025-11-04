@@ -14,7 +14,6 @@ import Footer from "./components/Footer";
 import PlayerPage from "./pages/PlayerPage";
 import Matches from "./pages/Matches";
 import MatchPage from "./pages/MatchPage";
-import Standings from "./pages/Standings";
 import Tournaments from "./pages/Tournaments";
 import News from "./pages/News";
 
@@ -32,7 +31,6 @@ function App() {
           <Route path='/players/:id' element={<PlayerPage />} />
           <Route path='/matches' element={<Matches />} />
           <Route path='/matches/:id' element={<MatchPage />} />
-          <Route path='/standings' element={<Standings />} />
           <Route path='/tournaments' element={<Tournaments />} />
           <Route path='/news' element={<News />} />
         </Routes>

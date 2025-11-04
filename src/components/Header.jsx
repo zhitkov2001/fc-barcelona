@@ -36,13 +36,6 @@ function Header() {
             Matches
           </Link>
           <Link
-            className={`nav__link ${isActive("/standings") ? "active" : ""}`}
-            to='/standings'
-            onClick={() => setActiveLink("/standings")}
-          >
-            Standings
-          </Link>
-          <Link
             className={`nav__link ${isActive("/tournaments") ? "active" : ""}`}
             to='/tournaments'
             onClick={() => setActiveLink("/tournaments")}
