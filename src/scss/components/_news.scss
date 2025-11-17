@@ -1,42 +1,41 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
 .news {
   .container {
-    display: block;
-    margin: 50px auto;
-    width: 80vw;
+    margin: 5rem auto;
+    width: $container-width;
+    padding: $container-padding;
 
-    border-radius: 10px;
-    background-color: #fff;
+    border-radius: 1rem;
+    background-color: $white;
 
     .news-nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      padding: 16px 0;
+      @include flex-center($gap: 1rem);
+      padding: 1.6rem 0;
 
       .nav-btn {
-        padding: 6px 12px;
+        padding: 0.6rem 1.2rem;
 
         background-color: transparent;
         border: none;
-        border-radius: 6px;
+        border-radius: 0.6rem;
         cursor: pointer;
 
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 600;
-        color: #141e5e;
+        color: $dark-blue;
 
         &.active {
-          background-color: #141e5e;
-          color: #fff;
+          background-color: $dark-blue;
+          color: $white;
         }
       }
     }
     .news__container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px 18px;
-      padding: 25px 40px 40px 40px;
+      @include grid-center;
+      @include template-columns-auto-fit(34.5rem);
+      gap: 1.6rem 1.8rem;
     }
   }
 }

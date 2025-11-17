@@ -2,16 +2,10 @@ import React from "react";
 
 import TitleBackround from "../components/TitleBackground";
 import newsData from "../data/news.json";
-import NewsItem from "../components/NewsItem";
+import NewsItem from "../components/News/NewsItem";
 
 const News = () => {
   const [selectedType, setSelectedType] = React.useState("All News");
-
-  // console.log("Selected type:", selectedType);
-  // console.log(
-  //   "Filtered news:",
-  //   newsData.filter((news) => news.category === selectedType)
-  // );
 
   const newsCategory = [
     "All News",

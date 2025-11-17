@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./MainNews.module.scss";
 
-import MainNewsItems from "../MainNewsItem";
-import MainNewsData from "../../data/news.json";
+import MainNewsItems from "../MainNewsItem/";
+import MainNewsData from "../../../data/news.json";
 
 function MainNews() {
   const centralIndex = 1;

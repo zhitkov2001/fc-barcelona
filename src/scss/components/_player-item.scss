@@ -1,17 +1,22 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/fonts";
+
 .player {
   position: relative;
-  display: block;
-  max-width: 450px;
-  max-height: 450px;
-  box-shadow: 0px 5px -2px 5px rgba(237, 237, 237, 0.902);
+  @include square($size: 42rem);
+  box-shadow: 0.2rem 0.2rem 1.2rem 0 rgba(182, 182, 182, 0.15);
 
   &:hover .player__info {
-    width: 100%;
-    height: 200px;
+    @include wh($width: 100%, $height: 19rem);
+
     transition: all 0.4s ease;
   }
 
   &:hover .player__name {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+
     transform: translateY(-120%);
     transition: all 0.4s ease;
   }
@@ -25,96 +30,94 @@
 
 .player__link {
   display: block;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
+  @include wh-100;
 }
 
 .player__img {
   display: block;
-  width: 100%;
-  height: 100%;
+  @include wh-100;
 }
 
 .player__info {
-  position: absolute;
-  font-family: "Libre Franklin", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include position($position: absolute, $bottom: 0);
+  @include flex-center;
+  @include wh($width: 100%, $height: 5rem);
+
+  font-family: $font-secondary;
+  color: $white;
+  overflow: hidden;
   background: linear-gradient(
     180deg,
-    rgba(8, 14, 31, 0.2),
-    rgba(8, 14, 31, 0.5) 0%,
-    #080e1f 70%,
-    #080e1f
+    rgba(8, 14, 31, 0.4) 0%,
+    rgba(8, 14, 31, 0.6) 43%,
+    rgba(8, 14, 31, 0.7) 60%,
+    rgba(8, 14, 31, 0.9) 85%
   );
-  color: #ffffff;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  overflow: hidden;
+
   transition: all 0.4s;
 }
 
 .player__name {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
+  margin-bottom: -0.5rem;
+  line-height: 1;
+
   transform: translateY(-3px);
   transition: all 0.4s;
 }
 .player__number {
-  font-size: 50px;
-  padding-right: 15px;
-  line-height: 1;
-  font-weight: 600;
+  font-family: $number;
+  line-height: 0.64;
+  font-size: 7rem;
+  padding-right: 0.8rem;
+  font-weight: 500;
 }
 .player__surname {
-  font-size: 40px;
-  line-height: 1;
+  font-size: 4rem;
 }
 
 .player__stats {
-  display: grid;
-  justify-content: center;
-  gap: 5px;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(110%);
-
+  @include position($position: absolute, $bottom: 0, $transform: translateY(110%));
+  @include grid-center($gap: 0.5rem);
   text-align: center;
   width: 90%;
-  padding: 10px 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
+
   opacity: 0;
   transition: all 0.4s ease;
 
   .player-stats__list {
-    display: flex;
-    gap: 15px;
+    @include flex($gap: 1.5rem);
     width: 100%;
+
     .player-stats__item {
       width: 100%;
-      line-height: 1;
+      font-weight: 500;
+
       .player-stats__title {
-        font-size: 20px;
-        font-weight: 500;
-        color: #ffffff;
+        font-family: $font-accent;
+        margin-bottom: 0.2rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $white;
       }
       .player-stats__value {
-        font-size: 36px;
-        color: #edc831;
-        font-weight: 700;
+        font-family: $number;
+        line-height: 0.64;
+        font-size: 5.8rem;
+        color: $yellow;
       }
       .current__stats {
-        font-size: 16px;
-        font-weight: 400;
+        text-transform: lowercase;
+        font-size: 1.6rem;
+        letter-spacing: -0.01em;
+        color: $grey;
       }
       .current__value {
-        font-size: 24px;
-        font-weight: 600;
+        color: $yellow;
+        font-size: 3.6rem;
       }
     }
   }

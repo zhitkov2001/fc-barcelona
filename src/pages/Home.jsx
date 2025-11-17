@@ -1,7 +1,7 @@
 import React from "react";
 
-import MainNews from "../components/MainNews";
-import ClubNews from "./../components/ClubNews";
+import MainNews from "../components/News/MainNews";
+import ClubNews from "../components/News/ClubNews";
 
 function Home() {
   return (

@@ -1,29 +1,26 @@
+@import "../../scss/abstracts/mixins";
+
 .sponsors {
   width: 100%;
 
   .slider__container {
-    margin: 50px auto;
+    position: relative;
+    margin: 5rem auto;
     width: 100%;
     overflow: hidden;
-    position: relative;
 
     .slider__track {
-      display: flex;
+      @include flex;
 
       .slide {
-        flex: 0 0 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
+        flex: 0 0 14%;
 
         .slide__link {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flex-center;
         }
         .slide__img {
-          max-width: 220px;
-          max-height: 60px;
+          @include wh($max-width: 22rem, $max-height: 6rem);
         }
       }
     }

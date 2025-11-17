@@ -19,19 +19,26 @@
                   "matchId": "m1",
                   "homeTeamId": 3,
                   "awayTeamId": 1,
-                  "legs": []
+                  "legs": [{ "homeScore": null, "awayScore": null }]
                 },
                 {
                   "matchId": "m2",
                   "homeTeamId": 2,
                   "awayTeamId": 4,
-                  "legs": []
+                  "legs": [{ "homeScore": null, "awayScore": null }]
                 }
               ]
             },
             {
               "title": "final",
-              "matches": []
+              "matches": [
+                {
+                  "matchId": "m1",
+                  "homeTeamId": null,
+                  "awayTeamId": null,
+                  "legs": []
+                }
+              ]
             }
           ]
         }

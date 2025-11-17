@@ -1,33 +1,30 @@
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
 .round-selector {
-  margin: 0 auto 26px;
+  @include flex-center;
+  margin: 0 auto 2.6rem;
+  width: 19.08rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 12px;
-  padding: 6px 8px;
-  max-width: 270px;
-
-  border: 1px solid #141e5e;
-  border-radius: 16px;
-  background-color: #e0e0e0;
+  border: 0.2rem solid $dark-blue;
+  border-radius: 2.6rem;
+  background-color: $grey;
 }
 
 .selector__item {
-  padding: 8px 12px;
+  padding: 0.8rem 1.2rem;
 
-  border: 1px solid #141e5e;
-  border-radius: 4px;
-  background-color: #f6f6f6;
-
-  color: #141e5e;
-
+  font-size: 1.6rem;
+  color: $blue;
+  border-radius: 2.6rem;
   cursor: pointer;
 
-  &.active {
-    background-color: #141e5e;
+  transition: all 0.3s ease;
 
-    color: #f6f6f6;
+  &.active {
+    background-color: $blue;
+    color: $white;
+
+    transition: all 0.3s ease;
   }
 }

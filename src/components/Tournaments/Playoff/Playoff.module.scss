@@ -1,38 +1,41 @@
-.playoff {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: center;
-  align-items: center;
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/fonts";
 
-  gap: 4px;
+.playoff {
+  @include grid-center;
+  @include template-columns-auto-fit(29.6rem);
+
+  gap: 0.8rem;
 }
 
 .round__container {
-  position: relative;
-  display: grid;
-  gap: 22px;
+  @include position($position: relative);
+  @include grid($gap: 2rem);
+
   height: 100%;
 }
 
 .playoff__title {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  @include position($position: absolute, $top: 0, $left: 50%, $transform: translateX(-50%));
+
+  color: $blue;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .round__couple {
-  display: block;
   align-content: center;
 
   .couple {
   }
 
   &:first-of-type {
-    margin-top: 60px;
+    margin-top: 6rem;
   }
 }
 
 .noMatches {
-  margin-top: 60px;
+  margin-top: 6rem;
 }

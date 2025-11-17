@@ -1,4 +1,3 @@
-// import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./NewsItem.module.scss";
@@ -26,7 +25,7 @@ function NewsItem(news) {
             <div className={styles["news__date-info"]}>
               <img
                 className={styles.news__icon}
-                src='../img/time.svg'
+                src='./img/svgicons/time.svg'
                 alt='time'
               />
               <p className={styles.news__date}>{news.date}</p>

@@ -64,178 +64,130 @@ const PlayerPage = () => {
   };
 
   return (
-    <div className="playerPage">
-      <div className="player-hero__wrapper">
-        <h2 className="player-hero__surname">{player.surname}</h2>
-        <div className="player-hero__container">
-          <div className="player-hero__stats">
-            <h3 className="player-hero-stats__title">Barca stats</h3>
-            <ul className="player-hero-stats__list">
+    <div className='playerPage'>
+      <div className='player-hero__wrapper'>
+        <h2 className='player-hero__surname'>{player.surname}</h2>
+        <div className='player-hero__container'>
+          <div className='player-hero__stats'>
+            <h3 className='player-hero-stats__title'>Barca stats</h3>
+            <ul className='player-hero-stats__list'>
               {playerStats &&
                 Object.entries(playerStats).map(([key, value]) => (
-                  <li
-                    key={`${key}-${value}`}
-                    className="player-hero-stats__item"
-                  >
-                    <p className="player-hero-stats-item__title">
-                      {key.charAt(0).toUpperCase() + key.slice(1)}
-                    </p>
-                    <p className="player-hero-stats-item__value">{value}</p>
+                  <li key={`${key}-${value}`} className='player-hero-stats__item'>
+                    <p className='player-hero-stats-item__title'>{key.charAt(0).toUpperCase() + key.slice(1)}</p>
+                    <p className='player-hero-stats-item__value'>{value}</p>
                   </li>
                 ))}
             </ul>
-            <ul className="player-hero-stats__list">
+            <ul className='player-hero-stats__list'>
               {playerCurrentStats &&
                 Object.entries(playerCurrentStats).map(([key, value]) => (
-                  <li
-                    key={`${key}-${value}`}
-                    className="player-hero-current-stats__item"
-                  >
-                    <p className="player-hero-stats-item-current__title">
-                      Season 24/25
-                    </p>
-                    <p className="player-hero-stats-item-current__value">
-                      {value}
-                    </p>
+                  <li key={`${key}-${value}`} className='player-hero-current-stats__item'>
+                    <p className='player-hero-stats-item-current__title'>Season 24/25</p>
+                    <p className='player-hero-stats-item-current__value'>{value}</p>
                   </li>
                 ))}
             </ul>
           </div>
-          <div className="player-hero-img__container">
-            <img
-              alt={`${player.img}`}
-              src={`../../../img/Players/No-bg/${player.img}.webp`}
-            />
-            <div className="player-hero-info__block">
-              <p className="player-hero-info__position">
-                {player.position.charAt(0).toUpperCase() +
-                  player.position.slice(1)}
+          <div className='player-hero-img__container'>
+            <img alt={`${player.img}`} src={`../../../img/Players/No-bg/${player.img}.webp`} />
+            <div className='player-hero-info__block'>
+              <p className='player-hero-info__position'>
+                {player.position.charAt(0).toUpperCase() + player.position.slice(1)}
               </p>
-              <div className="player-hero-info__data">
-                <p className="player-hero-info__number">{player?.number}</p>
-                <p className="player-hero-info__name">{player?.name}</p>
-                <p className="player-hero-info__surname">{player.surname}</p>
+              <div className='player-hero-info__data'>
+                <p className='player-hero-info__number'>{player?.number}</p>
+                <p className='player-hero-info__name'>{player?.name}</p>
+                <p className='player-hero-info__surname'>{player.surname}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="player-card__content">
-          <div className="player-card__wrapper">
-            <img
-              className="player-card__img"
-              src={`../../../img/Players/${player.img}.webp`}
-              alt={player.surname}
-            />
-            <div className="player-card-img__info">
-              <p className="player-card-img__number">{player.number}</p>
-              <p className="player-card-img__fullname">
+      <div className='container'>
+        <div className='player-card__content'>
+          <div className='player-card__wrapper'>
+            <img className='player-card__img' src={`../../../img/Players/${player.img}.webp`} alt={player.surname} />
+            <div className='player-card-img__info'>
+              <p className='player-card-img__number'>{player.number}</p>
+              <p className='player-card-img__fullname'>
                 {player.name} {player.surname}
               </p>
             </div>
           </div>
-          <div className="player-card__info">
-            <p className="player-card-info__title">{player.title}</p>
-            <p className="player-card-info__subtitle">{player.subtitle}</p>
-            <ul className="player-card-allTime__list">
+          <div className='player-card__info'>
+            <p className='player-card-info__title'>{player.title}</p>
+            <p className='player-card-info__subtitle'>{player.subtitle}</p>
+            <ul className='player-card-allTime__list'>
               {playerAllTimeStats &&
                 Object.entries(playerAllTimeStats).map(([key, value]) => (
-                  <li key={key} className="player-card-allTime__item">
-                    <p className="player-card-allTime-stats__title">
-                      {key.charAt(0).toUpperCase() + key.slice(1)}
-                    </p>
-                    <span className="player-card-allTime-stats__value">
-                      {value}
-                    </span>
+                  <li key={key} className='player-card-allTime__item'>
+                    <p className='player-card-allTime-stats__title'>{key.charAt(0).toUpperCase() + key.slice(1)}</p>
+                    <span className='player-card-allTime-stats__value'>{value}</span>
                   </li>
                 ))}
             </ul>
-            <button onClick={openPopup} className="player-card-btn">
+            <button onClick={openPopup} className='player-card-btn'>
               Read full BIO
               <svg
-                fill=""
-                height="16px"
-                width="12px"
-                version="1.1"
-                id="Layer_1"
-                viewBox="0 0 330 330"
-                stroke="#ffffff"
-                strokeWidth="20"
+                fill=''
+                height='1.6rem'
+                width='1.6rem'
+                version='1.1'
+                id='Layer_1'
+                viewBox='0 0 330 330'
+                stroke='#ffffff'
+                strokeWidth='20'
               >
-                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
+                <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+                <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
+                <g id='SVGRepo_iconCarrier'>
                   {" "}
                   <path
-                    id="XMLID_222_"
-                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                    id='XMLID_222_'
+                    d='M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z'
                   ></path>{" "}
                 </g>
               </svg>
             </button>
           </div>
         </div>
-        <div className="player-card__details">
-          <ul className="player-card-details__list">
+        <div className='player-card__details'>
+          <ul className='player-card-details__list'>
             {playerDetails &&
               Object.entries(playerDetails).map(([key, value]) => (
-                <li
-                  key={`${key}-${value}`}
-                  className="player-card-details__item"
-                >
-                  <p className="player-card-details__title">
-                    {detailsTranslation[key].toUpperCase()}
-                  </p>
-                  <p className="player-card-details__text">{value}</p>
+                <li key={`${key}-${value}`} className='player-card-details__item'>
+                  <p className='player-card-details__title'>{detailsTranslation[key].toUpperCase()}</p>
+                  <p className='player-card-details__text'>{value}</p>
                 </li>
               ))}
           </ul>
         </div>
         {playerTrophy && (
-          <div className="player-card__trophy">
-            <div className="player-card-trophy-btn__wrapper">
-              <button onClick={handlePrev} className="player-card-trophy__btn">
-                <img src="../../img/svgicons/btnPrev.svg" alt="Previous" />
+          <div className='player-card__trophy'>
+            <div className='player-card-trophy-btn__wrapper'>
+              <button onClick={handlePrev} className='player-card-trophy__btn'>
+                <img src='../../img/svgicons/btnPrev.svg' alt='Previous' />
               </button>
-              <button onClick={handleNext} className="player-card-trophy__btn">
-                <img src="../../img/svgicons/btnNext.svg" alt="Previous" />
+              <button onClick={handleNext} className='player-card-trophy__btn'>
+                <img src='../../img/svgicons/btnNext.svg' alt='Previous' />
               </button>
             </div>
-            <ul ref={listRef} className="player-card-trophy__list">
+            <ul ref={listRef} className='player-card-trophy__list'>
               {Object.entries(playerTrophy).length > 0 ? (
                 Object.entries(playerTrophy).map(([key, trophy]) => (
-                  <li
-                    key={`${key}-${trophy}`}
-                    className="player-card-trophy__item"
-                  >
-                    <p className="player-card-trophy__team">{trophy.club}</p>
-                    <p className="player-card-trophy__competition">
-                      {trophy.title}
-                    </p>
-                    <div className="player-card-trophy__wrapper">
-                      <span className="player-card-trophy__quantity">
-                        {trophy.quantity}
-                      </span>
-                      <img
-                        src={`../../img/Trophy/${trophy.img}.webp`}
-                        alt={`${trophy.img}`}
-                      />
+                  <li key={`${key}-${trophy}`} className='player-card-trophy__item'>
+                    <p className='player-card-trophy__team'>{trophy.club}</p>
+                    <p className='player-card-trophy__competition'>{trophy.title}</p>
+                    <div className='player-card-trophy__wrapper'>
+                      <span className='player-card-trophy__quantity'>{trophy.quantity}</span>
+                      <img src={`../../img/Trophy/${trophy.img}.webp`} alt={`${trophy.img}`} />
                     </div>
-                    <ul className="player-card-trophy-season__list">
+                    <ul className='player-card-trophy-season__list'>
                       {Object.entries(trophy.years).length > 0 ? (
                         Object.entries(trophy.years).map(([key, year]) => (
-                          <li
-                            key={`${key}-${year}`}
-                            className="player-card-trophy-season__item"
-                          >
-                            <p className="player-card-trophy-season__value">
-                              {year}
-                            </p>
+                          <li key={`${key}-${year}`} className='player-card-trophy-season__item'>
+                            <p className='player-card-trophy-season__value'>{year}</p>
                           </li>
                         ))
                       ) : (
@@ -253,16 +205,16 @@ const PlayerPage = () => {
       </div>
       {playerBio &&
         (popup ? (
-          <div className="full-bio__overlay">
-            <div className="full-bio__wrapper">
-              <button onClick={closePopup} className="full-bio__btn">
-                <img src="../../img/svgicons/close.svg" alt="close" />
+          <div className='full-bio__overlay'>
+            <div className='full-bio__wrapper'>
+              <button onClick={closePopup} className='full-bio__btn'>
+                <img src='../../img/svgicons/close.svg' alt='close' />
               </button>
-              <ul className="full-bio__content">
-                <h4 className="full-bio__title">{player.fullName}</h4>
+              <ul className='full-bio__content'>
+                <h4 className='full-bio__title'>{player.fullName}</h4>
                 {playerBio.map((text, i) => (
-                  <li key={i} className="full-bio__item">
-                    <p className="full-bio__paragraph">{text}</p>
+                  <li key={i} className='full-bio__item'>
+                    <p className='full-bio__paragraph'>{text}</p>
                   </li>
                 ))}
               </ul>

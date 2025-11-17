@@ -1,149 +1,108 @@
-.match__item {
-  padding: 10px 14px;
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
 
-  border-radius: 5px;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.252);
+.match__item {
+  padding: 1rem 1.4rem;
+
+  border-radius: 0.5rem;
+  border-bottom: 0.1rem solid hsla(0, 0, 0, 0.252);
   transition: all 0.1s ease;
   &:hover {
-    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.2rem 0.5rem 0.2rem rgba($black, 0.25);
 
     transition: all 0.1s ease;
   }
 
   .match-item__link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // flex: 1 0 auto;
+    @include wh-100;
+    @include flex-between;
 
     .match-date__container {
       position: relative;
-      align-content: center;
-      display: grid;
-      gap: 5px;
+      @include grid($align: center, $gap: 0.5rem);
+      @include wh($min-width: 14rem, $height: 5rem);
+      padding: 0.4rem 1rem;
 
-      padding: 4px 10px;
-      min-width: 140px;
-      height: 50px;
-
-      font-family: "Inter", serif;
+      font-family: $font-accent;
       font-weight: 500;
-      color: #0f2d7e;
+      color: $blue;
       line-height: 1;
 
       .match-weekday {
-        font-size: 12px;
+        font-size: 1.2rem;
       }
       .match-date {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
 
       &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 1px;
-        height: 100%;
-        content: "";
-        display: block;
-        background: #c5c5c5;
+        @include right-streak;
       }
     }
 
     .match__competition {
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 170px;
-      height: 50px;
+      @include flex-center;
+      @include wh($min-width: 17rem, $height: 5rem);
 
       .match-competition__img {
-        max-width: 110px;
-        max-height: 40px;
+        @include wh($max-width: 11rem, $max-height: 4rem);
       }
 
       &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 1px;
-        height: 100%;
-        content: "";
-        display: block;
-        background: #c5c5c5;
+        @include right-streak;
       }
     }
 
     .match-stage__container {
       position: relative;
-      align-content: center;
-      display: grid;
-      gap: 5px;
+      @include grid($align: center, $justify: flex-start, $gap: 0.5rem);
+      @include wh($min-width: 20rem, $height: 5rem);
+      padding: 0.4rem 1rem;
 
-      padding: 4px 10px;
-      min-width: 200px;
-      height: 50px;
-
-      font-family: "Inter", serif;
+      font-family: $font-accent;
       font-weight: 400;
-      color: #0f2d7e;
+      color: $blue;
       line-height: 1;
 
       .match__stage {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
       .match__stadium {
-        font-size: 12px;
+        font-size: 1.2rem;
       }
 
       &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 1px;
-        height: 100%;
-        content: "";
-        display: block;
-        background: #c5c5c5;
+        @include right-streak;
       }
     }
 
     .match__info {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center($gap: 2rem);
       flex-grow: 1;
-      gap: 20px;
-      width: 40%;
-      height: 50px;
+      @include wh($width: 40%, $height: 5rem);
 
       .match-info__team {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        min-width: 220px;
+        @include flex($align: center);
 
-        font-family: "Inter", serif;
+        gap: 1.2rem;
+        min-width: 22rem;
+
+        font-family: $font-accent;
         font-weight: 600;
-        color: #0f2d7e;
+        color: $blue;
         line-height: 1;
 
         .team__title {
-          font-size: 16px;
+          font-size: 1.6rem;
         }
 
         .team-img__container {
-          display: flex;
-          justify-content: center;
-          width: 50px;
-          height: 50px;
+          @include flex-center;
+          @include square($max-size: 5rem);
         }
         .team__img {
-          max-width: 40px;
-          max-height: 40px;
+          @include square($max-size: 4rem);
         }
 
         &--end {
@@ -152,30 +111,27 @@
       }
 
       .score__container {
-        position: relative;
-        display: flex;
-        gap: 8px;
-        padding: 4px 10px;
+        @include position($position: relative);
+        @include flex($gap: 0.8rem);
 
-        background-color: #203c89;
+        padding: 0.4rem 1rem;
 
-        font-family: Impact, sans-serif;
-        line-height: 28px;
-        color: #fff;
+        background-color: $blue;
+        font-family: $score;
+        line-height: 2.8rem;
+        color: $white;
 
         .team__score {
-          font-size: 28px;
+          font-size: 2.8rem;
         }
         .score__dash {
-          font-size: 28px;
+          font-size: 3.2rem;
         }
         .score__aggregate {
-          position: absolute;
-          bottom: -14px;
-          left: 20%;
-
-          font-size: 12px;
-          color: #555555;
+          @include position($position: absolute, $left: 40%, $bottom: -1.4rem, $transform: translateX(-40%));
+          width: fit-content;
+          font-size: 1.2rem;
+          color: $dark-grey;
           line-height: 1;
         }
       }

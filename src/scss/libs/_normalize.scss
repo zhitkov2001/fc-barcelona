@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../abstracts/variables";
 
 * {
   padding: 0;
@@ -49,6 +49,11 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+img,
+svg {
+  pointer-events: none;
 }
 
 @mixin noselect {

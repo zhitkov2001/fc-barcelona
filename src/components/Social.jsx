@@ -11,7 +11,7 @@ function Social() {
                 <img
                   className='social__link-img'
                   alt='Facebook'
-                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/facebook.webp`}
+                  src={`../img/SocialIcon/facebook.webp`}
                 />
                 <div className='social__link-item-info'>
                   <h5 className='social__link-item-title'>FC Barcelona</h5>
@@ -23,7 +23,7 @@ function Social() {
               <a href='!#' className='social__link'>
                 <img
                   className='social__link-img'
-                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/x.webp`}
+                  src={`../img/SocialIcon/x.webp`}
                   alt='X'
                 />
                 <div className='social__link-item-info'>
@@ -36,7 +36,7 @@ function Social() {
               <a href='!#' className='social__link'>
                 <img
                   className='social__link-img'
-                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/youtube.webp`}
+                  src={`../img/SocialIcon/youtube.webp`}
                   alt='YouTube'
                 />
                 <div className='social__link-item-info'>
@@ -49,7 +49,7 @@ function Social() {
               <a href='!#' className='social__link'>
                 <img
                   className='social__link-img'
-                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/instagram.webp`}
+                  src={`../img/SocialIcon/instagram.webp`}
                   alt='Instagram'
                 />
                 <div className='social__link-item-info'>
@@ -62,7 +62,7 @@ function Social() {
               <a href='!#' className='social__link'>
                 <img
                   className='social__link-img'
-                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/tiktok.webp`}
+                  src={`../img/SocialIcon/tiktok.webp`}
                   alt='Tik Tok'
                 />
                 <div className='social__link-item-info'>
@@ -75,7 +75,7 @@ function Social() {
               <a href='!#' className='social__link'>
                 <img
                   className='social__link-img'
-                  src={`${process.env.PUBLIC_URL}/img/SocialIcon/spotify.webp`}
+                  src={`../img/SocialIcon/spotify.webp`}
                   alt='Spotify'
                 />
                 <div className='social__link-item-info'>

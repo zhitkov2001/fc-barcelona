@@ -1,25 +1,30 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
 .header {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  height: 55px;
-  justify-content: center;
-  background-color: #1d37db;
+  @include position($position: fixed, $left: 0, $top: 0, $z-index: 1000);
+  @include flex-center;
+  @include wh($width: 100%, $height: 6.5rem);
+  background-color: $dark-blue-black;
 
   & .container {
-    display: flex;
-    width: 1350px;
+    @include flex;
+    width: $container-width;
+
+    padding-bottom: 1rem;
+  }
+
+  &::after {
+    @include position($position: absolute, $left: 0, $bottom: 0);
+    @include wh($width: 100%, $height: 1rem);
+    content: "";
+    background-image: $pomegranate-blue-gradient;
   }
 }
 
 .header__logo {
-  display: flex;
+  @include flex-center;
   flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 
   transition: all 0.1s ease;
@@ -31,71 +36,61 @@
   }
 
   & img {
-    width: 50px;
-    height: 50px;
+    @include wh($width: 5rem, $height: 5rem);
   }
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center($gap: 2.4rem);
 
   width: 100%;
-  gap: 2.5rem;
 }
 
 .nav__link {
   display: flex;
 
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: -0.4px;
-  line-height: 1.4;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
   color: hsla(0, 0%, 100%, 1);
   text-decoration: none;
 
-  background-image: linear-gradient(#fdc52c, #fdc52c);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-
+  @include underline-animation($yellow);
   transition: all 0.2s ease;
 
   &:hover {
     color: hsl(0, 0%, 91%);
-    background-size: 100% 2px;
+    background-size: 100% 0.2rem;
     transition: all 0.2s ease;
   }
 
   &.active {
-    color: #fdc52c;
-    background-size: 0% 2px;
+    color: $yellow;
+    background-size: 0% 0.2rem;
     transition: all 0.3s ease;
     animation: gradientShrink 0.2s ease forwards;
   }
 
   @keyframes gradientShrink {
     0% {
-      background-size: 100% 2px;
+      background-size: 100% 0.2rem;
       background-position: 0% 100%;
     }
     50% {
-      background-size: 60% 2px;
+      background-size: 60% 0.2rem;
       background-position: 50% 100%;
     }
     100% {
-      background-size: 0% 2px;
+      background-size: 0% 0.2rem;
       background-position: 50% 80%;
-      background-image: linear-gradient(#fdc52c, #fdc52c);
+      background-image: linear-gradient($yellow, $yellow);
     }
   }
 }
 
 .profile {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex($justify: flex-end, $align: center);
   text-align: center;
   white-space: nowrap;
   gap: 2rem;

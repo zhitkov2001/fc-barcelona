@@ -1,49 +1,42 @@
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
 .playoff-match {
-  padding: 6px 0;
+  padding: 0.6rem 0;
   width: 100%;
-  border: 1px solid #0f1585;
+  border: 0.1rem solid $blue;
 
   .match__header {
-    display: flex;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @include flex($justify: space-between, $align: center);
 
     .team__container {
-      display: grid;
-      justify-content: center;
-
-      gap: 6px;
-      width: 116px;
+      @include grid($justify: center, $gap: 0.6rem);
+      width: 11.6rem;
 
       .team__logo {
-        max-width: 40px;
-        max-height: 40px;
-
-        margin: auto;
+        @include square($max-size: 4rem);
       }
     }
     .match-score__container {
       text-align: center;
-      width: 48px;
+      width: 4.8rem;
 
       .match__score {
-        margin-bottom: -8px;
+        margin-bottom: -0.8rem;
 
         .score__value {
-          font-size: 18px;
+          font-size: 1.8rem;
           font-weight: 600;
-          color: #0f1585;
+          color: $blue;
           line-height: 1;
           letter-spacing: -0.06em;
         }
         .extratime__value {
-          margin-top: -2px;
+          margin-top: -0.2rem;
 
-          font-size: 14px;
+          font-size: 1.4rem;
           font-weight: 400;
-          color: #353992;
+          color: $dark-grey;
           line-height: 1;
           letter-spacing: -0.06em;
         }
@@ -52,34 +45,30 @@
   }
 
   .match__container {
-    margin-top: 4px;
-    padding-top: 4px;
-    border-top: 1px solid #0f1585;
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    border-top: 0.1rem solid $blue;
     .match__item {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      .team {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      @include flex($justify: space-between, $align: center);
 
-        width: 116px;
-        font-size: 15px;
+      .team {
+        @include flex-center;
+
+        width: 11.6rem;
+        font-size: 1.5rem;
         font-weight: 600;
-        color: #0f1585;
+        color: $blue;
         line-height: 1;
         letter-spacing: -0.02em;
       }
 
       .score {
         text-align: center;
-        width: 48px;
+        width: 4.8rem;
 
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 600;
-        color: #0f1585;
+        color: $blue;
         line-height: 1;
       }
     }

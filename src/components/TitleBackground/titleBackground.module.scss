@@ -1,31 +1,21 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+
 .title-background {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 190px;
-
+  @include flex-center;
+  @include wh($width: 100%, $height: 19rem);
   overflow: hidden;
 }
 
 .title-background::before {
+  @include position($position: absolute, $top: 0, $left: 0, $z-index: 1);
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-      180deg,
-      rgba(18, 42, 168, 0) 0%,
-      rgba(19, 39, 147, 0) 71%,
-      rgb(20, 30, 94) 100%
-    ),
+  @include wh-100;
+  background: linear-gradient(180deg, rgba(18, 42, 168, 0) 0%, rgba(19, 39, 147, 0) 71%, $dark-blue-black 100%),
     url(../../../public/img/titleBackground.png) no-repeat center;
   background-size: cover;
   opacity: 0.3;
-  z-index: 1;
 }
 
 .title-background > * {
@@ -38,5 +28,5 @@
   line-height: 1;
   font-weight: 600;
   font-size: 3rem;
-  color: #ffffff;
+  color: $white;
 }

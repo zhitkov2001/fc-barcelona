@@ -1,4 +1,6 @@
 @import "./libs/normalize";
+@import "./abstracts/variables";
+@import "./abstracts/fonts";
 
 @import "./components/footer";
 @import "./components/header";
@@ -9,18 +11,23 @@
 @import "./components/player-item";
 @import "./components/player-page";
 @import "./components/players";
-@import "./components/section-schedule";
 @import "./components/social";
 @import "./components/tournaments";
 
 html {
-  filter: brightness(0.75);
+  // filter: brightness(0.75);
 
-  font-family: "Nunito";
-  background-color: $dark-blue;
+  font-size: 10px;
+  font-family: $font-primary;
+  background-color: $dark-blue-black;
+}
+
+body {
+  font-size: inherit;
 }
 
 main {
-  margin-top: 55px;
+  font-size: inherit;
+  margin-top: 65px;
   width: 100%;
 }

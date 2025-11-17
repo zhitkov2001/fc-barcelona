@@ -1,103 +1,90 @@
 .playerPage {
-  display: block;
-  color: #fff;
-  padding: 0 0 25px 0;
+  color: $white;
+  padding: 0 0 2.5rem 0;
   min-height: 100vh;
 
   .player-hero__wrapper {
     position: relative;
-    display: flex;
-    justify-content: center;
-    height: 578px;
+    @include flex($justify: center);
+    height: 57.8rem;
 
     .player-hero__surname {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Libre Franklin", sans-serif;
-      position: absolute;
-      z-index: 1;
-      top: 20px;
+      @include flex-center;
+      font-family: $font-secondary;
+      @include position($position: absolute, $top: 2rem, $z-index: 1);
       width: 100%;
 
       font-size: 18vw;
       font-weight: 600;
-      line-height: 1;
-
+      line-height: 1.14;
+      text-transform: uppercase;
       white-space: nowrap;
       overflow: hidden;
-      opacity: 0.1;
-      text-transform: uppercase;
+      opacity: 0.05;
     }
 
     .player-hero__container {
       position: relative;
-      display: flex;
-      justify-content: space-between;
-      width: 70%;
+      @include flex($justify: space-between);
+      width: $container-width;
 
       .player-hero__stats {
         align-content: end;
-        margin-bottom: 28px;
         width: 55%;
         text-align: center;
 
         .player-hero-stats__title {
-          margin-bottom: 25px;
-          font-family: "Arial Narrow";
+          margin-bottom: 2.5rem;
+          font-family: $font-accent;
           font-weight: 700;
-          font-size: 26px;
+          font-size: 2.6rem;
           line-height: 100%;
           letter-spacing: 0.04em;
-          color: #fff;
+          color: $white;
         }
 
         .player-hero-stats__list {
-          display: flex;
-          justify-content: center;
-          gap: 25px;
-          margin-bottom: 10px;
+          @include flex($justify: center, $gap: 2.5rem);
+
+          margin-bottom: 1rem;
 
           li {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            font-family: "Libre Franklin", sans-serif;
+            @include grid-center;
+            font-family: $font-accent;
           }
 
           .player-hero-stats__item {
-            display: grid;
-            gap: 6px;
-            min-width: 140px;
+            @include grid($gap: 0.6rem);
+            min-width: 14rem;
 
             .player-hero-stats-item__title {
               font-weight: 500;
-              font-size: 22px;
+              font-size: 2.2rem;
               line-height: 100%;
-              color: #fff;
+              color: $white;
             }
             .player-hero-stats-item__value {
               font-weight: 600;
-              font-size: 70px;
+              font-size: 7rem;
               line-height: 100%;
-              color: #edc831;
+              color: $yellow;
             }
           }
           .player-hero-current-stats__item {
-            min-width: 140px;
+            min-width: 14rem;
 
             .player-hero-stats-item-current__title {
               font-weight: 400;
-              font-size: 16px;
+              font-size: 1.6rem;
               line-height: 100%;
-              color: #fff;
+              color: $white;
               letter-spacing: -0.01em;
             }
             .player-hero-stats-item-current__value {
               font-weight: 600;
-              font-size: 40px;
+              font-size: 4rem;
               line-height: 125%;
-              color: #edc831;
+              color: $yellow;
             }
           }
         }
@@ -106,13 +93,11 @@
 
     .player-hero-img__container {
       position: relative;
-      height: 578px;
-      width: 490px;
+      @include wh($width: 49rem, $height: 57.8rem);
 
       & img {
-        position: absolute;
-        z-index: 2;
-        width: 490px;
+        @include position($position: absolute, $z-index: 2);
+        width: 49rem;
       }
 
       .player-hero-info__block {
@@ -165,26 +150,21 @@
     position: relative;
     margin: 0 auto;
     padding: 50px 0;
-    width: 70%;
+    width: $container-width;
     min-height: 500px;
     background-color: #fff;
     border-radius: 5px;
 
     .player-card__content {
-      display: flex;
-      justify-content: center;
+      @include flex($justify: center, $align: flex-start);
       margin-bottom: 40px;
       width: 100%;
-      color: #000;
+      color: $black;
 
       .player-card__wrapper {
         padding: 38px 80px;
-        width: 50%;
-        background: linear-gradient(
-          90deg,
-          rgb(25, 46, 167) 50%,
-          rgb(184, 16, 27) 50%
-        );
+        width: 40%;
+        background: linear-gradient(90deg, rgb(25, 46, 167) 50%, rgb(184, 16, 27) 50%);
 
         .player-card__img {
           display: flex;
@@ -207,21 +187,19 @@
       }
 
       .player-card__info {
-        display: grid;
-        gap: 45px;
-        padding: 0 50px;
-        width: 50%;
+        @include grid($display: grid, $gap: 4rem);
+        padding: 0 5rem;
+        width: 60%;
 
-        color: #18191b;
+        font-family: $font-secondary;
+        color: $black;
         font-weight: 400;
         line-height: 1;
 
         .player-card-info__title {
-          font-family: "Abel", serif;
           font-size: 34px;
         }
         .player-card-info__subtitle {
-          font-family: "Libre Franklin", serif;
           font-size: 18px;
         }
         .player-card-allTime__list {
@@ -253,26 +231,24 @@
           }
         }
         .player-card-btn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 6px;
+          @include flex-center($gap: 0.6rem);
+
           padding: 15px 10px;
           max-width: 160px;
 
           font-size: 15px;
           line-height: 1;
-          background-color: #bc1144;
+          background-color: $pomegranate;
           border-radius: 5px;
           border: none;
-          color: #fff;
+          color: $white;
           cursor: pointer;
 
           transition: all 0.1s ease;
 
           & svg {
-            stroke: #ffffff;
-            fill: #ffffff;
+            stroke: $white;
+            fill: $white;
 
             transition: all 0.1s ease;
           }
@@ -396,9 +372,8 @@
           }
 
           .player-card-trophy__wrapper {
-            display: flex;
-            justify-content: start;
-            align-items: center;
+            // @include flex-start-center;
+            @include flex($justify: flex-start, $align: center);
             gap: 8px;
             max-height: 65px;
             max-width: 100px;
@@ -406,8 +381,8 @@
             .player-card-trophy__quantity {
               font-weight: 400;
               font-size: 55px;
-              line-height: 100%;
-              color: #f2e000;
+              line-height: 1;
+              color: $yellow;
             }
 
             img {
@@ -417,9 +392,8 @@
             }
           }
           .player-card-trophy-season__list {
-            display: flex;
+            @include flex($justify: flex-start, $align: flex-start);
             flex-wrap: wrap;
-            align-items: flex-start;
             width: 100%;
             height: 28px;
             gap: 4px 8px;
@@ -440,47 +414,32 @@
     }
   }
   .full-bio__overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    @include flex-center;
+    @include position($position: fixed, $left: 0, $top: 0, $z-index: 9);
+    @include wh-100;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 9;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     transition: all 0.9s ease;
 
     .full-bio__wrapper {
-      position: relative;
-      height: 700px;
-      width: 700px;
-      top: 30px;
-      right: 0;
-      background-color: #ffffff;
-      color: #000;
-      border-radius: 8px;
-      z-index: 10;
+      @include position($position: relative, $top: 30px, $right: 0);
+      @include wh($width: 700px, $height: 700px);
       display: flex;
       flex-direction: column;
 
+      background-color: $white;
+      color: $black;
+      border-radius: 8px;
+      z-index: 10;
+
       .full-bio__btn {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: -13px;
-        left: -13px;
-        width: 26px;
-        height: 26px;
+        @include position($position: absolute, $left: -13px, $top: -13px, $z-index: 11);
+        @include flex-center;
+        @include wh($width: 26px, $height: 26px);
         border-radius: 50%;
         border: none;
-        background-color: hsl(0, 0%, 93%);
+        background-color: $grey;
         cursor: pointer;
-        z-index: 11;
       }
 
       .full-bio__content {
@@ -488,22 +447,20 @@
         gap: 25px;
         padding: 20px 30px;
         overflow-y: auto;
-        font-family: "Inter", serif;
+        font-family: $font-accent;
         line-height: 1;
 
         .full-bio__title {
           text-align: center;
           font-weight: 600;
           font-size: 32px;
-          color: #18191b;
+          color: $black;
         }
-        // .full-bio__item {
-        // }
 
         .full-bio__paragraph {
           font-weight: 400;
           font-size: 16px;
-          color: #2a293e;
+          color: $black;
         }
       }
     }

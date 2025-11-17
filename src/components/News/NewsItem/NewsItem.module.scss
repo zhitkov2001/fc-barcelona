@@ -1,0 +1,68 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+
+.news__item {
+  @include wh($width: 35rem, $height: 25.7rem);
+
+  .img__container {
+    @include wh($width: 100%, $height: 20rem);
+
+    .news__img {
+      @include wh-100;
+    }
+  }
+
+  .info__container {
+    padding: 0 0.8rem 0.8rem 0.8rem;
+
+    background-color: #efefef;
+
+    color: $blue;
+
+    .news__title {
+      padding: 0.4rem 0;
+
+      text-align: start;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .news__info {
+      @include flex($justify: space-between, $align: center);
+
+      .category__container {
+        @include flex($align: center, $gap: 0.5rem);
+
+        .category-quad {
+          @include square($size: 1.2rem);
+
+          border-radius: 50%;
+          background-color: $red;
+        }
+        .category__title {
+          font-weight: 500;
+          line-height: 1;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .news__date-info {
+      @include flex($justify: center, $align: center, $gap: 0.6rem);
+
+      font-weight: 500;
+      line-height: 1;
+      font-size: 1.6rem;
+      .news__icon {
+        @include square($size: 1.4rem);
+      }
+      .news__month {
+      }
+      .news__date {
+      }
+    }
+  }
+}

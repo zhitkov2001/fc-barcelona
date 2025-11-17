@@ -1,0 +1,25 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+
+.main__news {
+  min-height: 100vh;
+  margin-bottom: 5rem;
+
+  background-image: url(./../../../assets/img/news_bg.webp);
+
+  .main__title {
+    padding: 5rem 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: $white;
+  }
+
+  .main__news-container {
+    @include flex-center;
+    @include wh($width: $container-width, $height: 55rem);
+
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}

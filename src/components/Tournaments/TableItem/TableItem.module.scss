@@ -1,66 +1,59 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+
 .tableItem {
-  position: relative;
-  height: 60px;
-  color: #141e5e;
-  border-bottom: 2px solid #e2e2e2;
-  z-index: 10;
+  @include position($position: relative, $z-index: 10);
+  height: 6rem;
+  color: $dark-blue;
+  border-bottom: 0.2rem solid $grey;
 
   &:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: $light-grey;
   }
 
   &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 4px;
-    height: 58px;
+    @include position($position: absolute, $left: 0, $bottom: 0);
+    @include wh($width: 0.4rem, $height: 5.8rem);
     content: "";
     background: var(--row-accent-color, transparent);
   }
 
   .position {
-    width: 60px;
-    font-size: 22px;
+    width: 5.3rem;
+    font-size: 2.2rem;
     font-weight: 900;
 
-    color: #141e5e;
+    color: $dark-blue;
   }
   .team__сontainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 15px;
-    gap: 8px;
-    height: 60px;
+    @include flex($justify: flex-start, $align: center, $gap: 0.8rem);
+
+    margin-left: 1.5rem;
+    height: 6rem;
 
     .team__img__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px !important;
-      height: 50px !important;
+      @include flex-center;
+      @include square($size: 5rem !important);
 
       .team__img {
-        max-width: 45px;
-        max-height: 45px;
+        @include square($max-size: 4.5rem);
       }
     }
 
     .teamTitle {
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 800;
     }
   }
 
   .points {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
   }
 
   .stats {
-    width: 100px;
-    font-size: 18px;
+    width: 10rem;
+    font-size: 1.8rem;
     font-weight: 500;
   }
 }

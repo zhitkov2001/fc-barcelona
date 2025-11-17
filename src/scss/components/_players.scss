@@ -1,81 +1,76 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/fonts";
+
 .players__nav {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
+  @include flex-center;
+  margin: 4rem 0;
 }
 
 .players__nav-item {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  @include flex-center;
   list-style: none;
-  margin: 5px 20px 5px 20px;
-  height: 30px;
+  margin: 0.5rem 2rem;
+  height: 3rem;
 }
 
 .nav__btn {
   display: flex;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "Libre Franklin", sans-serif;
+
+  font-size: 2rem;
+  font-family: $font-secondary;
   font-weight: 600;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
+
+  cursor: pointer;
   border: none;
+  background-color: transparent;
 
   transition: color 0.3s;
 
   &:hover {
-    color: #ba0404;
+    color: $red;
     transition: color 0.3s;
   }
 
   &.is-active {
-    color: #ba0404;
-    border-bottom: 2px solid #dec500;
+    color: $red;
+    border-bottom: 0.2rem solid $yellow;
 
     transition: color 0.3s;
   }
 }
 
 .players__container {
-  display: flex;
+  @include flex-center;
   margin: 0 auto;
-  background: var(--grey);
-  height: auto;
-  width: 80vw;
-  border-radius: 15px;
-  justify-content: center;
+  width: $container-width;
+  border-radius: 1.5rem;
 }
 
 .players {
-  display: block;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
-  // margin: 10px 20px;
-  gap: 35px;
 }
 
 .players__group {
-  display: block;
+  @include grid($justify: center);
+  width: 100%;
 }
 
 .players__position {
-  justify-content: center;
   text-align: center;
   width: 100%;
 
   margin: 2rem 0;
 
-  font-family: "Libre Franklin", sans-serif;
+  font-family: $font-secondary;
   font-size: 2.5rem;
-  color: #fff;
+  color: $white;
 }
 
 .players__group--flex {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 7px 10px;
+  @include flex($justify: flex-start, $align: center, $wrap: wrap, $gap: 0.7rem 1rem);
+  width: 100%;
+  max-width: 66.7vw;
 }

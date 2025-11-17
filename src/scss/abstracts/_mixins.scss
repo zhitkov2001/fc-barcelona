@@ -1,0 +1,110 @@
+@import "./variables";
+
+@mixin flex($display: flex, $direction: null, $justify: null, $align: null, $wrap: null, $gap: null) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+@mixin flex-center($gap: null, $wrap: null) {
+  @include flex($justify: center, $align: center);
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+@mixin flex-between($gap: null, $wrap: null) {
+  @include flex($justify: space-between, $align: center);
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin grid(
+  $display: grid,
+  $columns: null,
+  $rows: null,
+  $gap: null,
+  $align: null,
+  $justify: null,
+  $justify-items: null
+) {
+  display: $display;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+  justify-items: $justify-items;
+}
+
+@mixin grid-center($gap: null) {
+  @include grid($justify: center, $align: center);
+  gap: $gap;
+}
+
+// @mixin grid-auto-fit($max-size: null, $gap: null) {
+//   @include grid($columns: repeat(auto-fit, minmax($max-size, 1fr)), $gap: $gap);
+// }
+
+@mixin template-columns-auto-fit($value) {
+  grid-template-columns: repeat(auto-fit, $value);
+}
+
+@mixin wh($width: null, $height: null, $max-width: null, $max-height: null, $min-width: null, $min-height: null) {
+  width: $width;
+  height: $height;
+  max-width: $max-width;
+  max-height: $max-height;
+  min-width: $min-width;
+  min-height: $min-height;
+}
+
+@mixin square($size: null, $max-size: null, $min-size: null) {
+  width: $size;
+  height: $size;
+  max-width: $max-size;
+  max-height: $max-size;
+  min-width: $min-size;
+  min-height: $min-size;
+}
+
+@mixin wh-100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin position(
+  $position: null,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $z-index: null,
+  $transform: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+  transform: $transform;
+}
+
+@mixin underline-animation($color: $yellow, $height: 2px, $duration: 0.3s) {
+  background-image: linear-gradient($color, $color);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 0% $height;
+  transition: background-size $duration ease;
+}
+
+@mixin right-streak {
+  @include position($position: absolute, $top: 0, $right: 0);
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: $border-grey;
+}

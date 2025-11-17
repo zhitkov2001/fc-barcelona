@@ -1,7 +1,7 @@
 import styles from "./ClubNews.module.scss";
 
 import ClubNewsItems from "../ClubNewsItems";
-import ClubNewsData from "../../data/news.json";
+import ClubNewsData from "../../../data/news.json";
 
 function ClubNews() {
   return (

@@ -31,9 +31,7 @@ const PlayoffItem = ({ match, teamsData }) => {
               <p className={styles.score__value}>-</p>
             </div>
           </div>
-          <div
-            className={`${styles.team__container} ${styles["away-team__container"]}`}
-          >
+          <div className={`${styles.team__container} ${styles["away-team__container"]}`}>
             <img
               src={`../img/teams/${awayTeam?.image || "default"}.png`}
               alt={awayTeam?.title}
@@ -46,12 +44,12 @@ const PlayoffItem = ({ match, teamsData }) => {
   }
 
   const homeAggregate = hasSecondMatch
-    ? (firstMatch.homeScore || 0) + (secondMatch?.awayScore || 0)
-    : firstMatch.homeScore || 0;
+    ? (firstMatch.homeScore ?? 0) + (secondMatch?.awayScore ?? 0)
+    : firstMatch.homeScore ?? null;
 
   const awayAggregate = hasSecondMatch
-    ? (firstMatch.awayScore || 0) + (secondMatch?.homeScore || 0)
-    : firstMatch.awayScore || 0;
+    ? (firstMatch.awayScore ?? 0) + (secondMatch?.homeScore ?? 0)
+    : firstMatch.awayScore ?? null;
 
   const isDraw = homeAggregate === awayAggregate;
 
@@ -62,16 +60,12 @@ const PlayoffItem = ({ match, teamsData }) => {
 
     if (data?.penalty) {
       const { homeScore, awayScore } = data.penalty;
-      return hasSecondMatch
-        ? `pen. ${awayScore}-${homeScore}`
-        : `pen. ${homeScore}-${awayScore}`;
+      return hasSecondMatch ? `pen. ${awayScore}-${homeScore}` : `pen. ${homeScore}-${awayScore}`;
     }
 
     if (data?.extratime) {
       const { homeScore, awayScore } = data.extratime;
-      return hasSecondMatch
-        ? `ET ${awayScore}-${homeScore}`
-        : `ET ${homeScore}-${awayScore}`;
+      return hasSecondMatch ? `ET ${awayScore}-${homeScore}` : `ET ${homeScore}-${awayScore}`;
     }
 
     return null;
@@ -92,16 +86,12 @@ const PlayoffItem = ({ match, teamsData }) => {
         <div className={styles["match-score__container"]}>
           <div className={styles.match__score}>
             <p className={styles.score__value}>
-              {homeAggregate} - {awayAggregate}
+              {homeAggregate != null && awayAggregate != null ? `${homeAggregate} - ${awayAggregate}` : "vs"}
             </p>
-            {extratimeInfo && (
-              <p className={styles.extratime__value}>{extratimeInfo}</p>
-            )}
+            {extratimeInfo && <p className={styles.extratime__value}>{extratimeInfo}</p>}
           </div>
         </div>
-        <div
-          className={`${styles.team__container} ${styles["away-team__container"]}`}
-        >
+        <div className={`${styles.team__container} ${styles["away-team__container"]}`}>
           <img
             src={`../img/teams/${awayTeam?.image || "default"}.png`}
             alt={awayTeam?.title}
@@ -115,15 +105,17 @@ const PlayoffItem = ({ match, teamsData }) => {
           const home = isReversed ? awayTeam : homeTeam;
           const away = isReversed ? homeTeam : awayTeam;
 
-          return (
-            <div
-              key={`${leg.homeTeamId}-${leg.awayTeamId}-${index}`}
-              className={styles.match__item}
-            >
+          return homeAggregate != null && awayAggregate != null ? (
+            <div key={`${leg.homeTeamId}-${leg.awayTeamId}-${index}`} className={styles.match__item}>
               <div className={styles.team}>{home?.title}</div>
               <div className={styles.score}>
-                {leg.homeScore} - {leg.awayScore}
+                {leg.homeScore != null && leg.awayScore != null ? `${leg.homeScore} - ${leg.awayScore}` : ""}
               </div>
+              <div className={styles.team}>{away?.title}</div>
+            </div>
+          ) : (
+            <div key={`${leg.homeTeamId}-${leg.awayTeamId}-${index}`} className={styles.match__item}>
+              <div className={styles.team}>{home?.title}</div>
               <div className={styles.team}>{away?.title}</div>
             </div>
           );

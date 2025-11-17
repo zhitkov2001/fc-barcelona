@@ -1,13 +1,15 @@
+@import "../abstracts/variables";
+
 .tournaments {
+  min-height: 100vh;
+
   .container {
-    display: block;
-    margin: 50px auto;
-    padding: 24px 12px 36px;
-    width: 80vw;
-    min-height: 100vh;
+    margin: 5rem auto;
+    padding: 2.4rem 1.2rem 3.6rem;
+    width: $container-width;
 
     border-radius: 10px;
-    background-color: #fff;
+    background-color: $white;
 
     .table__container {
       padding: 6px;
@@ -19,10 +21,10 @@
     }
 
     .group-stage__title {
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 700;
-      line-height: 100%;
-      margin-bottom: 4px;
+      line-height: 1;
+      margin-bottom: 0.4rem;
     }
   }
 }
