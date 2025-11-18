@@ -3,12 +3,12 @@ import React from "react";
 import TitleBackround from "../components/TitleBackground";
 import matchData from "../data/schedule";
 import MatchItem from "../components/MatchItem";
+import GlassMatchItem from "../components/GlassMatchItem/index";
 
 function Matches() {
   const monthKeys = Object.keys(matchData);
 
   return (
-    // <>
     <section className='matches'>
       <TitleBackround title='Barça Matches' />
       <div className='container'>
@@ -16,7 +16,8 @@ function Matches() {
           <button className='matches__btn'>Schedule</button>
           <button className='matches__btn'>Matches</button>
         </div>
-        <ul className='match__list'>
+        <GlassMatchItem />
+        {/* <ul className='match__list'>
           {monthKeys.map((month) => (
             <div key={month} className='match__group'>
               <h3 className='match-list__month'>{month}</h3>
@@ -25,10 +26,9 @@ function Matches() {
               ))}
             </div>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </section>
-    // </>
   );
 }
 
