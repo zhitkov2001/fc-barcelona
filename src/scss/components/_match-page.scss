@@ -24,9 +24,12 @@
         @include wh-100;
         background-image: linear-gradient(
           180deg,
-          rgba(217, 217, 217, 0) 75%,
-          rgba(217, 217, 217, 0.2) 90%,
-          rgba(233, 233, 233, 0.8) 100%
+          rgba(217, 217, 217, 0.25) 7%,
+          rgba(217, 217, 217, 0.1) 25%,
+          rgba(217, 217, 217, 0.1) 75%,
+          rgba(233, 233, 233, 0.15) 85%,
+          rgba(233, 233, 233, 0.5) 95%,
+          rgba(233, 233, 233, 0.7) 100%
         );
         background-color: rgba(0, 1, 26, 0.6);
       }
@@ -66,7 +69,7 @@
             height: fit-content;
 
             .team-info-list__item {
-              @include flex($gap: 0.8rem);
+              @include flex($align: center, $gap: 0.8rem);
               white-space: nowrap;
 
               .action__container {
@@ -113,13 +116,16 @@
           .match-score__container {
             @include flex-center($gap: 0.6rem);
             line-height: 1;
+            font-family: $score;
+            font-size: 3.8rem;
 
             .team__score {
-              font-family: $score;
               font-size: 3.3rem;
             }
             .score__dash {
-              font-size: 3.8rem;
+            }
+            .time {
+              letter-spacing: 0.02em;
             }
           }
           .match-info__stadium {

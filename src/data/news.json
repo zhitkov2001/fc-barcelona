@@ -1,34 +1,6 @@
 [
   {
     "id": 5,
-    "weekday": "monday",
-    "month": "july",
-    "date": "05",
-    "img": "2",
-    "title": "Test news 6",
-    "subtitle": "The league organisation has confirmed when FC Barcelona will play their opening league fixture away to Mallorca",
-    "category": "club",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Ivan Rakitić has announced his retirement at the age of 37. After spending his final seasons playing in the Saudi Pro League and back in Croatia, he has decided to hang up his boots, bringing an end to a brilliant career that included spells at Schalke 04, Sevilla, and FC Barcelona."
-      },
-      {
-        "type": "heading",
-        "text": "Stunning stats"
-      },
-      {
-        "type": "paragraph",
-        "text": "Over his six seasons in a Barça shirt (2014–2020), Rakitić played a total of 310 competitive matches, scoring 36 goals. His trophy haul includes 4 La Liga titles, 4 Copas del Rey, 1 Champions League, 1 FIFA Club World Cup, 1 UEFA Super Cup, and 2 Spanish Super Cups. Beyond the statistics, he stood out for his tactical intelligence, work ethic, and flawless understanding with players like Messi, Busquets, Iniesta and Suárez."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ivan Rakitić will be remembered as a modern legend at FC Barcelona, an all-round midfielder who put his talent at the service of the team and helped shape one of the most successful eras in the club’s history."
-      }
-    ]
-  },
-  {
-    "id": 4,
     "month": "july",
     "date": "14",
     "img": "1",
@@ -59,6 +31,34 @@
       {
         "type": "paragraph",
         "text": "As a wide player, Bardghji is known for his one-on-one skills, his ability to dribble past opponents, and his effectiveness in front of goal. His presence on the right wing can, therefore, make the difference and provide more dynamism. During his spell for Copenhagen, he won three Danish league titles and two Danish cups, making decisive contributions for team success."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "weekday": "monday",
+    "month": "july",
+    "date": "05",
+    "img": "4",
+    "title": "The first game at the renovated Spotify Camp Nou",
+    "subtitle": "FC Barcelona informs that the match corresponding to matchday 13 of the League, against Athletic Club, scheduled for Saturday, November 22 at 16:15 hours, will finally be played at Spotify Camp Nou. FC Barcelona informs that the match corresponding to matchday 13 of the League, against Athletic Club, scheduled for Saturday, November 22 at 16:15 hours, will finally be played at Spotify Camp Nou.",
+    "category": "club",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Ivan Rakitić has announced his retirement at the age of 37. After spending his final seasons playing in the Saudi Pro League and back in Croatia, he has decided to hang up his boots, bringing an end to a brilliant career that included spells at Schalke 04, Sevilla, and FC Barcelona."
+      },
+      {
+        "type": "heading",
+        "text": "Stunning stats"
+      },
+      {
+        "type": "paragraph",
+        "text": "Over his six seasons in a Barça shirt (2014–2020), Rakitić played a total of 310 competitive matches, scoring 36 goals. His trophy haul includes 4 La Liga titles, 4 Copas del Rey, 1 Champions League, 1 FIFA Club World Cup, 1 UEFA Super Cup, and 2 Spanish Super Cups. Beyond the statistics, he stood out for his tactical intelligence, work ethic, and flawless understanding with players like Messi, Busquets, Iniesta and Suárez."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ivan Rakitić will be remembered as a modern legend at FC Barcelona, an all-round midfielder who put his talent at the service of the team and helped shape one of the most successful eras in the club’s history."
       }
     ]
   },

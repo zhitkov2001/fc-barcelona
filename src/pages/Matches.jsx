@@ -1,32 +1,43 @@
 import React from "react";
 
 import TitleBackround from "../components/TitleBackground";
-import matchData from "../data/schedule";
-import MatchItem from "../components/MatchItem";
-import GlassMatchItem from "../components/GlassMatchItem/index";
+import resultsData from "../data/matches/results";
+import scheduleData from "../data/matches/schedule";
+import MatchItem from "../components/Matches/MatchItem/index";
 
 function Matches() {
-  const monthKeys = Object.keys(matchData);
+  const [activeBtn, setActiveBtn] = React.useState("Matches");
+  const btnData = ["Schedule", "Matches"];
+  const currentData = activeBtn === "Matches" ? resultsData : scheduleData;
+  const monthKeys = Object.keys(currentData || {});
 
   return (
     <section className='matches'>
       <TitleBackround title='Barça Matches' />
       <div className='container'>
         <div className='btn__wrapper'>
-          <button className='matches__btn'>Schedule</button>
-          <button className='matches__btn'>Matches</button>
+          {btnData.map((value) => {
+            return (
+              <button
+                key={value}
+                className={activeBtn === value ? "matches__btn active" : "matches__btn"}
+                onClick={() => setActiveBtn(value)}
+              >
+                {value}
+              </button>
+            );
+          })}
         </div>
-        <GlassMatchItem />
-        {/* <ul className='match__list'>
+        <ul className='match__list'>
           {monthKeys.map((month) => (
             <div key={month} className='match__group'>
               <h3 className='match-list__month'>{month}</h3>
-              {matchData[month].map((match) => (
+              {currentData[month]?.map((match) => (
                 <MatchItem key={match.id} {...match} />
               ))}
             </div>
           ))}
-        </ul> */}
+        </ul>
       </div>
     </section>
   );
