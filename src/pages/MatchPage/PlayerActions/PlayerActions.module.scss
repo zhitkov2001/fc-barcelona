@@ -1,0 +1,15 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+
+.action__container {
+  @include flex($align: center, $gap: 0.2rem);
+
+  .action__img {
+    @include square($max-size: 1.6rem);
+  }
+
+  .action__minute {
+    color: $white;
+    font-size: 1.6rem;
+  }
+}

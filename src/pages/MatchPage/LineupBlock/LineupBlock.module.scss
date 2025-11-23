@@ -1,0 +1,35 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+.lineupWrapper {
+  padding: 0 2rem;
+  width: 50%;
+
+  line-height: 1;
+  color: $white;
+
+  .lineupTitle {
+    text-align: center;
+    padding: 0 0 1rem 0;
+
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: $black;
+  }
+
+  .lineupList {
+    padding: 1.5rem;
+
+    border-radius: 0.5rem;
+    background-color: $dark-blue-black;
+
+    .lineupSubtitle {
+      padding: 1rem 0 0.5rem 0;
+
+      font-family: $font-secondary;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: $white;
+    }
+  }
+}

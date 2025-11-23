@@ -1,380 +1,82 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
+import TeamActionsList from "./TeamActionsList";
+import LineupBlock from "./LineupBlock";
+import styles from "./MatchPage.module.scss";
 
 const MatchPage = () => {
-  const location = useLocation();
-  const match = location.state;
+  const match = useLocation().state;
 
-  const ownerPlayersList = match?.owner?.players?.start || {};
-  const guestPlayersList = match?.guest?.players?.start || {};
-  const ownerSubtitutionsList = match?.owner?.players?.subtitution || {};
-  const guestSubtitutionsList = match?.guest?.players?.subtitution || {};
-
-  const hasOwnerPlayers = Object.keys(ownerPlayersList).length > 0;
-  const hasGuestPlayers = Object.keys(guestPlayersList).length > 0;
-  const hasOwnerSubtitutions = Object.keys(ownerSubtitutionsList).length > 0;
-  const hasGuestSubtitutions = Object.keys(guestSubtitutionsList).length > 0;
-
-  const hasOwnerActions = hasOwnerPlayers || hasOwnerSubtitutions;
-  const hasGuestActions = hasGuestPlayers || hasGuestSubtitutions;
+  const owner = match.owner?.players || {};
+  const guest = match.guest?.players || {};
 
   return (
-    <div className='match__page'>
-      <div className='container'>
-        <div className='match__wrapper'>
+    <div className={styles.matchPage}>
+      <div className={styles.container}>
+        {/* Фон + карточка матча */}
+        <div className={styles.matchWrapper}>
           <img
-            src={`/img/Matches/${match?.matchBackground}.webp`}
-            alt={match?.match_background}
-            className='match-wrapper__background'
+            src={`/img/Matches/${match.matchBackground}.webp`}
+            className={styles.matchBackground}
+            alt={match.matchBackground}
           />
-          <div className='match__item'>
-            <div className='match-team__container'>
-              <div className='team-img__container'>
+
+          <div className={styles.matchItem}>
+            {/* Левая команда */}
+            <div className={styles.teamContainer}>
+              <div className={styles.teamInfo}>
                 <img
-                  className='team__logo'
-                  src={`/img/Teams/${match?.owner?.img || "default"}.png`}
-                  alt={match?.owner?.img}
+                  src={`/img/Teams/${match.owner.img || "default"}.png`}
+                  className={styles.teamLogo}
+                  alt={match.owner.img}
                 />
-                <div className='team__title'>{match?.owner?.title}</div>
+                <p className={styles.teamTitle}>{match.owner.title}</p>
               </div>
-
-              {/* Секция действий владельца */}
-              {hasOwnerActions ? (
-                <ul className='team-info__list'>
-                  {Object.entries({
-                    ...ownerPlayersList,
-                    ...ownerSubtitutionsList,
-                  })
-                    .filter(([_, player]) => {
-                      if (!player?.actions) return false;
-                      const validActions = Object.values(player.actions).filter(
-                        (action) => action?.img && action.img !== "subtitution" && action.minute
-                      );
-                      return validActions.length > 0;
-                    })
-                    .sort((a, b) => {
-                      const getFirstMinute = (player) => {
-                        const minutes = Object.values(player.actions)
-                          .filter((action) => action.img !== "subtitution")
-                          .map((action) => parseInt(action.minute) || Infinity);
-                        return Math.min(...minutes);
-                      };
-                      return getFirstMinute(a[1]) - getFirstMinute(b[1]);
-                    })
-                    .map(([playerId, player]) => {
-                      const actions = Object.entries(player.actions)
-                        .filter(([_, action]) => action?.img && action.img !== "subtitution" && action.minute)
-                        .sort((a, b) => (parseInt(a[1].minute) || 0) - (parseInt(b[1].minute) || 0));
-                      return (
-                        <li key={playerId} className='team-info-list__item'>
-                          {actions.map(([actionId, action]) => (
-                            <div key={actionId} className='action__container'>
-                              <img
-                                className='action__img'
-                                src={`/img/MatchAction/${action.img}.png`}
-                                alt={action.img}
-                                onError={(e) => (e.target.style.display = "none")}
-                              />
-                              {Array.isArray(action.minute) || typeof action.minute === "object" ? (
-                                Object.values(action.minute).map((min, i) => (
-                                  <span key={i} className='action__minute'>
-                                    {action.minute.length > 1 ? `${min}' ` : `${min}'`}
-                                  </span>
-                                ))
-                              ) : (
-                                <span className='action__minute'>{action.minute}'</span>
-                              )}
-                            </div>
-                          ))}
-                          <span className='action__player'>{player.surname}</span>
-                        </li>
-                      );
-                    })}
-                </ul>
-              ) : (
-                <ul className='team-info__list'></ul>
-              )}
+              <TeamActionsList start={owner.start} subs={owner.subtitution} />
             </div>
 
-            <div className='match__info'>
-              <p className='match-info__stage'>{match?.stageInfo?.stage}</p>
+            {/* Центральный блок */}
+            <div className={styles.matchInfo}>
+              <p className={styles.matchStage}>{match.stageInfo.stage}</p>
               <img
-                src={`/img/Competition/${match?.competition}.png`}
-                alt={match?.competition}
-                className={`match-info__competition ${match?.competition === "UCL" ? "white-logo" : ""}`}
+                className={`${styles.competitionLogo} ${match.competition === "UCL" ? styles.whiteLogo : ""}`}
+                alt={match.competition}
+                src={`/img/Competition/${match.competition}.png`}
+                onError={(e) => {
+                  e.target.outerHTML = `<span style="font-size: 1.8rem">${match.competition}</span>`;
+                }}
               />
-              {match?.score?.owner !== null && match?.score?.guest !== null ? (
-                <div className='match-score__container'>
-                  <p className='team__score'>{match?.score?.owner}</p>
-                  <span className='score__dash'>-</span>
-                  <p className='team__score'>{match?.score?.guest}</p>
+
+              {match.score.owner != null ? (
+                <div className={styles.scoreContainer}>
+                  <p className={styles.teamScore}>{match.score.owner}</p>
+                  <span>-</span>
+                  <p className={styles.teamScore}>{match.score.guest}</p>
                 </div>
               ) : (
-                <div className='match-score__container'>
-                  <span className='time'>{match?.dateInfo?.time}</span>
-                </div>
+                <span className={styles.time}>{match.dateInfo.time}</span>
               )}
-              <p className='match-info__stadium'>{match?.stageInfo?.stadium}</p>
+
+              <p className={styles.stadium}>{match.stageInfo.stadium}</p>
             </div>
 
-            <div className='match-team__container'>
-              {/* Секция действий гостя */}
-              {hasGuestActions ? (
-                <ul className='team-info__list'>
-                  {Object.entries({
-                    ...guestPlayersList,
-                    ...guestSubtitutionsList,
-                  })
-                    .filter(([_, player]) => {
-                      if (!player?.actions) return false;
-                      const validActions = Object.values(player.actions).filter(
-                        (action) => action?.img && action.img !== "subtitution" && action.minute
-                      );
-                      return validActions.length > 0;
-                    })
-                    .sort((a, b) => {
-                      const getFirstMinute = (player) => {
-                        const minutes = Object.values(player.actions)
-                          .filter((action) => action.img !== "subtitution")
-                          .map((action) => parseInt(action.minute) || Infinity);
-                        return Math.min(...minutes);
-                      };
-                      return getFirstMinute(a[1]) - getFirstMinute(b[1]);
-                    })
-                    .map(([playerId, player]) => {
-                      const actions = Object.entries(player.actions)
-                        .filter(([_, action]) => action?.img && action.img !== "subtitution" && action.minute)
-                        .sort((a, b) => (parseInt(a[1].minute) || 0) - (parseInt(b[1].minute) || 0));
-
-                      return (
-                        <li key={playerId} className='team-info-list__item'>
-                          {actions.map(([actionId, action]) => (
-                            <div key={actionId} className='action__container'>
-                              <img
-                                className='action__img'
-                                src={`/img/MatchAction/${action.img}.png`}
-                                alt={action.img}
-                                onError={(e) => (e.target.style.display = "none")}
-                              />
-                              {Array.isArray(action.minute) || typeof action.minute === "object" ? (
-                                Object.values(action.minute).map((min, i) => (
-                                  <span key={i} className='action__minute'>
-                                    {action.minute.length > 1 ? `${min}' ` : `${min}'`}
-                                  </span>
-                                ))
-                              ) : (
-                                <span className='action__minute'>{action.minute}'</span>
-                              )}
-                            </div>
-                          ))}
-                          <span className='action__player'>{player.surname}</span>
-                        </li>
-                      );
-                    })}
-                </ul>
-              ) : (
-                <ul className='team-info__list'></ul>
-              )}
-              <div className='team-img__container'>
-                <img
-                  className='team__logo'
-                  src={`/img/Teams/${match?.guest?.img || "default"}.png`}
-                  alt={match?.guest?.title}
-                />
-                <div className='team__title'>{match?.guest?.title}</div>
+            {/* Правая команда */}
+            <div className={styles.teamContainer}>
+              <TeamActionsList start={guest.start} subs={guest.subtitution} />
+              <div className={styles.teamInfo}>
+                <img src={`/img/Teams/${match.guest.img}.png`} className={styles.teamLogo} alt={match.guest.img} />
+                <p className={styles.teamTitle}>{match.guest.title}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='match-info__container'>
-          <h2 className='match-info__title'>Starting line up</h2>
-          <div className='lineup__container'>
-            {/* Состав владельца */}
-            <div className='lineup__wrapper'>
-              <h3 className='lineup__title'>{match?.owner?.title}</h3>
-              <ul className='lineup__list'>
-                {hasOwnerPlayers ? (
-                  Object.entries(ownerPlayersList).map(([key, player]) => (
-                    <li key={key} className='lineup__item'>
-                      <p className='lineup-player__number'>{player.number}</p>
-                      <div className='lineup-player-img__container'>
-                        <img
-                          className='lineup-player__img'
-                          src={player.img ? `/img/Players/30x30/${player.img}.png` : "/img/Players/30x30/Noname.png"}
-                          alt={player.img ? player.surname : "Noname"}
-                        />
-                      </div>
-                      <div className='luneup-player__info'>
-                        <p className='lineup-player__name'>{`${player.name} ${player.surname}`}</p>
-                        <p className='lineup-player__position'>{player.position}</p>
-                      </div>
-                      <ul className='player-action__list'>
-                        {player.actions
-                          ? Object.entries(player.actions).map(([key, action]) => (
-                              <li key={key} className='player-action__item'>
-                                <img
-                                  className='player-action__img'
-                                  src={`/img/MatchAction/${action.img}.png`}
-                                  alt={`${action.img}`}
-                                />
-                                {action.playerIn ? (
-                                  <p className='player-action__subtitle'>{`${action.minute}' ${action.playerIn}`}</p>
-                                ) : (
-                                  <p className='player-action__subtitle'>
-                                    {Array.isArray(action.minute) || typeof action.minute === "object"
-                                      ? Object.values(action.minute).map((min, i, arr) => (
-                                          <span key={i}>
-                                            {min}'{i < arr.length - 1 ? " " : ""}
-                                          </span>
-                                        ))
-                                      : `${action.minute}'`}
-                                  </p>
-                                )}
-                              </li>
-                            ))
-                          : null}
-                      </ul>
-                    </li>
-                  ))
-                ) : (
-                  <p>No starting players</p>
-                )}
+        {/* Блок составов */}
+        <div className={styles.infoContainer}>
+          <h2 className={styles.infoTitle}>Starting line up</h2>
 
-                <h4 className='lineup__subtitle'>Subtitution</h4>
-                {hasOwnerSubtitutions ? (
-                  Object.entries(ownerSubtitutionsList).map(([key, player]) => (
-                    <li key={key} className='lineup__item'>
-                      <p className='lineup-player__number'>{player.number}</p>
-                      <div className='lineup-player-img__container'>
-                        <img
-                          className='lineup-player__img'
-                          src={player.img ? `/img/Players/30x30/${player.img}.png` : "/img/Players/30x30/Noname.png"}
-                          alt={player.img ? player.surname : "Noname"}
-                        />
-                      </div>
-                      <div className='luneup-player__info'>
-                        <p className='lineup-player__name'>{`${player.name} ${player.surname}`}</p>
-                        <p className='lineup-player__position'>{player.position}</p>
-                      </div>
-                      <ul className='player-action__list'>
-                        {player.actions
-                          ? Object.entries(player.actions).map(([key, action]) => (
-                              <li key={key} className='player-action__item'>
-                                <img
-                                  className='player-action__img'
-                                  src={`/img/MatchAction/${action.img}.png`}
-                                  alt={`${action.img}`}
-                                />
-                                {action.playerIn ? (
-                                  <p className='player-action__subtitle'>{`${action.minute}' ${action.playerIn}`}</p>
-                                ) : (
-                                  <p className='player-action__subtitle'>{`${action.minute}'`}</p>
-                                )}
-                              </li>
-                            ))
-                          : null}
-                      </ul>
-                    </li>
-                  ))
-                ) : (
-                  <p>No substitutions</p>
-                )}
-              </ul>
-            </div>
-
-            {/* Состав гостя */}
-            <div className='lineup__wrapper'>
-              <h3 className='lineup__title'>{match?.guest?.title}</h3>
-              <ul className='lineup__list'>
-                {hasGuestPlayers ? (
-                  Object.entries(guestPlayersList).map(([key, player]) => (
-                    <li key={key} className='lineup__item'>
-                      <p className='lineup-player__number'>{player.number}</p>
-                      <div className='lineup-player-img__container'>
-                        <img
-                          className='lineup-player__img'
-                          src={player.img ? `/img/Players/30x30/${player.img}.png` : "/img/Players/30x30/Noname.png"}
-                          alt={player.img ? player.surname : "Noname"}
-                        />
-                      </div>
-                      <div className='luneup-player__info'>
-                        <p className='lineup-player__name'>{`${player.name} ${player.surname}`}</p>
-                        <p className='lineup-player__position'>{player.position}</p>
-                      </div>
-                      <ul className='player-action__list'>
-                        {player.actions
-                          ? Object.entries(player.actions).map(([key, action]) => (
-                              <li key={key} className='player-action__item'>
-                                <img
-                                  className='player-action__img'
-                                  src={`/img/MatchAction/${action.img}.png`}
-                                  alt={`${action.img}`}
-                                />
-                                {action.playerIn ? (
-                                  <p className='player-action__subtitle'>{`${action.minute}' ${action.playerIn}`}</p>
-                                ) : (
-                                  <p className='player-action__subtitle'>
-                                    {Array.isArray(action.minute) || typeof action.minute === "object"
-                                      ? Object.values(action.minute).map((min, i, arr) => (
-                                          <span key={i}>
-                                            {min}'{i < arr.length - 1 ? " " : ""}
-                                          </span>
-                                        ))
-                                      : `${action.minute}'`}
-                                  </p>
-                                )}
-                              </li>
-                            ))
-                          : null}
-                      </ul>
-                    </li>
-                  ))
-                ) : (
-                  <p>No starting players</p>
-                )}
-
-                <h4 className='lineup__subtitle'>Subtitution</h4>
-                {hasGuestSubtitutions ? (
-                  Object.entries(guestSubtitutionsList).map(([key, player]) => (
-                    <li key={key} className='lineup__item'>
-                      <p className='lineup-player__number'>{player.number}</p>
-                      <div className='lineup-player-img__container'>
-                        <img
-                          className='lineup-player__img'
-                          src={player.img ? `/img/Players/30x30/${player.img}.png` : "/img/Players/30x30/Noname.png"}
-                          alt={player.img ? player.surname : "Noname"}
-                        />
-                      </div>
-                      <div className='luneup-player__info'>
-                        <p className='lineup-player__name'>{`${player.name} ${player.surname}`}</p>
-                        <p className='lineup-player__position'>{player.position}</p>
-                      </div>
-                      <ul className='player-action__list'>
-                        {player.actions
-                          ? Object.entries(player.actions).map(([key, action]) => (
-                              <li key={key} className='player-action__item'>
-                                <img
-                                  className='player-action__img'
-                                  src={`/img/MatchAction/${action.img}.png`}
-                                  alt={`${action.img}`}
-                                />
-                                {action.playerIn ? (
-                                  <p className='player-action__subtitle'>{`${action.minute}' ${action.playerIn}`}</p>
-                                ) : (
-                                  <p className='player-action__subtitle'>{`${action.minute}'`}</p>
-                                )}
-                              </li>
-                            ))
-                          : null}
-                      </ul>
-                    </li>
-                  ))
-                ) : (
-                  <p>No substitutions</p>
-                )}
-              </ul>
-            </div>
+          <div className={styles.lineupContainer}>
+            <LineupBlock title={match.owner.title} start={owner.start} subs={owner.subtitution} />
+            <LineupBlock title={match.guest.title} start={guest.start} subs={guest.subtitution} />
           </div>
         </div>
       </div>

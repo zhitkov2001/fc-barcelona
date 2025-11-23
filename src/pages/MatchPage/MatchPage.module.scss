@@ -1,0 +1,133 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+
+.matchPage {
+  color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+/* Верхний блок матча */
+.matchWrapper {
+  position: relative;
+  @include flex-center;
+  @include wh($width: 100%, $height: 50rem);
+}
+
+.matchBackground {
+  @include position($position: absolute, $top: 0, $left: 0, $z-index: 1);
+  @include wh-100;
+  object-fit: cover;
+}
+
+.matchWrapper::after {
+  content: "";
+  @include position($position: absolute, $top: 0, $left: 0, $z-index: 2);
+  @include wh-100;
+  background-image: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0.25) 7%,
+    rgba(217, 217, 217, 0.1) 25%,
+    rgba(217, 217, 217, 0.1) 75%,
+    rgba(233, 233, 233, 0.15) 85%,
+    rgba(233, 233, 233, 0.5) 95%,
+    rgba(233, 233, 233, 0.7) 100%
+  );
+  background-color: rgba(0, 1, 26, 0.6);
+}
+
+.matchItem {
+  @include position($position: relative, $z-index: 3);
+  @include flex-between;
+  width: 90%;
+  padding: 2.5rem 3.5rem;
+  border: 0.2rem solid $white;
+  border-radius: 1.5rem;
+}
+
+/* Команды */
+.teamContainer {
+  @include flex($justify: center, $align: center, $gap: 1.5rem);
+}
+
+.teamInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.teamLogo {
+  margin: 0 auto;
+  @include square($max-size: 12rem);
+}
+
+.teamTitle {
+  font-family: $font-accent;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Центр */
+.matchInfo {
+  @include grid-center($gap: 1.4rem);
+  text-align: center;
+  line-height: 1;
+  color: $white;
+}
+
+.matchStage {
+  font-size: 1.6rem;
+}
+
+.competitionLogo {
+  margin: 1rem auto;
+  @include wh($max-width: 12rem, $max-height: 4rem);
+}
+
+.whiteLogo {
+  filter: brightness(0) invert(1);
+}
+
+.scoreContainer {
+  @include flex-center($gap: 0.6rem);
+  font-family: $score;
+  font-size: 3.8rem;
+}
+
+.teamScore {
+  font-size: 3.3rem;
+}
+
+.time {
+  letter-spacing: 0.02em;
+}
+
+.stadium {
+  font-size: 1.6rem;
+}
+
+/* Линии составов */
+.infoContainer {
+  min-height: 100vh;
+  border-radius: 0 0 0.8rem 0.8rem;
+  background-color: $white;
+  color: $black;
+}
+
+.infoTitle {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: $font-accent;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.lineupContainer {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
