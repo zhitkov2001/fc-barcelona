@@ -15,18 +15,11 @@ function TableItem(team) {
   const goalDifference = team.stats.scored - team.stats.missed;
 
   return (
-    <tr
-      className={styles.tableItem}
-      style={{ "--row-accent-color": getStatus() }}
-    >
+    <tr className={styles.tableItem} style={{ "--row-accent-color": getStatus() }}>
       <th className={styles.position}>{team.position}</th>
       <th className={styles.team__сontainer}>
         <div className={styles.team__img__container}>
-          <img
-            src={`../img/Teams/${team.image || "default"}.png`}
-            alt={team.title}
-            className={styles.team__img}
-          />
+          <img src={`/img/Teams/${team.image || "default"}.png`} alt={team.title} className={styles.team__img} />
         </div>
 
         <p className={styles.teamTitle}>{team.title}</p>

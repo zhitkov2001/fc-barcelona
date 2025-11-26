@@ -25,18 +25,9 @@
           left: 0;
           width: 100%;
           height: 4px;
-          background: linear-gradient(
-            270deg,
-            #9b0041 0,
-            #9b0041 49%,
-            #0018b4 51%,
-            #0018b4
-          );
+          background: linear-gradient(270deg, #9b0041 0, #9b0041 49%, #0018b4 51%, #0018b4);
         }
       }
     }
-  }
-
-  .standings-table__body {
   }
 }

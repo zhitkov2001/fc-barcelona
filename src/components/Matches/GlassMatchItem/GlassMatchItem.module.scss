@@ -1,19 +1,19 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+
 .match-background {
   width: 264px;
   height: 230px;
 
-  background: #2563eb;
-  background: #1e40af;
-  // background: #334155;
-  // background: #991b1b;
-  background: #dc2626;
-  // background: #4338ca;
-  // border: 1px solid rgba(238, 238, 238, 0.541);
+  // background: #7624b9; // La Liga
+  // background: #0030cf; //UCL
+  // background: #e62c2c; //Copa del Rey
+  // background: #e66f0e; //Super Copa
+  // background: #ffbb00; //Europa League
 
-  border-radius: 16px;
+  border-radius: 6px;
   position: relative;
   overflow: hidden;
-
   // Световые акценты
   &::before {
     content: "";
@@ -24,7 +24,7 @@
     bottom: 0;
     background: radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
       radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-    border-radius: 16px;
+    border-radius: 6px;
     opacity: 0.4;
   }
 
@@ -37,7 +37,7 @@
     right: 0;
     bottom: 0;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
-    border-radius: 16px;
+    border-radius: 6px;
     opacity: 0.15;
     mix-blend-mode: overlay;
   }
@@ -59,12 +59,12 @@
     rgba(255, 255, 255, 0.05) 100%
   );
 
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 
   /* Обводка для объемности */
-  border: 1px solid rgba(235, 235, 235, 0.582);
-  border-radius: 15px;
+  border: 1px solid rgba(235, 235, 235, 0.486);
+  border-radius: 6px;
 
   /* Тени для глубины - как при наведении */
   box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.4), inset 0 -2px 6px rgba(0, 0, 0, 0.3),
@@ -79,7 +79,7 @@
     right: 0;
     height: 40%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
-    border-radius: 15px 15px 0 0;
+    border-radius: 6px 6px 0 0;
     pointer-events: none;
   }
 }
@@ -88,7 +88,7 @@
 .match-content {
   position: relative;
   z-index: 2;
-  color: white;
+  color: $white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   height: 100%;
   display: flex;
@@ -107,17 +107,22 @@
 
   // Стили для изображений команд
   .team-logo {
-    width: 48px;
-    height: 48px;
+    @include square($size: 4.8rem);
     object-fit: contain;
-    filter: drop-shadow(0 2px 6px rgba(219, 219, 219, 0.25));
+    filter: drop-shadow(0 4px 8px rgba(219, 219, 219, 0.26));
 
     // Логотип турнира
     &.tournament-logo {
-      filter: brightness(0) invert(0.9);
+      filter: brightness(0) invert(1);
       width: 40px;
       height: 40px;
     }
+  }
+  .team__score {
+    text-align: center;
+    font-family: $number;
+    font-size: 4.8rem;
+    line-height: 0.64;
   }
 }
 
@@ -133,7 +138,7 @@
 
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.15) 100%);
   backdrop-filter: blur(20px);
-  border-radius: 22px 22px 16px 16px;
+  border-radius: 12px 12px 5px 5px;
 
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 18px rgba(0, 0, 0, 0.3);
 
@@ -151,7 +156,7 @@
       rgba(255, 255, 255, 0.15) 70%,
       transparent 90%
     );
-    border-radius: 22px 22px 0 0;
+    border-radius: 12px 12px 5px 5px;
   }
 }
 
@@ -163,7 +168,7 @@
   opacity: 0.9;
   margin-bottom: 4px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.95);
+  color: $white;
 }
 
 .match-day {
@@ -171,10 +176,6 @@
   font-weight: 700;
   margin-bottom: 8px;
   text-align: center;
-  background: linear-gradient(135deg, #fff 0%, #e8f4ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .match-details {
@@ -191,8 +192,7 @@
   justify-content: center;
   gap: 6px;
   font-size: 14px;
-  opacity: 0.9;
-  color: rgba(255, 255, 255, 0.9);
+  color: $white;
 }
 
 .glass-strong {
@@ -218,8 +218,7 @@
   }
 
   .team-logo {
-    width: 52px;
-    height: 52px;
+    @include square($size: 3.2rem);
 
     &.tournament-logo {
       width: 44px;

@@ -1,14 +1,615 @@
 {
-  "August 2025": [
+  "November 2025": [
+    {
+      "id": 1,
+      "dateInfo": {
+        "weekday": "Tuesday",
+        "date": "25",
+        "month": "November",
+        "time": "21:00"
+      },
+      "competition": { "img": "UCL", "title": "UEFA Champions League" },
+      "stageInfo": {
+        "stage": "Matchday 5",
+        "stadium": "Stamford Bridge"
+      },
+      "owner": {
+        "title": "Chelsea",
+        "img": "Chelsea",
+        "players": {
+          "start": {
+            "Sanchez": {
+              "number": "1",
+              "img": "",
+              "name": "Robert",
+              "surname": "Sanchez",
+              "position": "goalkeeper"
+            },
+            "Gusto": {
+              "number": "27",
+              "img": "",
+              "name": "Malo",
+              "surname": "Gusto",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "yellow", "minute": "40" },
+                "1": { "img": "subtitution", "minute": "45", "playerIn": "Santos" }
+              }
+            },
+            "Cucurella": {
+              "number": "3",
+              "img": "",
+              "name": "Marc",
+              "surname": "Cucurella",
+              "position": "defender"
+            },
+            "Chalobah": {
+              "number": "23",
+              "img": "",
+              "name": "Trevoh",
+              "surname": "Chalobah",
+              "position": "defender"
+            },
+            "Fofana": {
+              "number": "29",
+              "img": "",
+              "name": "Wesleys",
+              "surname": "Fofana",
+              "position": "defender"
+            },
+            "Garnacho": {
+              "number": "49",
+              "img": "",
+              "name": "Alejandro",
+              "surname": "Garnacho",
+              "position": "midfielder",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "59",
+                  "playerIn": "Delap"
+                }
+              }
+            },
+            "Fernandez": {
+              "number": "8",
+              "img": "",
+              "name": "Enzo",
+              "surname": "Fernandez",
+              "position": "midfielder"
+            },
+            "Estevao": {
+              "number": "41",
+              "img": "",
+              "name": "",
+              "surname": "Estevao",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "goal", "minute": "55" },
+                "1": { "img": "subtitution", "minute": "83", "playerIn": "George" }
+              }
+            },
+            "Caicedo": {
+              "number": "25",
+              "img": "",
+              "name": "Moises",
+              "surname": "Caicedo",
+              "position": "midfielder"
+            },
+            "James": {
+              "number": "24",
+              "img": "",
+              "name": "Reece",
+              "surname": "James",
+              "position": "forward",
+              "actions": { "0": { "img": "subtitution", "minute": "82", "playerIn": "Acheampong" } }
+            },
+            "Neto": {
+              "number": "7",
+              "img": "",
+              "name": "Pedro",
+              "surname": "Neto",
+              "position": "forward",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "77", "playerIn": "Gittens" }
+              }
+            }
+          },
+          "subtitution": {
+            "Acheampong": {
+              "number": "34",
+              "img": "",
+              "name": "Josh",
+              "surname": "Acheampong",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "82", "playerIn": "James" }
+              }
+            },
+            "Santos": {
+              "number": "17",
+              "img": "",
+              "name": "Andrey",
+              "surname": "Santos",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "45", "playerIn": "Gusto" }
+              }
+            },
+            "Gittens": {
+              "number": "11",
+              "img": "",
+              "name": "Jamie",
+              "surname": "Gittens",
+              "position": "forward",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "75", "playerIn": "Neto" }
+              }
+            },
+            "Delap": {
+              "number": "9",
+              "img": "",
+              "name": "Liam",
+              "surname": "Delap",
+              "position": "forward",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "59", "playerIn": "Garnacho" },
+                "1": { "img": "goal", "minute": "73" }
+              }
+            },
+            "George": {
+              "number": "32",
+              "img": "",
+              "name": "Tyrique",
+              "surname": "George",
+              "position": "forward",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "83",
+                  "playerIn": "Estevao"
+                }
+              }
+            }
+          }
+        }
+      },
+      "score": {
+        "owner": 3,
+        "guest": 0
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona",
+        "players": {
+          "start": {
+            "JoanGarcia": {
+              "number": "13",
+              "img": "JoanGarcia",
+              "name": "Joan",
+              "surname": "García",
+              "position": "goalkeeper"
+            },
+            "Balde": {
+              "number": "3",
+              "img": "Balde",
+              "name": "Alejandro",
+              "surname": "Balde",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "80", "playerIn": "Martin" }
+              }
+            },
+            "Araujo": {
+              "number": "4",
+              "img": "Araujo",
+              "name": "Ronald",
+              "surname": "Araujo",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "yellow", "minute": "32" },
+                "1": { "img": "second-yellow", "minute": "44" }
+              }
+            },
+            "Cubarsi": {
+              "number": "5",
+              "img": "Cubarsi",
+              "name": "Pau",
+              "surname": "Cubarsí",
+              "position": "defender"
+            },
+            "Koundé": {
+              "number": "23",
+              "img": "Kounde",
+              "name": "Jules",
+              "surname": "Koundé",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "goal", "minute": "27(OG)" }
+              }
+            },
+            "Garcia": {
+              "number": "24",
+              "img": "Garcia",
+              "name": "Eric",
+              "surname": " García",
+              "position": "midfielder"
+            },
+            "deJong": {
+              "number": "21",
+              "img": "deJong",
+              "name": "Frenkie",
+              "surname": "de Jong",
+              "position": "midfielder"
+            },
+            "Fermin": {
+              "number": "16",
+              "img": "Fermin",
+              "name": "Fermín",
+              "surname": "Lopez",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "62", "playerIn": "Christensen" }
+              }
+            },
+            "Yamal": {
+              "number": "10",
+              "img": "Yamal",
+              "name": "Lamine",
+              "surname": "Yamal",
+              "position": "forward",
+              "actions": { "0": { "img": "subtitution", "minute": "80", "playerIn": "Olmo" } }
+            },
+            "Torres": {
+              "number": "7",
+              "img": "Torres",
+              "name": "Ferran",
+              "surname": "Torres",
+              "position": "forward",
+              "actions": { "0": { "img": "subtitution", "minute": "45", "playerIn": "Rashford" } }
+            },
+            "Lewandowski": {
+              "number": "9",
+              "img": "Lewandowski",
+              "name": "Robert",
+              "surname": "Lewandowski",
+              "position": "forward",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "62", "playerIn": "Raphinha" }
+              }
+            }
+          },
+          "subtitution": {
+            "Kochen": {
+              "number": "31",
+              "img": "",
+              "name": "Diego",
+              "surname": "Kochen",
+              "position": "goalkeeper"
+            },
+            "Szczesny": {
+              "number": "25",
+              "img": "Szczesny",
+              "name": "Wojciech",
+              "surname": "Szczesny",
+              "position": "goalkeeper"
+            },
+            "Christensen": {
+              "number": "15",
+              "img": "Christensen",
+              "name": "Andreas",
+              "surname": "Christensen",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "62", "playerIn": "Fermin" }
+              }
+            },
+            "Martín": {
+              "number": "18",
+              "img": "Martin",
+              "name": "Gerard",
+              "surname": "Martín",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "80", "playerIn": "Balde" }
+              }
+            },
+            "Olmo": {
+              "number": "20",
+              "img": "Olmo",
+              "name": "Dani",
+              "surname": "Olmo",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "80", "playerIn": "Lamine Yamal" }
+              }
+            },
+            "DroFernández": {
+              "number": "27",
+              "img": "",
+              "name": "Dro",
+              "surname": "Fernández",
+              "position": "forward"
+            },
+            "Bernal": {
+              "number": "22",
+              "img": "",
+              "name": "Marc",
+              "surname": "Bernal",
+              "position": "midfielder"
+            },
+            "Casadó": {
+              "number": "17",
+              "img": "Casado",
+              "name": "Marc",
+              "surname": "Casado",
+              "position": "midfielder"
+            },
+            "Raphinha": {
+              "number": "11",
+              "img": "Raphinha",
+              "name": "",
+              "surname": "Raphinha",
+              "position": "forwards",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "62",
+                  "playerIn": "Lewandowski"
+                }
+              }
+            },
+            "Rashford": {
+              "number": "14",
+              "img": "",
+              "name": "Marcus",
+              "surname": "Rashford",
+              "position": "forward",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "45",
+                  "playerIn": "Torres"
+                }
+              }
+            },
+            "Bardghji": {
+              "number": "19",
+              "img": "",
+              "name": "Roony",
+              "surname": "Bardghji",
+              "position": "forward"
+            }
+          }
+        }
+      },
+      "matchBackground": "ChelseaBarcelona"
+    },
     {
       "id": 0,
+      "dateInfo": {
+        "weekday": "Saturday",
+        "date": "22",
+        "month": "November",
+        "time": "16:15"
+      },
+      "competition": { "img": "LaLiga", "title": "La Liga" },
+      "stageInfo": {
+        "stage": "Matchday 13",
+        "stadium": "Spotify Camp Nou"
+      },
+      "owner": {
+        "title": "FC Barcelona",
+        "img": "Barcelona",
+        "players": {
+          "start": {
+            "JoanGarcia": {
+              "number": "13",
+              "img": "JoanGarcia",
+              "name": "Joan",
+              "surname": "García",
+              "position": "goalkeeper"
+            },
+            "Balde": {
+              "number": "3",
+              "img": "Balde",
+              "name": "Alejandro",
+              "surname": "Balde",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "45", "playerIn": "Araujo" }
+              }
+            },
+            "Martín": {
+              "number": "18",
+              "img": "Martin",
+              "name": "Gerard",
+              "surname": "Martín",
+              "position": "defender"
+            },
+            "Koundé": {
+              "number": "23",
+              "img": "Kounde",
+              "name": "Jules",
+              "surname": "Koundé",
+              "position": "defender"
+            },
+            "Cubarsi": {
+              "number": "2",
+              "img": "Cubarsi",
+              "name": "Pau",
+              "surname": "Cubarsí",
+              "position": "defender"
+            },
+            "Garcia": {
+              "number": "24",
+              "img": "Garcia",
+              "name": "Eric",
+              "surname": " García",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "74", "playerIn": "Bernal" }
+              }
+            },
+            "Olmo": {
+              "number": "20",
+              "img": "Olmo",
+              "name": "Dani",
+              "surname": "Olmo",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "81", "playerIn": "Raphinha" }
+              }
+            },
+            "Fermin": {
+              "number": "16",
+              "img": "Fermin",
+              "name": "Fermín",
+              "surname": "Lopez",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "goal", "minute": "48" },
+                "1": { "img": "subtitution", "minute": "64", "playerIn": "Casadó" }
+              }
+            },
+            "Yamal": {
+              "number": "10",
+              "img": "Yamal",
+              "name": "Lamine",
+              "surname": "Yamal",
+              "position": "forward"
+            },
+            "Torres": {
+              "number": "7",
+              "img": "Torres",
+              "name": "Ferran",
+              "surname": "Torres",
+              "position": "forward",
+              "actions": { "0": { "img": "goal", "minute": ["45+3", "90"] } }
+            },
+            "Lewandowski": {
+              "number": "9",
+              "img": "Lewandowski",
+              "name": "Robert",
+              "surname": "Lewandowski",
+              "position": "forward",
+              "actions": {
+                "0": { "img": "goal", "minute": "04" },
+                "1": { "img": "subtitution", "minute": "64", "playerIn": "Fernández" }
+              }
+            }
+          },
+          "subtitution": {
+            "Kochen": {
+              "number": "31",
+              "img": "",
+              "name": "Diego",
+              "surname": "Kochen",
+              "position": "goalkeeper"
+            },
+            "Szczesny": {
+              "number": "25",
+              "img": "Szczesny",
+              "name": "Wojciech",
+              "surname": "Szczesny",
+              "position": "goalkeeper"
+            },
+            "Christensen": {
+              "number": "15",
+              "img": "Christensen",
+              "name": "Andreas",
+              "surname": "Christensen",
+              "position": "defender"
+            },
+            "Araujo": {
+              "number": "4",
+              "img": "Araujo",
+              "name": "Ronald",
+              "surname": "Araujo",
+              "position": "defender",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "45", "playerIn": "Balde" }
+              }
+            },
+            "DroFernández": {
+              "number": "27",
+              "img": "",
+              "name": "Dro",
+              "surname": "Fernández",
+              "position": "forward",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "64", "playerIn": "Lewandowski" }
+              }
+            },
+            "Bernal": {
+              "number": "22",
+              "img": "",
+              "name": "Marc",
+              "surname": "Bernal",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "74", "playerIn": "García" }
+              }
+            },
+            "Casadó": {
+              "number": "17",
+              "img": "Casado",
+              "name": "Marc",
+              "surname": "Casado",
+              "position": "midfielder",
+              "actions": {
+                "0": { "img": "subtitution", "minute": "64", "playerIn": "Lopez" }
+              }
+            },
+            "Raphinha": {
+              "number": "11",
+              "img": "Raphinha",
+              "name": "",
+              "surname": "Raphinha",
+              "position": "forwards",
+              "actions": {
+                "0": {
+                  "img": "subtitution",
+                  "minute": "81",
+                  "playerIn": "Olmo"
+                }
+              }
+            },
+            "Bardghji": {
+              "number": "19",
+              "img": "",
+              "name": "Roony",
+              "surname": "Bardghji",
+              "position": "forward"
+            }
+          }
+        }
+      },
+      "score": {
+        "owner": 4,
+        "guest": 0
+      },
+      "guest": {
+        "title": "AthleticClub",
+        "img": "AthleticBilbao",
+        "players": {
+          "start": {},
+          "subtitution": {}
+        }
+      },
+      "matchBackground": "SeoulBarcelona"
+    }
+  ],
+  "August 2025": [
+    {
+      "id": 1,
       "dateInfo": {
         "weekday": "Sunday",
         "date": "10",
         "month": "August",
         "time": "22:00"
       },
-      "competition": "Gamper Fest",
+      "competition": { "img": "GamperFest", "title": "Gamper Fest" },
       "stageInfo": {
         "stage": "Final",
         "stadium": "Estadi Johan Cruyff"
@@ -344,7 +945,7 @@
         "month": "August",
         "time": "14:00"
       },
-      "competition": "",
+      "competition": { "img": "", "title": "" },
       "stageInfo": {
         "stage": "Friendly",
         "stadium": "Daegu Stadium"
@@ -682,7 +1283,7 @@
         "month": "July",
         "time": "14:00"
       },
-      "competition": "",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Friendly",
         "stadium": "Seoul World Cup Stadium"
@@ -1316,7 +1917,7 @@
         "month": "July",
         "time": "13:00"
       },
-      "competition": "",
+      "competition": { "img": "", "title": "" },
       "stageInfo": {
         "stage": "Friendly",
         "stadium": "Noevir Stadium Kobe"

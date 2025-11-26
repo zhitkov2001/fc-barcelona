@@ -1,5 +1,19 @@
 @import "./variables";
 
+@mixin container-left {
+  width: 1104px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@mixin container-right {
+  width: calc(80vw - 1104px);
+  display: flex;
+  flex-direction: column;
+}
+
 @mixin flex($display: flex, $direction: null, $justify: null, $align: null, $wrap: null, $gap: null) {
   display: $display;
   flex-direction: $direction;

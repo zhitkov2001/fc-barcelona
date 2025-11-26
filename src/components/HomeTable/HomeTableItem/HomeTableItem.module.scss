@@ -1,0 +1,38 @@
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+.row {
+  font-size: 12px;
+  color: $blue;
+
+  &:nth-child(even) {
+    background-color: $light-grey;
+  }
+}
+
+.position {
+  width: 22px;
+}
+
+.team {
+  @include flex($justify: flex-start, $align: center, $gap: 0.6rem);
+}
+
+.logoContainer {
+  @include flex-center;
+  @include square($size: 28px);
+}
+
+.logo {
+  @include square($max-size: 28px);
+}
+
+.title {
+  font-size: 16px;
+}
+
+.played {
+}
+
+.points {
+}

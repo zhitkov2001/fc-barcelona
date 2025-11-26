@@ -1,0 +1,19 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+
+.calendar {
+  @include flex($justify: center, $align: flex-start, $gap: 0.8rem, $direction: column);
+  padding: 12px;
+  width: 100%;
+  background-color: $white;
+  border-radius: 14px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card__container {
+  @include flex($justify: center, $align: center, $gap: 0.8rem);
+}

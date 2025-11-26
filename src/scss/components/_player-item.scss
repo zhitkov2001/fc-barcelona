@@ -38,6 +38,17 @@
   @include wh-100;
 }
 
+.injured__container {
+  @include position($position: absolute, $left: 10px, $top: 10px, $z-index: 14);
+  @include flex-center;
+  padding: 0.1rem;
+
+  background-color: $white;
+}
+.injured__img {
+  pointer-events: all;
+}
+
 .player__info {
   @include position($position: absolute, $bottom: 0);
   @include flex-center;

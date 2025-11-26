@@ -14,8 +14,8 @@ const MatchItem = (match) => {
         </div>
         <div className={styles.match__competition}>
           <img
-            src={`../../img/Competition/${match.competition}.png`}
-            alt={`${match.competition}`}
+            src={`../../img/Competition/${match.competition.img}.png`}
+            alt={`${match.competition.title}`}
             className={styles["match-competition__img"]}
           />
         </div>

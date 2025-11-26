@@ -1,0 +1,39 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+.tableContainer {
+  min-width: 400px;
+  padding: 16px;
+  background-color: $white;
+  border-radius: 14px;
+}
+
+.tableTitle {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.homeTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tableHeader {
+  position: relative;
+
+  height: 16px;
+  &::after {
+    content: "";
+    @include position($position: absolute, $bottom: 0, $left: 0);
+    width: 100%;
+    height: 2px;
+    background: $pomegranate-blue-gradient;
+  }
+}
+.table__header-row {
+}
+.header__item {
+}
+.table__body {
+}

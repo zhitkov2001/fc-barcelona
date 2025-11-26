@@ -4,6 +4,9 @@
 .club__news {
   @include flex;
   width: 100%;
+  padding: 1.2rem;
+  background-color: $white;
+  border-radius: 14px;
 }
 
 .container {
@@ -14,17 +17,15 @@
 
 .club__news-container {
   margin: 0 auto;
-
-  background-color: $dark-blue-black;
 }
 
 .section__news-title {
-  margin-bottom: 5rem;
+  margin-bottom: 0.8rem;
 
   text-align: center;
   font-family: monospace;
   font-size: 2.4rem;
-  color: $white;
+  color: $black;
 }
 
 .club__news-list {

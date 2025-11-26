@@ -1,76 +1,6 @@
 {
   "November 2025": [
     {
-      "id": 0,
-      "dateInfo": {
-        "weekday": "Saturday",
-        "date": "22",
-        "month": "November",
-        "time": "16:15"
-      },
-      "competition": "LaLiga",
-      "stageInfo": {
-        "stage": "Matchday 13",
-        "stadium": "Spotify Camp Nou"
-      },
-      "owner": {
-        "title": "FC Barcelona",
-        "img": "Barcelona",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "score": {
-        "owner": null,
-        "guest": null
-      },
-      "guest": {
-        "title": "AthleticClub",
-        "img": "AthleticBilbao",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "matchBackground": "SeoulBarcelona"
-    },
-    {
-      "id": 1,
-      "dateInfo": {
-        "weekday": "Tuesday",
-        "date": "25",
-        "month": "November",
-        "time": "21:00"
-      },
-      "competition": "UCL",
-      "stageInfo": {
-        "stage": "Matchday 5",
-        "stadium": "Stamford Bridge"
-      },
-      "owner": {
-        "title": "Chelsea",
-        "img": "Chelsea",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "score": {
-        "owner": null,
-        "guest": null
-      },
-      "guest": {
-        "title": "FC Barcelona",
-        "img": "Barcelona",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "matchBackground": ""
-    },
-    {
       "id": 2,
       "dateInfo": {
         "weekday": "Saturday",
@@ -78,7 +8,7 @@
         "month": "November",
         "time": "16:15"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 14",
         "stadium": "Spotify Camp Nou"
@@ -115,7 +45,7 @@
         "month": "December",
         "time": "21:00"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 19",
         "stadium": "Spotify Camp Nou"
@@ -150,7 +80,7 @@
         "month": "December",
         "time": "18:30"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 15",
         "stadium": "Estadio La Cartuja de Sevilla"
@@ -186,7 +116,7 @@
         "month": "December",
         "time": "21:00"
       },
-      "competition": "UCL",
+      "competition": { "img": "UCL", "title": "UEFA Champions League" },
       "stageInfo": {
         "stage": "Matchday 6",
         "stadium": "Spotify Camp Nou"
@@ -221,7 +151,7 @@
         "month": "December",
         "time": "18:30"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 16",
         "stadium": "Spotify Camp Nou"
@@ -249,14 +179,14 @@
       "matchBackground": ""
     },
     {
-      "id": 1,
+      "id": 4,
       "dateInfo": {
         "weekday": "Sunday",
         "date": "21",
         "month": "December",
         "time": "16:15"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 17",
         "stadium": "Estadio de la Cerámica"
@@ -294,7 +224,7 @@
         "month": "January",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 18",
         "stadium": "Stage Front Stadium"
@@ -329,7 +259,7 @@
         "month": "January",
         "time": "20:00"
       },
-      "competition": "SuperCopa",
+      "competition": { "img": "SuperCopa", "title": "Super Copa" },
       "stageInfo": {
         "stage": "Semi-finals",
         "stadium": "Spotify Camp Nou"
@@ -365,7 +295,7 @@
         "month": "January",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 20",
         "stadium": "Estadio Municipal de Anoeta"
@@ -400,7 +330,7 @@
         "month": "January",
         "time": "21:00"
       },
-      "competition": "UCL",
+      "competition": { "img": "UCL", "title": "UEFA Champions League" },
       "stageInfo": {
         "stage": "Matchday 7",
         "stadium": "Fortuna Arena"
@@ -435,7 +365,7 @@
         "month": "January",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 21",
         "stadium": "Spotify Camp Nou"
@@ -471,7 +401,7 @@
         "month": "January",
         "time": "21:00"
       },
-      "competition": "UCL",
+      "competition": { "img": "UCL", "title": "UEFA Champions League" },
       "stageInfo": {
         "stage": "Matchday 8",
         "stadium": "Spotify Camp Nou"
@@ -509,7 +439,7 @@
         "month": "February",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 22",
         "stadium": "Martínez Valero"
@@ -544,7 +474,7 @@
         "month": "February",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 23",
         "stadium": "Spotify Camp Nou"
@@ -579,7 +509,7 @@
         "month": "February",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 24",
         "stadium": "Municipal de Montilivi"
@@ -614,7 +544,7 @@
         "month": "February",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 25",
         "stadium": "Spotify Camp Nou"
@@ -651,7 +581,7 @@
         "month": "March",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 26",
         "stadium": "Spotify Camp Nou"
@@ -686,7 +616,7 @@
         "month": "March",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 27",
         "stadium": "San Mamés"
@@ -721,7 +651,7 @@
         "month": "March",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 28",
         "stadium": "Spotify Camp Nou"
@@ -756,7 +686,7 @@
         "month": "March",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 29",
         "stadium": "Spotify Camp Nou"
@@ -793,7 +723,7 @@
         "month": "April",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 30",
         "stadium": "Riyadh Air Metropolitano"
@@ -828,7 +758,7 @@
         "month": "April",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 31",
         "stadium": "Spotify Camp Nou"
@@ -863,7 +793,7 @@
         "month": "April",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 32",
         "stadium": "Estadio Coliseum"
@@ -898,7 +828,7 @@
         "month": "April",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 33",
         "stadium": "Spotify Camp Nou"
@@ -935,7 +865,7 @@
         "month": "May",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 34",
         "stadium": "El Sadar"
@@ -970,7 +900,7 @@
         "month": "May",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 35",
         "stadium": "Spotify Camp Nou"
@@ -1005,7 +935,7 @@
         "month": "May",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 36",
         "stadium": "Mendizorroza"
@@ -1040,7 +970,7 @@
         "month": "May",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 37",
         "stadium": "Spotify Camp Nou"
@@ -1075,7 +1005,7 @@
         "month": "May",
         "time": "TBA"
       },
-      "competition": "LaLiga",
+      "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {
         "stage": "Matchday 38",
         "stadium": "Mestalla"

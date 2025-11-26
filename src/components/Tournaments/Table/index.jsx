@@ -22,7 +22,6 @@ const Table = ({ teamsList, tableData, mode }) => {
       return tableData.map((teamStats) => {
         const teamId = teamStats.teamId;
         const teamInfo = teamsList.find((team) => team.id === teamId);
-        console.log(teamsList);
         return {
           ...teamInfo,
           ...teamStats,
@@ -34,18 +33,8 @@ const Table = ({ teamsList, tableData, mode }) => {
 
   const sortedTeams = React.useMemo(() => {
     return [...normalizedData].sort((a, b) => {
-      const posA =
-        a.position !== undefined
-          ? a.position
-          : a.team?.position !== undefined
-          ? a.team.position
-          : 0;
-      const posB =
-        b.position !== undefined
-          ? b.position
-          : b.team?.position !== undefined
-          ? b.team.position
-          : 0;
+      const posA = a.position !== undefined ? a.position : a.team?.position !== undefined ? a.team.position : 0;
+      const posB = b.position !== undefined ? b.position : b.team?.position !== undefined ? b.team.position : 0;
 
       return posA - posB;
     });
@@ -64,10 +53,7 @@ const Table = ({ teamsList, tableData, mode }) => {
       </thead>
       <tbody className={styles["table__body"]}>
         {sortedTeams.map((team, index) => (
-          <TableItem
-            key={team.teamId ? team.teamId : `row-${index}`}
-            {...team}
-          />
+          <TableItem key={team.teamId ? team.teamId : `row-${index}`} {...team} />
         ))}
       </tbody>
     </table>

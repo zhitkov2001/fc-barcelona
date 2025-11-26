@@ -8,6 +8,10 @@
       "position": "goalkeeper",
       "img": "TerStegen",
       "number": "1",
+      "injured": {
+        "status": true,
+        "type": "Back injury"
+      },
       "stats": {
         "matches": "420",
         "clean": "174",
@@ -123,65 +127,6 @@
           "img": "",
           "years": {
             "0": "2009"
-          }
-        }
-      }
-    },
-    {
-      "id": "Pena",
-      "name": "Iñaki",
-      "surname": "Peña",
-      "fullName": "Ignacio Peña Sotorres",
-      "position": "goalkeeper",
-      "img": "Pena",
-      "number": "13",
-      "stats": {
-        "matches": "44",
-        "clean": "88",
-        "saves": "9"
-      },
-      "currentStats": {
-        "matches": "22",
-        "clean": "5",
-        "saves": "42"
-      },
-      "allTimeStats": {
-        "matches": "125",
-        "clean": "42"
-      },
-      "title": "Iñaki Peña is a Barça-style goalkeeper: he reads the game well and can use his feet well",
-      "subtitle": "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
-      "bio": [
-        "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
-        "In his first season between the posts of the Barça Under-14 team, he won the league and was one of the keys to the team. His skill and play allowed him to grow as a player until he reached Barça B in the 2018/19 season. The keeper alternated between the B squad and the first team in the season 2020/21 and was part of the squad that lifted the Copa del Rey.",
-        "In the winter of the 2021/22 season the keeper left for Galatasaray on loan before returning in the summer of 2022 to the club. In January 2023 he was officially registered as a first team player.",
-        "That same season, 2022/23, Peña made his first debut in the Champions League against Viktoria Plzen before making his first appearance in La Liga for the blaugranes away at Valladolid in May 2023."
-      ],
-      "details": {
-        "placeOfBirth": "Alicante, Spain",
-        "dateOfBirth": "02/03/1999",
-        "weight": "78kg",
-        "height": "184cm",
-        "clubDebut": "23/05/2023"
-      },
-      "trophy": {
-        "LaLiga": {
-          "club": "Barcelona",
-          "title": "La Liga",
-          "quantity": 1,
-          "img": "LaLiga",
-          "years": {
-            "0": "2022/23"
-          }
-        },
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
-          "quantity": 2,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2022/23",
-            "1": "2024/25"
           }
         }
       }
@@ -497,74 +442,6 @@
       }
     },
     {
-      "id": "Martinez",
-      "name": "Inigo",
-      "surname": "Martinez",
-      "fullName": "Iñigo Martínez Berridi",
-      "position": "defender",
-      "img": "Martinez",
-      "number": "5",
-      "stats": {
-        "matches": "54",
-        "goals": "2",
-        "assists": "3"
-      },
-      "currentStats": {
-        "matches": "29",
-        "goals": "2",
-        "assists": "3"
-      },
-      "allTimeStats": {
-        "matches": "525",
-        "goals": "30",
-        "assists": "18"
-      },
-      "title": "After more than a decade playing at the top level in Spain, Iñigo has proven his qualities at centre back",
-      "subtitle": "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
-      "bio": [
-        "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
-        "Martínez started his career at his hometown club of Aurrera d’Ondarroa before joining the youth set up at Real Sociedad at the age of 15. He made his debut for the first team in August 2011 and after six seasons with the club from Sant Sebastián he moved to their rivals Athletic Club. After six seasons in Bilbao he comes to Barça as one of the most highly rated centre halves in Spanish Football.",
-        "After representing Spain at various youth levels, Martinez has also played for the full national side.",
-        "Excellent in the air, Iñigo Martinez has the talent to bring the ball out from the back and his defensive skills will bring even solidity to the Barça back line. Vastly experienced, the defender also stands out for his leadership qualities and his competitive nature."
-      ],
-      "details": {
-        "placeOfBirth": "Bilbao, Spain",
-        "dateOfBirth": "17/05/1991",
-        "weight": "76kg",
-        "height": "182cm",
-        "clubDebut": "05/06/2023"
-      },
-      "trophy": {
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
-          "quantity": 1,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2024/25"
-          }
-        },
-        "SpanishSuperCupBilbao": {
-          "club": "Athletic Bilbao",
-          "title": "Spanish Super Cup",
-          "quantity": 1,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2020/21"
-          }
-        },
-        "EuroU21": {
-          "club": "Spain",
-          "title": "European U-21 Championship",
-          "quantity": 1,
-          "img": "",
-          "years": {
-            "0": "2013"
-          }
-        }
-      }
-    },
-    {
       "id": "Christensen",
       "name": "Andreas",
       "surname": "Christensen",
@@ -861,7 +738,6 @@
       }
     }
   ],
-
   "midfielders": [
     {
       "id": "Gavi",
@@ -871,6 +747,10 @@
       "position": "midfielder",
       "img": "Gavi",
       "number": "6",
+      "injured": {
+        "status": true,
+        "type": "Knees injury"
+      },
       "stats": {
         "matches": "133",
         "goals": "9",
@@ -949,6 +829,10 @@
       "position": "midfielder",
       "img": "Pedri",
       "number": "8",
+      "injured": {
+        "status": true,
+        "type": "Muscle injury"
+      },
       "stats": {
         "matches": "183",
         "goals": "25",
