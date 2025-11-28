@@ -1283,7 +1283,7 @@
         "month": "July",
         "time": "14:00"
       },
-      "competition": { "img": "LaLiga", "title": "La Liga" },
+      "competition": { "img": "", "title": "" },
       "stageInfo": {
         "stage": "Friendly",
         "stadium": "Seoul World Cup Stadium"

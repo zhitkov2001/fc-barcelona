@@ -118,7 +118,7 @@ const PlayerPage = () => {
           <div className='player-card__info'>
             <p className='player-card-info__title'>{player.title}</p>
             <p className='player-card-info__subtitle'>{player.subtitle}</p>
-            <ul className='player-card-allTime__list'>
+            {/* <ul className='player-card-allTime__list'>
               {playerAllTimeStats &&
                 Object.entries(playerAllTimeStats).map(([key, value]) => (
                   <li key={key} className='player-card-allTime__item'>
@@ -126,7 +126,7 @@ const PlayerPage = () => {
                     <span className='player-card-allTime-stats__value'>{value}</span>
                   </li>
                 ))}
-            </ul>
+            </ul> */}
             <button onClick={openPopup} className='player-card-btn'>
               Read full BIO
               <svg

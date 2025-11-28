@@ -38,12 +38,14 @@ const MatchPage = () => {
             <div className={styles.matchInfo}>
               <p className={styles.matchStage}>{match.stageInfo.stage}</p>
               <img
-                className={`${styles.competitionLogo} ${match.competition === "UCL" ? styles.whiteLogo : ""}`}
+                className={`${styles.competitionLogo} ${match.competition.img === "UCL" ? styles.whiteLogo : ""}`}
                 alt={match.competition.title}
-                src={`/img/Competition/${match.competition.img}.png`}
-                onError={(e) => {
-                  e.target.outerHTML = `<span style="font-size: 1.8rem">${match.competition}</span>`;
-                }}
+                src={match.competition.img ? `/img/Competition/${match.competition.img}.png` : <></>}
+                // onError={(e) => {
+                //   e.target.outerHTML = `<span style="font-size: 1.8rem">${
+                //     match.competition.title ? match.competition.title : <></>
+                //   }</span>`;
+                // }}
               />
 
               {match.score.owner != null ? (

@@ -132,6 +132,45 @@
       }
     },
     {
+      "id": "JoanGarcia",
+      "name": "Joan",
+      "surname": "Garcia",
+      "fullName": "Joan Garcia Pons",
+      "position": "goalkeeper",
+      "img": "JoanGarcia",
+      "number": "13",
+      "stats": {
+        "matches": "9",
+        "clean": "4",
+        "saves": "24"
+      },
+      "currentStats": {
+        "matches": "9",
+        "clean": "4",
+        "saves": "24"
+      },
+      "allTimeStats": {
+        "matches": "93",
+        "clean": "30"
+      },
+      "title": "A goalkeeper with tremendous reflexes who can also play with the ball at his feet",
+      "subtitle": "Joan Garcia came to FC Barcelona in the summer of 2025 after showing himself to be one of the best goalkeepers in La Liga in the previous campaign.",
+      "bio": [
+        "Joan Garcia came to FC Barcelona in the summer of 2025 after showing himself to be one of the best goalkeepers in La Liga in the previous campaign.",
+        "Born in Sallent de Llobregat, in the Bages region of Catalonia, the new Barça goalkeeper, like many others, didn’t start out between the posts. However, it wasn’t long before he followed in the footsteps of his older brother and picked up the gloves. That was the beginning of his path toward the elite. After leaving Sallent, he moved to Manresa and then to Damm, until Espanyol signed him at the age of 15.",
+        "With Espanyol, he made his first-team debut at the end of 2021, but it was not until the 2023/24 season that he established himself as the starting goalkeeper, helping the team earn promotion back to the top flight. He has just completed a fantastic campaign in La Liga, playing a key role in Espanyol's survival. In numbers, he was the goalkeeper with the most saves in the league (146), and according to advanced statistics, the one who prevented the most goals in the entire competition.",
+        "During his time at Espanyol, he became a regular in Spain’s youth national teams from the U17 to the U21 level, and he has an Olympic gold medal from the 2024 Games in Paris."
+      ],
+      "details": {
+        "placeOfBirth": "Sallent, Spain",
+        "dateOfBirth": "04/05/2001",
+        "weight": "79kg",
+        "height": "191cm",
+        "clubDebut": "27/07/2025"
+      },
+      "trophy": {}
+    },
+    {
       "id": "Szczesny",
       "name": "Wojcieh",
       "surname": "Szczesny",
@@ -223,93 +262,9 @@
           }
         }
       }
-    },
-    {
-      "id": "JoanGarcia",
-      "name": "Joan",
-      "surname": "Garcia",
-      "fullName": "Joan Garcia Pons",
-      "position": "goalkeeper",
-      "img": "JoanGarcia",
-      "number": "",
-
-      "title": "A goalkeeper with tremendous reflexes who can also play with the ball at his feet",
-      "subtitle": "Joan Garcia came to FC Barcelona in the summer of 2025 after showing himself to be one of the best goalkeepers in La Liga in the previous campaign.",
-      "bio": [
-        "Joan Garcia came to FC Barcelona in the summer of 2025 after showing himself to be one of the best goalkeepers in La Liga in the previous campaign.",
-        "Born in Sallent de Llobregat, in the Bages region of Catalonia, the new Barça goalkeeper, like many others, didn’t start out between the posts. However, it wasn’t long before he followed in the footsteps of his older brother and picked up the gloves. That was the beginning of his path toward the elite. After leaving Sallent, he moved to Manresa and then to Damm, until Espanyol signed him at the age of 15.",
-        "With Espanyol, he made his first-team debut at the end of 2021, but it was not until the 2023/24 season that he established himself as the starting goalkeeper, helping the team earn promotion back to the top flight. He has just completed a fantastic campaign in La Liga, playing a key role in Espanyol's survival. In numbers, he was the goalkeeper with the most saves in the league (146), and according to advanced statistics, the one who prevented the most goals in the entire competition.",
-        "During his time at Espanyol, he became a regular in Spain’s youth national teams from the U17 to the U21 level, and he has an Olympic gold medal from the 2024 Games in Paris."
-      ],
-      "details": {
-        "placeOfBirth": "Sallent, Spain",
-        "dateOfBirth": "04/05/2001",
-        "weight": "79kg",
-        "height": "191cm",
-        "clubDebut": ""
-      }
     }
   ],
-
   "defenders": [
-    {
-      "id": "Cubarsi",
-      "name": "Pau",
-      "surname": "Cubarsi",
-      "fullName": "Pau Cubarsí Paredes",
-      "position": "defender",
-      "img": "Cubarsi",
-      "number": "2",
-      "stats": {
-        "matches": "60",
-        "goals": "1",
-        "assists": "4"
-      },
-      "currentStats": {
-        "matches": "36",
-        "goals": "1",
-        "assists": "3"
-      },
-      "allTimeStats": {
-        "matches": "77",
-        "goals": "1",
-        "assists": "4"
-      },
-      "title": "A centre back who provides leadership and decisiveness in defence, while also being able to bring the ball out",
-      "subtitle": "Pau Cubarsí arrived at La Masia from Girona on 1 July 2018 as a U12 player. The 2023/24 season was a key moment in his career as he made his competitive debut with the first team.",
-      "bio": [
-        "Pau Cubarsí arrived at La Masia from Girona on 1 July 2018 as a U12 player. The 2023/24 season was a key moment in his career as he made his competitive debut with the first team.",
-        "A centre back who provides leadership and decisiveness in defence, while also being able to bring the ball out, as an U18 player during the 2023/24 season, he played for Barça Atlètic, while receiving squad call ups and playing time with the first team. Salamanca will always remain a fond memory for Pau Cubarsí, as the 16-year-old centre back made his competitive debut for the Club in January 2024 against Unionistas in the Copa del Rey. A month earlier he had already featured for the first team in a friendly game in Dallas against Club América.",
-        "The centre back played in 24 first team official fixtures in the 2023/24 season as well as playing in the U17 World Cup in the 2023/24 season and making his debut for the full Spanish national side. In the summer of 2024 he claimed a goal medal playing for Spain in the Paris Olympics."
-      ],
-      "details": {
-        "placeOfBirth": "Bescanó, Spain",
-        "dateOfBirth": "22/01/2007",
-        "weight": "75kg",
-        "height": "184cm",
-        "clubDebut": "18/01/2024"
-      },
-      "trophy": {
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
-          "quantity": 1,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2024/25"
-          }
-        },
-        "OlympicGames": {
-          "club": "Spain",
-          "title": "Olympic Games",
-          "quantity": 1,
-          "img": "",
-          "years": {
-            "0": "2024"
-          }
-        }
-      }
-    },
     {
       "id": "Balde",
       "name": "Alejandro",
@@ -442,6 +397,64 @@
       }
     },
     {
+      "id": "Cubarsi",
+      "name": "Pau",
+      "surname": "Cubarsi",
+      "fullName": "Pau Cubarsí Paredes",
+      "position": "defender",
+      "img": "Cubarsi",
+      "number": "5",
+      "stats": {
+        "matches": "60",
+        "goals": "1",
+        "assists": "4"
+      },
+      "currentStats": {
+        "matches": "36",
+        "goals": "1",
+        "assists": "3"
+      },
+      "allTimeStats": {
+        "matches": "77",
+        "goals": "1",
+        "assists": "4"
+      },
+      "title": "A centre back who provides leadership and decisiveness in defence, while also being able to bring the ball out",
+      "subtitle": "Pau Cubarsí arrived at La Masia from Girona on 1 July 2018 as a U12 player. The 2023/24 season was a key moment in his career as he made his competitive debut with the first team.",
+      "bio": [
+        "Pau Cubarsí arrived at La Masia from Girona on 1 July 2018 as a U12 player. The 2023/24 season was a key moment in his career as he made his competitive debut with the first team.",
+        "A centre back who provides leadership and decisiveness in defence, while also being able to bring the ball out, as an U18 player during the 2023/24 season, he played for Barça Atlètic, while receiving squad call ups and playing time with the first team. Salamanca will always remain a fond memory for Pau Cubarsí, as the 16-year-old centre back made his competitive debut for the Club in January 2024 against Unionistas in the Copa del Rey. A month earlier he had already featured for the first team in a friendly game in Dallas against Club América.",
+        "The centre back played in 24 first team official fixtures in the 2023/24 season as well as playing in the U17 World Cup in the 2023/24 season and making his debut for the full Spanish national side. In the summer of 2024 he claimed a goal medal playing for Spain in the Paris Olympics."
+      ],
+      "details": {
+        "placeOfBirth": "Bescanó, Spain",
+        "dateOfBirth": "22/01/2007",
+        "weight": "75kg",
+        "height": "184cm",
+        "clubDebut": "18/01/2024"
+      },
+      "trophy": {
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "OlympicGames": {
+          "club": "Spain",
+          "title": "Olympic Games",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        }
+      }
+    },
+    {
       "id": "Christensen",
       "name": "Andreas",
       "surname": "Christensen",
@@ -535,6 +548,67 @@
           "img": "ClubWorldCup",
           "years": {
             "0": "2020/21"
+          }
+        }
+      }
+    },
+    {
+      "id": "Martin",
+      "name": "Gerard",
+      "surname": "Martin",
+      "fullName": "Gerard Martín Langreo",
+      "position": "defender",
+      "img": "Martin",
+      "number": "18",
+      "stats": {
+        "matches": "58",
+        "goals": "1",
+        "assists": "6"
+      },
+      "currentStats": {
+        "matches": "16",
+        "goals": "0",
+        "assists": "0"
+      },
+      "title": "Versatile defender who can play at left back or centre back",
+      "subtitle": "Gerard Martín began his career at EF Performance and Sant Gabriel before moving at the U19 level to UE Cornellà where he reached the senior team in 2021/22. A defender who stands out for his versatility at the back. Even though he is a natural left back, he is tall enough to slot in at centre back if needed.",
+      "bio": [
+        "JGerard Martín began his career at EF Performance and Sant Gabriel before moving at the U19 level to UE Cornellà where he reached the senior team in 2021/22. A defender who stands out for his versatility at the back. Even though he is a natural left back, he is tall enough to slot in at centre back if needed.",
+        "In the summer of 2023 he joined Barça Atlètic. The blaugrana defender settled at the club quickly and in 2024/25 under coach Hansi Flick he began to make regular appearances for the first team, featuring in eight Champions League games and 28 games in the league. In 2025/26 he became part of the first team squad."
+      ],
+      "details": {
+        "placeOfBirth": "Esplugues de Llobregat, Spain",
+        "dateOfBirth": "26/02/2002",
+        "weight": "82kg",
+        "height": "186cm",
+        "clubDebut": "01/07/2024"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "CopaDelRey": {
+          "club": "Barcelona",
+          "title": "Copa Del Rey",
+          "quantity": 1,
+          "img": "CopaDelRey",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
           }
         }
       }
@@ -749,7 +823,7 @@
       "number": "6",
       "injured": {
         "status": true,
-        "type": "Knees injury"
+        "type": "Knee injury"
       },
       "stats": {
         "matches": "133",
@@ -934,66 +1008,6 @@
       }
     },
     {
-      "id": "Torre",
-      "name": "Pablo",
-      "surname": "Torre",
-      "fullName": "Pablo Torre Carral",
-      "position": "midfielder",
-      "img": "Torre",
-      "number": "14",
-      "stats": {
-        "matches": "25",
-        "goals": "5",
-        "assists": "4"
-      },
-      "currentStats": {
-        "matches": "12",
-        "goals": "4",
-        "assists": "3"
-      },
-      "allTimeStats": {
-        "matches": "132",
-        "goals": "22",
-        "assists": "28"
-      },
-      "title": "Attacking midfielder with great technique and the ability to play a killer pass",
-      "subtitle": "In March of 2022 Barça reached an agreement with Racing Santander for the transfer of Pablo Torre and the midfielder officially joined the Club in the summer of that year.",
-      "bio": [
-        "In March of 2022 Barça reached an agreement with Racing Santander for the transfer of Pablo Torre and the midfielder officially joined the Club in the summer of that year.",
-        "During the 2020/21 season, at the age of just 17, Pablo Torre made his debut for the Racing first team in the old Second Division B and as the season continued he became a regular in the side. The following season he was one of the top performers in the newly formed Primera RFEF Division and helped Racing win promotion back to the Second Division before joining FC Barcelona.",
-        "Torre returned to Barça in 2022/23 where he was part of the Barça Atlétic squad. After limited opportunities that season with the first team, in 23/24 the midfielder went out on loan to Girona where he made 29 appearances, five as a starter. In the summer of 2024 he returned to Barça and the first team.",
-        "Pablo Torre is a talented attacking midfielder who stands out for his ability to take players on, his vision in the final third of the pitch and his powerful shot."
-      ],
-      "details": {
-        "placeOfBirth": "Santander, Spain",
-        "dateOfBirth": "03/04/2003",
-        "weight": "65kg",
-        "height": "173cm",
-        "clubDebut": "07/09/2022"
-      },
-      "trophy": {
-        "LaLiga": {
-          "club": "Barcelona",
-          "title": "La Liga",
-          "quantity": 1,
-          "img": "LaLiga",
-          "years": {
-            "0": "2022/23"
-          }
-        },
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
-          "quantity": 2,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2022/23",
-            "1": "2024/25"
-          }
-        }
-      }
-    },
-    {
       "id": "Lopez",
       "name": "Fermin",
       "surname": "Lopez",
@@ -1001,6 +1015,10 @@
       "position": "midfielder",
       "img": "Fermin",
       "number": "16",
+      "injured": {
+        "status": true,
+        "type": "Muscle injury"
+      },
       "stats": {
         "matches": "67",
         "goals": "16",
@@ -1244,12 +1262,12 @@
       }
     },
     {
-      "id": "DeJong",
+      "id": "deJong",
       "name": "Frenkie",
-      "surname": "De Jong",
+      "surname": "de Jong",
       "fullName": "Frenkie de Jong",
       "position": "midfielder",
-      "img": "DeJong",
+      "img": "deJong",
       "number": "21",
       "stats": {
         "matches": "241",
@@ -1331,9 +1349,50 @@
           }
         }
       }
+    },
+    {
+      "id": "Bernal",
+      "name": "Marc",
+      "surname": "Bernal",
+      "fullName": "Marc Bernal Casas",
+      "position": "midfielder",
+      "img": "Bernal",
+      "number": "21",
+      "stats": {
+        "matches": "9",
+        "assists": "1"
+      },
+      "currentStats": {
+        "matches": "9",
+        "assists": "1"
+      },
+      "title": "Holding midfielder with great tactical awareness and defensive abilities",
+      "subtitle": "Born in Berga in Catalonia on 26 May, 2007, Marc Bernal Casas started his career with his home town club before joining Barça and La Masia at the age of just six. As a youngster his talent was obvious and Bernal quickly moved through the age categories.",
+      "bio": [
+        "Born in Berga in Catalonia on 26 May, 2007, Marc Bernal Casas started his career with his home town club before joining Barça and La Masia at the age of just six. As a youngster his talent was obvious and Bernal quickly moved through the age categories.",
+        "A holding midfielder with great tactical awareness and defensive abilities, Bernal quickly became a key member of the Barça Atlètic squad at the age of 16. In the 2023/24 season he made 31 appearances for Barça Atlètic, 27 of them as a starter, scoring twice in a game against Sestao River. On 17 August 2024, aged just 17 years and 84 days, he made his debut for the first team. However, just 10 days later in a league game against Rayo he suffered a serious knee injury that kept him out of action for over a year.",
+        "During his recovery in September 2024 he signed a contract to keep him at the Club until 2026."
+      ],
+      "details": {
+        "placeOfBirth": "Berga, Spain",
+        "dateOfBirth": "26/05/2007",
+        "weight": "87kg",
+        "height": "193cm",
+        "clubDebut": "01/07/2024"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2024/25"
+          }
+        }
+      }
     }
   ],
-
   "forwards": [
     {
       "id": "Torres",
@@ -1344,19 +1403,14 @@
       "img": "Torres",
       "number": "7",
       "stats": {
-        "matches": "138",
-        "goals": "35",
-        "assists": "15"
+        "matches": "173",
+        "goals": "53",
+        "assists": "20"
       },
       "currentStats": {
-        "matches": "25",
-        "goals": "10",
-        "assists": "3"
-      },
-      "allTimeStats": {
-        "matches": "195",
-        "goals": "34",
-        "assists": "37"
+        "matches": "16",
+        "goals": "9",
+        "assists": "1"
       },
       "title": "He brings together various talents which allow him to operate anywhere up front",
       "subtitle": "Born on 29 February 2000 in Foios (Valencia), Ferran Torres made first contact with the ball at an early age. He started out with futsal at the EPLA school and then attracted the attention of the Valencia CF academy. He was only seven years when he wore the shirt for the first time.",
@@ -1371,11 +1425,11 @@
         "With the Spanish national side he competed in Euro2020, played in the summer of 2021, where his two goals helped the Spanish national side to the semi-finals. In the World Cup in Qatar in 2022, Torres scored two again with Spain reaching the last 16. In Euro 2024 the striker scored once in the tournament as he picked up a winner's medal with Luis de la Fuente's squad."
       ],
       "details": {
-        "placeOfBirth": "Warszawa, Poland",
-        "dateOfBirth": "21/08/1988",
-        "weight": "81kg",
-        "height": "185cm",
-        "clubDebut": "12/09/2022"
+        "placeOfBirth": "Foios, Spain",
+        "dateOfBirth": "29/02/2000",
+        "weight": "80kg",
+        "height": "182cm",
+        "clubDebut": "12/01/2022"
       },
       "trophy": {
         "LaLiga": {
@@ -1652,6 +1706,90 @@
       }
     },
     {
+      "id": "Yamal",
+      "name": "Lamine",
+      "surname": "Yamal",
+      "fullName": "Lamine Yamal Nasraoui Ebana",
+      "position": "forward",
+      "img": "Yamal",
+      "number": "10",
+      "stats": {
+        "matches": "119",
+        "goals": "30",
+        "assists": "35"
+      },
+      "currentStats": {
+        "matches": "13",
+        "goals": "6",
+        "assists": "7"
+      },
+      "title": "A great talent from La Masia who stands out for his daring dribbling.",
+      "subtitle": "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
+      "bio": [
+        "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
+        "The forward had barely started playing for the U19s when he began training with the first team at the request of coach Xavi Hernández. In April 2023 he made his debut for the first team aged just 15 years, 9 months and 16 days in a 4-0 win against Real Betis, becoming the youngest player ever to represent Barça.",
+        "After an excellent 2022/23 campaign, Lamine continued with first team for preseason in 2023/24 and despite being registered with the B squad, the forward became a regular presence in the first team squad under coach Xavi Hernandez.",
+        "The winger set a whole host of records in the 2023/24 season with Barça, becoming the youngest player ever to reach 50 appearances for the first team. Besides, Lamine also set other records with regards to goalscoring and assists in competition such as La Liga, the Champions League and the Copa del Rey. In total in 2023/24 he made 50 appearances for Xavi Hernández's team, scoring 7 goals.",
+        "On an international level, Lamine also became the youngest player ever to play for the Spanish national side and their youngest ever goalscorer. In the summer of 2024 he also became the youngest player ever to appear in the European Championships when he started for Spain against Croatia at the age of 16 years and 338 days. The winger set more records on his way to victory in the final against England, amongst them becoming the youngest player ever to appear in a major tournament final.",
+        "After his excellent season for both club and country, in October 2024 Lamine was awarded the Kopa Trophy for best U23 player at the Ballon d'Or gala in Paris.",
+        "Lamine Yamal stands out for his ability to take players on, create chances and for his versatility as he can play as a striker, attacking midfielder or on the right wing."
+      ],
+      "details": {
+        "placeOfBirth": "Esplugues de Llobregat, Spain",
+        "dateOfBirth": "13/07/2007",
+        "weight": "72kg",
+        "height": "180cm",
+        "clubDebut": "13/07/2023"
+      },
+      "trophy": {
+        "LaLiga": {
+          "club": "Barcelona",
+          "title": "La Liga",
+          "quantity": 1,
+          "img": "LaLiga",
+          "years": {
+            "0": "2022/23"
+          }
+        },
+        "EuropeanChampionships": {
+          "club": "Spain",
+          "title": "European Championships",
+          "quantity": 1,
+          "img": "EuroCup",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "SpanishSuperCup": {
+          "club": "Barcelona",
+          "title": "Spanish Super Cup",
+          "quantity": 1,
+          "img": "SpanishSuperCup",
+          "years": {
+            "0": "2024/25"
+          }
+        },
+        "GoldenBoy": {
+          "club": "Individual",
+          "title": "Golden Boy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        },
+        "KopaTrophy": {
+          "club": "Individual",
+          "title": "Kopa Trophy",
+          "quantity": 1,
+          "img": "",
+          "years": {
+            "0": "2024"
+          }
+        }
+      }
+    },
+    {
       "id": "Raphinha",
       "name": "",
       "surname": "Raphinha",
@@ -1743,145 +1881,127 @@
       }
     },
     {
-      "id": "Victor",
-      "name": "Pau",
-      "surname": "Victor",
-      "fullName": "Pau Víctor Delgado",
+      "id": "Rashford",
+      "name": "Marcus",
+      "surname": "Rashford",
+      "fullName": "Marcus Rashford",
       "position": "forward",
-      "img": "Victor",
-      "number": "18",
+      "img": "Rashford",
+      "number": "14",
       "stats": {
-        "matches": "21",
-        "goals": "2",
-        "assists": "1"
+        "matches": "17",
+        "goals": "6",
+        "assists": "7"
       },
       "currentStats": {
-        "matches": "21",
-        "goals": "2",
-        "assists": "1"
+        "matches": "17",
+        "goals": "6",
+        "assists": "7"
       },
-      "allTimeStats": {
-        "matches": "110",
-        "goals": "29",
-        "assists": "13"
-      },
-      "title": "Versatile striker with great goalscoring ability and vision",
-      "subtitle": "A versatile forward who can play as a striker or on either wing, Víctor stands out for his vision and goalscoring ability, Pau Víctor was born in Sant Cugat del Vallès on 26 November 2001. He started playing at Junior FC and in his teens he joined Sabadell and three years later was playing U19 football for Girona, and after two years of that started playing for the Girona reserves.",
+      "title": "Right footed, he can play anywhere up front, take players on and is an excellent finisher",
+      "subtitle": "In July 2025 FC Barcelona and Manchester United reached an agreement for the loan of Marcus Rashford, the English striker becoming part of Hansi Flick's squad.",
       "bio": [
-        "A versatile forward who can play as a striker or on either wing, Víctor stands out for his vision and goalscoring ability, Pau Víctor was born in Sant Cugat del Vallès on 26 November 2001. He started playing at Junior FC and in his teens he joined Sabadell and three years later was playing U19 football for Girona, and after two years of that started playing for the Girona reserves.",
-        "He was soon knocking on the senior team's door, training with them regularly and playing eight Second Division fixtures in the 2019/20 and 2020/21 seasons.",
-        "In 2022/23 he was loaned back to CE Sabadell, playing 36 games, scoring 7 goals and giving 6 assists. He continued to develop as a footballer at Barça Atlètic in 2023/24, officially on loan from Girona."
+        "In July 2025 FC Barcelona and Manchester United reached an agreement for the loan of Marcus Rashford, the English striker becoming part of Hansi Flick's squad.",
+        "Born in Manchester, the new Barça forward started his career at local club Fletcher Moss Rangers before being picked up by Manchester United at the age of seven.  After making his way through the youth teams, Rashford made his debut for the first team at the age of 18 in February 2016, scoring twice in a 5-1 win over Midtjylland in a Europa League game.",
+        "Rashford soon became the focus of Manchester United’s attack but after nine and a half seasons with the first team, Rashford spent the second half of the 2024/25 campaign on loan at fellow Premier League side Aston Villa. Under Spanish coach Unai Emery the forward made 17 appearances, scoring four goals and creating five assists.",
+        "Given an MBE for his community work in helping in the fight against child poverty, Rashford can play anywhere in attack. Right footed, he can take players on and is an excellent finisher."
       ],
       "details": {
-        "placeOfBirth": "Sant Cugat del Vallès, Spain",
-        "dateOfBirth": "26/11/2001",
-        "weight": "77kg",
-        "height": "184cm",
-        "clubDebut": "30/07/2024"
+        "placeOfBirth": "Manchester, England",
+        "dateOfBirth": "31/10/1997",
+        "weight": "80kg",
+        "height": "188cm",
+        "clubDebut": "23/07/2025"
       },
       "trophy": {
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
+        "UEL": {
+          "club": "Manchester United",
+          "title": "Europa League",
           "quantity": 1,
-          "img": "SpanishSuperCup",
+          "img": "UEL",
           "years": {
-            "0": "2024/25"
+            "0": "2016/17"
+          }
+        },
+        "FACup": {
+          "club": "Manchester United",
+          "title": "FA Cup",
+          "quantity": 2,
+          "img": "FACup",
+          "years": {
+            "0": "2015/16",
+            "1": "2023/24"
+          }
+        },
+        "EnglishLeagueCup": {
+          "club": "Manchester United",
+          "title": "League Cup",
+          "quantity": 1,
+          "img": "EnglishLeagueCup",
+          "years": {
+            "0": "2016/17",
+            "1": "2022/23"
           }
         }
       }
     },
     {
-      "id": "Yamal",
-      "name": "Lamine",
-      "surname": "Yamal",
-      "fullName": "Lamine Yamal Nasraoui Ebana",
+      "id": "Bardghji",
+      "name": "Roony",
+      "surname": "Bardghji",
+      "fullName": "Roony Bardghji",
       "position": "forward",
-      "img": "Yamal",
-      "number": "10",
+      "img": "Bardghji",
+      "number": "28",
       "stats": {
-        "matches": "82",
-        "goals": "18",
-        "assists": "20"
+        "matches": "9",
+        "assists": "1"
       },
       "currentStats": {
-        "matches": "31",
-        "goals": "11",
-        "assists": "13"
+        "matches": "9",
+        "assists": "1"
       },
-      "allTimeStats": {
-        "matches": "113",
-        "goals": "21",
-        "assists": "31"
-      },
-      "title": "A great talent from La Masia who stands out for his daring dribbling.",
-      "subtitle": "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
+      "title": "A young right winger known for his skill, pace and goalscoring ability, qualities that make him a very good prospect",
+      "subtitle": "FC Barcelona and FC Copenhagen came to an agreement for the transfer of Roony Bardghji in the summer of 2025. The Swedish player became another young talent on the Barça books after his move to the Catalan capital.",
       "bio": [
-        "Lamine Yamal arrived at FC Barcelona at the age of 7 from his local club CF La Torreta. At La Masia he raced through the age categories quicker than any other player of his generation.",
-        "The forward had barely started playing for the U19s when he began training with the first team at the request of coach Xavi Hernández. In April 2023 he made his debut for the first team aged just 15 years, 9 months and 16 days in a 4-0 win against Real Betis, becoming the youngest player ever to represent Barça.",
-        "After an excellent 2022/23 campaign, Lamine continued with first team for preseason in 2023/24 and despite being registered with the B squad, the forward became a regular presence in the first team squad under coach Xavi Hernandez.",
-        "The winger set a whole host of records in the 2023/24 season with Barça, becoming the youngest player ever to reach 50 appearances for the first team. Besides, Lamine also set other records with regards to goalscoring and assists in competition such as La Liga, the Champions League and the Copa del Rey. In total in 2023/24 he made 50 appearances for Xavi Hernández's team, scoring 7 goals.",
-        "On an international level, Lamine also became the youngest player ever to play for the Spanish national side and their youngest ever goalscorer. In the summer of 2024 he also became the youngest player ever to appear in the European Championships when he started for Spain against Croatia at the age of 16 years and 338 days. The winger set more records on his way to victory in the final against England, amongst them becoming the youngest player ever to appear in a major tournament final.",
-        "After his excellent season for both club and country, in October 2024 Lamine was awarded the Kopa Trophy for best U23 player at the Ballon d'Or gala in Paris.",
-        "Lamine Yamal stands out for his ability to take players on, create chances and for his versatility as he can play as a striker, attacking midfielder or on the right wing."
+        "FC Barcelona and FC Copenhagen came to an agreement for the transfer of Roony Bardghji in the summer of 2025. The Swedish player became another young talent on the Barça books after his move to the Catalan capital.",
+        "Bardghji is a tricky winger who knows how to to score goals from the right flank, coming in on to his favoured left foot.",
+        "Signed from FC Copenhagen, Bardghji joined the youth system at the Danish side in summer 2020, after starting out at Malmö. His talent saw him quickly promoted to the Copenhagen first team in 2022, going on to play 84 games, scoring 15 goals and providing one assist.",
+        "One of the most in-demand young players in Europe, his rise was temporarily curtailed due to a serious injury that left him on the sidelines for almost a year. Despite this setback and having now recovered, his quality has been on show since his return.",
+        "During his spell for Copenhagen, he won three Danish league titles and two Danish cups, making decisive contributions for team success."
       ],
       "details": {
-        "placeOfBirth": "Esplugues de Llobregat, Spain",
-        "dateOfBirth": "13/07/2007",
-        "weight": "72kg",
-        "height": "180cm",
-        "clubDebut": "13/07/2023"
+        "placeOfBirth": "Kuwait City, Kuwait",
+        "dateOfBirth": "15/11/2005",
+        "weight": "73kg",
+        "height": "173cm",
+        "clubDebut": "14/07/2025"
       },
       "trophy": {
-        "LaLiga": {
-          "club": "Barcelona",
-          "title": "La Liga",
-          "quantity": 1,
-          "img": "LaLiga",
-          "years": {
-            "0": "2022/23"
-          }
-        },
-        "EuropeanChampionships": {
-          "club": "Spain",
-          "title": "European Championships",
-          "quantity": 1,
-          "img": "EuroCup",
-          "years": {
-            "0": "2024"
-          }
-        },
-        "SpanishSuperCup": {
-          "club": "Barcelona",
-          "title": "Spanish Super Cup",
-          "quantity": 1,
-          "img": "SpanishSuperCup",
-          "years": {
-            "0": "2024/25"
-          }
-        },
-        "GoldenBoy": {
-          "club": "Individual",
-          "title": "Golden Boy",
-          "quantity": 1,
+        "DanishSuperLeague": {
+          "club": "Copenhagen",
+          "title": "Danish Super League",
+          "quantity": 3,
           "img": "",
           "years": {
-            "0": "2024"
+            "0": "2021/22",
+            "1": "2022/23",
+            "2": "2024/25"
           }
         },
-        "KopaTrophy": {
-          "club": "Individual",
-          "title": "Kopa Trophy",
-          "quantity": 1,
+        "DanishCup": {
+          "club": "Copenhagen",
+          "title": "Danish Cup",
+          "quantity": 2,
           "img": "",
           "years": {
-            "0": "2024"
+            "0": "2022/23",
+            "1": "2024/25"
           }
         }
       }
     }
   ],
-
   "Stuff": [
     {
       "id": "Flick",
