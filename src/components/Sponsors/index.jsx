@@ -45,7 +45,11 @@ const Sponsors = () => {
           {duplicatedSlides.map((sponsor, index) => (
             <li key={index} className={styles.slide}>
               <a className={styles.slide__link} href={sponsor.link} target='_blank' rel='noopener noreferrer'>
-                <img className={styles.slide__img} alt={sponsor.img} src={`../img/partners/${sponsor.img}.png`} />
+                <img
+                  className={styles.slide__img}
+                  alt={sponsor.img}
+                  src={`${process.env.PUBLIC_URL}/img/partners/${sponsor.img}.png`}
+                />
               </a>
             </li>
           ))}

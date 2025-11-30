@@ -19,7 +19,11 @@ function TableItem(team) {
       <th className={styles.position}>{team.position}</th>
       <th className={styles.team__сontainer}>
         <div className={styles.team__img__container}>
-          <img src={`/img/Teams/${team.image || "default"}.png`} alt={team.title} className={styles.team__img} />
+          <img
+            src={`${process.env.PUBLIC_URL}/img/Teams/${team.image || "default"}.png`}
+            alt={team.title}
+            className={styles.team__img}
+          />
         </div>
 
         <p className={styles.teamTitle}>{team.title}</p>

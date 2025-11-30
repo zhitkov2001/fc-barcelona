@@ -5,7 +5,11 @@ const PlayerActions = ({ actions }) => {
     <>
       {actions.map(([id, action]) => (
         <div key={id} className={styles.action__container}>
-          <img className={styles.action__img} src={`/img/MatchAction/${action.img}.png`} alt={action.img} />
+          <img
+            className={styles.action__img}
+            src={`${process.env.PUBLIC_URL}/img/MatchAction/${action.img}.png`}
+            alt={action.img}
+          />
           {/* Минуты */}
           {Array.isArray(action.minute) ? (
             action.minute.map((m, i) => (

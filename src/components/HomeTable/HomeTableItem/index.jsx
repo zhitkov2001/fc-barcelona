@@ -10,7 +10,7 @@ const HomeTableItem = ({ team }) => {
       <td className={styles.position}>{team.position}</td>
       <td className={styles.team}>
         <div className={styles.logoContainer}>
-          <img className={styles.logo} src={`../img/Teams/${team.image}.png`} alt={team.title} />
+          <img className={styles.logo} src={`${process.env.PUBLIC_URL}/img/Teams/${team.image}.png`} alt={team.title} />
         </div>
         <span className={styles.title}>{team.title}</span>
       </td>

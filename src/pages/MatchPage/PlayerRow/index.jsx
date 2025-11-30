@@ -8,7 +8,11 @@ const PlayerRow = ({ player }) => (
     <div className={styles["lineup-player-img__container"]}>
       <img
         className={styles["lineup-player__img"]}
-        src={player.img ? `/img/Players/30x30/${player.img}.png` : "/img/Players/30x30/Noname.png"}
+        src={
+          player.img
+            ? `${process.env.PUBLIC_URL}/img/Players/30x30/${player.img}.png`
+            : `${process.env.PUBLIC_URL}/img/Players/30x30/Noname.png`
+        }
         alt={player.surname}
       />
     </div>

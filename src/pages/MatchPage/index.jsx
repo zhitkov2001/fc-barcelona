@@ -15,7 +15,7 @@ const MatchPage = () => {
         {/* Фон + карточка матча */}
         <div className={styles.matchWrapper}>
           <img
-            src={`/img/Matches/${match.matchBackground}.webp`}
+            src={`${process.env.PUBLIC_URL}/img/Matches/${match.matchBackground}.webp`}
             className={styles.matchBackground}
             alt={match.matchBackground}
           />
@@ -25,7 +25,7 @@ const MatchPage = () => {
             <div className={styles.teamContainer}>
               <div className={styles.teamInfo}>
                 <img
-                  src={`/img/Teams/${match.owner.img || "default"}.png`}
+                  src={`${process.env.PUBLIC_URL}/img/Teams/${match.owner.img || "default"}.png`}
                   className={styles.teamLogo}
                   alt={match.owner.img}
                 />
@@ -40,7 +40,13 @@ const MatchPage = () => {
               <img
                 className={`${styles.competitionLogo} ${match.competition.img === "UCL" ? styles.whiteLogo : ""}`}
                 alt={match.competition.title}
-                src={match.competition.img ? `/img/Competition/${match.competition.img}.png` : <></>}
+                src={
+                  match.competition.img ? (
+                    `${process.env.PUBLIC_URL}/img/Competition/${match.competition.img}.png`
+                  ) : (
+                    <></>
+                  )
+                }
                 // onError={(e) => {
                 //   e.target.outerHTML = `<span style="font-size: 1.8rem">${
                 //     match.competition.title ? match.competition.title : <></>
@@ -65,7 +71,11 @@ const MatchPage = () => {
             <div className={styles.teamContainer}>
               <TeamActionsList start={guest.start} subs={guest.subtitution} />
               <div className={styles.teamInfo}>
-                <img src={`/img/Teams/${match.guest.img}.png`} className={styles.teamLogo} alt={match.guest.img} />
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/Teams/${match.guest.img}.png`}
+                  className={styles.teamLogo}
+                  alt={match.guest.img}
+                />
                 <p className={styles.teamTitle}>{match.guest.title}</p>
               </div>
             </div>

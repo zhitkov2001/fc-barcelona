@@ -8,7 +8,7 @@ function NewsItem(news) {
       <article className={styles.news__item}>
         <div className={styles.img__container}>
           <img
-            src={`./img/News/${news.img}.webp`}
+            src={`${process.env.PUBLIC_URL}/img/News/${news.img}.webp`}
             alt={news.title}
             className={styles.news__img}
           />
@@ -18,16 +18,10 @@ function NewsItem(news) {
           <div className={styles.news__info}>
             <div className={styles.category__container}>
               <div className={styles["category-quad"]}></div>
-              <div className={styles.category__title}>
-                {news.category[0].toUpperCase() + news.category.slice(1)}
-              </div>
+              <div className={styles.category__title}>{news.category[0].toUpperCase() + news.category.slice(1)}</div>
             </div>
             <div className={styles["news__date-info"]}>
-              <img
-                className={styles.news__icon}
-                src='./img/svgicons/time.svg'
-                alt='time'
-              />
+              <img className={styles.news__icon} src={`${process.env.PUBLIC_URL}/img/svgicons/time.svg`} alt='time' />
               <p className={styles.news__date}>{news.date}</p>
               <p className={styles.news__month}>{news.month}</p>
             </div>

@@ -21,7 +21,7 @@ const PlayoffItem = ({ match, teamsData }) => {
         <div className={styles.match__header}>
           <div className={styles.team__container}>
             <img
-              src={`../img/teams/${homeTeam?.image || "default"}.png`}
+              src={`${process.env.PUBLIC_URL}/img/teams/${homeTeam?.image || "default"}.png`}
               alt={homeTeam?.title}
               className={styles.team__logo}
             />
@@ -33,7 +33,7 @@ const PlayoffItem = ({ match, teamsData }) => {
           </div>
           <div className={`${styles.team__container} ${styles["away-team__container"]}`}>
             <img
-              src={`../img/teams/${awayTeam?.image || "default"}.png`}
+              src={`${process.env.PUBLIC_URL}/img/teams/${awayTeam?.image || "default"}.png`}
               alt={awayTeam?.title}
               className={styles.team__logo}
             />
@@ -78,7 +78,7 @@ const PlayoffItem = ({ match, teamsData }) => {
       <div className={styles.match__header}>
         <div className={styles.team__container}>
           <img
-            src={`../img/teams/${homeTeam?.image || "default"}.png`}
+            src={`${process.env.PUBLIC_URL}/img/teams/${homeTeam?.image || "default"}.png`}
             alt={homeTeam?.title}
             className={styles.team__logo}
           />
@@ -93,7 +93,7 @@ const PlayoffItem = ({ match, teamsData }) => {
         </div>
         <div className={`${styles.team__container} ${styles["away-team__container"]}`}>
           <img
-            src={`../img/teams/${awayTeam?.image || "default"}.png`}
+            src={`${process.env.PUBLIC_URL}/img/teams/${awayTeam?.image || "default"}.png`}
             alt={awayTeam?.title}
             className={styles.team__logo}
           />

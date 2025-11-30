@@ -90,7 +90,7 @@ const PlayerPage = () => {
             </ul>
           </div>
           <div className='player-hero-img__container'>
-            <img alt={`${player.img}`} src={`../../../img/Players/No-bg/${player.img}.webp`} />
+            <img alt={`${player.img}`} src={`${process.env.PUBLIC_URL}/img/Players/No-bg/${player.img}.webp`} />
             <div className='player-hero-info__block'>
               <p className='player-hero-info__position'>
                 {player.position.charAt(0).toUpperCase() + player.position.slice(1)}
@@ -107,7 +107,11 @@ const PlayerPage = () => {
       <div className='container'>
         <div className='player-card__content'>
           <div className='player-card__wrapper'>
-            <img className='player-card__img' src={`../../../img/Players/${player.img}.webp`} alt={player.surname} />
+            <img
+              className='player-card__img'
+              src={`${process.env.PUBLIC_URL}/img/Players/${player.img}.webp`}
+              alt={player.surname}
+            />
             <div className='player-card-img__info'>
               <p className='player-card-img__number'>{player.number}</p>
               <p className='player-card-img__fullname'>
@@ -167,10 +171,10 @@ const PlayerPage = () => {
           <div className='player-card__trophy'>
             <div className='player-card-trophy-btn__wrapper'>
               <button onClick={handlePrev} className='player-card-trophy__btn'>
-                <img src='../../img/svgicons/btnPrev.svg' alt='Previous' />
+                <img src={`${process.env.PUBLIC_URL}/img/svgicons/btnPrev.svg`} alt='Previous' />
               </button>
               <button onClick={handleNext} className='player-card-trophy__btn'>
-                <img src='../../img/svgicons/btnNext.svg' alt='Previous' />
+                <img src={`${process.env.PUBLIC_URL}/img/svgicons/btnNext.svg`} alt='Previous' />
               </button>
             </div>
             <ul ref={listRef} className='player-card-trophy__list'>
@@ -181,7 +185,7 @@ const PlayerPage = () => {
                     <p className='player-card-trophy__competition'>{trophy.title}</p>
                     <div className='player-card-trophy__wrapper'>
                       <span className='player-card-trophy__quantity'>{trophy.quantity}</span>
-                      <img src={`../../img/Trophy/${trophy.img}.webp`} alt={`${trophy.img}`} />
+                      <img src={`${process.env.PUBLIC_URL}/img/Trophy/${trophy.img}.webp`} alt={`${trophy.img}`} />
                     </div>
                     <ul className='player-card-trophy-season__list'>
                       {Object.entries(trophy.years).length > 0 ? (
@@ -208,7 +212,7 @@ const PlayerPage = () => {
           <div className='full-bio__overlay'>
             <div className='full-bio__wrapper'>
               <button onClick={closePopup} className='full-bio__btn'>
-                <img src='../../img/svgicons/close.svg' alt='close' />
+                <img src={`${process.env.PUBLIC_URL}/img/svgicons/close.svg`} alt='close' />
               </button>
               <ul className='full-bio__content'>
                 <h4 className='full-bio__title'>{player.fullName}</h4>

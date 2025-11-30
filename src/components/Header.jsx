@@ -15,7 +15,7 @@ function Header() {
     <header className='header'>
       <div className='container'>
         <Link to='/' className='header__logo'>
-          <img src={`../img/barca_logo(60px).webp`} alt='Barcelona Logo' />
+          <img src={`${process.env.PUBLIC_URL}/img/barca_logo(60px).webp`} alt='Barcelona Logo' />
         </Link>
         <nav className='nav'>
           <Link

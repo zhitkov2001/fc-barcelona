@@ -8,11 +8,11 @@ function PlayerItem(player) {
   return (
     <div className='player'>
       <Link to={`/players/${player.id}`} key={player.id} state={{ player }} className='player__link'>
-        <img className='player__img' alt='' src={`../../../img/Players/Min/${player?.img}.webp`} />
+        <img className='player__img' alt='' src={`${process.env.PUBLIC_URL}/img/Players/Min/${player?.img}.webp`} />
         {player.injured ? (
           <div className='injured__container'>
             <img
-              src='/img/MatchAction/injured.png'
+              src={`${process.env.PUBLIC_URL}/img/MatchAction/injured.png`}
               title={player.injured.type}
               alt='injured'
               className='injured__img'

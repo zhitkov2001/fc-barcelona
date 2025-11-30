@@ -5,16 +5,14 @@ import styles from "./MainNewsItem.module.scss";
 function MainNewsItems({ isActive, onMouseEnter, ...news }) {
   return (
     <Link
-      className={`${styles["main__news-item"]} ${
-        isActive ? styles.active : ""
-      }`}
+      className={`${styles["main__news-item"]} ${isActive ? styles.active : ""}`}
       onMouseEnter={onMouseEnter}
       to={`/newspage/${news.id}`}
     >
       <img
         className={styles["main__news-img"]}
         alt={news.title}
-        src={`/img/News/${news.img}.webp`}
+        src={`${process.env.PUBLIC_URL}/img/News/${news.img}.webp`}
       />
       <div className={styles["main__news-info"]}>
         <p className={styles["main__news-title"]}>{news.title}</p>
