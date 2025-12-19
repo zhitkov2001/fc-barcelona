@@ -1,6 +1,6 @@
 import React from "react";
 
-import TitleBackround from "../components/TitleBackground";
+import TitleBackground from "../components/TitleBackground";
 import resultsData from "../data/matches/results";
 import scheduleData from "../data/matches/schedule";
 import MatchItem from "../components/Matches/MatchItem/index";
@@ -13,7 +13,7 @@ function Matches() {
 
   return (
     <section className='matches'>
-      <TitleBackround title='Barça Matches' />
+      <TitleBackground title='Barça Matches' />
       <div className='container'>
         <div className='btn__wrapper'>
           {btnData.map((value) => {

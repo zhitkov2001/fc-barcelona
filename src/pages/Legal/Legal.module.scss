@@ -1,0 +1,37 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+
+.legal {
+}
+
+.legalContainer {
+  margin: 50px auto;
+  padding: 2.4rem 1.2rem 3.6rem;
+  width: 70vw;
+  border-radius: 10px;
+  background-color: $white;
+
+  font-family: $font-accent;
+  color: $black;
+}
+
+.legalTitle {
+  padding-bottom: 6px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.legalTitle2 {
+  padding-bottom: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.legalText {
+  padding: 0 0 6px 12px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}

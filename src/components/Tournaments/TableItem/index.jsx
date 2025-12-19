@@ -1,4 +1,4 @@
-import React from "react";
+// import clsx from "clsx";
 import styles from "./TableItem.module.scss";
 
 function TableItem(team) {
@@ -17,12 +17,12 @@ function TableItem(team) {
   return (
     <tr className={styles.tableItem} style={{ "--row-accent-color": getStatus() }}>
       <th className={styles.position}>{team.position}</th>
-      <th className={styles.team__сontainer}>
-        <div className={styles.team__img__container}>
+      <th className={styles.teamContainer}>
+        <div className={styles.teamImgContainer}>
           <img
             src={`${process.env.PUBLIC_URL}/img/Teams/${team.image || "default"}.png`}
             alt={team.title}
-            className={styles.team__img}
+            className={styles.teamImg}
           />
         </div>
 
@@ -32,12 +32,12 @@ function TableItem(team) {
         <b>{points}</b>
       </th>
       <th className={styles.stats}>{played}</th>
-      <th className={styles.stats}>{team.stats.wins}</th>
-      <th className={styles.stats}>{team.stats.draws}</th>
-      <th className={styles.stats}>{team.stats.losses}</th>
-      <th className={styles.stats}>{team.stats.scored}</th>
-      <th className={styles.stats}>{team.stats.missed}</th>
-      <th className={styles.stats}>{goalDifference}</th>
+      <th className={`${styles.stats} ${styles.hideMobile}`}>{team.stats.wins}</th>
+      <th className={`${styles.stats} ${styles.hideMobile}`}>{team.stats.draws}</th>
+      <th className={`${styles.stats} ${styles.hideMobile}`}>{team.stats.losses}</th>
+      <th className={`${styles.stats} ${styles.hideMobile}`}>{team.stats.scored}</th>
+      <th className={`${styles.stats} ${styles.hideMobile}`}>{team.stats.missed}</th>
+      <th className={`${styles.stats} ${styles.hideMobile}`}>{goalDifference}</th>
     </tr>
   );
 }

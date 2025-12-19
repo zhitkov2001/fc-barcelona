@@ -56,7 +56,6 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className='underline'></div>
     </header>
   );
 }

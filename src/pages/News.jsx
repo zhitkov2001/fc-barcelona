@@ -1,33 +1,24 @@
 import React from "react";
 
-import TitleBackround from "../components/TitleBackground";
+import TitleBackground from "../components/TitleBackground";
 import newsData from "../data/news.json";
 import NewsItem from "../components/News/NewsItem";
 
 const News = () => {
   const [selectedType, setSelectedType] = React.useState("All News");
 
-  const newsCategory = [
-    "All News",
-    "club",
-    "match reports",
-    "players",
-    "transfers",
-    "la masia",
-  ];
+  const newsCategory = ["All News", "club", "match reports", "players", "transfers", "la masia"];
 
   function onSelectedType(type) {
     setSelectedType(type);
   }
 
   const filteredNews =
-    selectedType === "All News"
-      ? newsData
-      : newsData.filter((news) => news.category === selectedType);
+    selectedType === "All News" ? newsData : newsData.filter((news) => news.category === selectedType);
 
   return (
     <section className='news'>
-      <TitleBackround title='News' />
+      <TitleBackground title='News' />
       <div className='container'>
         <div className='news-nav'>
           {newsCategory.map((item, id) => (

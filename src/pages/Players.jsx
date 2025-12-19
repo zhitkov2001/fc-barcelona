@@ -2,23 +2,17 @@ import React from "react";
 
 import PlayerItem from "../components/PlayerItem";
 import PlayersData from "../data/players.json";
-import TitleBackround from "../components/TitleBackground";
+import TitleBackground from "../components/TitleBackground";
 
 function Players() {
-  const firstTeamNav = [
-    "goalkeepers",
-    "defenders",
-    "midfielders",
-    "forwards",
-    "coach stuff",
-  ];
+  const firstTeamNav = ["goalkeepers", "defenders", "midfielders", "forwards", "coach stuff"];
 
   const playersKeys = Object.keys(PlayersData);
 
   return (
     <>
       <section className='first__team'>
-        <TitleBackround title='FC Barcelona First Team' />
+        <TitleBackground title='FC Barcelona First Team' />
         <ul className='players__nav'>
           {firstTeamNav.map((id) => (
             <li className='players__nav-item' key={id}>
@@ -32,9 +26,7 @@ function Players() {
           <ul className='players'>
             {playersKeys.map((section) => (
               <div key={section} className='players__group'>
-                <h3 className='players__position'>
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </h3>
+                <h3 className='players__position'>{section.charAt(0).toUpperCase() + section.slice(1)}</h3>
                 <div className='players__group--flex'>
                   {PlayersData[section].map((player) => (
                     <PlayerItem key={player.id} {...player} />

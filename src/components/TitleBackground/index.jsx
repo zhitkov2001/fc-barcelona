@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./TitleBackground.module.scss";
 
-const TitleBackround = ({ title }) => {
+const TitleBackground = ({ title }) => {
   return (
     <div className={styles["title-background"]}>
-      <h2 className={styles.title}>{title}</h2>
+      <h1 className={styles.title}>{title}</h1>
     </div>
   );
 };
 
-export default TitleBackround;
+export default TitleBackground;

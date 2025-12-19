@@ -1,148 +1,5 @@
 {
-  "November 2025": [
-    {
-      "id": 2,
-      "dateInfo": {
-        "weekday": "Saturday",
-        "date": "29",
-        "month": "November",
-        "time": "16:15"
-      },
-      "competition": { "img": "LaLiga", "title": "La Liga" },
-      "stageInfo": {
-        "stage": "Matchday 14",
-        "stadium": "Spotify Camp Nou"
-      },
-      "owner": {
-        "title": "FC Barcelona",
-        "img": "Barcelona",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "score": {
-        "owner": null,
-        "guest": null
-      },
-      "guest": {
-        "title": "Alaves",
-        "img": "Alaves",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "matchBackground": ""
-    }
-  ],
   "December 2025": [
-    {
-      "id": 0,
-      "dateInfo": {
-        "weekday": "Tuesday",
-        "date": "02",
-        "month": "December",
-        "time": "21:00"
-      },
-      "competition": { "img": "LaLiga", "title": "La Liga" },
-      "stageInfo": {
-        "stage": "Matchday 19",
-        "stadium": "Spotify Camp Nou"
-      },
-      "owner": {
-        "title": "FC Barcelona",
-        "img": "Barcelona",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "score": {
-        "owner": null,
-        "guest": null
-      },
-      "guest": {
-        "title": "Atletico Madrid",
-        "img": "AtleticoMadrid",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "matchBackground": "SeoulBarcelona"
-    },
-    {
-      "id": 1,
-      "dateInfo": {
-        "weekday": "Saturday",
-        "date": "06",
-        "month": "December",
-        "time": "18:30"
-      },
-      "competition": { "img": "LaLiga", "title": "La Liga" },
-      "stageInfo": {
-        "stage": "Matchday 15",
-        "stadium": "Estadio La Cartuja de Sevilla"
-      },
-      "owner": {
-        "title": "Real Betis",
-        "img": "RealBetis",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "score": {
-        "owner": null,
-        "guest": null
-      },
-      "guest": {
-        "title": "FC Barcelona",
-        "img": "Barcelona",
-
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "matchBackground": ""
-    },
-    {
-      "id": 2,
-      "dateInfo": {
-        "weekday": "Tuesday",
-        "date": "09",
-        "month": "December",
-        "time": "21:00"
-      },
-      "competition": { "img": "UCL", "title": "UEFA Champions League" },
-      "stageInfo": {
-        "stage": "Matchday 6",
-        "stadium": "Spotify Camp Nou"
-      },
-      "owner": {
-        "title": "FC Barcelona",
-        "img": "Barcelona",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "score": {
-        "owner": null,
-        "guest": null
-      },
-      "guest": {
-        "title": "Frankfurt",
-        "img": "Frankfurt",
-        "players": {
-          "start": {},
-          "subtitution": {}
-        }
-      },
-      "matchBackground": ""
-    },
     {
       "id": 3,
       "dateInfo": {
@@ -180,6 +37,42 @@
     },
     {
       "id": 4,
+      "dateInfo": {
+        "weekday": "Tuesday",
+        "date": "16",
+        "month": "December",
+        "time": "21:00"
+      },
+      "competition": { "img": "CopaDelRey", "title": "Copa del Rey" },
+      "stageInfo": {
+        "stage": "Round of 32",
+        "stadium": "Pedro Escartín"
+      },
+      "owner": {
+        "title": "Deportivo Guadalajara",
+        "img": "DeportivoGuadalajara",
+        "players": {
+          "start": {},
+          "subtitution": {}
+        }
+      },
+      "score": {
+        "owner": null,
+        "guest": null
+      },
+      "guest": {
+        "title": "FC Barcelona",
+        "img": "Barcelona",
+
+        "players": {
+          "start": {},
+          "subtitution": {}
+        }
+      },
+      "matchBackground": ""
+    },
+    {
+      "id": 5,
       "dateInfo": {
         "weekday": "Sunday",
         "date": "21",
@@ -219,10 +112,10 @@
     {
       "id": 0,
       "dateInfo": {
-        "weekday": "Sunday",
-        "date": "04",
+        "weekday": "Saturday",
+        "date": "03",
         "month": "January",
-        "time": "TBA"
+        "time": "21:00"
       },
       "competition": { "img": "LaLiga", "title": "La Liga" },
       "stageInfo": {

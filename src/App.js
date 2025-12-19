@@ -16,6 +16,8 @@ import Matches from "./pages/Matches";
 import MatchPage from "./pages/MatchPage";
 import Tournaments from "./pages/Tournaments";
 import News from "./pages/News";
+import TermsOfUse from "./pages/Legal/TermsOfUse";
+import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
 
 import ScrollToTop from "./utils/ScrollToTop";
 
@@ -33,6 +35,8 @@ function App() {
           <Route path='/matches/:id' element={<MatchPage />} />
           <Route path='/tournaments' element={<Tournaments />} />
           <Route path='/news' element={<News />} />
+          <Route path='/terms-of-use' element={<TermsOfUse />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>
       </main>
       <Partners />

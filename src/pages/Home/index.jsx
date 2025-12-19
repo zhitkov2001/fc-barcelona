@@ -7,6 +7,7 @@ import ClubNews from "../../components/News/ClubNews";
 import HomeTable from "../../components/HomeTable";
 
 import LaLigaData from "../../data/tournaments/laliga.json";
+// import LaLigaData from "https://github.com/zhitkov2001/fc-barcelona-data/tree/main/data/tournaments/laliga.json";
 
 import { normalizeTeams, normalizeTable } from "../../utils/Tournaments/normalize";
 

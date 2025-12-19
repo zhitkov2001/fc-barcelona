@@ -4,18 +4,18 @@ import TableItem from "../TableItem";
 import styles from "./Table.module.scss";
 
 const Table = ({ teamsList, tableData, mode }) => {
-  const tableHeadItems = [
-    "Position",
-    "Team",
-    "Points",
-    "Matches",
-    "Wins",
-    "Draws",
-    "Losses",
-    "Scored",
-    "Missed",
-    "Difference",
-  ];
+  const tableHeadItems = {
+    Pos: "Position",
+    Team: "Team",
+    Pts: "Points",
+    M: "Matches",
+    W: "Wins",
+    D: "Draws",
+    L: "Losses",
+    Score: "Scored",
+    Miss: "Missed",
+    Diff: "Difference",
+  };
 
   const normalizedData = React.useMemo(() => {
     if (mode === "groups") {
@@ -41,22 +41,24 @@ const Table = ({ teamsList, tableData, mode }) => {
   }, [normalizedData]);
 
   return (
-    <table className={styles.table}>
-      <thead className={styles["table__header"]}>
-        <tr className={styles["table__header-row"]}>
-          {tableHeadItems.map((item, index) => (
-            <td key={index} className={styles["header__item"]}>
-              {item}
-            </td>
+    <div className={styles.tableWrapper}>
+      <table className={styles.table}>
+        <thead className={styles["table__header"]}>
+          <tr className={styles["table__header-row"]}>
+            {Object.entries(tableHeadItems).map(([key, value]) => (
+              <td key={key} title={value} className={styles["header__item"]}>
+                {key}
+              </td>
+            ))}
+          </tr>
+        </thead>
+        <tbody className={styles["table__body"]}>
+          {sortedTeams.map((team, index) => (
+            <TableItem key={team.teamId ? team.teamId : `row-${index}`} {...team} />
           ))}
-        </tr>
-      </thead>
-      <tbody className={styles["table__body"]}>
-        {sortedTeams.map((team, index) => (
-          <TableItem key={team.teamId ? team.teamId : `row-${index}`} {...team} />
-        ))}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   );
 };
 export default Table;

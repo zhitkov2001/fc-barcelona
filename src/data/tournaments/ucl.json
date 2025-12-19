@@ -48,22 +48,22 @@
           {
             "teamId": 1,
             "stats": {
-              "position": 36,
-              "wins": 0,
+              "position": 34,
+              "wins": 1,
               "draws": 0,
               "losses": 5,
-              "scored": 1,
-              "missed": 16
+              "scored": 5,
+              "missed": 18
             }
           },
           {
             "teamId": 2,
             "stats": {
               "position": 1,
-              "wins": 5,
+              "wins": 6,
               "draws": 0,
               "losses": 0,
-              "scored": 14,
+              "scored": 17,
               "missed": 1
             },
             "isQualified": "green"
@@ -71,21 +71,21 @@
           {
             "teamId": 3,
             "stats": {
-              "position": 10,
-              "wins": 3,
+              "position": 5,
+              "wins": 4,
               "draws": 1,
               "losses": 1,
-              "scored": 6,
-              "missed": 5
+              "scored": 8,
+              "missed": 6
             },
-            "isQualified": "orange"
+            "isQualified": "green"
           },
           {
             "teamId": 4,
             "stats": {
-              "position": 27,
+              "position": 28,
               "wins": 1,
-              "draws": 1,
+              "draws": 2,
               "losses": 3,
               "scored": 4,
               "missed": 9
@@ -94,71 +94,71 @@
           {
             "teamId": 5,
             "stats": {
-              "position": 12,
-              "wins": 3,
+              "position": 8,
+              "wins": 4,
               "draws": 0,
               "losses": 2,
-              "scored": 12,
-              "missed": 10
-            },
-            "isQualified": "orange"
-          },
-          {
-            "teamId": 6,
-            "stats": {
-              "position": 6,
-              "wins": 3,
-              "draws": 1,
-              "losses": 1,
-              "scored": 17,
-              "missed": 11
+              "scored": 15,
+              "missed": 12
             },
             "isQualified": "green"
           },
           {
+            "teamId": 6,
+            "stats": {
+              "position": 10,
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scored": 19,
+              "missed": 13
+            },
+            "isQualified": "orange"
+          },
+          {
             "teamId": 7,
             "stats": {
-              "position": 18,
-              "wins": 2,
+              "position": 15,
+              "wins": 3,
               "draws": 1,
               "losses": 2,
-              "scored": 12,
-              "missed": 10
+              "scored": 14,
+              "missed": 11
             },
             "isQualified": "orange"
           },
           {
             "teamId": 8,
             "stats": {
-              "position": 17,
+              "position": 20,
               "wins": 2,
-              "draws": 2,
+              "draws": 3,
               "losses": 1,
-              "scored": 8,
-              "missed": 10
+              "scored": 10,
+              "missed": 12
             },
             "isQualified": "orange"
           },
           {
             "teamId": 9,
             "stats": {
-              "position": 3,
-              "wins": 4,
+              "position": 2,
+              "wins": 5,
               "draws": 0,
               "losses": 1,
-              "scored": 15,
-              "missed": 6
+              "scored": 18,
+              "missed": 7
             },
             "isQualified": "green"
           },
           {
             "teamId": 10,
             "stats": {
-              "position": 30,
-              "wins": 1,
+              "position": 25,
+              "wins": 2,
               "draws": 0,
               "losses": 4,
-              "scored": 4,
+              "scored": 6,
               "missed": 8
             }
           },
@@ -167,89 +167,90 @@
             "stats": {
               "position": 32,
               "wins": 0,
-              "draws": 2,
+              "draws": 3,
               "losses": 3,
-              "scored": 7,
-              "missed": 11
+              "scored": 9,
+              "missed": 13
             }
           },
           {
             "teamId": 12,
             "stats": {
-              "position": 26,
+              "position": 31,
               "wins": 1,
               "draws": 1,
-              "losses": 3,
+              "losses": 4,
               "scored": 8,
-              "missed": 13
+              "missed": 16
             }
           },
           {
             "teamId": 13,
             "stats": {
-              "position": 7,
+              "position": 13,
               "wins": 3,
               "draws": 1,
-              "losses": 1,
-              "scored": 12,
-              "missed": 6
+              "losses": 2,
+              "scored": 13,
+              "missed": 8
             },
-            "isQualified": "green"
+            "isQualified": "orange"
           },
           {
             "teamId": 14,
             "stats": {
-              "position": 29,
-              "wins": 1,
+              "position": 24,
+              "wins": 2,
               "draws": 1,
               "losses": 3,
-              "scored": 7,
-              "missed": 14
-            }
+              "scored": 10,
+              "missed": 16
+            },
+            "isQualified": "orange"
           },
           {
             "teamId": 15,
             "stats": {
-              "position": 28,
+              "position": 30,
               "wins": 1,
               "draws": 1,
-              "losses": 3,
-              "scored": 7,
-              "missed": 14
+              "losses": 4,
+              "scored": 8,
+              "missed": 16
             }
           },
           {
             "teamId": 16,
             "stats": {
-              "position": 14,
+              "position": 18,
               "wins": 3,
               "draws": 0,
-              "losses": 2,
+              "losses": 3,
               "scored": 8,
-              "missed": 7
+              "missed": 8
             },
             "isQualified": "orange"
           },
           {
             "teamId": 17,
             "stats": {
-              "position": 4,
+              "position": 6,
               "wins": 4,
               "draws": 0,
-              "losses": 1,
+              "losses": 2,
               "scored": 12,
-              "missed": 3
+              "missed": 4
             },
             "isQualified": "green"
           },
           {
             "teamId": 18,
             "stats": {
-              "position": 22,
-              "wins": 1,
+              "position": 17,
+              "wins": 2,
               "draws": 3,
               "losses": 1,
-              "scored": 10,
+              "scored": 12,
               "missed": 10
             },
             "isQualified": "orange"
@@ -257,22 +258,22 @@
           {
             "teamId": 19,
             "stats": {
-              "position": 35,
+              "position": 36,
               "wins": 0,
               "draws": 1,
-              "losses": 4,
+              "losses": 5,
               "scored": 4,
-              "missed": 14
+              "missed": 15
             }
           },
           {
             "teamId": 20,
             "stats": {
-              "position": 13,
-              "wins": 3,
+              "position": 9,
+              "wins": 4,
               "draws": 0,
               "losses": 2,
-              "scored": 10,
+              "scored": 11,
               "missed": 8
             },
             "isQualified": "orange"
@@ -280,35 +281,35 @@
           {
             "teamId": 21,
             "stats": {
-              "position": 9,
-              "wins": 3,
+              "position": 4,
+              "wins": 4,
               "draws": 1,
               "losses": 1,
-              "scored": 10,
-              "missed": 5
+              "scored": 12,
+              "missed": 6
             },
-            "isQualified": "orange"
+            "isQualified": "green"
           },
           {
             "teamId": 22,
             "stats": {
-              "position": 21,
-              "wins": 2,
+              "position": 16,
+              "wins": 3,
               "draws": 0,
               "losses": 3,
-              "scored": 8,
-              "missed": 6
+              "scored": 11,
+              "missed": 8
             },
             "isQualified": "orange"
           },
           {
             "teamId": 23,
             "stats": {
-              "position": 23,
-              "wins": 1,
+              "position": 19,
+              "wins": 2,
               "draws": 3,
               "losses": 1,
-              "scored": 6,
+              "scored": 7,
               "missed": 8
             },
             "isQualified": "orange"
@@ -316,44 +317,44 @@
           {
             "teamId": 24,
             "stats": {
-              "position": 20,
+              "position": 23,
               "wins": 2,
               "draws": 1,
-              "losses": 2,
+              "losses": 3,
               "scored": 6,
-              "missed": 9
+              "missed": 11
             },
             "isQualified": "orange"
           },
           {
             "teamId": 25,
             "stats": {
-              "position": 11,
+              "position": 12,
               "wins": 3,
-              "draws": 0,
+              "draws": 1,
               "losses": 2,
-              "scored": 11,
-              "missed": 4
+              "scored": 13,
+              "missed": 7
             },
             "isQualified": "orange"
           },
           {
             "teamId": 26,
             "stats": {
-              "position": 33,
-              "wins": 0,
+              "position": 29,
+              "wins": 1,
               "draws": 2,
               "losses": 3,
-              "scored": 5,
+              "scored": 6,
               "missed": 13
             }
           },
           {
             "teamId": 27,
             "stats": {
-              "position": 2,
+              "position": 3,
               "wins": 4,
-              "draws": 0,
+              "draws": 1,
               "losses": 1,
               "scored": 19,
               "missed": 8
@@ -363,82 +364,81 @@
           {
             "teamId": 28,
             "stats": {
-              "position": 15,
+              "position": 21,
               "wins": 2,
               "draws": 2,
-              "losses": 1,
-              "scored": 13,
-              "missed": 8
+              "losses": 2,
+              "scored": 15,
+              "missed": 11
             },
             "isQualified": "orange"
           },
           {
             "teamId": 29,
             "stats": {
-              "position": 24,
+              "position": 26,
               "wins": 1,
               "draws": 3,
-              "losses": 1,
+              "losses": 2,
               "scored": 4,
-              "missed": 7
-            },
-            "isQualified": "orange"
+              "missed": 9
+            }
           },
           {
             "teamId": 30,
             "stats": {
-              "position": 19,
+              "position": 22,
               "wins": 2,
               "draws": 1,
-              "losses": 2,
-              "scored": 8,
-              "missed": 9
+              "losses": 3,
+              "scored": 10,
+              "missed": 13
             },
             "isQualified": "orange"
           },
           {
             "teamId": 31,
             "stats": {
-              "position": 5,
+              "position": 7,
               "wins": 4,
               "draws": 0,
-              "losses": 1,
-              "scored": 12,
-              "missed": 5
+              "losses": 2,
+              "scored": 13,
+              "missed": 7
             },
             "isQualified": "green"
           },
           {
             "teamId": 32,
             "stats": {
-              "position": 31,
+              "position": 33,
               "wins": 0,
               "draws": 3,
-              "losses": 2,
+              "losses": 3,
               "scored": 2,
-              "missed": 8
+              "missed": 11
             }
           },
           {
             "teamId": 33,
             "stats": {
-              "position": 8,
+              "position": 14,
               "wins": 3,
               "draws": 1,
-              "losses": 1,
-              "scored": 11,
-              "missed": 5
+              "losses": 2,
+              "scored": 12,
+              "missed": 8
             },
-            "isQualified": "green"
+            "isQualified": "orange"
           },
           {
             "teamId": 34,
             "stats": {
-              "position": 16,
-              "wins": 2,
+              "position": 11,
+              "wins": 3,
               "draws": 2,
               "losses": 1,
-              "scored": 10,
+              "scored": 13,
               "missed": 7
             },
             "isQualified": "orange"
@@ -446,23 +446,23 @@
           {
             "teamId": 35,
             "stats": {
-              "position": 25,
+              "position": 27,
               "wins": 2,
               "draws": 0,
-              "losses": 3,
-              "scored": 5,
-              "missed": 12
+              "losses": 4,
+              "scored": 7,
+              "missed": 15
             }
           },
           {
             "teamId": 36,
             "stats": {
-              "position": 34,
+              "position": 35,
               "wins": 0,
               "draws": 1,
-              "losses": 4,
-              "scored": 2,
-              "missed": 10
+              "losses": 5,
+              "scored": 4,
+              "missed": 13
             }
           }
         ],

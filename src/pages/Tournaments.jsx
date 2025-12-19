@@ -1,9 +1,8 @@
 import React from "react";
 
-import TitleBackround from "../components/TitleBackground";
+import TitleBackground from "../components/TitleBackground";
 import TournamentsSelector from "../components/Tournaments/TournamentsSelector";
 import Table from "../components/Tournaments/Table/index";
-// import OldTable from "../components/Tournaments/Table/OldTable";
 import RoundSelector from "../components/Tournaments/RoundSelector";
 import Playoff from "../components/Tournaments/Playoff";
 
@@ -13,11 +12,7 @@ import CdrData from "../data/tournaments/copa-del-rey.json";
 import SscData from "../data/tournaments/spanish-super-cup.json";
 import UelData from "../data/tournaments/europa-league.json";
 
-import {
-  normalizeTeams,
-  normalizePlayoff,
-  normalizeTable,
-} from "../utils/Tournaments/normalize/index";
+import { normalizeTeams, normalizePlayoff, normalizeTable } from "../utils/Tournaments/normalize/index";
 
 const Tournaments = () => {
   // function sortStringsAlphabetically(strings) {
@@ -25,38 +20,38 @@ const Tournaments = () => {
   // }
 
   // const teams = [
-  //   "Juventus",
-  //   "Nantes",
-  //   "Sevilla",
-  //   "PSVEindhoven",
-  //   "Bayer",
-  //   "Monaco",
-  //   "Sporting",
-  //   "Midtjylland",
-  //   "RBSalzburg",
-  //   "Roma",
-  //   "Ajax",
-  //   "UnionBerlin",
-  //   "Shakhtar",
-  //   "Rennes",
+  //   "Deportivo",
+  //   "Mallorca",
+  //   "Eibar",
+  //   "Elche",
+  //   "Guadalajara",
   //   "Barcelona",
-  //   "ManchesterUnited",
-  //   "Feyenoord",
+  //   "Eldense",
+  //   "Sociedad",
+  //   "SportingGijon",
+  //   "Valencia",
+  //   "CulturalLeonesa",
+  //   "Levante",
+  //   "Albacete",
+  //   "CeltaVigo",
+  //   "AtleticoBaleares",
+  //   "AtleticoMadrid",
+  //   "Huesca",
+  //   "Osasuna",
+  //   "Racing",
+  //   "Villarreal",
+  //   "Alaves",
+  //   "Sevilla",
+  //   "Talavera",
+  //   "RealMadrid",
+  //   "Burgos",
+  //   "Getafe",
+  //   "Ourense",
+  //   "AthleticBilbao",
+  //   "RealMurcia",
   //   "RealBetis",
-  //   "Freiburg",
-  //   "Fenerbahce",
-  //   "RealSociedad",
-  //   "Arsenal",
-  //   "Ferencvaros",
-  //   "UnionSG",
-  //   // "Almeria",
-  //   // "Sevilla",
-  //   // "Cartagena",
-  //   // "Leganes",
-  //   // "Minera",
-  //   // "RealMadrid",
-  //   // "Rasing",
-  //   // "Celta",
+  //   "Granada",
+  //   "RayoVallecano",
   //   // "Olympiacos",
   //   // "Kairat",
   //   // "Benfica",
@@ -107,10 +102,7 @@ const Tournaments = () => {
   };
 
   React.useEffect(() => {
-    if (
-      availableSeasons.length > 0 &&
-      !availableSeasons.includes(selectedSeason)
-    ) {
+    if (availableSeasons.length > 0 && !availableSeasons.includes(selectedSeason)) {
       setSelectedSeason(availableSeasons[0]);
     }
   }, [availableSeasons, selectedSeason]);
@@ -135,8 +127,7 @@ const Tournaments = () => {
   };
 
   React.useEffect(() => {
-    if (selectedLeague && selectedSeason)
-      fetchTournamentData(selectedLeague, selectedSeason);
+    if (selectedLeague && selectedSeason) fetchTournamentData(selectedLeague, selectedSeason);
   }, [selectedLeague, selectedSeason]);
 
   if (!currentTournament || !currentSeason) {
@@ -152,7 +143,7 @@ const Tournaments = () => {
 
   return (
     <section className='tournaments'>
-      <TitleBackround title='Tournaments' />
+      <TitleBackground title='Tournaments' />
       <div className='container'>
         <TournamentsSelector
           selectedLeague={selectedLeague}
@@ -164,41 +155,25 @@ const Tournaments = () => {
           availableSeasons={availableSeasons}
         />
 
-        {hasLeague && !hasPlayoff && (
-          <Table teamsList={teamsList} tableData={tableData} />
-        )}
+        {hasLeague && !hasPlayoff && <Table teamsList={teamsList} tableData={tableData} />}
 
         {hasPlayoff && (hasLeague || hasGroupStage) && (
           <>
-            <RoundSelector
-              selectedRound={selectedRound}
-              onRoundChange={handleRoundChange}
-            />
+            <RoundSelector selectedRound={selectedRound} onRoundChange={handleRoundChange} />
             {selectedRound === "Group stage" || selectedRound === "League" ? (
               hasGroupStage ? (
                 oldTableData.map((group) => {
-                  const groupTableData = tableData.filter(
-                    (team) => team.groupName === group.groupName
-                  );
+                  const groupTableData = tableData.filter((team) => team.groupName === group.groupName);
 
                   return (
                     <div className='table__container' key={group.groupName}>
                       <h5 className='group-stage__title'>{`Group ${group.groupName}`}</h5>
-                      <Table
-                        key={group.groupName}
-                        teamsList={teamsList}
-                        tableData={groupTableData}
-                        mode='groups'
-                      />
+                      <Table key={group.groupName} teamsList={teamsList} tableData={groupTableData} mode='groups' />
                     </div>
                   );
                 })
               ) : (
-                <Table
-                  teamsList={teamsList}
-                  tableData={tableData}
-                  mode='league'
-                />
+                <Table teamsList={teamsList} tableData={tableData} mode='league' />
               )
             ) : (
               <Playoff playoffData={playoffData} teamsData={teamsList} />
@@ -206,9 +181,7 @@ const Tournaments = () => {
           </>
         )}
 
-        {hasPlayoff && !hasLeague && !hasGroupStage && (
-          <Playoff playoffData={playoffData} teamsData={teamsList} />
-        )}
+        {hasPlayoff && !hasLeague && !hasGroupStage && <Playoff playoffData={playoffData} teamsData={teamsList} />}
       </div>
     </section>
   );
