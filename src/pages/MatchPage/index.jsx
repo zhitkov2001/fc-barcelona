@@ -15,7 +15,7 @@ const MatchPage = () => {
         {/* Фон + карточка матча */}
         <div className={styles.matchWrapper}>
           <img
-            src={`${ASSETS_BASE_URL}/Matches/${match.matchBackground}.webp`}
+            src={`${ASSETS_BASE_URL}/Matches/${match?.matchBackground || "default"}.webp`}
             className={styles.matchBackground}
             alt={match.matchBackground}
           />
