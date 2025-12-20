@@ -4,7 +4,7 @@ import PlayoffItem from "../PlayOffItem/index";
 
 const Playoff = ({ playoffData, teamsData }) => {
   if (!playoffData || playoffData.length === 0) {
-    return <div>Нет данных для отображения плейофф</div>;
+    return <h2>Нет данных для отображения плейофф</h2>;
   }
 
   return (

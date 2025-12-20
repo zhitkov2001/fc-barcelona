@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 
 import styles from "./NewsItem.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 function NewsItem(news) {
   return (
     <Link to={`/newspage/${news.id}`}>
       <article className={styles.news__item}>
         <div className={styles.img__container}>
           <img
-            src={`${process.env.PUBLIC_URL}/img/News/${news.img}.webp`}
+            src={`${ASSETS_BASE_URL}/News/${news.img}.webp`}
             alt={news.title}
             className={styles.news__img}
+            loading='lazy'
           />
         </div>
         <div className={styles.info__container}>
@@ -21,7 +22,7 @@ function NewsItem(news) {
               <div className={styles.category__title}>{news.category[0].toUpperCase() + news.category.slice(1)}</div>
             </div>
             <div className={styles["news__date-info"]}>
-              <img className={styles.news__icon} src={`${process.env.PUBLIC_URL}/img/svgicons/time.svg`} alt='time' />
+              <img className={styles.news__icon} src={`${ASSETS_BASE_URL}/svgicons/time.svg`} alt='time' />
               <p className={styles.news__date}>{news.date}</p>
               <p className={styles.news__month}>{news.month}</p>
             </div>

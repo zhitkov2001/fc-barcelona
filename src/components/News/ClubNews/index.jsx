@@ -1,9 +1,9 @@
+import React from "react";
 import styles from "./ClubNews.module.scss";
 
 import ClubNewsItems from "../ClubNewsItems";
-import ClubNewsData from "../../../data/news.json";
 
-function ClubNews() {
+function ClubNews({ newsData }) {
   return (
     <>
       <section className={styles.club__news}>
@@ -11,7 +11,7 @@ function ClubNews() {
           <div className={styles["club__news-container"]}>
             <h2 className={styles["section__news-title"]}>News</h2>
             <ul className={styles["club__news-list"]}>
-              {ClubNewsData.slice(0, 6).map((news) => (
+              {newsData.slice(0, 6).map((news) => (
                 <ClubNewsItems key={news.id} {...news} />
               ))}
             </ul>

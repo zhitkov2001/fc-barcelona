@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import styles from "./MainNewsItem.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 function MainNewsItems({ isActive, onMouseEnter, ...news }) {
   return (
     <Link
@@ -9,11 +9,7 @@ function MainNewsItems({ isActive, onMouseEnter, ...news }) {
       onMouseEnter={onMouseEnter}
       to={`/newspage/${news.id}`}
     >
-      <img
-        className={styles["main__news-img"]}
-        alt={news.title}
-        src={`${process.env.PUBLIC_URL}/img/News/${news.img}.webp`}
-      />
+      <img className={styles["main__news-img"]} alt={news.title} src={`${ASSETS_BASE_URL}/News/${news.img}.webp`} />
       <div className={styles["main__news-info"]}>
         <p className={styles["main__news-title"]}>{news.title}</p>
         <p className={styles["main__news-subtitle"]}>{news.subtitle}</p>

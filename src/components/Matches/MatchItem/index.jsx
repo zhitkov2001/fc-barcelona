@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./MatchItem.module.scss";
+import { ASSETS_BASE_URL } from "../../../config/assets";
 
 const MatchItem = (match) => {
   return (
@@ -14,7 +15,7 @@ const MatchItem = (match) => {
         </div>
         <div className={styles.match__competition}>
           <img
-            src={`${process.env.PUBLIC_URL}/img/Competition/${match.competition.img}.png`}
+            src={`${ASSETS_BASE_URL}/Competition/${match.competition.img}.png`}
             alt={`${match.competition.title}`}
             className={styles["match-competition__img"]}
           />
@@ -28,7 +29,7 @@ const MatchItem = (match) => {
             <p className={styles.team__title}>{match.owner.title}</p>
             <img
               className={styles.team__img}
-              src={`${process.env.PUBLIC_URL}/img/Teams/${match.owner?.img || "default"}.png`}
+              src={`${ASSETS_BASE_URL}/Teams/${match.owner?.img || "default"}.png`}
               alt={`${match.owner.title}`}
             />
           </div>
@@ -52,7 +53,7 @@ const MatchItem = (match) => {
             <div className={styles["team-img__container"]}>
               <img
                 className={styles.team__img}
-                src={`${process.env.PUBLIC_URL}/img/Teams/${match.guest.img || "default"}.png`}
+                src={`${ASSETS_BASE_URL}/Teams/${match.guest.img || "default"}.png`}
                 alt={`${match.guest.title}`}
               />
             </div>

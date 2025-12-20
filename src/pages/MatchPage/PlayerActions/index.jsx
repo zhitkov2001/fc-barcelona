@@ -1,5 +1,5 @@
 import styles from "./PlayerActions.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 const PlayerActions = ({ actions }) => {
   return (
     <>
@@ -7,8 +7,9 @@ const PlayerActions = ({ actions }) => {
         <div key={id} className={styles.action__container}>
           <img
             className={styles.action__img}
-            src={`${process.env.PUBLIC_URL}/img/MatchAction/${action.img}.png`}
+            src={`${ASSETS_BASE_URL}/MatchAction/${action.img}.png`}
             alt={action.img}
+            loading='lazy'
           />
           {/* Минуты */}
           {Array.isArray(action.minute) ? (

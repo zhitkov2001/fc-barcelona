@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { ASSETS_BASE_URL } from "../config/assets";
 function PlayerItem(player) {
   const playerStats = player?.stats;
   const playerStatsCurrent = player?.currentStats;
@@ -8,14 +8,15 @@ function PlayerItem(player) {
   return (
     <div className='player'>
       <Link to={`/players/${player.id}`} key={player.id} state={{ player }} className='player__link'>
-        <img className='player__img' alt='' src={`${process.env.PUBLIC_URL}/img/Players/Min/${player?.img}.webp`} />
+        <img className='player__img' alt='' src={`${ASSETS_BASE_URL}/Players/Min/${player?.img}.webp`} loading='lazy' />
         {player.injured ? (
           <div className='injured__container'>
             <img
-              src={`${process.env.PUBLIC_URL}/img/MatchAction/injured.png`}
+              src={`${ASSETS_BASE_URL}/MatchAction/injured.png`}
               title={player.injured.type}
               alt='injured'
               className='injured__img'
+              loading='lazy'
             />
           </div>
         ) : null}

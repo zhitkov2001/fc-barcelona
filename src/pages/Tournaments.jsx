@@ -6,13 +6,8 @@ import Table from "../components/Tournaments/Table/index";
 import RoundSelector from "../components/Tournaments/RoundSelector";
 import Playoff from "../components/Tournaments/Playoff";
 
-import UclData from "../data/tournaments/ucl.json";
-import LaLigaData from "../data/tournaments/laliga.json";
-import CdrData from "../data/tournaments/copa-del-rey.json";
-import SscData from "../data/tournaments/spanish-super-cup.json";
-import UelData from "../data/tournaments/europa-league.json";
-
 import { normalizeTeams, normalizePlayoff, normalizeTable } from "../utils/Tournaments/normalize/index";
+import { DATA_BASE_URL } from "../config/assets";
 
 const Tournaments = () => {
   // function sortStringsAlphabetically(strings) {
@@ -60,30 +55,67 @@ const Tournaments = () => {
   // const sortedTeams = sortStringsAlphabetically(teams);
   // console.log(sortedTeams);
 
-  const TournamentsData = {
-    "La Liga": LaLigaData,
-    "UEFA Champions League": UclData,
-    "Copa del Rey": CdrData,
-    "Spanish Supercup": SscData,
-    "UEFA Europa League": UelData,
+  const TOURNAMENTS = {
+    "La Liga": `${DATA_BASE_URL}/tournaments/laliga.json`,
+    "UEFA Champions League": `${DATA_BASE_URL}/tournaments/ucl.json`,
+    "Copa del Rey": `${DATA_BASE_URL}/tournaments/copa-del-rey.json`,
+    "Spanish Supercup": `${DATA_BASE_URL}/tournaments/spanish-super-cup.json`,
+    "UEFA Europa League": `${DATA_BASE_URL}/tournaments/europa-league.json`,
   };
 
-  const [currentTournament, setCurrentTournament] = React.useState(null);
-  const [currentSeason, setCurrentSeason] = React.useState(null);
+  const TOURNAMENTS_META = {
+    "La Liga": { title: "La Liga" },
+    "UEFA Champions League": { title: "UEFA Champions League" },
+    "Copa del Rey": { title: "Copa del Rey" },
+    "Spanish Supercup": { title: "Spanish Supercup" },
+    "UEFA Europa League": { title: "UEFA Europa League" },
+  };
+
+  const [currentTournament, setCurrentTournament] = React.useState({});
+  const [currentSeason, setCurrentSeason] = React.useState({});
   const [teamsList, setTeamsList] = React.useState([]);
-  const [tableData, setTableData] = React.useState([]);
   const [playoffData, setPlayoffData] = React.useState([]);
   const [selectedLeague, setSelectedLeague] = React.useState("La Liga");
   const [selectedSeason, setSelectedSeason] = React.useState("");
   const [selectedRound, setSelectedRound] = React.useState("Group stage");
+  const [tournamentData, setTournamentData] = React.useState({});
+  const [tableData, setTableData] = React.useState([]);
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    const loadTournament = async () => {
+      try {
+        setLoading(true);
+
+        const res = await fetch(TOURNAMENTS[selectedLeague]);
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}`);
+        }
+
+        const data = await res.json();
+        setTournamentData((prev) => ({
+          ...prev,
+          [selectedLeague]: data,
+        }));
+      } catch (e) {
+        console.error("Failed to load tournament", e);
+        setTournamentData({});
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadTournament();
+  }, [selectedLeague]);
 
   const availableSeasons = React.useMemo(() => {
-    const leagueData = TournamentsData[selectedLeague];
+    const leagueData = tournamentData[selectedLeague];
     return leagueData?.seasons ? Object.keys(leagueData.seasons) : [];
-  }, [selectedLeague]);
+  }, [tournamentData, selectedLeague]);
 
   const handleLeagueChange = (league) => {
     setSelectedLeague(league);
+    setSelectedSeason("");
   };
 
   const handleSeasonChange = (season) => {
@@ -108,7 +140,7 @@ const Tournaments = () => {
   }, [availableSeasons, selectedSeason]);
 
   const fetchTournamentData = (league, seasonKey) => {
-    const tournament = TournamentsData[league];
+    const tournament = tournamentData[league];
     const season = tournament?.seasons?.[seasonKey];
 
     setCurrentTournament(tournament);
@@ -130,7 +162,7 @@ const Tournaments = () => {
     if (selectedLeague && selectedSeason) fetchTournamentData(selectedLeague, selectedSeason);
   }, [selectedLeague, selectedSeason]);
 
-  if (!currentTournament || !currentSeason) {
+  if (loading || !currentTournament || !currentSeason) {
     return <div>Loading...</div>;
   }
 
@@ -151,37 +183,40 @@ const Tournaments = () => {
           onLeagueChange={handleLeagueChange}
           onSeasonChange={handleSeasonChange}
           onReset={handleReset}
-          tournamentsData={TournamentsData}
+          tournamentsData={TOURNAMENTS_META}
           availableSeasons={availableSeasons}
         />
 
-        {hasLeague && !hasPlayoff && <Table teamsList={teamsList} tableData={tableData} />}
-
-        {hasPlayoff && (hasLeague || hasGroupStage) && (
+        {loading && <div>Loading tournament...</div>}
+        {!loading && currentTournament && currentSeason && (
           <>
-            <RoundSelector selectedRound={selectedRound} onRoundChange={handleRoundChange} />
-            {selectedRound === "Group stage" || selectedRound === "League" ? (
-              hasGroupStage ? (
-                oldTableData.map((group) => {
-                  const groupTableData = tableData.filter((team) => team.groupName === group.groupName);
+            {hasLeague && !hasPlayoff && <Table teamsList={teamsList} tableData={tableData} />}
+            {hasPlayoff && (hasLeague || hasGroupStage) && (
+              <>
+                <RoundSelector selectedRound={selectedRound} onRoundChange={handleRoundChange} />
+                {selectedRound === "Group stage" || selectedRound === "League" ? (
+                  hasGroupStage ? (
+                    oldTableData.map((group) => {
+                      const groupTableData = tableData.filter((team) => team.groupName === group.groupName);
 
-                  return (
-                    <div className='table__container' key={group.groupName}>
-                      <h5 className='group-stage__title'>{`Group ${group.groupName}`}</h5>
-                      <Table key={group.groupName} teamsList={teamsList} tableData={groupTableData} mode='groups' />
-                    </div>
-                  );
-                })
-              ) : (
-                <Table teamsList={teamsList} tableData={tableData} mode='league' />
-              )
-            ) : (
-              <Playoff playoffData={playoffData} teamsData={teamsList} />
+                      return (
+                        <div className='table__container' key={group.groupName}>
+                          <h5 className='group-stage__title'>{`Group ${group.groupName}`}</h5>
+                          <Table key={group.groupName} teamsList={teamsList} tableData={groupTableData} mode='groups' />
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <Table teamsList={teamsList} tableData={tableData} mode='league' />
+                  )
+                ) : (
+                  <Playoff playoffData={playoffData} teamsData={teamsList} />
+                )}
+              </>
             )}
+            {hasPlayoff && !hasLeague && !hasGroupStage && <Playoff playoffData={playoffData} teamsData={teamsList} />}
           </>
         )}
-
-        {hasPlayoff && !hasLeague && !hasGroupStage && <Playoff playoffData={playoffData} teamsData={teamsList} />}
       </div>
     </section>
   );

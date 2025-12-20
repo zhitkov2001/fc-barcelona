@@ -1,6 +1,5 @@
-// import clsx from "clsx";
 import styles from "./TableItem.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 function TableItem(team) {
   const getStatus = () => {
     if (team.isDowngraded) return "#dc3545";
@@ -20,9 +19,10 @@ function TableItem(team) {
       <th className={styles.teamContainer}>
         <div className={styles.teamImgContainer}>
           <img
-            src={`${process.env.PUBLIC_URL}/img/Teams/${team.image || "default"}.png`}
+            src={`${ASSETS_BASE_URL}/Teams/${team.image || "default"}.png`}
             alt={team.title}
             className={styles.teamImg}
+            loading='lazy'
           />
         </div>
 

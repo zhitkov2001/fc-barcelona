@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import { ASSETS_BASE_URL } from "../config/assets";
 function Header() {
   const location = useLocation();
   const [activeLink, setActiveLink] = React.useState(location.pathname);
@@ -15,7 +15,7 @@ function Header() {
     <header className='header'>
       <div className='container'>
         <Link to='/' className='header__logo'>
-          <img src={`${process.env.PUBLIC_URL}/img/barca_logo(60px).webp`} alt='Barcelona Logo' />
+          <img src={`${ASSETS_BASE_URL}/barca_logo(60px).webp`} alt='Barcelona Logo' />
         </Link>
         <nav className='nav'>
           <Link

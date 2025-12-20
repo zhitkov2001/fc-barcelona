@@ -1,12 +1,10 @@
 import React from "react";
 import styles from "./PlayOffItem.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 const PlayoffItem = ({ match, teamsData }) => {
   const findTeamById = (teamId) => {
     return teamsData?.find((team) => team.id === teamId) || {};
   };
-
-  // if (!match?.legs[0]) return null;
 
   const firstMatch = match.legs[0];
   const hasSecondMatch = match.legs.length > 1;
@@ -21,8 +19,9 @@ const PlayoffItem = ({ match, teamsData }) => {
         <div className={styles.match__header}>
           <div className={styles.team__container}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/teams/${homeTeam?.image || "default"}.png`}
+              src={`${ASSETS_BASE_URL}/Teams/${homeTeam?.image || "default"}.png`}
               alt={homeTeam?.title}
+              loading='lazy'
               className={styles.team__logo}
             />
           </div>
@@ -33,8 +32,9 @@ const PlayoffItem = ({ match, teamsData }) => {
           </div>
           <div className={`${styles.team__container} ${styles["away-team__container"]}`}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/teams/${awayTeam?.image || "default"}.png`}
+              src={`${ASSETS_BASE_URL}/Teams/${awayTeam?.image || "default"}.png`}
               alt={awayTeam?.title}
+              loading='lazy'
               className={styles.team__logo}
             />
           </div>
@@ -78,9 +78,10 @@ const PlayoffItem = ({ match, teamsData }) => {
       <div className={styles.match__header}>
         <div className={styles.team__container}>
           <img
-            src={`${process.env.PUBLIC_URL}/img/teams/${homeTeam?.image || "default"}.png`}
+            src={`${ASSETS_BASE_URL}/Teams/${homeTeam?.image || "default"}.png`}
             alt={homeTeam?.title}
             className={styles.team__logo}
+            loading='lazy'
           />
         </div>
         <div className={styles["match-score__container"]}>
@@ -93,9 +94,10 @@ const PlayoffItem = ({ match, teamsData }) => {
         </div>
         <div className={`${styles.team__container} ${styles["away-team__container"]}`}>
           <img
-            src={`${process.env.PUBLIC_URL}/img/teams/${awayTeam?.image || "default"}.png`}
+            src={`${ASSETS_BASE_URL}/Teams/${awayTeam?.image || "default"}.png`}
             alt={awayTeam?.title}
             className={styles.team__logo}
+            loading='lazy'
           />
         </div>
       </div>

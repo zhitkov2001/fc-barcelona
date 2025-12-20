@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useLocation } from "react-router-dom";
 
+import { ASSETS_BASE_URL } from "../config/assets";
+
 const PlayerPage = () => {
   const location = useLocation();
   const player = location.state?.player;
@@ -90,7 +92,7 @@ const PlayerPage = () => {
             </ul>
           </div>
           <div className='player-hero-img__container'>
-            <img alt={`${player.img}`} src={`${process.env.PUBLIC_URL}/img/Players/No-bg/${player.img}.webp`} />
+            <img alt={`${player.img}`} src={`${ASSETS_BASE_URL}/Players/No-bg/${player.img}.webp`} />
             <div className='player-hero-info__block'>
               <p className='player-hero-info__position'>
                 {player.position.charAt(0).toUpperCase() + player.position.slice(1)}
@@ -109,7 +111,7 @@ const PlayerPage = () => {
           <div className='player-card__wrapper'>
             <img
               className='player-card__img'
-              src={`${process.env.PUBLIC_URL}/img/Players/${player.img}.webp`}
+              src={`${ASSETS_BASE_URL}/Players/${player.img}.webp`}
               alt={player.surname}
             />
             <div className='player-card-img__info'>
@@ -122,15 +124,6 @@ const PlayerPage = () => {
           <div className='player-card__info'>
             <p className='player-card-info__title'>{player.title}</p>
             <p className='player-card-info__subtitle'>{player.subtitle}</p>
-            {/* <ul className='player-card-allTime__list'>
-              {playerAllTimeStats &&
-                Object.entries(playerAllTimeStats).map(([key, value]) => (
-                  <li key={key} className='player-card-allTime__item'>
-                    <p className='player-card-allTime-stats__title'>{key.charAt(0).toUpperCase() + key.slice(1)}</p>
-                    <span className='player-card-allTime-stats__value'>{value}</span>
-                  </li>
-                ))}
-            </ul> */}
             <button onClick={openPopup} className='player-card-btn'>
               Read full BIO
               <svg
@@ -171,10 +164,10 @@ const PlayerPage = () => {
           <div className='player-card__trophy'>
             <div className='player-card-trophy-btn__wrapper'>
               <button onClick={handlePrev} className='player-card-trophy__btn'>
-                <img src={`${process.env.PUBLIC_URL}/img/svgicons/btnPrev.svg`} alt='Previous' />
+                <img src={`${ASSETS_BASE_URL}/svgicons/btnPrev.svg`} alt='Previous' />
               </button>
               <button onClick={handleNext} className='player-card-trophy__btn'>
-                <img src={`${process.env.PUBLIC_URL}/img/svgicons/btnNext.svg`} alt='Previous' />
+                <img src={`${ASSETS_BASE_URL}/svgicons/btnNext.svg`} alt='Previous' />
               </button>
             </div>
             <ul ref={listRef} className='player-card-trophy__list'>
@@ -185,7 +178,7 @@ const PlayerPage = () => {
                     <p className='player-card-trophy__competition'>{trophy.title}</p>
                     <div className='player-card-trophy__wrapper'>
                       <span className='player-card-trophy__quantity'>{trophy.quantity}</span>
-                      <img src={`${process.env.PUBLIC_URL}/img/Trophy/${trophy.img}.webp`} alt={`${trophy.img}`} />
+                      <img src={`${ASSETS_BASE_URL}/Trophy/${trophy.img}.webp`} alt={`${trophy.img}`} loading='lazy' />
                     </div>
                     <ul className='player-card-trophy-season__list'>
                       {Object.entries(trophy.years).length > 0 ? (
@@ -212,7 +205,7 @@ const PlayerPage = () => {
           <div className='full-bio__overlay'>
             <div className='full-bio__wrapper'>
               <button onClick={closePopup} className='full-bio__btn'>
-                <img src={`${process.env.PUBLIC_URL}/img/svgicons/close.svg`} alt='close' />
+                <img src={`${ASSETS_BASE_URL}/svgicons/close.svg`} alt='close' />
               </button>
               <ul className='full-bio__content'>
                 <h4 className='full-bio__title'>{player.fullName}</h4>

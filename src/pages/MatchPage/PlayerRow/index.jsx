@@ -1,6 +1,6 @@
 import PlayerActions from "../PlayerActions";
 import styles from "./PlayerRow.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 const PlayerRow = ({ player }) => (
   <li className={styles.lineup__item}>
     <p className={styles["lineup-player__number"]}>{player.number}</p>
@@ -10,10 +10,11 @@ const PlayerRow = ({ player }) => (
         className={styles["lineup-player__img"]}
         src={
           player.img
-            ? `${process.env.PUBLIC_URL}/img/Players/30x30/${player.img}.png`
-            : `${process.env.PUBLIC_URL}/img/Players/30x30/Noname.png`
+            ? `${ASSETS_BASE_URL}/Players/30x30/${player.img}.png`
+            : `${ASSETS_BASE_URL}/Players/30x30/Noname.png`
         }
         alt={player.surname}
+        loading='lazy'
       />
     </div>
 

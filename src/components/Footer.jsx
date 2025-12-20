@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { ASSETS_BASE_URL } from "../config/assets";
 function Footer() {
   const mainLinks = [
     { label: "Home", href: "/" },
@@ -41,7 +41,7 @@ function Footer() {
         <div className='footer__copyright'>
           <div className='copyright-left'>
             <div className='img__container'>
-              <img src={`${process.env.PUBLIC_URL}/img/barca_logo(60px).webp`} alt='FC Barcelona' className='logo' />
+              <img src={`${ASSETS_BASE_URL}/barca_logo(60px).webp`} alt='FC Barcelona' className='logo' />
             </div>
             <div className='info'>
               <p className='title'>fc barcelona</p>

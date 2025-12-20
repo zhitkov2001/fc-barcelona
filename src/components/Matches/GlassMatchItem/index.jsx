@@ -1,5 +1,5 @@
 import styles from "./GlassMatchItem.module.scss";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 function GlassMatchItem({ match }) {
   const tournamentColors = {
     "La Liga": "#7624b9",
@@ -18,7 +18,7 @@ function GlassMatchItem({ match }) {
       <div className={styles["match-content"]}>
         <div className={styles["teams-container"]}>
           <img
-            src={`${process.env.PUBLIC_URL}/img/Teams/${match.owner.img}.png`}
+            src={`${ASSETS_BASE_URL}/Teams/${match.owner.img}.png`}
             alt={match.owner.title}
             className={styles["team-logo"]}
           />
@@ -27,7 +27,7 @@ function GlassMatchItem({ match }) {
             <span className={styles.team__score}>:</span>
           ) : (
             <img
-              src={`${process.env.PUBLIC_URL}/img/Competition/${match.competition.img}_min.png`}
+              src={`${ASSETS_BASE_URL}/Competition/${match.competition.img}_min.png`}
               alt='Copa Del Rey'
               className={`${styles["team-logo"]} ${styles["tournament-logo"]}`}
               title={match.competition.title}
@@ -35,7 +35,7 @@ function GlassMatchItem({ match }) {
           )}
           <span className={styles.team__score}>{isResult ? match.score.guest : null}</span>
           <img
-            src={`${process.env.PUBLIC_URL}/img/Teams/${match.guest.img}.png`}
+            src={`${ASSETS_BASE_URL}/Teams/${match.guest.img}.png`}
             alt={match.guest.title}
             className={styles["team-logo"]}
           />
@@ -46,13 +46,13 @@ function GlassMatchItem({ match }) {
           <div className={styles["match-day"]}>{match.stageInfo.stage}</div>
           <div className={styles["match-details"]}>
             <div className={styles["match-date"]}>
-              <img src={`${process.env.PUBLIC_URL}/img/svgicons/calendar.svg`} alt='calendar' />
+              <img src={`${ASSETS_BASE_URL}/svgicons/calendar.svg`} alt='calendar' />
               {`${match.dateInfo.weekday.slice(0, 3)}, ${match.dateInfo.date}, ${match.dateInfo.month.slice(0, 3)}, ${
                 match.dateInfo.time
               }`}
             </div>
             <div className={styles["match-venue"]}>
-              <img src={`${process.env.PUBLIC_URL}/img/svgicons/location.svg`} alt='location' />
+              <img src={`${ASSETS_BASE_URL}/svgicons/location.svg`} alt='location' />
               {match.stageInfo.stadium}
             </div>
           </div>

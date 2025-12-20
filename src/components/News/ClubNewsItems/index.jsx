@@ -1,15 +1,16 @@
 import styles from "./ClubNewsItems.module.scss";
 
 import { Link } from "react-router-dom";
-
+import { ASSETS_BASE_URL } from "../../../config/assets";
 function ClubNewsItems(news) {
   return (
     <Link to={`/newspage/${news.id}`} className={styles["club__news-link"]}>
       <li className={styles["club__news-item"]}>
         <img
           className={styles["club__news-img"]}
-          src={`${process.env.PUBLIC_URL}/img/News/${news.img}.webp`}
+          src={`${ASSETS_BASE_URL}/News/${news.img}.webp`}
           alt='Club news'
+          loading='lazy'
         />
         <div className={styles["club__news-info"]}>
           <p className={styles["club__news-title"]}>{news.title}</p>
