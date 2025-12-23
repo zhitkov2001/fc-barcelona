@@ -32,6 +32,8 @@ const Sponsors = () => {
 
   React.useEffect(() => {
     if (!sliderTrackRef.current) return;
+    if (sponsorsData.length === 0) return;
+
     const sliderTrack = sliderTrackRef.current;
     let animationFrameId;
     const speed = 0.4;
@@ -53,7 +55,7 @@ const Sponsors = () => {
     animationFrameId = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(animationFrameId);
-  }, [isHovered]);
+  }, [isHovered, sponsorsData]);
 
   return (
     <section className={styles.sponsors}>
