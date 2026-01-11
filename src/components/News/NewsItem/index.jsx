@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 import styles from "./NewsItem.module.scss";
 import { ASSETS_BASE_URL } from "../../../config/assets";
-function NewsItem(news) {
+function NewsItem({ news }) {
   return (
-    <Link to={`/newspage/${news.id}`}>
+    <Link to={`/newspage/${news.id}`} key={news.id} state={{ news }} className={styles.news__link}>
       <article className={styles.news__item}>
         <div className={styles.img__container}>
           <img
-            src={`${ASSETS_BASE_URL}/News/${news.img}.webp`}
+            src={`${ASSETS_BASE_URL}/News/${news.id}/${news.cover}.webp`}
             alt={news.title}
             className={styles.news__img}
             loading='lazy'

@@ -56,7 +56,7 @@ const News = () => {
 
         <div className='news__container'>
           {filteredNews.map((news) => (
-            <NewsItem key={news.id} {...news} />
+            <NewsItem key={news.id} news={news} />
           ))}
         </div>
       </div>

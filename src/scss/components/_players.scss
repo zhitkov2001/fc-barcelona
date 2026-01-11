@@ -54,7 +54,7 @@
 }
 
 .players__group {
-  @include grid($justify: center);
+  @include grid($justify: flex-start);
   width: 1280px;
   margin: 0 auto;
 }
@@ -71,6 +71,6 @@
 }
 
 .players__group--flex {
-  @include flex($align: flex-start, $wrap: wrap, $gap: 0.7rem 1rem);
-  width: 100%;
+  @include flex($justify: flex-start, $align: flex-start, $wrap: wrap, $gap: 0.7rem 1rem);
+  width: 1280px;
 }

@@ -18,7 +18,7 @@ function MainNews({ newsData }) {
               key={news.id}
               isActive={activeId === index}
               onMouseEnter={() => setActiveId(index)}
-              {...news}
+              news={news}
             />
           ))}
         </div>

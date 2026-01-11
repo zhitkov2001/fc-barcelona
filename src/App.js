@@ -16,6 +16,7 @@ import Matches from "./pages/Matches";
 import MatchPage from "./pages/MatchPage";
 import Tournaments from "./pages/Tournaments";
 import News from "./pages/News";
+import NewsPage from "./pages/NewsPage";
 import TermsOfUse from "./pages/Legal/TermsOfUse";
 import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
 
@@ -35,6 +36,7 @@ function App() {
           <Route path='/matches/:id' element={<MatchPage />} />
           <Route path='/tournaments' element={<Tournaments />} />
           <Route path='/news' element={<News />} />
+          <Route path='/newspage/:id' element={<NewsPage />} />
           <Route path='/terms-of-use' element={<TermsOfUse />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>

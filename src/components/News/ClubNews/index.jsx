@@ -12,7 +12,7 @@ function ClubNews({ newsData }) {
             <h2 className={styles["section__news-title"]}>News</h2>
             <ul className={styles["club__news-list"]}>
               {newsData.slice(0, 6).map((news) => (
-                <ClubNewsItems key={news.id} {...news} />
+                <ClubNewsItems key={news.id} news={news} />
               ))}
             </ul>
           </div>
