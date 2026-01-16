@@ -85,7 +85,7 @@ const PlayerPage = () => {
               {playerCurrentStats &&
                 Object.entries(playerCurrentStats).map(([key, value]) => (
                   <li key={`${key}-${value}`} className='player-hero-current-stats__item'>
-                    <p className='player-hero-stats-item-current__title'>Season 24/25</p>
+                    <p className='player-hero-stats-item-current__title'>Season 25/26</p>
                     <p className='player-hero-stats-item-current__value'>{value}</p>
                   </li>
                 ))}

@@ -67,7 +67,7 @@
     .match-stage__container {
       position: relative;
       @include grid($align: center, $justify: flex-start, $gap: 0.5rem);
-      @include wh($min-width: 20rem, $height: 5rem);
+      @include wh($width: 20rem, $height: 5rem);
       padding: 0.4rem 1rem;
 
       font-family: $font-accent;
@@ -79,6 +79,9 @@
         font-size: 1.4rem;
       }
       .match__stadium {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 1.2rem;
       }
 

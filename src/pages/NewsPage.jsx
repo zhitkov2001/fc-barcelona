@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { ASSETS_BASE_URL } from "../config/assets";
 
@@ -9,7 +9,36 @@ const NewsPage = () => {
   if (!news) {
     return <div className='news__error'>News not found</div>;
   }
-  console.log({ news });
+
+  const SliderBlock = ({ id, images, newsId }) => {
+    const [index, setIndex] = useState(0);
+    const total = images.length;
+
+    const prev = () => setIndex((i) => (i - 1 + total) % total);
+    const next = () => setIndex((i) => (i + 1) % total);
+
+    const current = images[index];
+
+    return (
+      <div className='slider'>
+        <button className='slider__btn slider__btn--left' onClick={prev}>
+          ‹
+        </button>
+
+        <div className='slider__viewport'>
+          <img
+            className='slider__image'
+            src={`${ASSETS_BASE_URL}/News/${newsId}/${current.src}.webp`}
+            alt={current.alt}
+          />
+        </div>
+
+        <button className='slider__btn slider__btn slider__btn--right' onClick={next}>
+          ›
+        </button>
+      </div>
+    );
+  };
 
   const contentMap = {
     paragraph: ({ id, text }) => (
@@ -42,6 +71,8 @@ const NewsPage = () => {
         <p className='paragraph'>{text}</p>
       </div>
     ),
+
+    slider: (block) => <SliderBlock key={block.id} {...block} newsId={news.id} />,
   };
 
   function renderContent(content) {
