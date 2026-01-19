@@ -8,7 +8,7 @@ function GlassMatchItem({ match }) {
     "Super Copa": "#e66f0e",
     "UEFA Europa League": "#ffbb00",
   };
-
+  console.log(match);
   const bgColor = tournamentColors[match.competition.title] || "#334155";
 
   const isResult = match.score?.owner !== null && match.score?.guest !== null;
@@ -17,11 +17,14 @@ function GlassMatchItem({ match }) {
       <div className={styles["glass-overlay"]}></div>
       <div className={styles["match-content"]}>
         <div className={styles["teams-container"]}>
-          <img
-            src={`${ASSETS_BASE_URL}/Teams/${match.owner.img}.png`}
-            alt={match.owner.title}
-            className={styles["team-logo"]}
-          />
+          <div className={styles["team-container"]}>
+            <img
+              src={`${ASSETS_BASE_URL}/Teams/${match.owner.img}.png`}
+              alt={match.owner.title}
+              className={styles["team-logo"]}
+            />
+            <p className={styles["team-title"]}>{match.owner.title}</p>
+          </div>
           <span className={styles.team__score}>{isResult ? match.score.owner : null}</span>
           {isResult ? (
             <span className={styles.team__score}>:</span>
@@ -34,11 +37,14 @@ function GlassMatchItem({ match }) {
             />
           )}
           <span className={styles.team__score}>{isResult ? match.score.guest : null}</span>
-          <img
-            src={`${ASSETS_BASE_URL}/Teams/${match.guest.img}.png`}
-            alt={match.guest.title}
-            className={styles["team-logo"]}
-          />
+          <div className={styles["team-container"]}>
+            <img
+              src={`${ASSETS_BASE_URL}/Teams/${match.guest.img}.png`}
+              alt={match.guest.title}
+              className={styles["team-logo"]}
+            />
+            <p className={styles["team-title"]}>{match.guest.title}</p>
+          </div>
         </div>
 
         <div className={styles["match-info"]}>

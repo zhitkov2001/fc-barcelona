@@ -2,8 +2,9 @@
 @import "../../../scss/abstracts/mixins";
 
 .match-background {
-  width: 264px;
-  height: 230px;
+  width: 300px;
+  height: 261px;
+  flex: 0 0 300px;
 
   // background: #7624b9; // La Liga
   // background: #0030cf; //UCL
@@ -22,7 +23,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+    background:
+      radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
       radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
     border-radius: 6px;
     opacity: 0.4;
@@ -45,8 +47,8 @@
 
 // Стеклянный слой
 .glass-overlay {
-  width: 262px;
-  height: 230px;
+  width: 298px;
+  height: 259px;
   position: absolute;
   top: 1px;
   left: 1px;
@@ -67,7 +69,9 @@
   border-radius: 6px;
 
   /* Тени для глубины - как при наведении */
-  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.4), inset 0 -2px 6px rgba(0, 0, 0, 0.3),
+  box-shadow:
+    inset 0 2px 6px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.3),
     0 6px 25px rgba(0, 0, 0, 0.2);
 
   /* Световые блики */
@@ -105,6 +109,23 @@
     padding: 26px 16px 8px; // Переносим паддинг сюда
   }
 
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 80px;
+
+    .team-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
   // Стили для изображений команд
   .team-logo {
     @include square($size: 4.8rem);
@@ -134,13 +155,15 @@
   justify-content: center;
   text-align: start;
   width: 100%;
-  padding: 16px 18px 24px;
+  padding: 16px 18px 32px;
 
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.15) 100%);
   backdrop-filter: blur(20px);
   border-radius: 12px 12px 5px 5px;
 
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 18px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 18px rgba(0, 0, 0, 0.3);
 
   &::before {
     content: "";
@@ -162,7 +185,7 @@
 
 // Стили текста
 .match-league {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
   opacity: 0.9;
@@ -172,7 +195,7 @@
 }
 
 .match-day {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 8px;
   text-align: center;
@@ -208,13 +231,13 @@
 
 @media (max-width: 480px) {
   .match-background {
-    width: 280px;
-    height: 200px;
+    width: 300px;
+    height: 261px;
   }
 
   .glass-overlay {
-    width: 278px;
-    height: 198px;
+    width: 298px;
+    height: 258px;
   }
 
   .team-logo {

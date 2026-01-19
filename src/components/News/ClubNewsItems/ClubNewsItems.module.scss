@@ -46,6 +46,7 @@
   position: relative;
   @include flex;
   @include wh($width: 100%, $height: 24rem);
+  object-fit: cover;
 
   transition: all 2s linear;
 }

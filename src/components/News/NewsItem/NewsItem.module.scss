@@ -9,6 +9,7 @@
 
     .news__img {
       @include wh-100;
+      object-fit: cover;
     }
   }
 

@@ -69,14 +69,14 @@ function Home() {
       {loadingNewsData ? <h3>Loading...</h3> : <MainNews newsData={newsData.slice(0, 3)} />}
 
       <div className={styles.container}>
-        <div className={styles.containerLeft}>
-          <Calendar />
-          {loadingNewsData ? <h3>Loading...</h3> : <ClubNews newsData={newsData.slice(0, 6)} />}
-        </div>
+        {/* <div className={styles.containerLeft}> */}
+        <Calendar />
+        {loadingNewsData ? <h3>Loading...</h3> : <ClubNews newsData={newsData.slice(0, 6)} />}
+        {/* </div> */}
 
-        <div className={styles.containerRight}>
+        {/* <div className={styles.containerRight}>
           {loadingLaLigaData ? <h3>Loading...</h3> : <HomeTable teamsList={teamsList} tableData={tableData} />}
-        </div>
+        </div> */}
       </div>
     </section>
   );

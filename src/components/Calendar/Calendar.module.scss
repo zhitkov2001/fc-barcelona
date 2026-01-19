@@ -16,4 +16,10 @@
 
 .card__container {
   @include flex($justify: center, $align: center, $gap: 0.8rem);
+
+  @media (max-width: 1560px) {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
 }
