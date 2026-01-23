@@ -11,11 +11,12 @@
 
 .container {
   @include flex;
-  width: $container-width;
+  width: 100%;
   margin: 0 auto;
 }
 
 .club__news-container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -29,11 +30,16 @@
 }
 
 .club__news-list {
-  @include grid($justify: center, $gap: 2.5rem 2rem);
-  grid-template-columns: repeat(4, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
-
+  // @include grid($justify: center, $gap: 2.5rem 2rem);
+  // grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  display: flex;
+  flex-flow: row wrap;
+  // gap: 1.5rem 2rem;
   width: 100%;
+}
 
-  list-style: none;
+@media (width <= 854px) {
+  .club__news-list {
+    // grid-template-columns: 1fr;
+  }
 }

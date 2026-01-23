@@ -10,8 +10,13 @@
   width: $container-width;
   margin: 0 auto;
   gap: 22px;
+
+  @media (width <= 840px) {
+    width: $container-width-medium;
+  }
+
   @media (width <= 768px) {
-    width: 100%;
+    width: $container-width-mobile;
   }
 }
 

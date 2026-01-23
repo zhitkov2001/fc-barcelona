@@ -2,27 +2,57 @@
 
 .sponsors {
   width: 100%;
+}
+.slider__container {
+  position: relative;
+  margin: 5rem auto;
+  width: 100%;
+  overflow: hidden;
+}
+.slider__track {
+  @include flex;
+}
+.slide {
+  @include flex-center;
+  flex: 0 0 14%;
+}
+.slide__link {
+  @include flex-center;
+}
+.slide__img {
+  @include wh($max-width: 22rem, $max-height: 6rem);
+}
 
+@media (width <= 1140px) {
   .slider__container {
-    position: relative;
-    margin: 5rem auto;
-    width: 100%;
-    overflow: hidden;
-
-    .slider__track {
-      @include flex;
-
-      .slide {
-        @include flex-center;
-        flex: 0 0 14%;
-
-        .slide__link {
-          @include flex-center;
-        }
-        .slide__img {
-          @include wh($max-width: 22rem, $max-height: 6rem);
-        }
-      }
-    }
+    margin: 3.5rem auto;
+  }
+  .slide {
+    flex: 0 0 10%;
+  }
+  .slide__img {
+    @include wh($max-width: 15rem, $max-height: 4.1rem);
+  }
+}
+@media (width <= 700px) {
+  .slider__container {
+    margin: 2.5rem auto;
+  }
+  .slide {
+    flex: 0 0 10%;
+  }
+  .slide__img {
+    @include wh($max-width: 13rem, $max-height: 3.6rem);
+  }
+}
+@media (width <= 500px) {
+  .slider__container {
+    margin: 2.5rem auto;
+  }
+  .slide {
+    flex: 0 0 8%;
+  }
+  .slide__img {
+    @include wh($max-width: 12rem, $max-height: 3rem);
   }
 }

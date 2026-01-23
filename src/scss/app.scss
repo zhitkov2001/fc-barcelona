@@ -24,6 +24,10 @@ html {
 
 body {
   font-size: inherit;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 main {

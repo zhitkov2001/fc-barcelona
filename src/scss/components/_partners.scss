@@ -38,3 +38,32 @@
 .partners__img {
   @include wh($max-width: 25rem, $max-height: 5rem);
 }
+
+@media (max-width: 1200px) {
+  .partners {
+    margin: 3.5rem 0;
+  }
+
+  .partners__list {
+    gap: 3.5rem;
+  }
+  .partners__img {
+    @include wh($max-width: 22rem, $max-height: 4.4rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .partners__img {
+    @include wh($max-width: 11rem, $max-height: 3.2rem);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .partners__list {
+    gap: 2rem;
+  }
+
+  .partners__item {
+    margin-bottom: 2rem;
+  }
+}

@@ -66,12 +66,29 @@
 }
 
 @mixin wh($width: null, $height: null, $max-width: null, $max-height: null, $min-width: null, $min-height: null) {
-  width: $width;
-  height: $height;
-  max-width: $max-width;
-  max-height: $max-height;
-  min-width: $min-width;
-  min-height: $min-height;
+  @if $width != null {
+    width: $width;
+  }
+
+  @if $height != null {
+    height: $height;
+  }
+
+  @if $max-width != null {
+    max-width: $max-width;
+  }
+
+  @if $max-height != null {
+    max-height: $max-height;
+  }
+
+  @if $min-width != null {
+    min-width: $min-width;
+  }
+
+  @if $min-height != null {
+    min-height: $min-height;
+  }
 }
 
 @mixin square($size: null, $max-size: null, $min-size: null) {

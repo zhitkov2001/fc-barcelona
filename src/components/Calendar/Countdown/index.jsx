@@ -4,12 +4,11 @@ import styles from "./Countdown.module.scss";
 function Countdown({ dateInfo }) {
   const [timeLeft, setTimeLeft] = useState({});
 
-  const createMatchDate = () => {
-    const fullDateString = `${dateInfo.date} ${dateInfo.month} 2026 ${dateInfo.time}`;
-    return new Date(fullDateString);
-  };
-
   useEffect(() => {
+    const createMatchDate = () => {
+      const fullDateString = `${dateInfo.date} ${dateInfo.month} 2026 ${dateInfo.time}`;
+      return new Date(fullDateString);
+    };
     const matchDate = createMatchDate();
 
     const updateCountdown = () => {

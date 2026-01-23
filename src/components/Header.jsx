@@ -4,12 +4,22 @@ import { ASSETS_BASE_URL } from "../config/assets";
 function Header() {
   const location = useLocation();
   const [activeLink, setActiveLink] = React.useState(location.pathname);
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     setActiveLink(location.pathname);
+    setMenuOpen(false);
   }, [location.pathname]);
 
   const isActive = (path) => activeLink === path;
+
+  React.useEffect(() => {
+    document.body.classList.toggle("menu-open", menuOpen);
+
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, [menuOpen]);
 
   return (
     <header className='header'>
@@ -17,7 +27,12 @@ function Header() {
         <Link to='/' className='header__logo'>
           <img src={`${ASSETS_BASE_URL}/barca_logo(60px).webp`} alt='Barcelona Logo' />
         </Link>
-        <nav className='nav'>
+        <button className={`burger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen((p) => !p)}>
+          <span />
+          <span />
+          <span />
+        </button>
+        <nav className={`nav ${menuOpen ? "nav--open" : ""}`}>
           <Link
             className={`nav__link ${isActive("/players") ? "active" : ""}`}
             to='/players'
@@ -46,14 +61,23 @@ function Header() {
           >
             News
           </Link>
+
+          <div className='profile profile--mobile'>
+            <Link to={"!/"} className='nav__link'>
+              Login
+            </Link>
+            <Link to={"!/"} className='nav__link'>
+              Sign in
+            </Link>
+          </div>
         </nav>
-        <div className='profile'>
-          <a className='nav__link' id='profile' href='!#'>
+        <div className='profile profile--desktop'>
+          <Link to={"!/"} className='nav__link'>
             Login
-          </a>
-          <a className='nav__link' id='profile' href='!#'>
+          </Link>
+          <Link to={"!/"} className='nav__link'>
             Sign in
-          </a>
+          </Link>
         </div>
       </div>
     </header>

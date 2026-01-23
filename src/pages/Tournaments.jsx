@@ -9,6 +9,22 @@ import Playoff from "../components/Tournaments/Playoff";
 import { normalizeTeams, normalizePlayoff, normalizeTable } from "../utils/Tournaments/normalize/index";
 import { DATA_BASE_URL } from "../config/assets";
 
+const TOURNAMENTS = {
+  "La Liga": `${DATA_BASE_URL}/tournaments/laliga.json`,
+  "UEFA Champions League": `${DATA_BASE_URL}/tournaments/ucl.json`,
+  "Copa del Rey": `${DATA_BASE_URL}/tournaments/copa-del-rey.json`,
+  "Spanish Supercup": `${DATA_BASE_URL}/tournaments/spanish-super-cup.json`,
+  "UEFA Europa League": `${DATA_BASE_URL}/tournaments/europa-league.json`,
+};
+
+const TOURNAMENTS_META = {
+  "La Liga": { title: "La Liga" },
+  "UEFA Champions League": { title: "UEFA Champions League" },
+  "Copa del Rey": { title: "Copa del Rey" },
+  "Spanish Supercup": { title: "Spanish Supercup" },
+  "UEFA Europa League": { title: "UEFA Europa League" },
+};
+
 const Tournaments = () => {
   // function sortStringsAlphabetically(strings) {
   //   return strings.sort();
@@ -54,22 +70,6 @@ const Tournaments = () => {
   // ];
   // const sortedTeams = sortStringsAlphabetically(teams);
   // console.log(sortedTeams);
-
-  const TOURNAMENTS = {
-    "La Liga": `${DATA_BASE_URL}/tournaments/laliga.json`,
-    "UEFA Champions League": `${DATA_BASE_URL}/tournaments/ucl.json`,
-    "Copa del Rey": `${DATA_BASE_URL}/tournaments/copa-del-rey.json`,
-    "Spanish Supercup": `${DATA_BASE_URL}/tournaments/spanish-super-cup.json`,
-    "UEFA Europa League": `${DATA_BASE_URL}/tournaments/europa-league.json`,
-  };
-
-  const TOURNAMENTS_META = {
-    "La Liga": { title: "La Liga" },
-    "UEFA Champions League": { title: "UEFA Champions League" },
-    "Copa del Rey": { title: "Copa del Rey" },
-    "Spanish Supercup": { title: "Spanish Supercup" },
-    "UEFA Europa League": { title: "UEFA Europa League" },
-  };
 
   const [currentTournament, setCurrentTournament] = React.useState({});
   const [currentSeason, setCurrentSeason] = React.useState({});
@@ -139,28 +139,31 @@ const Tournaments = () => {
     }
   }, [availableSeasons, selectedSeason]);
 
-  const fetchTournamentData = (league, seasonKey) => {
-    const tournament = tournamentData[league];
-    const season = tournament?.seasons?.[seasonKey];
+  const fetchTournamentData = React.useCallback(
+    (league, seasonKey) => {
+      const tournament = tournamentData[league];
+      const season = tournament?.seasons?.[seasonKey];
 
-    setCurrentTournament(tournament);
-    setCurrentSeason(season || null);
+      setCurrentTournament(tournament);
+      setCurrentSeason(season || null);
 
-    const normalizedTeams = normalizeTeams(season?.teams, season?.stages);
-    setTeamsList(normalizedTeams);
+      const normalizedTeams = normalizeTeams(season?.teams, season?.stages);
+      setTeamsList(normalizedTeams);
 
-    const normalizedPlayoff = normalizePlayoff(season?.stages);
-    setPlayoffData(normalizedPlayoff);
+      const normalizedPlayoff = normalizePlayoff(season?.stages);
+      setPlayoffData(normalizedPlayoff);
 
-    const normalizedTable = normalizeTable(season);
-    setTableData(normalizedTable);
+      const normalizedTable = normalizeTable(season);
+      setTableData(normalizedTable);
 
-    setSelectedRound(normalizedPlayoff.length > 0 ? "Playoff" : "Group stage");
-  };
+      setSelectedRound(normalizedPlayoff.length > 0 ? "Playoff" : "Group stage");
+    },
+    [tournamentData],
+  );
 
   React.useEffect(() => {
     if (selectedLeague && selectedSeason) fetchTournamentData(selectedLeague, selectedSeason);
-  }, [selectedLeague, selectedSeason]);
+  }, [selectedLeague, selectedSeason, fetchTournamentData]);
 
   if (loading || !currentTournament || !currentSeason) {
     return <div>Loading...</div>;

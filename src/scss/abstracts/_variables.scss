@@ -20,7 +20,9 @@ $pomegranate: #bc1144;
 $purple: #37345e;
 $green: #1db954;
 
-$container-width: 80vw;
+$container-width: 80%;
+$container-width-medium: 90%;
+$container-width-mobile: 95%;
 $container-padding: 2.5rem 3rem 4rem;
 
 $duration: 0.15s;
@@ -33,7 +35,8 @@ $number: "Custom-fcb", sans-serif;
 
 $pomegranate-blue-gradient: linear-gradient(270deg, #9b0041 0, #9b0041 45%, #0018b4 55%, #0018b4);
 
-$instagram-gradient: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+$instagram-gradient:
+  radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
   radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
   radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
   radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),

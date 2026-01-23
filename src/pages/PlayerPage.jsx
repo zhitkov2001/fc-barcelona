@@ -8,7 +8,6 @@ const PlayerPage = () => {
   const player = location.state?.player;
   const playerStats = player?.stats;
   const playerCurrentStats = player?.currentStats;
-  const playerAllTimeStats = player?.allTimeStats;
   const playerDetails = player?.details;
   const playerBio = player?.bio;
   const playerTrophy = player?.trophy;

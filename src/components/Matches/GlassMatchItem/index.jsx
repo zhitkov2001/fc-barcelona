@@ -8,7 +8,6 @@ function GlassMatchItem({ match }) {
     "Super Copa": "#e66f0e",
     "UEFA Europa League": "#ffbb00",
   };
-  console.log(match);
   const bgColor = tournamentColors[match.competition.title] || "#334155";
 
   const isResult = match.score?.owner !== null && match.score?.guest !== null;

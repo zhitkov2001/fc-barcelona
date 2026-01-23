@@ -3,16 +3,16 @@ import TitleBackground from "../components/TitleBackground";
 import MatchItem from "../components/Matches/MatchItem";
 import { DATA_BASE_URL } from "../config/assets";
 
+const MATCHES_URLS = {
+  Matches: `${DATA_BASE_URL}/matches/results.json`,
+  Schedule: `${DATA_BASE_URL}/matches/schedule.json`,
+};
+
 function Matches() {
   const [activeBtn, setActiveBtn] = React.useState("Matches");
   const [matchesData, setMatchesData] = React.useState({});
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
-
-  const MATCHES_URLS = {
-    Matches: `${DATA_BASE_URL}/matches/results.json`,
-    Schedule: `${DATA_BASE_URL}/matches/schedule.json`,
-  };
 
   React.useEffect(() => {
     const loadMatches = async () => {
