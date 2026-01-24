@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fc-barcelona/static/css/main.86543df9.css",
-    "main.js": "/fc-barcelona/static/js/main.eb5919bf.js",
+    "main.css": "/fc-barcelona/static/css/main.e07d5cdc.css",
+    "main.js": "/fc-barcelona/static/js/main.563553ad.js",
     "static/media/titleBackground.png": "/fc-barcelona/static/media/titleBackground.6e2b3070601a00f2c7aa.png",
     "static/media/news_bg.webp": "/fc-barcelona/static/media/news_bg.fb13cbed22c5bb199632.webp",
     "static/media/playerTitleBackground.png": "/fc-barcelona/static/media/playerTitleBackground.2ecf5cc4b80394e328b5.png",
@@ -10,11 +10,11 @@
     "static/media/fc-barcelona-2022-rus.woff": "/fc-barcelona/static/media/fc-barcelona-2022-rus.b025bca0847161b9ee4b.woff",
     "static/media/reset.svg": "/fc-barcelona/static/media/reset.215f0fa9d45c9bf7d87c97eda40aef6a.svg",
     "index.html": "/fc-barcelona/index.html",
-    "main.86543df9.css.map": "/fc-barcelona/static/css/main.86543df9.css.map",
-    "main.eb5919bf.js.map": "/fc-barcelona/static/js/main.eb5919bf.js.map"
+    "main.e07d5cdc.css.map": "/fc-barcelona/static/css/main.e07d5cdc.css.map",
+    "main.563553ad.js.map": "/fc-barcelona/static/js/main.563553ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.86543df9.css",
-    "static/js/main.eb5919bf.js"
+    "static/css/main.e07d5cdc.css",
+    "static/js/main.563553ad.js"
   ]
 }
