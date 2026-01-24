@@ -143,12 +143,13 @@
 }
 
 @media (width <= 900px) {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  header {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
-
   .burger {
     display: flex;
   }

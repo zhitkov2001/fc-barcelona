@@ -11,6 +11,10 @@
     border-radius: 10px;
     background-color: $white;
 
+    @media (width <= 840px) {
+      width: $container-width-medium;
+    }
+
     .table__container {
       padding: 6px;
       margin-bottom: 24px;

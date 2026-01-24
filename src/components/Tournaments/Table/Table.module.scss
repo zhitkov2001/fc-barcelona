@@ -34,3 +34,15 @@
     background: linear-gradient(270deg, #9b0041 0, #9b0041 49%, #0018b4 51%, #0018b4);
   }
 }
+
+@media (width <= 840px) {
+  .stats {
+    width: 2.8rem;
+  }
+}
+
+@media (width <= 600px) {
+  .hideMobile {
+    display: none;
+  }
+}

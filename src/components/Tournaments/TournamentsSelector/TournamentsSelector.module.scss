@@ -25,7 +25,7 @@
 
 .selector-option__item {
   @include position($position: relative);
-  @include grid($gap: 0.8rem);
+  @include grid($gap: 0.6rem);
   @include wh($width: 20rem, $height: 4.8rem);
   padding: 0.6rem 0.4rem;
   line-height: 1;
@@ -47,12 +47,19 @@
   font-size: 1.2rem;
   font-weight: 400;
   color: rgba($light-grey, 0.8);
+
+  user-select: none;
 }
 
 .option__value {
   font-size: 1.6rem;
   font-weight: 600;
   color: $white;
+
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .selector__btn {
@@ -140,5 +147,56 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (width <=840px) {
+  .tournaments-selector {
+    padding: 0.35rem 1.6rem;
+    @include wh($width: 48rem, $height: 6rem);
+    margin-bottom: 2rem;
+  }
+
+  .selector-option__item {
+    @include wh($width: 16rem, $height: 4.8rem);
+  }
+}
+
+@media (width <= 670px) {
+  .tournaments-selector {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.8rem;
+
+    height: auto;
+    @include wh($width: 36rem, $height: auto);
+  }
+
+  .selector-options {
+    display: contents;
+  }
+
+  .selector-option__item:first-child {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .selector-option__item:nth-child(2) {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .selector__btn {
+    grid-column: 2;
+    align-self: stretch;
+    justify-self: end;
+    height: 4.8rem;
+  }
+}
+
+@media (width <= 520px) {
+  .tournaments-selector {
+    @include wh($width: 28rem, $height: auto);
   }
 }

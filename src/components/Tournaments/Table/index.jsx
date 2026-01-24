@@ -2,6 +2,7 @@ import React from "react";
 import TableItem from "../TableItem";
 
 import styles from "./Table.module.scss";
+import { useWindowWidth } from "../../../hooks/useWindowWidth";
 
 const Table = ({ teamsList, tableData, mode }) => {
   const tableHeadItems = {
@@ -16,6 +17,24 @@ const Table = ({ teamsList, tableData, mode }) => {
     Miss: "Missed",
     Diff: "Difference",
   };
+
+  const mobileHeadItems = {
+    Pos: "Position",
+    Team: "Team",
+    Pts: "Points",
+    M: "Matches",
+    G: "Goals",
+  };
+
+  const width = useWindowWidth();
+
+  function getTableHeadItems(width) {
+    if (width <= 600) return mobileHeadItems;
+
+    return tableHeadItems;
+  }
+
+  const headers = getTableHeadItems(width);
 
   const normalizedData = React.useMemo(() => {
     if (mode === "groups") {
@@ -45,9 +64,9 @@ const Table = ({ teamsList, tableData, mode }) => {
       <table className={styles.table}>
         <thead className={styles["table__header"]}>
           <tr className={styles["table__header-row"]}>
-            {Object.entries(tableHeadItems).map(([key, value]) => (
+            {Object.entries(headers).map(([key, value]) => (
               <td key={key} title={value} className={styles["header__item"]}>
-                {key}
+                {width > 1000 ? value : width > 600 ? key : key.charAt(0)}
               </td>
             ))}
           </tr>
