@@ -4,7 +4,9 @@ import TableItem from "../TableItem";
 import styles from "./Table.module.scss";
 import { useWindowWidth } from "../../../hooks/useWindowWidth";
 
-const Table = ({ teamsList, tableData, mode }) => {
+const Table = ({ teamsById, tableData, mode }) => {
+  // console.log(tableData);
+
   const tableHeadItems = {
     Pos: "Position",
     Team: "Team",
@@ -40,7 +42,11 @@ const Table = ({ teamsList, tableData, mode }) => {
     if (mode === "groups") {
       return tableData.map((teamStats) => {
         const teamId = teamStats.teamId;
-        const teamInfo = teamsList.find((team) => team.id === teamId);
+        const teamInfo = teamsById[String(teamId)] || {
+          id: teamId,
+          title: "",
+          image: "",
+        };
         return {
           ...teamInfo,
           ...teamStats,
@@ -48,7 +54,7 @@ const Table = ({ teamsList, tableData, mode }) => {
       });
     }
     return tableData;
-  }, [teamsList, tableData, mode]);
+  }, [teamsById, tableData, mode]);
 
   const sortedTeams = React.useMemo(() => {
     return [...normalizedData].sort((a, b) => {
@@ -65,9 +71,9 @@ const Table = ({ teamsList, tableData, mode }) => {
         <thead className={styles["table__header"]}>
           <tr className={styles["table__header-row"]}>
             {Object.entries(headers).map(([key, value]) => (
-              <td key={key} title={value} className={styles["header__item"]}>
+              <th key={key} title={value} className={styles["header__item"]}>
                 {width > 1000 ? value : width > 600 ? key : key.charAt(0)}
-              </td>
+              </th>
             ))}
           </tr>
         </thead>

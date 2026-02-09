@@ -2,21 +2,11 @@
 @import "../../../scss/abstracts/mixins";
 
 .tableItem {
-  @include position($position: relative, $z-index: 10);
-  height: 6rem;
-  width: 100%;
-  color: $dark-blue;
   border-bottom: 0.2rem solid $grey;
+  box-shadow: inset 0.4rem 0 0 var(--row-accent-color, transparent);
 
   &:nth-child(even) {
     background-color: $light-grey;
-  }
-
-  &::after {
-    @include position($position: absolute, $left: 0, $bottom: 0);
-    @include wh($width: 0.4rem, $height: 5.8rem);
-    content: "";
-    background: var(--row-accent-color, transparent);
   }
 }
 

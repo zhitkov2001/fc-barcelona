@@ -1,9 +1,15 @@
 import React from "react";
 import styles from "./PlayOffItem.module.scss";
 import { ASSETS_BASE_URL } from "../../../config/assets";
-const PlayoffItem = ({ match, teamsData }) => {
+const PlayoffItem = ({ match, teamsById }) => {
   const findTeamById = (teamId) => {
-    return teamsData?.find((team) => team.id === teamId) || {};
+    return (
+      teamsById?.[String(teamId)] || {
+        id: teamId,
+        title: "",
+        image: "",
+      }
+    );
   };
 
   const firstMatch = match.legs[0];
@@ -45,11 +51,11 @@ const PlayoffItem = ({ match, teamsData }) => {
 
   const homeAggregate = hasSecondMatch
     ? (firstMatch.homeScore ?? 0) + (secondMatch?.awayScore ?? 0)
-    : firstMatch.homeScore ?? null;
+    : (firstMatch.homeScore ?? null);
 
   const awayAggregate = hasSecondMatch
     ? (firstMatch.awayScore ?? 0) + (secondMatch?.homeScore ?? 0)
-    : firstMatch.awayScore ?? null;
+    : (firstMatch.awayScore ?? null);
 
   const isDraw = homeAggregate === awayAggregate;
 

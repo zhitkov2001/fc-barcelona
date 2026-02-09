@@ -1,30 +1,22 @@
-export function normalizeTeams(teams, stages) {
-  if (!teams) return [];
+export function normalizeTeams(rawTeams = [], teamsById = {}) {
+  return rawTeams.map((team) => {
+    const id = String(team.teamId || team.id);
 
-  const teamsMap = teams.reduce((acc, team) => {
-    acc[team.id] = {
-      id: team.id,
-      title: team.name || team.title,
-      image: team.image || "",
+    const dictTeam = teamsById[id];
+
+    if (!dictTeam) {
+      return {
+        id,
+        title: team.title ?? "Unknown",
+        image: team.image ?? "default",
+      };
+    }
+
+    return {
+      id,
+      title: dictTeam.shortTitle || dictTeam.title,
+      abbr: dictTeam.abbr,
+      image: dictTeam.image || "default",
     };
-    return acc;
-  }, {});
-
-  if (stages?.league) {
-    return teams.map((team) => teamsMap[team.id]);
-  }
-
-  if (stages?.groupStage) {
-    const groupTeams = Object.values(stages.groupStage)
-      .flatMap((group) => group.teams.map((t) => teamsMap[t.teamId]))
-      .filter(Boolean);
-
-    const uniqueTeams = Array.from(
-      new Map(groupTeams.map((t) => [t.id, t])).values()
-    );
-
-    return uniqueTeams;
-  }
-
-  return teams.map((team) => teamsMap[team.id]);
+  });
 }

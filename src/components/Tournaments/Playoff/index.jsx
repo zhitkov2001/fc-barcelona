@@ -2,7 +2,7 @@ import styles from "./Playoff.module.scss";
 
 import PlayoffItem from "../PlayOffItem/index";
 
-const Playoff = ({ playoffData, teamsData }) => {
+const Playoff = ({ playoffData, teamsById }) => {
   if (!playoffData || playoffData.length === 0) {
     return <h2>Нет данных для отображения плейофф</h2>;
   }
@@ -15,7 +15,7 @@ const Playoff = ({ playoffData, teamsData }) => {
           {round.matches && round.matches.length > 0 ? (
             round.matches.map((match, matchIndex) => (
               <div key={matchIndex} className={styles.round__couple}>
-                <PlayoffItem match={match} teamsData={teamsData} />
+                <PlayoffItem match={match} teamsById={teamsById} />
               </div>
             ))
           ) : (
