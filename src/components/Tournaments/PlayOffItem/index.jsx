@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./PlayOffItem.module.scss";
 import { ASSETS_BASE_URL } from "../../../config/assets";
+import { getDisplayedTitle } from "../../../utils/Tournaments/normalize/getDisplayedTitle";
+
 const PlayoffItem = ({ match, teamsById }) => {
   const findTeamById = (teamId) => {
     return (
@@ -115,16 +117,16 @@ const PlayoffItem = ({ match, teamsById }) => {
 
           return homeAggregate != null && awayAggregate != null ? (
             <div key={`${leg.homeTeamId}-${leg.awayTeamId}-${index}`} className={styles.match__item}>
-              <div className={styles.team}>{home?.title}</div>
+              <div className={styles.team}>{getDisplayedTitle(home, 70)}</div>
               <div className={styles.score}>
                 {leg.homeScore != null && leg.awayScore != null ? `${leg.homeScore} - ${leg.awayScore}` : ""}
               </div>
-              <div className={styles.team}>{away?.title}</div>
+              <div className={styles.team}>{getDisplayedTitle(away, 70)}</div>
             </div>
           ) : (
             <div key={`${leg.homeTeamId}-${leg.awayTeamId}-${index}`} className={styles.match__item}>
-              <div className={styles.team}>{home?.title}</div>
-              <div className={styles.team}>{away?.title}</div>
+              <div className={styles.team}>{getDisplayedTitle(home, 70)}</div>
+              <div className={styles.team}>{getDisplayedTitle(away, 70)}</div>
             </div>
           );
         })}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TitleBackground.module.scss";
+import styles from "./titleBackground.module.scss";
 
 const TitleBackground = ({ title }) => {
   return (

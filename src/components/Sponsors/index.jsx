@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Sponsors.module.scss";
+import styles from "./sponsors.module.scss";
 import { DATA_BASE_URL, ASSETS_BASE_URL } from "../../config/assets";
 const Sponsors = () => {
   const [sponsorsData, setSponsorsData] = React.useState([]);
