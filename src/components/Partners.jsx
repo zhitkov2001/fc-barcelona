@@ -18,11 +18,11 @@ function Partners() {
           <li className='partners__item'>
             <a
               className='partners__link'
-              href='https://www.philips.com/ambilight?1'
+              href='https://www.midea.com/global'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img className='partners__img' alt='Amblight' src={`${ASSETS_BASE_URL}/amblight_logo.webp`} />
+              <img className='partners__img' alt='Midea' src={`${ASSETS_BASE_URL}/midea_logo.webp`} />
             </a>
           </li>
         </ul>

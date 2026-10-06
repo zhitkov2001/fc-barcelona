@@ -6,8 +6,7 @@ import Table from "../components/Tournaments/Table/index";
 import RoundSelector from "../components/Tournaments/RoundSelector";
 import Playoff from "../components/Tournaments/Playoff";
 
-import { createTeamsById } from "../utils/Tournaments/normalize/createTeamsById";
-import { normalizeTeams, normalizePlayoff, normalizeTable } from "../utils/Tournaments/normalize/index";
+import {  normalizePlayoff, normalizeTable, createTeamsById } from "../utils/Tournaments/index";
 import { DATA_BASE_URL } from "../config/assets";
 
 const TOURNAMENTS = {

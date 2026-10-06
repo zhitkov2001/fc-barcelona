@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./PlayOffItem.module.scss";
 import { ASSETS_BASE_URL } from "../../../config/assets";
-import { getDisplayedTitle } from "../../../utils/Tournaments/normalize/getDisplayedTitle";
+import { getDisplayedTitle } from "../../../utils/Tournaments/index";
 
 const PlayoffItem = ({ match, teamsById }) => {
   const findTeamById = (teamId) => {
